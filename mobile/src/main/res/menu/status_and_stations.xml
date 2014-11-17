@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="in.codeseed.tubely.activities.StatusAndStationsActivity" >
+
+    <item android:id="@+id/action_tweet"
+        android:icon="@drawable/write_tweet"
+        android:title="Write Tweet!"
+        app:showAsAction="always"/>
+</menu>

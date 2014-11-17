@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    card_view:cardElevation="2dp"
+    card_view:cardCornerRadius="2dp"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tubeName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/piccadilly_bg"
+                android:gravity="center"
+                android:text="Picadilly"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>>
+
+
+        <TextView
+            android:id="@+id/tubeStatus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Good Service" />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

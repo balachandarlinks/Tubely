@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">London\'s Tubely</string>
+    <string name="app_version">1.0.3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="network_error">Duh.. Network Error!</string>
+    <string name="network_error_toast">"There is some problem with your data network :(</string>
+    <string name="refresh_success">Refreshed!</string>
+    <string name="tubestatus_current_feed">http://cloud.tfl.gov.uk/TrackerNet/LineStatus</string>
+    <string name="good_service_extra_message">No worries! Everything on this line is absolutely fine for your travel. Happy Journey from Appkiddo ☺</string>
+
+    <string name="spread_tubely">Hi, Check out this app called "Tubely" ( https://play.google.com/store/apps/details?id=in.codeseed.tubely ) in Playstore. It really helps a lot to travel in London underground.</string>
+
+    <string-array name="tubeLines">
+        <item>Bakerloo</item>
+        <item>Central</item>
+        <item>Circle</item>
+        <item>District</item>
+        <item>Hammersmith and City</item>
+        <item>Jubilee</item>
+        <item>Metropolitan</item>
+        <item>Northern</item>
+        <item>Piccadilly</item>
+        <item>Victoria</item>
+        <item>Waterloo and City</item>
+        <item>Overground</item>
+        <item>DLR</item>
+    </string-array>
+    <string-array name="twitterHandles">
+        <item>bakerlooline</item>
+        <item>centralline</item>
+        <item>circleline</item>
+        <item>districtline</item>
+        <item>hamandcityline</item>
+        <item>jubileeline</item>
+        <item>metline</item>
+        <item>northernline</item>
+        <item>piccadillyline</item>
+        <item>victorialine</item>
+        <item>wlooandcityline</item>
+        <item>LDNOverground</item>
+        <item>LondonDLR</item>
+    </string-array>
+
+    <string name="title_activity_status_and_stations">StatusAndStationsActivity</string>
+    <string name="title_activity_tubely_settings">Settings</string>
+    <string name="title_activity_station">Station Activity</string>
+    <string name="title_activity_tube_map">London Tube Map</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+</resources>

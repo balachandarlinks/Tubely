@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="bakerlooStnCodes">
+        <item>BST</item>
+        <item>CHX</item>
+        <item>ERB</item>
+        <item>ELE</item>
+        <item>EMB</item>
+        <item>HSD</item>
+        <item>HAW</item>
+        <item>KGN</item>
+        <item>KNT</item>
+        <item>KPK</item>
+        <item>LAM</item>
+        <item>MDV</item>
+        <item>MYB</item>
+        <item>NWM</item>
+        <item>OXC</item>
+        <item>PAD</item>
+        <item>PIC</item>
+        <item>QPK</item>
+        <item>RPK</item>
+        <item>SKT</item>
+        <item>SPK</item>
+        <item>WAR</item>
+        <item>WLO</item>
+        <item>WEM</item>
+        <item>WJN</item>
+    </string-array>
+
+    <string-array name="bakerlooStnNames">
+        <item>Baker Street</item>
+        <item>Charing Cross</item>
+        <item>Edgware Road (Bakerloo)</item>
+        <item>Elephant and Castle</item>
+        <item>Embankment</item>
+        <item>Harlesden</item>
+        <item>Harrow and Wealdstone</item>
+        <item>Kensal Green</item>
+        <item>Kenton</item>
+        <item>Kilburn Park</item>
+        <item>Lambeth North</item>
+        <item>Maida Vale</item>
+        <item>Marylebone</item>
+        <item>North Wembley</item>
+        <item>Oxford Circus</item>
+        <item>Paddington</item>
+        <item>Piccadilly Circus</item>
+        <item>Queen\'s Park</item>
+        <item>Regent\'s Park</item>
+        <item>South Kenton</item>
+        <item>Stonebridge Park</item>
+        <item>Warwick Avenue</item>
+        <item>Waterloo</item>
+        <item>Wembley Central</item>
+        <item>Willesden Junction</item>
+    </string-array>
+
+    <string-array name="centralStnCodes">
+        <item>BNK</item>
+        <item>BDE</item>
+        <item>BNG</item>
+        <item>BDS</item>
+        <item>BHL</item>
+        <item>CYL</item>
+        <item>CHG</item>
+        <item>DEB</item>
+        <item>EBY</item>
+        <item>EAC</item>
+        <item>EPP</item>
+        <item>FLP</item>
+        <item>GHL</item>
+        <item>GRH</item>
+        <item>GFD</item>
+        <item>HAI</item>
+        <item>HLN</item>
+        <item>HOL</item>
+        <item>HPK</item>
+        <item>LAN</item>
+        <item>LEY</item>
+        <item>LYS</item>
+        <item>LST</item>
+        <item>LTN</item>
+        <item>MAR</item>
+        <item>MLE</item>
+        <item>NEP</item>
+        <item>NAC</item>
+        <item>NHT</item>
+        <item>NHG</item>
+        <item>OXC</item>
+        <item>PER</item>
+        <item>QWY</item>
+        <item>RED</item>
+        <item>ROD</item>
+        <item>RUG</item>
+        <item>SBC</item>
+        <item>SNB</item>
+        <item>SRP</item>
+        <item>SWF</item>
+        <item>STP</item>
+        <item>SFD</item>
+        <item>THB</item>
+        <item>TCR</item>
+        <item>WAN</item>
+        <item>WAC</item>
+        <item>WRP</item>
+        <item>WCT</item>
+        <item>WFD</item>
+    </string-array>
+
+    <string-array name="centralStnNames">
+        <item>Bank</item>
+        <item>Barkingside</item>
+        <item>Bethnal Green</item>
+        <item>Bond Street</item>
+        <item>Buckhurst Hill</item>
+        <item>Chancery Lane</item>
+        <item>Chigwell</item>
+        <item>Debden</item>
+        <item>Ealing Broadway</item>
+        <item>East Acton</item>
+        <item>Epping</item>
+        <item>Fairlop</item>
+        <item>Gants Hill</item>
+        <item>Grange Hill</item>
+        <item>Greenford</item>
+        <item>Hainault</item>
+        <item>Hanger Lane</item>
+        <item>Holborn</item>
+        <item>Holland Park</item>
+        <item>Lancaster Gate</item>
+        <item>Leyton</item>
+        <item>Leytonstone</item>
+        <item>Liverpool Street</item>
+        <item>Loughton</item>
+        <item>Marble Arch</item>
+        <item>Mile End</item>
+        <item>Newbury Park</item>
+        <item>North Acton</item>
+        <item>Northolt</item>
+        <item>Notting Hill Gate</item>
+        <item>Oxford Circus</item>
+        <item>Perivale</item>
+        <item>Queensway</item>
+        <item>Redbridge</item>
+        <item>Roding Valley</item>
+        <item>Ruislip Gardens</item>
+        <item>Shepherd\'s Bush</item>
+        <item>Snaresbrook</item>
+        <item>South Ruislip</item>
+        <item>South Woodford</item>
+        <item>St Paul\'s</item>
+        <item>Stratford</item>
+        <item>Theydon Bois</item>
+        <item>Tottenham Court Road</item>
+        <item>Wanstead</item>
+        <item>West Acton</item>
+        <item>West Ruislip</item>
+        <item>White City</item>
+        <item>Woodford</item>
+    </string-array>
+
+</resources>

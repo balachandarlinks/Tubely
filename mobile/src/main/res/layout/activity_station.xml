@@ -1,0 +1,243 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="in.codeseed.tubely.activities.StationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            xmlns:card="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            card:cardElevation="2dp"
+            card:cardCornerRadius="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    map:mapType="normal"
+                    map:uiRotateGestures="true"
+                    map:uiScrollGestures="true"
+                    map:uiTiltGestures="true"
+                    map:uiZoomControls="false"
+                    map:uiZoomGestures="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="2">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:alpha="0.6"
+                        android:gravity="center"
+                        android:text="DIRECT ME"
+                        android:textStyle="bold"
+                        android:background="@drawable/tubely_button"
+                        android:layout_height="match_parent"
+                        android:onClick="directToGoogleMap"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card1="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/train_prediction_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:minHeight="50dp"
+            card1:cardElevation="2dp"
+            card1:cardCornerRadius="2dp">
+
+            <LinearLayout
+                android:id="@+id/train_prediction_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/platform_refresh"
+                    android:minHeight="50dp"
+                    android:onClick="loadTrainsInPlatforms"
+                    android:src="@drawable/refresh_material"
+                    android:scaleType="centerInside"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/platform_refresh_textview"
+                    android:alpha="0.5"
+                    android:gravity="center"
+                    android:text="Loading platforms..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card2="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            card2:cardElevation="2dp"
+            card2:cardCornerRadius="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:text="CONTACT"
+                        android:textSize="16sp"
+                        android:alpha="0.8"
+                        android:gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:capitalize="characters"
+                        android:editable="false"
+                        android:elegantTextHeight="false"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/station_phone"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:alpha="0.8"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="right"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/station_address"
+                    android:text="-"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:alpha="0.8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="25dp"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:text="ZONES"
+                            android:alpha="0.8"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:id="@+id/zones_textview"
+                            android:text="-"
+                            android:textSize="12dp"
+                            android:alpha="0.8"
+                            android:gravity="center_vertical|left"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:text="LINES"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical"
+                            android:alpha="0.8"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
+
+                        <TextView
+                            android:id="@+id/lines_textview"
+                            android:text="-"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical|left"
+                            android:textSize="12sp"
+                            android:alpha="0.8"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

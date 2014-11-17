@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="pref_feedback"
+        android:summary="We value your feedback! Kindly tell us how you feel."
+        android:title="Feedback" />
+
+    <Preference
+        android:key="share_with_friends"
+        android:summary="Share Tubely with friends!"
+        android:title="Share Tubely"/>
+
+    <Preference
+        android:key="pref_rate"
+        android:summary="Your ratings are the most important driving force behind this app. Thank you."
+        android:title="Rate Tubely!" />
+
+    <Preference
+        android:key="pref_appkiddo"
+        android:summary="Don't miss out my other apps in Playstore"
+        android:title="More Apps by Appkiddo" />
+
+    <Preference
+        android:key="pref_appversion"
+        android:summary="@string/app_version"
+        android:title="@string/app_name" />
+
+
+</PreferenceScreen>

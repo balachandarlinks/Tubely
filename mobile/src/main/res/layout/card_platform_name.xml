@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/platform_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:textStyle="bold"
+    android:textAllCaps="true"
+    android:textColor="@android:color/black"
+    android:alpha="0.9"
+    android:text="Platform 3"
+    android:gravity="left|center_vertical">
+
+</TextView>

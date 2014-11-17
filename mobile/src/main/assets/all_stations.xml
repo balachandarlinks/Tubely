@@ -1,0 +1,1299 @@
+<AllStations>
+    <Stations>
+        <Station
+            Name="Acton Town"
+            Code="ACT"
+            Lines="District,Piccadilly"
+            />
+        <Station
+            Name="Aldgate"
+            Code="ALD"
+            Lines="Metropolitan,Circle"
+            />
+        <Station
+            Name="Aldgate East"
+            Code="ALE"
+            Lines="Hammersmith and City,District"
+            />
+        <Station
+            Name="Alperton"
+            Code="ALP"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Amersham"
+            Code="AME"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="Angel"
+            Code="ANG"
+            Lines="Northern"
+            />
+        <Station
+            Name="Archway"
+            Code="ARC"
+            Lines="Northern"
+            />
+        <Station
+            Name="Arnos Grove"
+            Code="AGR"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Arsenal"
+            Code="ARL"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Baker Street"
+            Code="BST"
+            Lines="Metropolitan,Bakerloo,Circle,Jubilee,Hammersmith and City"
+            />
+        <Station
+            Name="Balham"
+            Code="BAL"
+            Lines="Northern"
+            />
+        <Station
+            Name="Bank"
+            Code="BNK"
+            Lines="Waterloo and City,Northern,Central"
+            />
+        <Station
+            Name="Barbican"
+            Code="BAR"
+            Lines="Metropolitan,Circle,Hammersmith and City"
+            />
+        <Station
+            Name="Barking"
+            Code="BKG"
+            Lines="District,Hammersmith and City"
+            />
+        <Station
+            Name="Barkingside"
+            Code="BDE"
+            Lines="Central"
+            />
+        <Station
+            Name="Barons Court"
+            Code="BCT"
+            Lines="District,Piccadilly"
+            />
+        <Station
+            Name="Becontree"
+            Code="BEC"
+            Lines="District"
+            />
+        <Station
+            Name="Belsize Park"
+            Code="BPK"
+            Lines="Northern"
+            />
+        <Station
+            Name="Bermondsey"
+            Code="BER"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="Bethnal Green"
+            Code="BNG"
+            Lines="Central"
+            />
+        <Station
+            Name="Blackfriars"
+            Code="BLF"
+            Lines="District,Circle"
+            />
+        <Station
+            Name="Blackhorse Road"
+            Code="BHR"
+            Lines="Victoria"
+            />
+        <Station
+            Name="Bond Street"
+            Code="BDS"
+            Lines="Central,Jubilee"
+            />
+        <Station
+            Name="Borough"
+            Code="BOR"
+            Lines="Northern"
+            />
+        <Station
+            Name="Boston Manor"
+            Code="BOS"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Bounds Green"
+            Code="BGR"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Bow Road"
+            Code="BWR"
+            Lines="District,Hammersmith and City"
+            />
+        <Station
+            Name="Brent Cross"
+            Code="BTX"
+            Lines="Northern"
+            />
+        <Station
+            Name="Brixton"
+            Code="BRX"
+            Lines="Victoria"
+            />
+        <Station
+            Name="Bromley-by-Bow"
+            Code="BBB"
+            Lines="District,Hammersmith and City"
+            />
+        <Station
+            Name="Buckhurst Hill"
+            Code="BHL"
+            Lines="Central"
+            />
+        <Station
+            Name="Burnt Oak"
+            Code="BUR"
+            Lines="Barnet"
+            />
+        <Station
+            Name="Caledonian Road"
+            Code="CRD"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Camden Town"
+            Code="CTN"
+            Lines="Northern"
+            />
+        <Station
+            Name="Canada Water"
+            Code="CWR"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="Canary Wharf"
+            Code="CWF"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="Canning Town"
+            Code="CNT"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="Cannon Street"
+            Code="CST"
+            Lines="District,Circle"
+            />
+        <Station
+            Name="Canons Park"
+            Code="CPK"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="Chalfont and Latimer"
+            Code="CLF"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="Chalk Farm"
+            Code="CHF"
+            Lines="Northern"
+            />
+        <Station
+            Name="Chancery Lane"
+            Code="CYL"
+            Lines="Central"
+            />
+        <Station
+            Name="Charing Cross"
+            Code="CHX"
+            Lines="Bakerloo,Northern"
+            />
+        <Station
+            Name="Chigwell"
+            Code="CHG"
+            Lines="Central"
+            />
+        <Station
+            Name="Chiswick Park"
+            Code="CHP"
+            Lines="District"
+            />
+        <Station
+            Name="Chorleywood"
+            Code="CWD"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="Clapham Common"
+            Code="CPC"
+            Lines="Northern"
+            />
+        <Station
+            Name="Clapham North"
+            Code="CPN"
+            Lines="Northern"
+            />
+        <Station
+            Name="Clapham South"
+            Code="CPS"
+            Lines="Northern"
+            />
+        <Station
+            Name="Cockfosters"
+            Code="CFS"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Colindale"
+            Code="COL"
+            Lines="Northern"
+            />
+        <Station
+            Name="Colliers Wood"
+            Code="CLW"
+            Lines="Northern"
+            />
+        <Station
+            Name="Covent Garden"
+            Code="COV"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Croxley"
+            Code="CRX"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="Dagenham East"
+            Code="DGE"
+            Lines="District"
+            />
+        <Station
+            Name="Dagenham Heathway"
+            Code="DGH"
+            Lines="District"
+            />
+        <Station
+            Name="Debden"
+            Code="DEB"
+            Lines="Central"
+            />
+        <Station
+            Name="Dollis Hill"
+            Code="DHL"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="Ealing Broadway"
+            Code="EBY"
+            Lines="District,Central"
+            />
+        <Station
+            Name="Ealing Common"
+            Code="ECM"
+            Lines="District,Piccadilly"
+            />
+        <Station
+            Name="Earl's Court"
+            Code="ECT"
+            Lines="District,Piccadilly"
+            />
+        <Station
+            Name="East Acton"
+            Code="EAC"
+            Lines="Central"
+            />
+        <Station
+            Name="East Finchley"
+            Code="EFY"
+            Lines="Northern"
+            />
+        <Station
+            Name="East Ham"
+            Code="EHM"
+            Lines="District,Hammersmith and City"
+            />
+        <Station
+            Name="East Putney"
+            Code="EPY"
+            Lines="District"
+            />
+        <Station
+            Name="Eastcote"
+            Code="ETE"
+            Lines="Metropolitan,Piccadilly"
+            />
+        <Station
+            Name="Edgware"
+            Code="EDG"
+            Lines="Northern"
+            />
+        <Station
+            Name="Edgware Road (Bakerloo)"
+            Code="ERB"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="Edgware Road (H and C)"
+            Code="ERD"
+            Lines="Hammersmith and City,District,Circle"
+            />
+        <Station
+            Name="Elephant and Castle"
+            Code="ELE"
+            Lines="Northern,Bakerloo"
+            />
+        <Station
+            Name="Elm Park"
+            Code="EPK"
+            Lines="District"
+            />
+        <Station
+            Name="Embankment"
+            Code="EMB"
+            Lines="District,Bakerloo,Northern,Circle,"
+            />
+        <Station
+            Name="Epping"
+            Code="EPP"
+            Lines="Central"
+            />
+        <Station
+            Name="Euston"
+            Code="EUS"
+            Lines="Northern,Victoria"
+            />
+        <Station
+            Name="Euston Square"
+            Code="ESQ"
+            Lines="Metropolitan,Circle,Hammersmith and City"
+            />
+        <Station
+            Name="Fairlop"
+            Code="FLP"
+            Lines="Central"
+            />
+        <Station
+            Name="Farringdon"
+            Code="FAR"
+            Lines="Metropolitan,Circle,Hammersmith and City"
+            />
+        <Station
+            Name="Finchley Central"
+            Code="FYC"
+            Lines="Northern"
+            />
+        <Station
+            Name="Finchley Road"
+            Code="FRD"
+            Lines="Metropolitan,Jubilee"
+            />
+        <Station
+            Name="Finsbury Park"
+            Code="FPK"
+            Lines="Piccadilly,Victoria"
+            />
+        <Station
+            Name="Fulham Broadway"
+            Code="FBY"
+            Lines="District"
+            />
+        <Station
+            Name="Gants Hill"
+            Code="GHL"
+            Lines="Central"
+            />
+        <Station
+            Name="Gloucester Road"
+            Code="GRD"
+            Lines="District,Piccadilly,Circle"
+            />
+        <Station
+            Name="Golders Green"
+            Code="GGR"
+            Lines="Northern"
+            />
+        <Station
+            Name="Goodge Street"
+            Code="GST"
+            Lines="Northern"
+            />
+        <Station
+            Name="Grange Hill"
+            Code="GRH"
+            Lines="Central"
+            />
+        <Station
+            Name="Great Portland Street"
+            Code="GPS"
+            Lines="Metropolitan,Circle,Hammersmith and City"
+            />
+        <Station
+            Name="Green Park"
+            Code="GPK"
+            Lines="Central"
+            />
+        <Station
+            Name="Greenford"
+            Code="GFD"
+            Lines="Piccadilly,Victoria,Jubilee"
+            />
+        <Station
+            Name="Gunnersbury"
+            Code="GUN"
+            Lines="District"
+            />
+        <Station
+            Name="Hainault"
+            Code="HAI"
+            Lines="Central"
+            />
+        <Station
+            Name="Hammersmith (District and Picc)"
+            Code="HMD"
+            Lines="District,Piccadilly"
+            />
+        <Station
+            Name="Hammersmith"
+            Code="HMS"
+            Lines="Hammersmith and City,Circle"
+            />
+        <Station
+            Name="Hampstead"
+            Code="HMP"
+            Lines="Northern"
+            />
+        <Station
+            Name="Hanger Lane"
+            Code="HLN"
+            Lines="Central"
+            />
+        <Station
+            Name="Harlesden"
+            Code="HSD"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="HarStation and Wealdstone"
+            Code="HAW"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="HarStation on the Hill"
+            Code="HOH"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="Hatton Cross"
+            Code="HTX"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="HeathStation Terminal 4"
+            Code="HTF"
+            Lines="2,3,Piccadilly"
+            />
+        <Station
+            Name="HeathStation Terminal 5"
+            Code="HRV"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="HeathStation Terminals 123"
+            Code="HRC"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Hendon Central"
+            Code="HND"
+            Lines="Northern"
+            />
+        <Station
+            Name="High Barnet"
+            Code="HBT"
+            Lines="Northern"
+            />
+        <Station
+            Name="High Street Kensington"
+            Code="HST"
+            Lines="District,Circle"
+            />
+        <Station
+            Name="Highbury and Islington"
+            Code="HBY"
+            Lines="Victoria"
+            />
+        <Station
+            Name="Highgate"
+            Code="HIG"
+            Lines="Northern"
+            />
+        <Station
+            Name="Hillingdon"
+            Code="HDN"
+            Lines="Metropolitan,Piccadilly"
+            />
+        <Station
+            Name="Holborn"
+            Code="HOL"
+            Lines="Central,Piccadilly"
+            />
+        <Station
+            Name="Holland Park"
+            Code="HPK"
+            Lines="Central"
+            />
+        <Station
+            Name="Holloway Road"
+            Code="HRD"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Hornchurch"
+            Code="HCH"
+            Lines="District"
+            />
+        <Station
+            Name="Hounslow Central"
+            Code="HNC"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Hounslow East"
+            Code="HNE"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Hounslow West"
+            Code="HNW"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Hyde Park Corner"
+            Code="HPC"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Ickenham"
+            Code="ICK"
+            Lines="Metropolitan,Piccadilly"
+            />
+        <Station
+            Name="Kennington"
+            Code="KEN"
+            Lines="Northern"
+            />
+        <Station
+            Name="Kensal Green"
+            Code="KGN"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="Kensington (Olympia)"
+            Code="OLY"
+            Lines="District"
+            />
+        <Station
+            Name="Kentish Town"
+            Code="KTN"
+            Lines="Northern"
+            />
+        <Station
+            Name="Kenton"
+            Code="KNT"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="Kew Gardens"
+            Code="KEW"
+            Lines="District"
+            />
+        <Station
+            Name="Kilburn"
+            Code="KIL"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="Kilburn Park"
+            Code="KPK"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="King&apos;s Cross St Pancras"
+            Code="KXX"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="Kingsbury"
+            Code="KBY"
+            Lines="Metropolitan,Northern,Piccadilly,Circle,Victoria,Hammersmith and City"
+            />
+        <Station
+            Name="Knightsbridge"
+            Code="KNB"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Lambeth North"
+            Code="LAM"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="Lancaster Gate"
+            Code="LAN"
+            Lines="Central"
+            />
+        <Station
+            Name="Leicester Square"
+            Code="LSQ"
+            Lines="Hammersmith and City,Circle"
+            />
+        <Station
+            Name="Leyton"
+            Code="LEY"
+            Lines="Piccadilly,Northern"
+            />
+        <Station
+            Name="Leytonstone"
+            Code="LYS"
+            Lines="Central"
+            />
+        <Station
+            Name="Liverpool Street"
+            Code="LST"
+            Lines="Central"
+            />
+        <Station
+            Name="London Bridge"
+            Code="LON"
+            Lines="Metropolitan,Central,Circle,Hammersmith and City"
+            />
+        <Station
+            Name="Loughton"
+            Code="LTN"
+            Lines="Northern,Jubilee"
+            />
+        <Station
+            Name="Maida Vale"
+            Code="MDV"
+            Lines="Central"
+            />
+        <Station
+            Name="Manor House"
+            Code="MNR"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="Mansion House"
+            Code="MAN"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Marble Arch"
+            Code="MAR"
+            Lines="District,Circle"
+            />
+        <Station
+            Name="Marylebone"
+            Code="MYB"
+            Lines="Central"
+            />
+        <Station
+            Name="Mile End"
+            Code="MLE"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="Mill Hill East"
+            Code="MHE"
+            Lines="District,Hammersmith and City,Central"
+            />
+        <Station
+            Name="Monument"
+            Code="MON"
+            Lines="Northern"
+            />
+        <Station
+            Name="Moor Park"
+            Code="MPK"
+            Lines="District,Circle"
+            />
+        <Station
+            Name="Moorgate"
+            Code="MGT"
+            Lines="Metropolitan,Northern,Circle,Hammersmith and City"
+            />
+        <Station
+            Name="Morden"
+            Code="MOR"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="Mornington Crescent"
+            Code="MCR"
+            Lines="Northern"
+            />
+        <Station
+            Name="Neasden"
+            Code="NEA"
+            Lines="Northern"
+            />
+        <Station
+            Name="Newbury Park"
+            Code="NEP"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="North Acton"
+            Code="NAC"
+            Lines="Central"
+            />
+        <Station
+            Name="North Ealing"
+            Code="NEL"
+            Lines="Central"
+            />
+        <Station
+            Name="North Greenwich"
+            Code="NGW"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="North HarStation"
+            Code="NHR"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="North Wembley"
+            Code="NWM"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="Northfields"
+            Code="NFD"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="Northolt"
+            Code="NHT"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Northwick Park"
+            Code="NWP"
+            Lines="Central"
+            />
+        <Station
+            Name="Northwood"
+            Code="NWD"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="Northwood Hills"
+            Code="NWH"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="Notting Hill Gate"
+            Code="NHG"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="Oakwood"
+            Code="OAK"
+            Lines="District,Central,Circle"
+            />
+        <Station
+            Name="Old Street"
+            Code="OLD"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Olympia"
+            Code="OLY"
+            Lines="Northern"
+            />
+        <Station
+            Name="Osterley"
+            Code="OST"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Oval"
+            Code="OVL"
+            Lines="Northern"
+            />
+        <Station
+            Name="Oxford Circus"
+            Code="OXC"
+            Lines="Central,Bakerloo,Victoria"
+            />
+        <Station
+            Name="Paddington"
+            Code="PAD"
+            Lines="Hammersmith and City,District,Circle,Bakerloo,"
+            />
+        <Station
+            Name="Park Royal"
+            Code="PRY"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Parsons Green"
+            Code="PGR"
+            Lines="District"
+            />
+        <Station
+            Name="Perivale"
+            Code="PER"
+            Lines="Central"
+            />
+        <Station
+            Name="Piccadilly Circus"
+            Code="PIC"
+            Lines="Bakerloo,Piccadilly"
+            />
+        <Station
+            Name="Pimlico"
+            Code="PIM"
+            Lines="Victoria"
+            />
+        <Station
+            Name="Pinner"
+            Code="PIN"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="Plaistow"
+            Code="PLW"
+            Lines="District,Hammersmith and City"
+            />
+        <Station
+            Name="Putney Bridge"
+            Code="PUT"
+            Lines="District"
+            />
+        <Station
+            Name="Queen's Park"
+            Code="QPK"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="Queensbury"
+            Code="QBY"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="Queensway"
+            Code="QWY"
+            Lines="Central"
+            />
+        <Station
+            Name="Ravenscourt Park"
+            Code="RCP"
+            Lines="District"
+            />
+        <Station
+            Name="Rayners Lane"
+            Code="RLN"
+            Lines="Metropolitan,Piccadilly"
+            />
+        <Station
+            Name="Redbridge"
+            Code="RED"
+            Lines="Central"
+            />
+        <Station
+            Name="Regent's Park"
+            Code="RPK"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="Richmond"
+            Code="RMD"
+            Lines="District"
+            />
+        <Station
+            Name="Rickmansworth"
+            Code="RKY"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="Roding Valley"
+            Code="ROD"
+            Lines="Central"
+            />
+        <Station
+            Name="Ruislip"
+            Code="RUI"
+            Lines="Metropolitan,Piccadilly"
+            />
+        <Station
+            Name="Ruislip Gardens"
+            Code="RUG"
+            Lines="Central"
+            />
+        <Station
+            Name="Ruislip Manor"
+            Code="RUM"
+            Lines="Metropolitan,Piccadilly"
+            />
+        <Station
+            Name="Russell Square"
+            Code="RSQ"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Seven Sisters"
+            Code="SVS"
+            Lines="Victoria"
+            />
+        <Station
+            Name="ShepherdÕs Bush"
+            Code="SBC"
+            Lines="Central"
+            />
+        <Station
+            Name="Sloane Square"
+            Code="SSQ"
+            Lines="District,Circle"
+            />
+        <Station
+            Name="Snaresbrook"
+            Code="SNB"
+            Lines="Central"
+            />
+        <Station
+            Name="South Ealing"
+            Code="SEL"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="South HarStation"
+            Code="SHR"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="South Kensington"
+            Code="SKN"
+            Lines="District,Piccadilly,Circle"
+            />
+        <Station
+            Name="South Kenton"
+            Code="SKT"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="South Ruislip"
+            Code="SRP"
+            Lines="Central"
+            />
+        <Station
+            Name="South Wimbledon"
+            Code="SWM"
+            Lines="Northern"
+            />
+        <Station
+            Name="South Woodford"
+            Code="SWF"
+            Lines="Central"
+            />
+        <Station
+            Name="Southfields"
+            Code="SFS"
+            Lines="District"
+            />
+        <Station
+            Name="Southgate"
+            Code="SGT"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Southwark"
+            Code="SWK"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="St Johns Wood"
+            Code="SJW"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="St Pauls"
+            Code="STP"
+            Lines="Central"
+            />
+        <Station
+            Name="St. James's Park"
+            Code="SJP"
+            Lines="District,Circle"
+            />
+        <Station
+            Name="Stamford Brook"
+            Code="STB"
+            Lines="District"
+            />
+        <Station
+            Name="Stanmore"
+            Code="STA"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="Stepney Green"
+            Code="STG"
+            Lines="District,Hammersmith and City"
+            />
+        <Station
+            Name="Stockwell"
+            Code="STK"
+            Lines="Northern,Victoria"
+            />
+        <Station
+            Name="Stonebridge Park"
+            Code="SPK"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="Stratford"
+            Code="SFD"
+            Lines="Central,Jubilee"
+            />
+        <Station
+            Name="Sudbury Hill"
+            Code="SHL"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Sudbury Town"
+            Code="STN"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Swiss Cottage"
+            Code="SWC"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="Temple"
+            Code="TEM"
+            Lines="District,Circle"
+            />
+        <Station
+            Name="Theydon Bois"
+            Code="THB"
+            Lines="Central"
+            />
+        <Station
+            Name="Tooting Bec"
+            Code="TBE"
+            Lines="Northern"
+            />
+        <Station
+            Name="Tooting Broadway"
+            Code="TBY"
+            Lines="Northern"
+            />
+        <Station
+            Name="Tottenham Court Road"
+            Code="TCR"
+            Lines="Central,Northern"
+            />
+        <Station
+            Name="Tottenham Hale"
+            Code="TTH"
+            Lines="Victoria"
+            />
+        <Station
+            Name="Totteridge and Whetstone"
+            Code="TOT"
+            Lines="Northern"
+            />
+        <Station
+            Name="Tower Hill"
+            Code="THL"
+            Lines="District,Circle"
+            />
+        <Station
+            Name="Tufnell Park"
+            Code="TPK"
+            Lines="Northern"
+            />
+        <Station
+            Name="Turnham Green"
+            Code="TGR"
+            Lines="District,Piccadilly"
+            />
+        <Station
+            Name="Turnpike Lane"
+            Code="TPL"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Upminster"
+            Code="UPM"
+            Lines="District"
+            />
+        <Station
+            Name="Upminster Bridge"
+            Code="UPB"
+            Lines="District"
+            />
+        <Station
+            Name="Upney"
+            Code="UPY"
+            Lines="District"
+            />
+        <Station
+            Name="Upton Park"
+            Code="UPK"
+            Lines="Newham"
+            />
+        <Station
+            Name="Uxbridge"
+            Code="UXB"
+            Lines="Metropolitan,Piccadilly"
+            />
+        <Station
+            Name="Vauxhall"
+            Code="VUX"
+            Lines="Victoria"
+            />
+        <Station
+            Name="Victoria"
+            Code="VIC"
+            Lines="District,Circle,Victoria"
+            />
+        <Station
+            Name="Walthamstow Central"
+            Code="WAL"
+            Lines="Victoria"
+            />
+        <Station
+            Name="Wanstead"
+            Code="WAN"
+            Lines="Central"
+            />
+        <Station
+            Name="Warren Street"
+            Code="WST"
+            Lines="Northern,Victoria"
+            />
+        <Station
+            Name="Warwick Avenue"
+            Code="WAR"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="Waterloo"
+            Code="WLO"
+            Lines="Waterloo and City,Bakerloo,Northern,Jubilee"
+            />
+        <Station
+            Name="Watford"
+            Code="WAT"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="Wembley Central"
+            Code="WEM"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="Wembley Park"
+            Code="WPK"
+            Lines="Metropolitan,Jubilee"
+            />
+        <Station
+            Name="West Acton"
+            Code="WAC"
+            Lines="Central"
+            />
+        <Station
+            Name="West Brompton"
+            Code="WBT"
+            Lines="District"
+            />
+        <Station
+            Name="West Finchley"
+            Code="WFY"
+            Lines="Northern"
+            />
+        <Station
+            Name="West Ham"
+            Code="WHM"
+            Lines="District,Hammersmith and City,Jubilee"
+            />
+        <Station
+            Name="West Hampstead"
+            Code="WHD"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="West HarStation"
+            Code="WHR"
+            Lines="Metropolitan"
+            />
+        <Station
+            Name="West Kensington"
+            Code="WKN"
+            Lines="District"
+            />
+        <Station
+            Name="West Ruislip"
+            Code="WRP"
+            Lines="Central"
+            />
+        <Station
+            Name="Westminster"
+            Code="WMS"
+            Lines="District,Circle,Jubilee"
+            />
+        <Station
+            Name="White City"
+            Code="WCT"
+            Lines="Central"
+            />
+        <Station
+            Name="Whitechapel"
+            Code="WCL"
+            Lines="District,Hammersmith and City"
+            />
+        <Station
+            Name="Willesden Green"
+            Code="WLG"
+            Lines="Jubilee"
+            />
+        <Station
+            Name="Willesden Junction"
+            Code="WJN"
+            Lines="Bakerloo"
+            />
+        <Station
+            Name="Wimbledon"
+            Code="WDN"
+            Lines="District"
+            />
+        <Station
+            Name="Wimbledon Park"
+            Code="WMP"
+            Lines="District"
+            />
+        <Station
+            Name="Wood Green"
+            Code="WGN"
+            Lines="Piccadilly"
+            />
+        <Station
+            Name="Woodford"
+            Code="WFD"
+            Lines="Central"
+            />
+    </Stations>
+</AllStations>

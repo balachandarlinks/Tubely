@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bakerloo_fg">#FFFFFF</color>
+    <color name="bakerloo_bg">#AE6118</color>
+    <color name="central_fg">#FFFFFF</color>
+    <color name="central_bg">#E41F1F</color>
+    <color name="circle_fg">#113892</color>
+    <color name="circle_bg">#F8D42D</color>
+    <color name="district_fg">#FFFFFF</color>
+    <color name="district_bg">#007229</color>
+    <color name="dlr_fg">#FFFFFF</color>
+    <color name="dlr_bg">#00BBB4</color>
+    <color name="hsmithandcity_fg">#113892</color>
+    <color name="hsmithandcity_bg">#E899A8</color>
+    <color name="jubilee_fg">#FFFFFF</color>
+    <color name="jubilee_bg">#686E72</color>
+    <color name="metropoliton_fg">#FFFFFF</color>
+    <color name="metropoliton_bg">#893267</color>
+    <color name="northern_fg">#FFFFFF</color>
+    <color name="northern_bg">#000000</color>
+    <color name="overground_fg">#FFFFFF</color>
+    <color name="overground_bg">#F86C00</color>
+    <color name="piccadilly_fg">#FFFFFF</color>
+    <color name="piccadilly_bg">#0450A1</color>
+    <color name="victoria_fg">#FFFFFF</color>
+    <color name="victoria_bg">#009FE0</color>
+    <color name="waterlooandcity_fg">#113892</color>
+    <color name="waterlooandcity_bg">#70C3CE</color>
+
+    <!-- Material Designs -->
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#c5cae9</color>
+
+    <color name="colorYellow">#FFF59D</color>
+    <color name="colorLime">#E6EE9C</color>
+    <color name="colorPurple">#CE93D8</color>
+    <color name="colorLightBlue">#81D4FA</color>
+
+    <color name="tubeMapActionBar">#55c5cae9</color>
+
+    <!-- ActionBar Color Style -->
+    <color name="page_title_strip">#7986cb</color>
+</resources>
