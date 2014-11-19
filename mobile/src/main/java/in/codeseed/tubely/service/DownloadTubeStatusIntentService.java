@@ -168,7 +168,8 @@ public class DownloadTubeStatusIntentService extends IntentService {
         try {
 
             Root root = tflWebService.getStationsData();
-            bulkInsertStationFacilties(root.getStations());
+            if(root != null && root.getStations() != null)
+                bulkInsertStationFacilties(root.getStations());
         }catch (Exception e){
             Log.d(TAG, String.valueOf(e.getMessage()));
         }
