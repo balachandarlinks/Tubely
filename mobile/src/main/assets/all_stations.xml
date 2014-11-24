@@ -438,12 +438,12 @@
         <Station
             Name="Green Park"
             Code="GPK"
-            Lines="Central"
+            Lines="Piccadilly,Victoria,Jubilee"
             />
         <Station
             Name="Greenford"
             Code="GFD"
-            Lines="Piccadilly,Victoria,Jubilee"
+            Lines="Central"
             />
         <Station
             Name="Gunnersbury"
@@ -956,7 +956,7 @@
             Lines="Victoria"
             />
         <Station
-            Name="ShepherdÕs Bush"
+            Name="Shepherd's Bush"
             Code="SBC"
             Lines="Central"
             />
