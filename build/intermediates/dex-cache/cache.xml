@@ -1,143 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<pre-dex-items>
+<items version="2" >
 
     <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-c6a1a9992f959017fa3aca076c2fe72bfa3f556a.jar"
-        jar="/home/bala/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e"/>
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/classes-f7446692850e974330dc30ebc2a447532e66708e.jar" />
+    </item>
     <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/classes-2b27de47a2eb127a6a4d1a317640ffee86755edb.jar"
-        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.0/classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="7d2525cba8ed61fff102977caed964fc22061e34"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/classes-64ea0850810f7d144b9c89af497d37885cdb451c.jar"
-        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/Tubely/ssimageview/unspecified/classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="0a0b22167d90dba49539b21a6339c236739eb45f"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/cglib-2.2.1-v20090111-6e2095f67f6a1502f9ec6a3b5ccbdd5963714a69.jar"
-        jar="/home/bala/.gradle/caches/modules-2/files-2.1/org.sonatype.sisu.inject/cglib/2.2.1-v20090111/7ce5e983fd0e6c78346f4c9cbfa39d83049dda2/cglib-2.2.1-v20090111.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="07ce5e983fd0e6c78346f4c9cbfa39d83049dda2"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/classes-3ab092a50d34e4d0d5a1d16a40d6cde26bb54f5b.jar"
-        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.0/classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="efeda77c808750cb670ee9c48d8a1835d89dbcb2"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/twitter4j-core-4.0.2-0c6ce7ee737b564959f16487fd9c373d455e386e.jar"
-        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/libs/twitter4j-core-4.0.2.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="381cf31e9200c2902782f17248d2af18e2ab4c56"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/classes-eab80bb41445c065c00e4283d792638de188d77a.jar"
-        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.71/classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-8d6b389a5ddb572ca1c5802bc3cf017af83b89ae.jar"
-        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/retrofit-1.7.1-80e37d5316fe62b7f1a78354cff1d51413561ade.jar"
-        jar="/home/bala/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.7.1/168a878946d665200edc733ac715b1264a6cd7b6/retrofit-1.7.1.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="168a878946d665200edc733ac715b1264a6cd7b6"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/guice-3.0-no_aop-cb1a9e0ba5acbd40f417c164274ba43eb894bded.jar"
-        jar="/home/bala/.gradle/caches/modules-2/files-2.1/com.google.inject/guice/3.0/28586dc97c525501329d9a242fc3402041e3572d/guice-3.0-no_aop.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="28586dc97c525501329d9a242fc3402041e3572d"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/converter-simplexml-1.7.1-f45a680bd58a2792fb24dbcadcbc096dfdc4e434.jar"
-        jar="/home/bala/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/converter-simplexml/1.7.1/c5bc4a50b1582da64337c728970b780d41d9efbd/converter-simplexml-1.7.1.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="c5bc4a50b1582da64337c728970b780d41d9efbd"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/asm-4.0-c6ec65a3be05d7fd67e0755519c08039ea79d907.jar"
         jar="/home/bala/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/4.0/659add6efc75a4715d738e73f07505246edf4d66/asm-4.0.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="659add6efc75a4715d738e73f07505246edf4d66"/>
+        sha1="659add6efc75a4715d738e73f07505246edf4d66">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/asm-4.0-c6ec65a3be05d7fd67e0755519c08039ea79d907.jar" />
+    </item>
     <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/aopalliance-1.0-7161680e32ddf8f3346012c2cdb2341e43ddbc19.jar"
-        jar="/home/bala/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar"
+        jar="/home/bala/.gradle/caches/modules-2/files-2.1/com.google.inject/guice/3.0/28586dc97c525501329d9a242fc3402041e3572d/guice-3.0-no_aop.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8"/>
+        sha1="28586dc97c525501329d9a242fc3402041e3572d">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/guice-3.0-no_aop-cb1a9e0ba5acbd40f417c164274ba43eb894bded.jar" />
+    </item>
     <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/release/timber-2.5.0-207916428bdca6a773cfb82f020314e4dd7ad4fe.jar"
-        jar="/home/bala/.gradle/caches/modules-2/files-2.1/com.jakewharton.timber/timber/2.5.0/5e743a8b1d28e7158f21dfe3a02bd933a1c6b54b/timber-2.5.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="5e743a8b1d28e7158f21dfe3a02bd933a1c6b54b"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/roboguice-2.0-72c43cbb27ec961e775c4e27f89f5a7efd1eed7b.jar"
-        jar="/home/bala/.gradle/caches/modules-2/files-2.1/org.roboguice/roboguice/2.0/727ccb8f376109d0b5c44abca6f791dccc5c5dbc/roboguice-2.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="727ccb8f376109d0b5c44abca6f791dccc5c5dbc"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/gson-2.3-55fd63acae3822726054fff8c0d44a403ab749fe.jar"
-        jar="/home/bala/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/stax-1.2.0-c48c84cfda8f1ec08a9b4969c3e39994ca6b502f.jar"
-        jar="/home/bala/.gradle/caches/modules-2/files-2.1/stax/stax/1.2.0/c434800de5e4bbe1822805be5fb1c32d6834f830/stax-1.2.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="c434800de5e4bbe1822805be5fb1c32d6834f830"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/javax.inject-1-2ff346305638fc25116d09966829c904977e428b.jar"
-        jar="/home/bala/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38"/>
-    <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/simple-xml-2.7.1-5b8ab0d75699d8b07a177d2a32dbffd19509c45d.jar"
         jar="/home/bala/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-xml/2.7.1/dd91fb744c2ff921407475cb29a1e3fee397d411/simple-xml-2.7.1.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="dd91fb744c2ff921407475cb29a1e3fee397d411"/>
+        sha1="dd91fb744c2ff921407475cb29a1e3fee397d411">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/simple-xml-2.7.1-5b8ab0d75699d8b07a177d2a32dbffd19509c45d.jar" />
+    </item>
     <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/classes-e609c332467abfd703ec4882bc6421f5b2a0078e.jar"
-        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
+        jar="/home/bala/.gradle/caches/modules-2/files-2.1/com.jakewharton.timber/timber/2.5.0/5e743a8b1d28e7158f21dfe3a02bd933a1c6b54b/timber-2.5.0.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="686344a780033e4ba22b926cd225f8d4941247e6"/>
+        sha1="5e743a8b1d28e7158f21dfe3a02bd933a1c6b54b">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/timber-2.5.0-207916428bdca6a773cfb82f020314e4dd7ad4fe.jar" />
+    </item>
     <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-23afed35bacdc50f8370fc7445d870d4e1b8670f.jar"
-        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.0/libs/internal_impl-21.0.0.jar"
+        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/libs/twitter4j-core-4.0.2.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="5a8e01742aee890c56fe638ea7c921b91a3fdc62"/>
+        sha1="381cf31e9200c2902782f17248d2af18e2ab4c56">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/twitter4j-core-4.0.2-0c6ce7ee737b564959f16487fd9c373d455e386e.jar" />
+    </item>
     <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/classes-e5906fa7b0e5d76450f049f4026606fc8d9ff63c.jar"
-        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.0/classes.jar"
+        jar="/home/bala/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/converter-simplexml/1.7.1/c5bc4a50b1582da64337c728970b780d41d9efbd/converter-simplexml-1.7.1.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="0c0c19759e5868604a3b4c2c0074ee9404d73c76"/>
+        sha1="c5bc4a50b1582da64337c728970b780d41d9efbd">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/converter-simplexml-1.7.1-f45a680bd58a2792fb24dbcadcbc096dfdc4e434.jar" />
+    </item>
     <item
-        dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/debug/classes-66e46f93d7b00050dc43630568f4e26c4c10864f.jar"
-        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/classes.jar"
+        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.2/classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="95fd37732ec852e99f07eeb516a3650172f1d136"/>
+        sha1="4796f18d3750bf2bfa078407a94a7f9db35b440d">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/classes-f9f786d10db578e6759ed5503c72cee0ce7b8653.jar" />
+    </item>
+    <item
+        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.71/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/classes-eab80bb41445c065c00e4283d792638de188d77a.jar" />
+    </item>
+    <item
+        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="61965ae058916e6a57950dd61b0164dc866af19a">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/classes-6324d5e659c1d7c7baac629c7892c7819547eb7f.jar" />
+    </item>
+    <item
+        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/libs/svg-android-1.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9f7c80e87e9925b691875dc9388869d87515f7d2">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/svg-android-1.1-460ac314f4a43192074c154b86ba370cbc12adc9.jar" />
+    </item>
+    <item
+        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.github.mrengineer13/snackbar/0.4.1/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6348a9869018af3fd56b6aa6c26e47ca947c3ced">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/classes-153d7aecb249a1592c3f3febd3ccf48b1c12064c.jar" />
+    </item>
+    <item
+        jar="/home/bala/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/aopalliance-1.0-7161680e32ddf8f3346012c2cdb2341e43ddbc19.jar" />
+    </item>
+    <item
+        jar="/home/bala/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/gson-2.3-55fd63acae3822726054fff8c0d44a403ab749fe.jar" />
+    </item>
+    <item
+        jar="/home/bala/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.7.1/168a878946d665200edc733ac715b1264a6cd7b6/retrofit-1.7.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="168a878946d665200edc733ac715b1264a6cd7b6">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/retrofit-1.7.1-80e37d5316fe62b7f1a78354cff1d51413561ade.jar" />
+    </item>
+    <item
+        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/classes-810a77f8f25367edc9df93309d9478653e21d234.jar" />
+    </item>
+    <item
+        jar="/home/bala/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/javax.inject-1-2ff346305638fc25116d09966829c904977e428b.jar" />
+    </item>
+    <item
+        jar="/home/bala/.gradle/caches/modules-2/files-2.1/stax/stax/1.2.0/c434800de5e4bbe1822805be5fb1c32d6834f830/stax-1.2.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c434800de5e4bbe1822805be5fb1c32d6834f830">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/stax-1.2.0-c48c84cfda8f1ec08a9b4969c3e39994ca6b502f.jar" />
+    </item>
+    <item
+        jar="/home/bala/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/support-annotations-21.0.2-89e21c774ab95c0a855b908c6184434fa79f9adc.jar" />
+    </item>
+    <item
+        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.2/libs/internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9346da9fb778af9e451211bbc3541daced174ba7">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/internal_impl-21.0.2-73d3ef825617cc74a42a2908513f2139c4d160e6.jar" />
+    </item>
+    <item
+        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b017100da14f9c158c9f5f2f508333c224b24a7c">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/classes-cfb4de51569d18ce23adbd6f257d5177f390da82.jar" />
+    </item>
+    <item
+        jar="/home/bala/.gradle/caches/modules-2/files-2.1/org.sonatype.sisu.inject/cglib/2.2.1-v20090111/7ce5e983fd0e6c78346f4c9cbfa39d83049dda2/cglib-2.2.1-v20090111.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="07ce5e983fd0e6c78346f4c9cbfa39d83049dda2">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/cglib-2.2.1-v20090111-6e2095f67f6a1502f9ec6a3b5ccbdd5963714a69.jar" />
+    </item>
+    <item
+        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/Tubely/ssimageview/unspecified/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6c57c16db43cd2938172138c3558a64ebefdcce8">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/classes-64ea0850810f7d144b9c89af497d37885cdb451c.jar" />
+    </item>
+    <item
+        jar="/home/bala/.gradle/caches/modules-2/files-2.1/org.roboguice/roboguice/2.0/727ccb8f376109d0b5c44abca6f791dccc5c5dbc/roboguice-2.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="727ccb8f376109d0b5c44abca6f791dccc5c5dbc">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/roboguice-2.0-72c43cbb27ec961e775c4e27f89f5a7efd1eed7b.jar" />
+    </item>
+    <item
+        jar="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="/home/bala/AndroidStudioProjects/Tubely/mobile/build/intermediates/pre-dexed/Amazon/debug/internal_impl-21.0.2-ea99e4bbbe698085522c4cf57a3f53f688e39f53.jar" />
+    </item>
 
-</pre-dex-items>
+</items>

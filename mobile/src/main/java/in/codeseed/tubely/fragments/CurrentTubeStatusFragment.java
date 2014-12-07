@@ -59,7 +59,6 @@ public class CurrentTubeStatusFragment extends Fragment implements LoaderManager
     private List<Tube> tubeList;
     private SharedPreferences preferences;
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,8 +106,7 @@ public class CurrentTubeStatusFragment extends Fragment implements LoaderManager
         injectResources(view);
 
         //Setup swipe refresh Layout
-        swipeRefreshLayout.setColorSchemeColors(R.color.circle_bg, R.color.overground_bg, R.color.victoria_bg, R.color.jubilee_bg);
-        //swipeRefreshLayout.setProgressBackgroundColor(getResources().getColor(R.color.piccadilly_bg));
+        swipeRefreshLayout.setColorSchemeResources(R.color.circle_bg, R.color.overground_bg, R.color.victoria_bg, R.color.dlr_bg);
 
         //Setup GridLayout Manager and Recycler view
         if(getActivity().getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
@@ -121,11 +119,16 @@ public class CurrentTubeStatusFragment extends Fragment implements LoaderManager
         tubeStatusAdapter = new TubeStatusAdapter(getActivity().getApplicationContext(), tubeList, R.layout.grid_card_tubestatus);
         recyclerView.setAdapter(tubeStatusAdapter);
 
-        //Fix to let recycler view scroll to the top without getting disturbed by swipe refresh layout
         recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+
+                //Fix to let recycler view scroll to the top without getting disturbed by swipe refresh layout
                 swipeRefreshLayout.setEnabled(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0);
+
+                //Hide Lastupdate Textview while scrolling tube status
+                tubeStatusLastUpdate.setVisibility(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0 ? View.VISIBLE:View.INVISIBLE);
             }
         });
 
@@ -236,7 +239,6 @@ public class CurrentTubeStatusFragment extends Fragment implements LoaderManager
 
     @Override
     public void onLoaderReset(Loader<Cursor> cursorLoader) {
-        //TODO:Clear off the content from UI
         tubeStatusAdapter.updateAdapter(null);
     }
 
@@ -245,17 +247,7 @@ public class CurrentTubeStatusFragment extends Fragment implements LoaderManager
         if(swipeRefreshLayout.isRefreshing())
             swipeRefreshLayout.setRefreshing(false);
 
-        LayoutInflater inflater = getActivity().getLayoutInflater();
-        View layout = inflater.inflate(R.layout.toast_network_error,
-                (ViewGroup) getActivity().findViewById(R.id.toast_network_error));
-
-        TextView text = (TextView) layout.findViewById(R.id.text);
-        text.setText("Network Failure!");
-
-        Toast toast = new Toast(getActivity().getApplicationContext());
-        toast.setDuration(Toast.LENGTH_LONG);
-        toast.setView(layout);
-        toast.show();
+        Toast.makeText(getActivity().getApplicationContext(), "No Internet connection!", Toast.LENGTH_SHORT).show();
 
         if(tubeLoader.getVisibility() == View.VISIBLE)
             tubeLoaderTextView.setText("Pull down to refresh!");

@@ -1,34 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ListView
-        android:id="@+id/list_view"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@null"
+        style="@style/TubelyNearByStationsScroller">
 
-    </ListView>
+        <LinearLayout
+            android:background="@null"
+            android:id="@+id/nearby_stations"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </ScrollView>
 
     <RelativeLayout
-        android:id="@+id/line_error"
+        android:id="@+id/nearby_stations_loader"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
             android:layout_centerInParent="true"
-            android:id="@+id/line_error_imageview"
-            android:src="@drawable/face_sad"
+            android:id="@+id/reload_nearby_stations_imageview"
+            android:src="@drawable/refresh_material"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/reload_nearby_stations_textview"
             android:textSize="12sp"
             android:alpha="0.6"
             android:paddingTop="10dp"
             android:gravity="center"
-            android:text="Sorry! We dont support this line."
-            android:layout_below="@id/line_error_imageview"
+            android:text=""
+            android:layout_below="@id/reload_nearby_stations_imageview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

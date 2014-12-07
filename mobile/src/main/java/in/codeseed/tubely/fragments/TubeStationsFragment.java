@@ -72,6 +72,7 @@ public class TubeStationsFragment extends Fragment {
                     Intent intent = new Intent(getActivity().getApplicationContext(), StationActivity.class);
                     intent.putExtra("station", stationName);
                     intent.putExtra("code", stationCode);
+                    stationLine = sortStationLine(stationLine);
                     intent.putExtra("line", stationLine);
                     startActivity(intent);
                 }
@@ -80,6 +81,22 @@ public class TubeStationsFragment extends Fragment {
             loadStationsData();
         }
 
+    }
+
+    private String sortStationLine(String stationLine){
+        String sortedStationLine;
+        if(stationLine.contains(lineName+",")){
+            stationLine = stationLine.replace(lineName + ",", "");
+        }else{
+            stationLine = stationLine.replace(lineName, "");
+        }
+
+        if(stationLine.equalsIgnoreCase("")){
+            sortedStationLine = lineName;
+        }else {
+            sortedStationLine = lineName + "," + stationLine;
+        }
+        return sortedStationLine;
     }
 
     @Override

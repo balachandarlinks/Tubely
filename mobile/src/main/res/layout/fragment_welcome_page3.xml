@@ -6,6 +6,7 @@
 
     <ImageView
         android:id="@+id/tube_status"
+        android:scaleType="centerInside"
         android:layout_centerInParent="true"
         android:src="@drawable/station"
         android:layout_width="200dp"
@@ -15,6 +16,7 @@
         android:layout_centerInParent="true"
         android:textSize="12sp"
         android:alpha="0.8"
+        android:paddingTop="10dp"
         android:typeface="serif"
         android:textStyle="bold"
         android:layout_margin="16dp"

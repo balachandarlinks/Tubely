@@ -14,22 +14,17 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <RelativeLayout
+        <TextView
+            android:id="@+id/tubeName"
+            android:minHeight="?attr/listPreferredItemHeightSmall"
             android:layout_width="match_parent"
-            android:layout_height="?android:attr/listPreferredItemHeight"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:background="@color/piccadilly_bg"
+            android:gravity="center"
+            android:text="Picadilly"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/tubeName"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/piccadilly_bg"
-                android:gravity="center"
-                android:text="Picadilly"
-                android:textColor="@android:color/white"
-                android:textSize="18sp" />
-
-        </RelativeLayout>
 
         <TextView
             android:id="@+id/tubeStatus"
@@ -37,6 +32,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center"
+            android:textSize="14sp"
             android:padding="5dp"
             android:singleLine="true"
             android:text="Good Service" />

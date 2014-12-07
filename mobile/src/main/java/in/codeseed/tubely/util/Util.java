@@ -2,6 +2,7 @@ package in.codeseed.tubely.util;
 
 import java.util.Date;
 
+import in.codeseed.tubely.R;
 import in.codeseed.tubely.simplexml.allstations.AllStations;
 
 /**
@@ -12,8 +13,9 @@ public class Util {
     public static final String STATION_TABLE_SPLITTER = "#123#";
     public static final String SHARED_PREF_TUBESTATUS_CURRENT = "tubestatus_current_lastupdate";
     public static final String SHARED_PREF_TUBESTATUS_WEEKEND = "tubestatus_weekend_lastupdate";
-    public static final String SHARED_PREF_STATION_FACILITIES = "stations_facilities_lastupdate";
+    public static final String SHARED_PREF_STATION_FACILITIES = "stations_facilities_update";
     public static final String SHARED_PREF_FIRST_TIME_WELCOME = "tubely_first_time_welcome";
+    public static final String SHARED_PREF_NEARBY_STATIONS_RADIOUS = "pref_neaby_stations_distance";
 
     private static AllStations allStations;
 
@@ -63,5 +65,67 @@ public class Util {
 
     public static void setAllStations(AllStations allStations) {
         Util.allStations = allStations;
+    }
+
+    public static int getLineColorResource(String line){
+
+        int lineColorResource = R.color.colorPrimary;
+        switch (line){
+            case "Bakerloo":
+
+                lineColorResource = R.color.bakerloo_bg;
+                break;
+
+            case "Central":
+                lineColorResource = R.color.central_bg;
+                break;
+
+            case "Circle":
+                lineColorResource = R.color.circle_bg;
+                break;
+
+            case "District":
+                lineColorResource = R.color.district_bg;
+                break;
+
+            case "DLR":
+                lineColorResource = R.color.dlr_bg;
+                break;
+
+            case "Hammersmith and City":
+            case "Hammersmith & City":
+                lineColorResource = R.color.hsmithandcity_bg;
+                break;
+
+            case "Jubilee":
+                lineColorResource = R.color.jubilee_bg;
+                break;
+
+            case "Metropolitan":
+                lineColorResource = R.color.metropoliton_bg;
+                break;
+
+            case "Northern":
+                lineColorResource = R.color.northern_bg;
+                break;
+
+            case "Overground":
+                lineColorResource = R.color.overground_bg;
+                break;
+
+            case "Piccadilly":
+                lineColorResource = R.color.piccadilly_bg;
+                break;
+
+            case "Victoria":
+                lineColorResource = R.color.victoria_bg;
+                break;
+
+            case "Waterloo and City":
+            case "Waterloo & City":
+                lineColorResource = R.color.waterlooandcity_bg;
+                break;
+        }
+        return lineColorResource;
     }
 }

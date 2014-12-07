@@ -2,6 +2,13 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <EditTextPreference
+        android:key="pref_neaby_stations_distance"
+        android:summary="Set the neaby stations radious"
+        android:title="Nearby Stations Circle (In Meters)"
+        android:defaultValue="1000"
+        android:inputType="number"/>
+
     <Preference
         android:key="pref_feedback"
         android:summary="We value your feedback! Kindly tell us how you feel."

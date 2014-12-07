@@ -146,7 +146,7 @@
             Lines="Victoria"
             />
         <Station
-            Name="Bromley-by-Bow"
+            Name="Bromley-By-Bow"
             Code="BBB"
             Lines="District,Hammersmith and City"
             />
@@ -838,19 +838,8 @@
         <Station
             Name="Paddington"
             Code="PAD"
-            Lines="Bakerloo"
+            Lines="Bakerloo,Circle,Hammersmith and City"
             />
-        <Station
-            Name="Paddington (District and circle)"
-            Code="PAD"
-            Lines="District,Circle"
-            />
-        <Station
-            Name="Paddington (H&C)"
-            Code="PAD"
-            Lines="Hammersmith and City"
-            />
-					
        <Station
             Name="Park Royal"
             Code="PRY"

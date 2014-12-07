@@ -27,10 +27,10 @@
     <color name="waterlooandcity_fg">#113892</color>
     <color name="waterlooandcity_bg">#70C3CE</color>
 
-    <!-- Material Designs -->
+    <!-- Material Designs c5cae9-->
     <color name="colorPrimary">#3f51b5</color>
     <color name="colorPrimaryDark">#303f9f</color>
-    <color name="colorAccent">#c5cae9</color>
+    <color name="colorAccent">#ff9800</color>
 
     <color name="colorYellow">#FFF59D</color>
     <color name="colorLime">#E6EE9C</color>

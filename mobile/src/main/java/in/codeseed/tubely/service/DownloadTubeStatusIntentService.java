@@ -157,9 +157,10 @@ public class DownloadTubeStatusIntentService extends IntentService {
 
     }
 
-    private void updateStationDetails(){
+    private void updateStationDetails() {
 
-        RestAdapter restAdapter = new RestAdapter.Builder()
+        /*DONT READ FROM API. MAKE IT LOCAL*/
+        /*RestAdapter restAdapter = new RestAdapter.Builder()
                 .setConverter(new SimpleXMLConverter())
                 .setEndpoint("http://data.tfl.gov.uk/")
                 .build();
@@ -172,7 +173,18 @@ public class DownloadTubeStatusIntentService extends IntentService {
                 bulkInsertStationFacilties(root.getStations());
         }catch (Exception e){
             Log.d(TAG, String.valueOf(e.getMessage()));
+        }*/
+
+        Serializer serializer = new Persister();
+        try {
+            InputStream stationsInputStream = getResources().getAssets().open("stations_facilities.xml");
+            Root root = serializer.read(Root.class, stationsInputStream);
+            if(root != null && root.getStations() != null)
+                bulkInsertStationFacilties(root.getStations());
+        }catch(Exception exception){
+            Log.d(TAG, exception.getMessage());
         }
+
     }
 
     void loadStationsDataFromXML(){
@@ -269,10 +281,14 @@ public class DownloadTubeStatusIntentService extends IntentService {
             ops.add(ContentProviderOperation.newInsert(TubelyDBContract.StationTable.CONTENT_URI)
                     .withValues(values)
                     .build());
+
+            SharedPreferences.Editor preferenceEditor = PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit();
+            preferenceEditor.putBoolean(Util.SHARED_PREF_STATION_FACILITIES, false);
+            preferenceEditor.commit();
         }
         try{
             getContentResolver().applyBatch(TubelyDBContract.CONTENT_AUTHORITY, ops);
-            updateLastUpdatedTime(Util.SHARED_PREF_STATION_FACILITIES);
+            //updateLastUpdatedTime(Util.SHARED_PREF_STATION_FACILITIES);
             Log.d(TAG, "Station Facilties Updated in DB");
         }catch(RemoteException | OperationApplicationException exception){
             Log.d(TAG, exception.getMessage());
@@ -285,5 +301,7 @@ public class DownloadTubeStatusIntentService extends IntentService {
         preferenceEditor.putLong(key, new Date().getTime());
         preferenceEditor.commit();
     }
+
+
 }
 

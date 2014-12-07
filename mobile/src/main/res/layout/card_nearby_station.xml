@@ -1,6 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:card="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card:cardElevation="2dp"
+        card:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/nearby_station"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/nearby_station_icon"
+                        android:src="@drawable/train"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:scaleType="center"/>
+
+                    <TextView
+                        android:id="@+id/nearby_station_name"
+                        android:text="Hounslow East"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:alpha="0.6"
+                        android:gravity="left|center_vertical"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <TextView
+                    android:background="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="1dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    style="@style/TubelyLineBatchScroller">
+
+                    <in.codeseed.tubely.customviews.LinesBatchLayout
+                        android:id="@+id/lines_batch_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:orientation="horizontal">
+
+                    </in.codeseed.tubely.customviews.LinesBatchLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/direction_walk"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/nearby_station_navigation_icon"
+                    android:src="@drawable/walk"
+                    android:background="@color/colorAccent"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.75"/>
+
+                <TextView
+                    android:id="@+id/nearby_station_distance"
+                    android:text="75 m"
+                    android:background="@color/colorAccent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:alpha="0.9"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>

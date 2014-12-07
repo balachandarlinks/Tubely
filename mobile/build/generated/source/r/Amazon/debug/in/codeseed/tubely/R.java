@@ -35,29 +35,19 @@ public final class R {
         public static final int twitterHandles=0x7f060009;
     }
     public static final class attr {
-        /**  Custom divider drawable to use for elements in the action bar. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionBarDivider=0x7f01007a;
-        /**  Custom item state list drawable background for action bar items. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionBarItemBackground=0x7f01007b;
-        /** 
-             Reference to a theme that should be used to inflate popups
-             shown by widgets in the action bar.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionBarPopupTheme=0x7f010074;
-        /** 
-             Size of the Action Bar, including the contextual
-             bar used to present Action Modes.
-        
-         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -75,18 +65,11 @@ containing a value of this type.
 </table>
          */
         public static final int actionBarSize=0x7f010079;
-        /** 
-             Reference to a style for the split Action Bar. This style
-             controls the split component that holds the menu/action
-             buttons. actionBarStyle is still used for the primary
-             bar.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionBarSplitStyle=0x7f010076;
-        /**  Reference to a style for the Action Bar 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionBarStyle=0x7f010075;
@@ -94,8 +77,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionBarTabBarStyle=0x7f010070;
-        /**  Default style for tabs within an action bar 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionBarTabStyle=0x7f01006f;
@@ -103,65 +85,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionBarTabTextStyle=0x7f010071;
-        /** 
-             Reference to a theme that should be used to inflate the
-             action bar. This will be inherited by any widget inflated
-             into the action bar.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionBarTheme=0x7f010077;
-        /** 
-             Reference to a theme that should be used to inflate widgets
-             and layouts destined for the action bar. Most of the time
-             this will be a reference to the current theme, but when
-             the action bar has a significantly different contrast
-             profile than the rest of the activity the difference
-             can become important. If this is set to @null the current
-             theme will be used.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionBarWidgetTheme=0x7f010078;
-        /**  Default action button style. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionButtonStyle=0x7f010092;
-        /**  Default ActionBar dropdown style. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionDropDownStyle=0x7f01008d;
-        /** 
-             An optional layout to be used as an action view.
-             See {@link android.view.MenuItem#setActionView(android.view.View)}
-             for more info.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionLayout=0x7f010048;
-        /** 
-             TextAppearance style that will be applied to text that
-             appears within action menu items.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionMenuTextAppearance=0x7f01007c;
-        /**  Color for text that appears within action menu items. 
- Color for text that appears within action menu items. 
-         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int actionMenuTextColor=0x7f01007d;
-        /**  Background drawable to use for action mode UI 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionModeBackground=0x7f010080;
@@ -169,48 +123,39 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionModeCloseButtonStyle=0x7f01007f;
-        /**  Drawable to use for the close action mode button 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionModeCloseDrawable=0x7f010082;
-        /**  Drawable to use for the Copy action button in Contextual Action Bar 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionModeCopyDrawable=0x7f010084;
-        /**  Drawable to use for the Cut action button in Contextual Action Bar 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionModeCutDrawable=0x7f010083;
-        /**  Drawable to use for the Find action button in WebView selection action modes 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionModeFindDrawable=0x7f010088;
-        /**  Drawable to use for the Paste action button in Contextual Action Bar 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionModePasteDrawable=0x7f010085;
-        /**  PopupWindow style to use for action modes when showing as a window overlay. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionModePopupWindowStyle=0x7f01008a;
-        /**  Drawable to use for the Select all action button in Contextual Action Bar 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionModeSelectAllDrawable=0x7f010086;
-        /**  Drawable to use for the Share action button in WebView selection action modes 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionModeShareDrawable=0x7f010087;
-        /**  Background drawable to use for action mode UI in the lower split bar 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionModeSplitBackground=0x7f010081;
@@ -218,8 +163,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionModeStyle=0x7f01007e;
-        /**  Drawable to use for the Web Search action button in WebView selection action modes 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionModeWebSearchDrawable=0x7f010089;
@@ -231,13 +175,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int actionOverflowMenuStyle=0x7f010073;
-        /** 
-             The name of an optional ActionProvider class to instantiate an action view
-             and perform operations such as default action for that menu item.
-             See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
-             for more info.
-        
-         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -245,12 +183,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int actionProviderClass=0x7f01004a;
-        /** 
-             The name of an optional View class to instantiate and use as an
-             action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
-             for more info.
-        
-         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -258,17 +191,11 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int actionViewClass=0x7f010049;
-        /**  Default ActivityChooserView style. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int activityChooserViewStyle=0x7f010099;
-        /** 
-    The size of the ad. It must be one of BANNER, FULL_BANNER, LEADERBOARD,
-    MEDIUM_RECTANGLE, SMART_BANNER, WIDE_SKYSCRAPER, or
-    &lt;width&gt;x&lt;height&gt;.
-        
-         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -276,12 +203,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int adSize=0x7f01001f;
-        /** 
-    A comma-separated list of the supported ad sizes. The sizes must be one of
-    BANNER, FULL_BANNER, LEADERBOARD, MEDIUM_RECTANGLE, SMART_BANNER,
-    WIDE_SKYSCRAPER, or &lt;width&gt;x&lt;height&gt;.
-        
-         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -289,8 +211,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int adSizes=0x7f010020;
-        /**  The ad unit ID. 
-         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -298,8 +219,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int adUnitId=0x7f010021;
-        /**  Theme to be used for the Wallet selector 
-         <p>Must be one of the following constant values.</p>
+        /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
@@ -318,27 +238,23 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int assetName=0x7f01005e;
-        /**  Specifies a background drawable for the action bar. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int background=0x7f01000c;
-        /**  Specifies a background drawable for the bottom component of a split action bar. 
-         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int backgroundSplit=0x7f01000e;
-        /**  Specifies a background drawable for a second stacked row of the action bar. 
-         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int backgroundStacked=0x7f01000d;
-        /**  The size of the bars when they are parallel to each other 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -348,35 +264,15 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int barSize=0x7f010034;
-        /** 
-             A style that may be applied to Buttons placed within a
-             LinearLayout with the style buttonBarStyle to form a button bar.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int buttonBarButtonStyle=0x7f010094;
-        /** 
-         A style that may be applied to horizontal LinearLayouts
-         to form a button bar.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int buttonBarStyle=0x7f010093;
-        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>top</code></td><td>0x30</td><td> Push object to the top of its container, not changing its size. </td></tr>
-<tr><td><code>bottom</code></td><td>0x50</td><td> Push object to the bottom of its container, not changing its size. </td></tr>
-</table>
-         */
-        public static final int buttonGravity=0x7f0100c3;
-        /**  Appearance of the buy button. Must be one of "classic", "grayscale" and "monochrome" 
-         <p>Must be one of the following constant values.</p>
+        /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
@@ -388,12 +284,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
          */
         public static final int buyButtonAppearance=0x7f0100d0;
-        /** 
-             Height of the buy button. This includes an 8dp padding (4dp on each side) used for
-             pressed and focused states of the button. The value can be a specific height, e.g.
-             "48dp", or special values "match_parent" and "wrap_content".
-        
-         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -412,8 +303,7 @@ containing a value of this type.
 </table>
          */
         public static final int buyButtonHeight=0x7f0100cd;
-        /**  Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now" 
-         <p>Must be one of the following constant values.</p>
+        /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
@@ -425,12 +315,7 @@ containing a value of this type.
 </table>
          */
         public static final int buyButtonText=0x7f0100cf;
-        /** 
-             Width of the buy button. This includes an 8dp padding (4dp on each side) used for
-             pressed and focused states of the button. The value can be a specific width, e.g.
-             "300dp", or special values "match_parent" and "wrap_content".
-        
-         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -489,8 +374,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int cameraZoom=0x7f01003e;
-        /**  Background color for CardView. 
-         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -499,8 +383,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int cardBackgroundColor=0x7f010022;
-        /**  Corner radius for CardView. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -510,8 +393,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int cardCornerRadius=0x7f010023;
-        /**  Elevation for CardView. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -521,8 +403,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int cardElevation=0x7f010024;
-        /**  Maximum Elevation for CardView. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -532,8 +413,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int cardMaxElevation=0x7f010025;
-        /**  Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners. 
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -541,8 +421,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int cardPreventCornerOverlap=0x7f010027;
-        /**  Add padding in API v21+ as well to have the same measurements with previous versions. 
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -550,22 +429,27 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int cardUseCompatPadding=0x7f010026;
-        /**  Close button icon 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int closeIcon=0x7f010051;
-        /**  Specifies a layout to use for the "close" item at the starting edge. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int closeItemLayout=0x7f01001c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int collapseIcon=0x7f0100c4;
-        /**  The drawing color for the bars 
-         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+        public static final int closeIcon=0x7f010051;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int closeItemLayout=0x7f01001c;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int collapseContentDescription=0x7f0100c4;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int collapseIcon=0x7f0100c3;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -574,11 +458,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int color=0x7f01002e;
-        /** 
-             Bright complement to the primary branding color. By default, this is the color applied
-             to framework controls (via colorControlActivated).
-        
-         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -587,8 +467,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int colorAccent=0x7f0100b4;
-        /**  The color applied to framework buttons in their normal state. 
-         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -597,8 +476,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int colorButtonNormal=0x7f0100b8;
-        /**  The color applied to framework controls in their activated (ex. checked) state. 
-         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -607,8 +485,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int colorControlActivated=0x7f0100b6;
-        /**  The color applied to framework control highlights (ex. ripples, list selectors). 
-         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -617,8 +494,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int colorControlHighlight=0x7f0100b7;
-        /**  The color applied to framework controls in their normal state. 
-         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -627,11 +503,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int colorControlNormal=0x7f0100b5;
-        /** 
-             The primary branding color for the app. By default, this is the color applied to the
-             action bar background.
-        
-         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -640,11 +512,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int colorPrimary=0x7f0100b2;
-        /** 
-             Dark variant of the primary branding color. By default, this is the color applied to
-             the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
-        
-         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -653,8 +521,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int colorPrimaryDark=0x7f0100b3;
-        /**  The color applied to framework switch thumbs in their normal state. 
-         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -663,16 +530,11 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int colorSwitchThumbNormal=0x7f0100b9;
-        /**  Commit icon shown in the query suggestion row 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int commitIcon=0x7f010055;
-        /** 
-             Minimum inset for content views within a bar. Navigation buttons and
-             menu views are excepted. Only valid for some themes and configurations.
-        
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -682,11 +544,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int contentInsetEnd=0x7f010017;
-        /** 
-             Minimum inset for content views within a bar. Navigation buttons and
-             menu views are excepted. Only valid for some themes and configurations.
-        
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -696,11 +554,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int contentInsetLeft=0x7f010018;
-        /** 
-             Minimum inset for content views within a bar. Navigation buttons and
-             menu views are excepted. Only valid for some themes and configurations.
-        
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -710,11 +564,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int contentInsetRight=0x7f010019;
-        /** 
-             Minimum inset for content views within a bar. Navigation buttons and
-             menu views are excepted. Only valid for some themes and configurations.
-        
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -724,8 +574,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int contentInsetStart=0x7f010016;
-        /**  Inner padding between the edges of the Card and children of the CardView. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -735,8 +584,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int contentPadding=0x7f010028;
-        /**  Inner padding between the bottom edge of the Card and children of the CardView. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -746,8 +594,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int contentPaddingBottom=0x7f01002c;
-        /**  Inner padding between the left edge of the Card and children of the CardView. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -757,8 +604,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int contentPaddingLeft=0x7f010029;
-        /**  Inner padding between the right edge of the Card and children of the CardView. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -768,8 +614,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int contentPaddingRight=0x7f01002a;
-        /**  Inner padding between the top edge of the Card and children of the CardView. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -779,16 +624,11 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int contentPaddingTop=0x7f01002b;
-        /**  Specifies a layout for custom navigation. Overrides navigationMode. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int customNavigationLayout=0x7f01000f;
-        /** 
-             Whether this spinner should mark child views as enabled/disabled when
-             the spinner itself is enabled/disabled.
-        
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -796,8 +636,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int disableChildrenWhenDisabled=0x7f01005c;
-        /**  Options affecting how the action bar is displayed. 
-         <p>Must be one or more (separated by '|') of the following constant values.</p>
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
@@ -813,18 +652,15 @@ containing a value of this type.
 </table>
          */
         public static final int displayOptions=0x7f010005;
-        /**  Specifies the drawable used for item dividers. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int divider=0x7f01000b;
-        /**  A drawable that may be used as a horizontal divider between visual elements. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int dividerHorizontal=0x7f010098;
-        /**  Size of padding on either end of a divider. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -834,13 +670,11 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int dividerPadding=0x7f010038;
-        /**  A drawable that may be used as a vertical divider between visual elements. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int dividerVertical=0x7f010097;
-        /**  The total size of the drawable 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -854,13 +688,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int drawerArrowStyle=0x7f010000;
-        /**  ListPopupWindow compatibility 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int dropDownListViewStyle=0x7f0100aa;
-        /**  The preferred item height for dropdown lists. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -870,20 +702,17 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int dropdownListPreferredItemHeight=0x7f01008e;
-        /**  EditText background drawable. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int editTextBackground=0x7f01009f;
-        /**  EditText text foreground color. 
-         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int editTextColor=0x7f01009e;
-        /**  Elevation for the action bar itself 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -893,8 +722,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int elevation=0x7f01001a;
-        /**  Google Wallet environment to use 
-         <p>Must be one of the following constant values.</p>
+        /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
@@ -906,19 +734,11 @@ containing a value of this type.
 </table>
          */
         public static final int environment=0x7f0100ca;
-        /** 
-             The drawable to show in the button for expanding the activities overflow popup.
-             <strong>Note:</strong> Clients would like to set this drawable
-             as a clue about the action the chosen activity will perform. For
-             example, if share activity is to be chosen the drawable should
-             give a clue that sharing is to be performed.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int expandActivityOverflowButtonDrawable=0x7f01001e;
-        /**  Fragment mode 
-         <p>Must be one of the following constant values.</p>
+        /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
@@ -929,13 +749,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
          */
         public static final int fragmentMode=0x7f0100cc;
-        /**  A style resource specifing attributes to customize the look and feel of WalletFragment 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int fragmentStyle=0x7f0100cb;
-        /**  The max gap between the bars when they are parallel to each other 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -945,8 +763,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int gapBetweenBars=0x7f010031;
-        /**  Go button icon 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int goIcon=0x7f010052;
@@ -960,8 +777,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int height=0x7f010001;
-        /**  Set true to hide the action bar on a vertical nested scroll of content. 
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -969,26 +785,19 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int hideOnContentScroll=0x7f010015;
-        /**  Specifies a drawable to use for the 'home as up' indicator. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int homeAsUpIndicator=0x7f010091;
-        /**  Specifies a layout to use for the "home" section of the action bar. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int homeLayout=0x7f010010;
-        /**  Specifies the drawable used for the application icon. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int icon=0x7f010009;
-        /** 
-             The default state of the SearchView. If true, it will be iconified when not in
-             use and expanded when clicked.
-        
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -996,13 +805,11 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int iconifiedByDefault=0x7f01004f;
-        /**  Specifies a style resource to use for an indeterminate progress spinner. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int indeterminateProgressStyle=0x7f010012;
-        /**  The maximal number of items initially shown in the activity list. 
-         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1018,11 +825,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int isLightTheme=0x7f010002;
-        /** 
-             Specifies padding that should be applied to the left and right sides of
-             system-provided items in the bar.
-        
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1032,13 +835,11 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int itemPadding=0x7f010014;
-        /**  The layout to use for the search view. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int layout=0x7f01004e;
-        /**  Drawable used as a background for selected list items. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int listChoiceBackgroundIndicator=0x7f0100b1;
@@ -1046,8 +847,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int listPopupWindowStyle=0x7f0100ab;
-        /**  The preferred list item height. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1057,8 +857,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int listPreferredItemHeight=0x7f0100a5;
-        /**  A larger, more robust list item height. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1068,8 +867,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int listPreferredItemHeightLarge=0x7f0100a7;
-        /**  A smaller, sleeker list item height. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1079,8 +877,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int listPreferredItemHeightSmall=0x7f0100a6;
-        /**  The preferred padding along the left edge of list items. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1090,8 +887,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int listPreferredItemPaddingLeft=0x7f0100a8;
-        /**  The preferred padding along the right edge of list items. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1101,8 +897,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int listPreferredItemPaddingRight=0x7f0100a9;
-        /**  Specifies the drawable used for the application logo. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int logo=0x7f01000a;
@@ -1120,32 +915,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
          */
         public static final int mapType=0x7f010039;
-        /**  Masked wallet details background 
-         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int maskedWalletDetailsBackground=0x7f0100d3;
-        /**  "Change" button background in masked wallet details view 
-         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int maskedWalletDetailsButtonBackground=0x7f0100d5;
-        /**  TextAppearance for the "Change" button in masked wallet details view 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int maskedWalletDetailsButtonTextAppearance=0x7f0100d4;
-        /**  TextAppearance for headers describing masked wallet details 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int maskedWalletDetailsHeaderTextAppearance=0x7f0100d2;
-        /**  Type of the wallet logo image in masked wallet details view 
-         <p>Must be one of the following constant values.</p>
+        /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
@@ -1156,8 +946,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
          */
         public static final int maskedWalletDetailsLogoImageType=0x7f0100d7;
-        /**  Color of the Google Wallet logo text in masked wallet details view 
-         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1166,8 +955,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int maskedWalletDetailsLogoTextColor=0x7f0100d6;
-        /**  TextAppearance for masked wallet details 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int maskedWalletDetailsTextAppearance=0x7f0100d1;
@@ -1181,12 +969,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int maxButtonHeight=0x7f0100c1;
-        /** 
-             When set to true, all children with a weight will be considered having
-             the minimum size of the largest child. If false, all children are
-             measured normally.
-        
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1194,8 +977,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int measureWithLargestChild=0x7f010036;
-        /**  The size of the middle bar when top and bottom bars merge into middle bar to form an arrow 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1205,11 +987,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int middleBarArrowSize=0x7f010033;
-        /** 
-             Text to set as the content description for the navigation button
-             located at the start of the toolbar.
-        
-         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1217,29 +995,23 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int navigationContentDescription=0x7f0100c6;
-        /** 
-             Icon drawable to use for the navigation button located at
-             the start of the toolbar.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int navigationIcon=0x7f0100c5;
-        /**  The type of navigation to use. 
-         <p>Must be one of the following constant values.</p>
+        /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>normal</code></td><td>0</td><td> Normal static title text </td></tr>
-<tr><td><code>listMode</code></td><td>1</td><td> The action bar will use a selection list for navigation. </td></tr>
-<tr><td><code>tabMode</code></td><td>2</td><td> The action bar will use a series of horizontal tabs for navigation. </td></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>listMode</code></td><td>1</td><td></td></tr>
+<tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
          */
         public static final int navigationMode=0x7f010004;
-        /**  Whether the popup window should overlap its anchor view. 
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1247,8 +1019,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int overlapAnchor=0x7f01004c;
-        /**  Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1258,8 +1029,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int paddingEnd=0x7f0100c8;
-        /**  Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1277,18 +1047,15 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int panEnabled=0x7f01005f;
-        /**  The background of a panel when it is inset from the left and right edges of the screen. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int panelBackground=0x7f0100ae;
-        /**  Default Panel Menu style. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int panelMenuListTheme=0x7f0100b0;
-        /**  Default Panel Menu width. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1298,35 +1065,23 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int panelMenuListWidth=0x7f0100af;
-        /**  Default PopupMenu style. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int popupMenuStyle=0x7f01009c;
-        /** 
-             Reference to a layout to use for displaying a prompt in the dropdown for
-             spinnerMode="dropdown". This layout must contain a TextView with the id
-             {@code @android:id/text1} to be populated with the prompt text.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int popupPromptView=0x7f01005b;
-        /** 
-             Reference to a theme that should be used to inflate popups
-             shown by widgets in the action bar.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int popupTheme=0x7f01001b;
-        /**  Default PopupWindow style. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int popupWindowStyle=0x7f01009d;
-        /**  Whether space should be reserved in layout when an icon is missing. 
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1334,8 +1089,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int preserveIconSpacing=0x7f01004b;
-        /**  Specifies the horizontal padding on either end for an embedded progress bar. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1345,23 +1099,19 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int progressBarPadding=0x7f010013;
-        /**  Specifies a style resource to use for an embedded progress bar. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int progressBarStyle=0x7f010011;
-        /**  The prompt to display when the spinner's dialog is shown. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int prompt=0x7f010059;
-        /**  Background for the section containing the search query 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int queryBackground=0x7f010057;
-        /**  An optional query hint string to be displayed in the empty query field. 
-         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1369,66 +1119,37 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int queryHint=0x7f010050;
-        /**  Search icon 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int searchIcon=0x7f010053;
-        /**  Style for the search query widget. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int searchViewStyle=0x7f0100a4;
-        /** 
-             A style that may be applied to buttons or other selectable items
-             that should react to pressed and focus states, but that do not
-             have a clear visual border along the edges.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int selectableItemBackground=0x7f010095;
-        /**  Background drawable for borderless standalone items that need focus/pressed states. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int selectableItemBackgroundBorderless=0x7f010096;
-        /**  How this item should display in the Action Bar, if present. 
-         <p>Must be one or more (separated by '|') of the following constant values.</p>
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>never</code></td><td>0</td><td>
-                 Never show this item in an action bar, show it in the overflow menu instead.
-                 Mutually exclusive with "ifRoom" and "always".
-            </td></tr>
-<tr><td><code>ifRoom</code></td><td>1</td><td>
-                 Show this item in an action bar if there is room for it as determined
-                 by the system. Favor this option over "always" where possible.
-                 Mutually exclusive with "never" and "always".
-            </td></tr>
-<tr><td><code>always</code></td><td>2</td><td>
-                 Always show this item in an actionbar, even if it would override
-                 the system's limits of how much stuff to put there. This may make
-                 your action bar look bad on some screens. In most cases you should
-                 use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never".
-            </td></tr>
-<tr><td><code>withText</code></td><td>4</td><td>
-                 When this item is shown as an action in the action bar, show a text
-                 label with it even if it has an icon representation.
-            </td></tr>
-<tr><td><code>collapseActionView</code></td><td>8</td><td>
-                 This item's action view collapses to a normal menu
-                 item. When expanded, the action view takes over a
-                 larger segment of its container.
-            </td></tr>
+<tr><td><code>never</code></td><td>0</td><td></td></tr>
+<tr><td><code>ifRoom</code></td><td>1</td><td></td></tr>
+<tr><td><code>always</code></td><td>2</td><td></td></tr>
+<tr><td><code>withText</code></td><td>4</td><td></td></tr>
+<tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
          */
         public static final int showAsAction=0x7f010047;
-        /**  Setting for which dividers to show. 
-         <p>Must be one or more (separated by '|') of the following constant values.</p>
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
@@ -1441,8 +1162,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
          */
         public static final int showDividers=0x7f010037;
-        /**  Whether to draw on/off text. 
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1450,8 +1170,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int showText=0x7f010067;
-        /**  Whether bars should rotate or not during transition 
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1459,33 +1178,26 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int spinBars=0x7f01002f;
-        /**  Default Spinner style. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int spinnerDropDownItemStyle=0x7f010090;
-        /**  Display mode for spinner options. 
-         <p>Must be one of the following constant values.</p>
+        /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>dialog</code></td><td>0</td><td> Spinner options will be presented to the user as a dialog window. </td></tr>
-<tr><td><code>dropdown</code></td><td>1</td><td>
-                 Spinner options will be presented to the user as an inline dropdown
-                 anchored to the spinner widget itself.
-            </td></tr>
+<tr><td><code>dialog</code></td><td>0</td><td></td></tr>
+<tr><td><code>dropdown</code></td><td>1</td><td></td></tr>
 </table>
          */
         public static final int spinnerMode=0x7f01005a;
-        /**  Default Spinner style. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int spinnerStyle=0x7f01008f;
-        /**  Whether to split the track and leave a gap for the thumb drawable. 
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1497,8 +1209,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int src=0x7f01005d;
-        /**  State identifier indicating the popup will be above the anchor. 
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1506,13 +1217,11 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int state_above_anchor=0x7f01004d;
-        /**  Background for the section containing the action (e.g. voice search) 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int submitBackground=0x7f010058;
-        /**  Specifies subtitle text used for navigationMode="normal" 
-         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1524,18 +1233,15 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int subtitleTextAppearance=0x7f0100bb;
-        /**  Specifies a style to use for subtitle text. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int subtitleTextStyle=0x7f010008;
-        /**  Layout for query suggestion rows 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int suggestionRowLayout=0x7f010056;
-        /**  Minimum width for the switch component 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1545,8 +1251,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int switchMinWidth=0x7f010064;
-        /**  Minimum space between the switch and caption text 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1556,71 +1261,54 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int switchPadding=0x7f010065;
-        /**  Default style for the Switch widget. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int switchStyle=0x7f0100a0;
-        /**  TextAppearance style for text displayed on the switch thumb. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int switchTextAppearance=0x7f010063;
-        /**  Present the text in ALL CAPS. This may use a small-caps form when available. 
-         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
          */
         public static final int textAllCaps=0x7f01002d;
-        /**  Text color, typeface, size, and style for the text inside of a popup menu. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int textAppearanceLargePopupMenu=0x7f01008b;
-        /**  The preferred TextAppearance for the primary text of list items. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int textAppearanceListItem=0x7f0100ac;
-        /**  The preferred TextAppearance for the primary text of small list items. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int textAppearanceListItemSmall=0x7f0100ad;
-        /**  Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int textAppearanceSearchResultSubtitle=0x7f0100a2;
-        /**  Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int textAppearanceSearchResultTitle=0x7f0100a1;
-        /**  Text color, typeface, size, and style for small text inside of a popup menu. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int textAppearanceSmallPopupMenu=0x7f01008c;
-        /**  Text color for urls in search suggestions, used by things like global search 
-         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int textColorSearchUrl=0x7f0100a3;
-        /** 
-             Specifies a theme override for a view. When a theme override is set, the
-             view will be inflated using a {@link android.content.Context} themed with
-             the specified resource. During XML inflation, any child views under the
-             view with a theme override will inherit the themed context.
-        
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int theme=0x7f0100c2;
-        /**  The thickness (stroke size) for the bar paint 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1630,8 +1318,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int thickness=0x7f010035;
-        /**  Amount of padding on either side of text within the switch thumb. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1703,23 +1390,19 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int titleTextAppearance=0x7f0100ba;
-        /**  Specifies a style to use for title text. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int titleTextStyle=0x7f010007;
-        /**  Default Toolar NavigationButtonStyle 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int toolbarNavigationButtonStyle=0x7f01009b;
-        /**  Default Toolbar style. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int toolbarStyle=0x7f01009a;
-        /**  The size of the top and bottom bars when they merge to the middle bar to form an arrow 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
@@ -1729,8 +1412,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int topBottomBarArrowSize=0x7f010032;
-        /**  Drawable to use as the "track" that the switch thumb slides within. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int track=0x7f010061;
@@ -1790,16 +1472,11 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int useViewLifecycle=0x7f010045;
-        /**  Voice button icon 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int voiceIcon=0x7f010054;
-        /** 
-             Flag indicating whether this window should have an Action Bar
-             in place of the usual title bar.
-        
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1807,12 +1484,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int windowActionBar=0x7f010068;
-        /** 
-             Flag indicating whether this window's Action Bar should overlay
-             application content. Does nothing if the window would not
-             have an Action Bar.
-        
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1820,11 +1492,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int windowActionBarOverlay=0x7f010069;
-        /** 
-             Flag indicating whether action modes should overlay window content
-             when there is not reserved space for their UI (such as an Action Bar).
-        
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1832,12 +1500,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int windowActionModeOverlay=0x7f01006a;
-        /** 
-             A fixed height for the window along the major axis of the screen,
-             that is, when in portrait. Can be either an absolute dimension
-             or a fraction of the screen size in that dimension.
-        
-         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
@@ -1850,12 +1513,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int windowFixedHeightMajor=0x7f01006e;
-        /** 
-             A fixed height for the window along the minor axis of the screen,
-             that is, when in landscape. Can be either an absolute dimension
-             or a fraction of the screen size in that dimension.
-        
-         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
@@ -1868,12 +1526,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int windowFixedHeightMinor=0x7f01006c;
-        /** 
-             A fixed width for the window along the major axis of the screen,
-             that is, when in landscape. Can be either an absolute dimension
-             or a fraction of the screen size in that dimension.
-        
-         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
@@ -1886,12 +1539,7 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int windowFixedWidthMajor=0x7f01006b;
-        /** 
-             A fixed width for the window along the minor axis of the screen,
-             that is, when in portrait. Can be either an absolute dimension
-             or a fraction of the screen size in that dimension.
-        
-         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+        /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
 <p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
@@ -2093,17 +1741,18 @@ containing a value of this type.
         public static final int abc_text_size_subtitle_material_toolbar=0x7f0a0022;
         public static final int abc_text_size_title_material=0x7f0a0023;
         public static final int abc_text_size_title_material_toolbar=0x7f0a0024;
-        public static final int activity_horizontal_margin=0x7f0a0025;
-        public static final int activity_vertical_margin=0x7f0a0026;
-        public static final int cardview_compat_inset_shadow=0x7f0a0027;
-        public static final int cardview_default_elevation=0x7f0a0028;
-        public static final int cardview_default_radius=0x7f0a0029;
-        public static final int dialog_fixed_height_major=0x7f0a002a;
-        public static final int dialog_fixed_height_minor=0x7f0a002b;
-        public static final int dialog_fixed_width_major=0x7f0a002c;
-        public static final int dialog_fixed_width_minor=0x7f0a002d;
-        public static final int disabled_alpha_material_dark=0x7f0a002e;
-        public static final int disabled_alpha_material_light=0x7f0a002f;
+        public static final int action_bar_default_height=0x7f0a0025;
+        public static final int activity_horizontal_margin=0x7f0a0026;
+        public static final int activity_vertical_margin=0x7f0a0027;
+        public static final int cardview_compat_inset_shadow=0x7f0a0028;
+        public static final int cardview_default_elevation=0x7f0a0029;
+        public static final int cardview_default_radius=0x7f0a002a;
+        public static final int dialog_fixed_height_major=0x7f0a002b;
+        public static final int dialog_fixed_height_minor=0x7f0a002c;
+        public static final int dialog_fixed_width_major=0x7f0a002d;
+        public static final int dialog_fixed_width_minor=0x7f0a002e;
+        public static final int disabled_alpha_material_dark=0x7f0a002f;
+        public static final int disabled_alpha_material_light=0x7f0a0030;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_holo_dark=0x7f020000;
@@ -2157,192 +1806,215 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020030;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
-        public static final int call=0x7f020033;
-        public static final int clock=0x7f020034;
-        public static final int common_full_open_on_phone=0x7f020035;
-        public static final int common_ic_googleplayservices=0x7f020036;
-        public static final int common_signin_btn_icon_dark=0x7f020037;
-        public static final int common_signin_btn_icon_disabled_dark=0x7f020038;
-        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f020039;
-        public static final int common_signin_btn_icon_disabled_focus_light=0x7f02003a;
-        public static final int common_signin_btn_icon_disabled_light=0x7f02003b;
-        public static final int common_signin_btn_icon_focus_dark=0x7f02003c;
-        public static final int common_signin_btn_icon_focus_light=0x7f02003d;
-        public static final int common_signin_btn_icon_light=0x7f02003e;
-        public static final int common_signin_btn_icon_normal_dark=0x7f02003f;
-        public static final int common_signin_btn_icon_normal_light=0x7f020040;
-        public static final int common_signin_btn_icon_pressed_dark=0x7f020041;
-        public static final int common_signin_btn_icon_pressed_light=0x7f020042;
-        public static final int common_signin_btn_text_dark=0x7f020043;
-        public static final int common_signin_btn_text_disabled_dark=0x7f020044;
-        public static final int common_signin_btn_text_disabled_focus_dark=0x7f020045;
-        public static final int common_signin_btn_text_disabled_focus_light=0x7f020046;
-        public static final int common_signin_btn_text_disabled_light=0x7f020047;
-        public static final int common_signin_btn_text_focus_dark=0x7f020048;
-        public static final int common_signin_btn_text_focus_light=0x7f020049;
-        public static final int common_signin_btn_text_light=0x7f02004a;
-        public static final int common_signin_btn_text_normal_dark=0x7f02004b;
-        public static final int common_signin_btn_text_normal_light=0x7f02004c;
-        public static final int common_signin_btn_text_pressed_dark=0x7f02004d;
-        public static final int common_signin_btn_text_pressed_light=0x7f02004e;
-        public static final int face=0x7f02004f;
-        public static final int face_sad=0x7f020050;
-        public static final int ic_launcher=0x7f020051;
-        public static final int ic_plusone_medium_off_client=0x7f020052;
-        public static final int ic_plusone_small_off_client=0x7f020053;
-        public static final int ic_plusone_standard_off_client=0x7f020054;
-        public static final int ic_plusone_tall_off_client=0x7f020055;
-        public static final int live_line_status=0x7f020056;
-        public static final int map=0x7f020057;
-        public static final int new_tweet=0x7f020058;
-        public static final int powered_by_google_dark=0x7f020059;
-        public static final int powered_by_google_light=0x7f02005a;
-        public static final int refresh_material=0x7f02005b;
-        public static final int search=0x7f02005c;
-        public static final int station=0x7f02005d;
-        public static final int train=0x7f02005e;
-        public static final int tube_map=0x7f02005f;
-        public static final int tubely_button=0x7f020060;
-        public static final int tubely_welcome_button=0x7f020061;
-        public static final int tweets=0x7f020062;
-        public static final int twitter=0x7f020063;
-        public static final int write_tweet=0x7f020064;
+        public static final int arrow_down=0x7f020033;
+        public static final int call=0x7f020034;
+        public static final int clock=0x7f020035;
+        public static final int common_full_open_on_phone=0x7f020036;
+        public static final int common_ic_googleplayservices=0x7f020037;
+        public static final int common_signin_btn_icon_dark=0x7f020038;
+        public static final int common_signin_btn_icon_disabled_dark=0x7f020039;
+        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f02003a;
+        public static final int common_signin_btn_icon_disabled_focus_light=0x7f02003b;
+        public static final int common_signin_btn_icon_disabled_light=0x7f02003c;
+        public static final int common_signin_btn_icon_focus_dark=0x7f02003d;
+        public static final int common_signin_btn_icon_focus_light=0x7f02003e;
+        public static final int common_signin_btn_icon_light=0x7f02003f;
+        public static final int common_signin_btn_icon_normal_dark=0x7f020040;
+        public static final int common_signin_btn_icon_normal_light=0x7f020041;
+        public static final int common_signin_btn_icon_pressed_dark=0x7f020042;
+        public static final int common_signin_btn_icon_pressed_light=0x7f020043;
+        public static final int common_signin_btn_text_dark=0x7f020044;
+        public static final int common_signin_btn_text_disabled_dark=0x7f020045;
+        public static final int common_signin_btn_text_disabled_focus_dark=0x7f020046;
+        public static final int common_signin_btn_text_disabled_focus_light=0x7f020047;
+        public static final int common_signin_btn_text_disabled_light=0x7f020048;
+        public static final int common_signin_btn_text_focus_dark=0x7f020049;
+        public static final int common_signin_btn_text_focus_light=0x7f02004a;
+        public static final int common_signin_btn_text_light=0x7f02004b;
+        public static final int common_signin_btn_text_normal_dark=0x7f02004c;
+        public static final int common_signin_btn_text_normal_light=0x7f02004d;
+        public static final int common_signin_btn_text_pressed_dark=0x7f02004e;
+        public static final int common_signin_btn_text_pressed_light=0x7f02004f;
+        public static final int detailed_station_ab=0x7f020050;
+        public static final int face=0x7f020051;
+        public static final int face_sad=0x7f020052;
+        public static final int ic_launcher=0x7f020053;
+        public static final int ic_plusone_medium_off_client=0x7f020054;
+        public static final int ic_plusone_small_off_client=0x7f020055;
+        public static final int ic_plusone_standard_off_client=0x7f020056;
+        public static final int ic_plusone_tall_off_client=0x7f020057;
+        public static final int lines_batch_scroll_icon=0x7f020058;
+        public static final int lines_spinner=0x7f020059;
+        public static final int live_line_status=0x7f02005a;
+        public static final int map=0x7f02005b;
+        public static final int new_tweet=0x7f02005c;
+        public static final int powered_by_google_dark=0x7f02005d;
+        public static final int powered_by_google_light=0x7f02005e;
+        public static final int refresh_material=0x7f02005f;
+        public static final int search=0x7f020060;
+        public static final int station=0x7f020061;
+        public static final int train=0x7f020062;
+        public static final int tube_map=0x7f020063;
+        public static final int tubely_button=0x7f020064;
+        public static final int tubely_welcome_button=0x7f020065;
+        public static final int tweets=0x7f020066;
+        public static final int twitter=0x7f020067;
+        public static final int walk=0x7f020068;
+        public static final int write_tweet=0x7f020069;
     }
     public static final class id {
-        public static final int action_bar=0x7f090044;
-        public static final int action_bar_activity_content=0x7f090028;
-        public static final int action_bar_container=0x7f090043;
-        public static final int action_bar_root=0x7f09003f;
-        public static final int action_bar_spinner=0x7f090029;
-        public static final int action_bar_subtitle=0x7f090032;
-        public static final int action_bar_title=0x7f090031;
-        public static final int action_context_bar=0x7f090045;
-        public static final int action_map=0x7f090083;
-        public static final int action_menu_divider=0x7f09002a;
-        public static final int action_menu_presenter=0x7f09002b;
-        public static final int action_mode_bar=0x7f090041;
-        public static final int action_mode_bar_stub=0x7f090040;
-        public static final int action_mode_close_button=0x7f090033;
-        public static final int action_search=0x7f090082;
-        public static final int action_settings=0x7f090084;
-        public static final int action_tweet=0x7f090085;
-        public static final int activity_chooser_view_content=0x7f090034;
+        public static final int action_bar=0x7f090042;
+        public static final int action_bar_activity_content=0x7f090026;
+        public static final int action_bar_container=0x7f090041;
+        public static final int action_bar_root=0x7f09003d;
+        public static final int action_bar_spinner=0x7f090027;
+        public static final int action_bar_subtitle=0x7f090030;
+        public static final int action_bar_title=0x7f09002f;
+        public static final int action_context_bar=0x7f090043;
+        public static final int action_map=0x7f090095;
+        public static final int action_menu_divider=0x7f090028;
+        public static final int action_menu_presenter=0x7f090029;
+        public static final int action_mode_bar=0x7f09003f;
+        public static final int action_mode_bar_stub=0x7f09003e;
+        public static final int action_mode_close_button=0x7f090031;
+        public static final int action_search=0x7f090094;
+        public static final int action_settings=0x7f090096;
+        public static final int action_tweet=0x7f090097;
+        public static final int activity_chooser_view_content=0x7f090032;
         public static final int always=0x7f090012;
         public static final int beginning=0x7f09000a;
-        public static final int book_now=0x7f090024;
-        public static final int bottom=0x7f090019;
-        public static final int buyButton=0x7f09001f;
-        public static final int buy_now=0x7f090023;
-        public static final int buy_with_google=0x7f090022;
-        public static final int checkbox=0x7f09003c;
-        public static final int classic=0x7f090025;
+        public static final int between_space=0x7f09005f;
+        public static final int book_now=0x7f090022;
+        public static final int buyButton=0x7f09001d;
+        public static final int buy_now=0x7f090021;
+        public static final int buy_with_google=0x7f090020;
+        public static final int checkbox=0x7f09003a;
+        public static final int classic=0x7f090023;
         public static final int collapseActionView=0x7f090014;
-        public static final int current_location=0x7f090066;
-        public static final int decor_content_parent=0x7f090042;
-        public static final int default_activity_button=0x7f090037;
-        public static final int destination=0x7f090065;
-        public static final int detailCardExtra=0x7f09006a;
+        public static final int current_location=0x7f090074;
+        public static final int decor_content_parent=0x7f090040;
+        public static final int default_activity_button=0x7f090035;
+        public static final int destination=0x7f090073;
+        public static final int detailCardExtra=0x7f090078;
         public static final int dialog=0x7f090015;
+        public static final int directMeButton=0x7f090057;
+        public static final int direction_walk=0x7f09006f;
         public static final int disableHome=0x7f090009;
         public static final int dropdown=0x7f090016;
-        public static final int edit_query=0x7f090046;
+        public static final int edit_query=0x7f090044;
         public static final int end=0x7f09000c;
-        public static final int expand_activities_button=0x7f090035;
-        public static final int expanded_menu=0x7f09003b;
-        public static final int grayscale=0x7f090026;
-        public static final int holo_dark=0x7f09001a;
-        public static final int holo_light=0x7f09001b;
-        public static final int home=0x7f09002c;
+        public static final int expand_activities_button=0x7f090033;
+        public static final int expanded_menu=0x7f090039;
+        public static final int grayscale=0x7f090024;
+        public static final int header_card=0x7f090053;
+        public static final int header_colorbar=0x7f090054;
+        public static final int holo_dark=0x7f090018;
+        public static final int holo_light=0x7f090019;
+        public static final int home=0x7f09002a;
         public static final int homeAsUp=0x7f090006;
         public static final int hybrid=0x7f09000f;
-        public static final int icon=0x7f090039;
+        public static final int icon=0x7f090037;
         public static final int ifRoom=0x7f090011;
-        public static final int image=0x7f090036;
-        public static final int indicator_four=0x7f090063;
-        public static final int indicator_one=0x7f090060;
-        public static final int indicator_three=0x7f090062;
-        public static final int indicator_two=0x7f090061;
-        public static final int line_error=0x7f090071;
-        public static final int line_error_imageview=0x7f090072;
-        public static final int lines_textview=0x7f09005c;
+        public static final int image=0x7f090034;
+        public static final int indicator_four=0x7f09006b;
+        public static final int indicator_one=0x7f090068;
+        public static final int indicator_three=0x7f09006a;
+        public static final int indicator_two=0x7f090069;
+        public static final int line_error=0x7f090083;
+        public static final int line_error_imageview=0x7f090084;
+        public static final int lines_batch_layout=0x7f090064;
+        public static final int lines_linear_layout=0x7f090059;
+        public static final int lines_spinner=0x7f09005a;
+        public static final int lines_spinner_arrow=0x7f09005b;
         public static final int listMode=0x7f090001;
-        public static final int list_item=0x7f090038;
-        public static final int list_view=0x7f090070;
-        public static final int map=0x7f090054;
-        public static final int match_parent=0x7f090021;
+        public static final int list_item=0x7f090036;
+        public static final int list_view=0x7f090082;
+        public static final int map=0x7f090055;
+        public static final int match_parent=0x7f09001f;
         public static final int middle=0x7f09000b;
-        public static final int monochrome=0x7f090027;
+        public static final int monochrome=0x7f090025;
+        public static final int nearby_station=0x7f09006c;
+        public static final int nearby_station_distance=0x7f090071;
+        public static final int nearby_station_icon=0x7f09006d;
+        public static final int nearby_station_name=0x7f09006e;
+        public static final int nearby_station_navigation_icon=0x7f090070;
+        public static final int nearby_stations=0x7f09007d;
+        public static final int nearby_stations_loader=0x7f09007e;
         public static final int never=0x7f090010;
         public static final int none=0x7f090003;
         public static final int normal=0x7f090000;
-        public static final int pager=0x7f09005d;
-        public static final int pager_title_strip=0x7f090053;
-        public static final int platform_name=0x7f090064;
-        public static final int platform_refresh=0x7f090057;
-        public static final int platform_refresh_textview=0x7f090058;
-        public static final int production=0x7f09001c;
-        public static final int progress_circular=0x7f09002d;
-        public static final int progress_horizontal=0x7f09002e;
-        public static final int radio=0x7f09003e;
-        public static final int sandbox=0x7f09001d;
+        public static final int pager=0x7f090065;
+        public static final int pager_title_strip=0x7f090051;
+        public static final int pinItButton=0x7f090056;
+        public static final int platform_name=0x7f090072;
+        public static final int platform_refresh=0x7f09005d;
+        public static final int platform_refresh_imageview=0x7f09005e;
+        public static final int platform_refresh_textview=0x7f090060;
+        public static final int production=0x7f09001a;
+        public static final int progress_circular=0x7f09002b;
+        public static final int progress_horizontal=0x7f09002c;
+        public static final int radio=0x7f09003c;
+        public static final int reload_nearby_stations_imageview=0x7f09007f;
+        public static final int reload_nearby_stations_textview=0x7f090080;
+        public static final int sandbox=0x7f09001b;
         public static final int satellite=0x7f09000d;
-        public static final int search_badge=0x7f090048;
-        public static final int search_bar=0x7f090047;
-        public static final int search_button=0x7f090049;
-        public static final int search_close_btn=0x7f09004e;
-        public static final int search_edit_frame=0x7f09004a;
-        public static final int search_go_btn=0x7f090050;
-        public static final int search_mag_icon=0x7f09004b;
-        public static final int search_plate=0x7f09004c;
-        public static final int search_src_text=0x7f09004d;
-        public static final int search_voice_btn=0x7f090051;
-        public static final int section_label=0x7f09006f;
-        public static final int selectionDetails=0x7f090020;
-        public static final int shortcut=0x7f09003d;
+        public static final int search_badge=0x7f090046;
+        public static final int search_bar=0x7f090045;
+        public static final int search_button=0x7f090047;
+        public static final int search_close_btn=0x7f09004c;
+        public static final int search_edit_frame=0x7f090048;
+        public static final int search_go_btn=0x7f09004e;
+        public static final int search_mag_icon=0x7f090049;
+        public static final int search_plate=0x7f09004a;
+        public static final int search_src_text=0x7f09004b;
+        public static final int search_voice_btn=0x7f09004f;
+        public static final int section_label=0x7f090081;
+        public static final int selectionDetails=0x7f09001e;
+        public static final int shortcut=0x7f09003b;
         public static final int showCustom=0x7f090008;
         public static final int showHome=0x7f090005;
         public static final int showTitle=0x7f090007;
-        public static final int split_action_bar=0x7f09002f;
-        public static final int station_address=0x7f09005a;
-        public static final int station_name=0x7f09007c;
-        public static final int station_phone=0x7f090059;
-        public static final int strict_sandbox=0x7f09001e;
-        public static final int submit_area=0x7f09004f;
+        public static final int split_action_bar=0x7f09002d;
+        public static final int station_address=0x7f090062;
+        public static final int station_name=0x7f09008e;
+        public static final int station_phone=0x7f090061;
+        public static final int station_scrollview=0x7f090052;
+        public static final int strict_sandbox=0x7f09001c;
+        public static final int submit_area=0x7f09004d;
         public static final int tabMode=0x7f090002;
         public static final int terrain=0x7f09000e;
-        public static final int text=0x7f09007e;
-        public static final int time=0x7f090067;
-        public static final int title=0x7f09003a;
-        public static final int titleCard=0x7f090068;
-        public static final int titleCardText=0x7f090069;
-        public static final int title_textview=0x7f09005f;
-        public static final int toast_network_error=0x7f09007d;
-        public static final int top=0x7f090018;
-        public static final int train_prediction_card=0x7f090055;
-        public static final int train_prediction_linear_layout=0x7f090056;
-        public static final int tubeFragmentSwipeRefresh=0x7f090073;
-        public static final int tubeLoader=0x7f090076;
-        public static final int tubeLoaderImageView=0x7f090077;
-        public static final int tubeLoaderTextView=0x7f090078;
-        public static final int tubeName=0x7f09007a;
-        public static final int tubeStatus=0x7f09007b;
-        public static final int tubeStatusLastUpdate=0x7f090074;
-        public static final int tubeStatusRecyclerView=0x7f090075;
-        public static final int tubeStatusViewPager=0x7f090052;
-        public static final int tube_map=0x7f09005e;
-        public static final int tube_status=0x7f090079;
-        public static final int tweet=0x7f090080;
-        public static final int tweetCardIcon=0x7f09007f;
-        public static final int tweetCardTime=0x7f090081;
-        public static final int tweetLoader=0x7f09006d;
-        public static final int tweetLoaderImageView=0x7f09006e;
-        public static final int twitter_header=0x7f09006b;
-        public static final int twitter_stream_recyclerview=0x7f09006c;
-        public static final int up=0x7f090030;
+        public static final int text=0x7f090090;
+        public static final int time=0x7f090075;
+        public static final int title=0x7f090038;
+        public static final int titleCard=0x7f090076;
+        public static final int titleCardText=0x7f090077;
+        public static final int title_textview=0x7f090067;
+        public static final int toast_network_error=0x7f09008f;
+        public static final int train_prediction_card=0x7f090058;
+        public static final int train_prediction_linear_layout=0x7f09005c;
+        public static final int tubeFragmentSwipeRefresh=0x7f090085;
+        public static final int tubeLoader=0x7f090086;
+        public static final int tubeLoaderImageView=0x7f090087;
+        public static final int tubeLoaderTextView=0x7f090088;
+        public static final int tubeName=0x7f09008c;
+        public static final int tubeStatus=0x7f09008d;
+        public static final int tubeStatusLastUpdate=0x7f09008a;
+        public static final int tubeStatusRecyclerView=0x7f090089;
+        public static final int tubeStatusViewPager=0x7f090050;
+        public static final int tube_map=0x7f090066;
+        public static final int tube_status=0x7f09008b;
+        public static final int tweet=0x7f090092;
+        public static final int tweetCardIcon=0x7f090091;
+        public static final int tweetCardTime=0x7f090093;
+        public static final int tweetLoader=0x7f09007b;
+        public static final int tweetLoaderImageView=0x7f09007c;
+        public static final int twitter_header=0x7f090079;
+        public static final int twitter_stream_recyclerview=0x7f09007a;
+        public static final int up=0x7f09002e;
         public static final int useLogo=0x7f090004;
         public static final int withText=0x7f090013;
         public static final int wrap_content=0x7f090017;
-        public static final int zones_textview=0x7f09005b;
+        public static final int zones_textview=0x7f090063;
     }
     public static final class integer {
         public static final int abc_max_action_buttons=0x7f0b0000;
@@ -2377,24 +2049,30 @@ containing a value of this type.
         public static final int activity_status_and_stations=0x7f030019;
         public static final int activity_tube_map=0x7f03001a;
         public static final int activity_welcome=0x7f03001b;
-        public static final int card_platform_name=0x7f03001c;
-        public static final int card_platform_train=0x7f03001d;
-        public static final int detailed_status_card=0x7f03001e;
-        public static final int fragment_detailed_status=0x7f03001f;
-        public static final int fragment_status_and_stations=0x7f030020;
-        public static final int fragment_tubestations=0x7f030021;
-        public static final int fragment_tubestatus=0x7f030022;
-        public static final int fragment_welcome_page1=0x7f030023;
-        public static final int fragment_welcome_page2=0x7f030024;
-        public static final int fragment_welcome_page3=0x7f030025;
-        public static final int fragment_welcome_page4=0x7f030026;
-        public static final int grid_card_tubestatus=0x7f030027;
-        public static final int listitem_tube_station=0x7f030028;
-        public static final int search_item=0x7f030029;
-        public static final int support_simple_spinner_dropdown_item=0x7f03002a;
-        public static final int toast_network_error=0x7f03002b;
-        public static final int toolbar_tubely=0x7f03002c;
-        public static final int twitter_status_card=0x7f03002d;
+        public static final int card_nearby_station=0x7f03001c;
+        public static final int card_platform_name=0x7f03001d;
+        public static final int card_platform_train=0x7f03001e;
+        public static final int detailed_status_card=0x7f03001f;
+        public static final int fragment_detailed_status=0x7f030020;
+        public static final int fragment_nearby_stations=0x7f030021;
+        public static final int fragment_status_and_stations=0x7f030022;
+        public static final int fragment_tubestations=0x7f030023;
+        public static final int fragment_tubestatus=0x7f030024;
+        public static final int fragment_welcome_page1=0x7f030025;
+        public static final int fragment_welcome_page2=0x7f030026;
+        public static final int fragment_welcome_page3=0x7f030027;
+        public static final int fragment_welcome_page4=0x7f030028;
+        public static final int grid_card_tubestatus=0x7f030029;
+        public static final int line_batch_textview=0x7f03002a;
+        public static final int lines_spinner_dropdown_item=0x7f03002b;
+        public static final int lines_spinner_item=0x7f03002c;
+        public static final int listitem_nearby_station=0x7f03002d;
+        public static final int listitem_tube_station=0x7f03002e;
+        public static final int search_item=0x7f03002f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030030;
+        public static final int toast_network_error=0x7f030031;
+        public static final int toolbar_tubely=0x7f030032;
+        public static final int twitter_status_card=0x7f030033;
     }
     public static final class menu {
         public static final int main=0x7f0e0000;
@@ -2419,74 +2097,77 @@ containing a value of this type.
         public static final int abc_searchview_description_voice=0x7f0c000c;
         public static final int abc_shareactionprovider_share_with=0x7f0c000d;
         public static final int abc_shareactionprovider_share_with_application=0x7f0c000e;
-        public static final int accept=0x7f0c000f;
-        public static final int action_settings=0x7f0c0010;
-        public static final int app_name=0x7f0c0011;
-        public static final int app_version=0x7f0c0012;
-        public static final int common_android_wear_notification_needs_update_text=0x7f0c0013;
-        public static final int common_android_wear_update_text=0x7f0c0014;
-        public static final int common_android_wear_update_title=0x7f0c0015;
-        public static final int common_google_play_services_enable_button=0x7f0c0016;
-        public static final int common_google_play_services_enable_text=0x7f0c0017;
-        public static final int common_google_play_services_enable_title=0x7f0c0018;
-        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f0c0019;
-        public static final int common_google_play_services_install_button=0x7f0c001a;
-        public static final int common_google_play_services_install_text_phone=0x7f0c001b;
-        public static final int common_google_play_services_install_text_tablet=0x7f0c001c;
-        public static final int common_google_play_services_install_title=0x7f0c001d;
-        public static final int common_google_play_services_invalid_account_text=0x7f0c001e;
-        public static final int common_google_play_services_invalid_account_title=0x7f0c001f;
-        public static final int common_google_play_services_needs_enabling_title=0x7f0c0020;
-        public static final int common_google_play_services_network_error_text=0x7f0c0021;
-        public static final int common_google_play_services_network_error_title=0x7f0c0022;
-        public static final int common_google_play_services_notification_needs_installation_title=0x7f0c0023;
-        public static final int common_google_play_services_notification_needs_update_title=0x7f0c0024;
-        public static final int common_google_play_services_notification_ticker=0x7f0c0025;
-        public static final int common_google_play_services_unknown_issue=0x7f0c0026;
-        public static final int common_google_play_services_unsupported_text=0x7f0c0027;
-        public static final int common_google_play_services_unsupported_title=0x7f0c0028;
-        public static final int common_google_play_services_update_button=0x7f0c0029;
-        public static final int common_google_play_services_update_text=0x7f0c002a;
-        public static final int common_google_play_services_update_title=0x7f0c002b;
-        public static final int common_open_on_phone=0x7f0c002c;
-        public static final int common_signin_button_text=0x7f0c002d;
-        public static final int common_signin_button_text_long=0x7f0c002e;
-        public static final int create_calendar_message=0x7f0c002f;
-        public static final int create_calendar_title=0x7f0c0030;
-        public static final int decline=0x7f0c0031;
-        public static final int good_service_extra_message=0x7f0c0032;
-        public static final int hello_world=0x7f0c0033;
-        public static final int network_error=0x7f0c0034;
-        public static final int network_error_toast=0x7f0c0035;
-        public static final int pref_default_display_name=0x7f0c0036;
-        public static final int pref_description_social_recommendations=0x7f0c0037;
-        public static final int pref_header_data_sync=0x7f0c0038;
-        public static final int pref_header_general=0x7f0c0039;
-        public static final int pref_header_notifications=0x7f0c003a;
-        public static final int pref_ringtone_silent=0x7f0c003b;
-        public static final int pref_title_add_friends_to_messages=0x7f0c003c;
-        public static final int pref_title_display_name=0x7f0c003d;
-        public static final int pref_title_new_message_notifications=0x7f0c003e;
-        public static final int pref_title_ringtone=0x7f0c003f;
-        public static final int pref_title_social_recommendations=0x7f0c0040;
-        public static final int pref_title_sync_frequency=0x7f0c0041;
-        public static final int pref_title_system_sync_settings=0x7f0c0042;
-        public static final int pref_title_vibrate=0x7f0c0043;
-        public static final int refresh_success=0x7f0c0044;
-        public static final int spread_tubely=0x7f0c0045;
-        public static final int store_picture_message=0x7f0c0046;
-        public static final int store_picture_title=0x7f0c0047;
-        public static final int title_activity_settings=0x7f0c0048;
-        public static final int title_activity_station=0x7f0c0049;
-        public static final int title_activity_status_and_stations=0x7f0c004a;
-        public static final int title_activity_tube_map=0x7f0c004b;
-        public static final int title_activity_tubely_settings=0x7f0c004c;
-        public static final int title_activity_welcome=0x7f0c004d;
-        public static final int title_section1=0x7f0c004e;
-        public static final int title_section2=0x7f0c004f;
-        public static final int title_section3=0x7f0c0050;
-        public static final int tubestatus_current_feed=0x7f0c0051;
-        public static final int wallet_buy_button_place_holder=0x7f0c0052;
+        public static final int abc_toolbar_collapse_description=0x7f0c000f;
+        public static final int accept=0x7f0c0010;
+        public static final int action_settings=0x7f0c0011;
+        public static final int app_name=0x7f0c0012;
+        public static final int app_version=0x7f0c0013;
+        public static final int common_android_wear_notification_needs_update_text=0x7f0c0014;
+        public static final int common_android_wear_update_text=0x7f0c0015;
+        public static final int common_android_wear_update_title=0x7f0c0016;
+        public static final int common_google_play_services_enable_button=0x7f0c0017;
+        public static final int common_google_play_services_enable_text=0x7f0c0018;
+        public static final int common_google_play_services_enable_title=0x7f0c0019;
+        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f0c001a;
+        public static final int common_google_play_services_install_button=0x7f0c001b;
+        public static final int common_google_play_services_install_text_phone=0x7f0c001c;
+        public static final int common_google_play_services_install_text_tablet=0x7f0c001d;
+        public static final int common_google_play_services_install_title=0x7f0c001e;
+        public static final int common_google_play_services_invalid_account_text=0x7f0c001f;
+        public static final int common_google_play_services_invalid_account_title=0x7f0c0020;
+        public static final int common_google_play_services_needs_enabling_title=0x7f0c0021;
+        public static final int common_google_play_services_network_error_text=0x7f0c0022;
+        public static final int common_google_play_services_network_error_title=0x7f0c0023;
+        public static final int common_google_play_services_notification_needs_installation_title=0x7f0c0024;
+        public static final int common_google_play_services_notification_needs_update_title=0x7f0c0025;
+        public static final int common_google_play_services_notification_ticker=0x7f0c0026;
+        public static final int common_google_play_services_unknown_issue=0x7f0c0027;
+        public static final int common_google_play_services_unsupported_text=0x7f0c0028;
+        public static final int common_google_play_services_unsupported_title=0x7f0c0029;
+        public static final int common_google_play_services_update_button=0x7f0c002a;
+        public static final int common_google_play_services_update_text=0x7f0c002b;
+        public static final int common_google_play_services_update_title=0x7f0c002c;
+        public static final int common_open_on_phone=0x7f0c002d;
+        public static final int common_signin_button_text=0x7f0c002e;
+        public static final int common_signin_button_text_long=0x7f0c002f;
+        public static final int create_calendar_message=0x7f0c0030;
+        public static final int create_calendar_title=0x7f0c0031;
+        public static final int decline=0x7f0c0032;
+        public static final int good_service_extra_message=0x7f0c0033;
+        public static final int hello_blank_fragment=0x7f0c0034;
+        public static final int hello_world=0x7f0c0035;
+        public static final int network_error=0x7f0c0036;
+        public static final int network_error_toast=0x7f0c0037;
+        public static final int no_nearby_stations=0x7f0c0038;
+        public static final int pref_default_display_name=0x7f0c0039;
+        public static final int pref_description_social_recommendations=0x7f0c003a;
+        public static final int pref_header_data_sync=0x7f0c003b;
+        public static final int pref_header_general=0x7f0c003c;
+        public static final int pref_header_notifications=0x7f0c003d;
+        public static final int pref_ringtone_silent=0x7f0c003e;
+        public static final int pref_title_add_friends_to_messages=0x7f0c003f;
+        public static final int pref_title_display_name=0x7f0c0040;
+        public static final int pref_title_new_message_notifications=0x7f0c0041;
+        public static final int pref_title_ringtone=0x7f0c0042;
+        public static final int pref_title_social_recommendations=0x7f0c0043;
+        public static final int pref_title_sync_frequency=0x7f0c0044;
+        public static final int pref_title_system_sync_settings=0x7f0c0045;
+        public static final int pref_title_vibrate=0x7f0c0046;
+        public static final int refresh_success=0x7f0c0047;
+        public static final int spread_tubely=0x7f0c0048;
+        public static final int store_picture_message=0x7f0c0049;
+        public static final int store_picture_title=0x7f0c004a;
+        public static final int title_activity_settings=0x7f0c004b;
+        public static final int title_activity_station=0x7f0c004c;
+        public static final int title_activity_status_and_stations=0x7f0c004d;
+        public static final int title_activity_tube_map=0x7f0c004e;
+        public static final int title_activity_tubely_settings=0x7f0c004f;
+        public static final int title_activity_welcome=0x7f0c0050;
+        public static final int title_section1=0x7f0c0051;
+        public static final int title_section2=0x7f0c0052;
+        public static final int title_section3=0x7f0c0053;
+        public static final int tubestatus_current_feed=0x7f0c0054;
+        public static final int wallet_buy_button_place_holder=0x7f0c0055;
     }
     public static final class style {
         public static final int Base_TextAppearance_AppCompat=0x7f0d0000;
@@ -2545,18 +2226,18 @@ containing a value of this type.
         public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0d0035;
         public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0d0036;
         public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0d0037;
-        public static final int Base_V11_Theme_AppCompat=0x7f0d00eb;
-        public static final int Base_V11_Theme_AppCompat_Dialog=0x7f0d00ec;
-        public static final int Base_V11_Theme_AppCompat_Light=0x7f0d00ed;
-        public static final int Base_V11_Theme_AppCompat_Light_Dialog=0x7f0d00ee;
-        public static final int Base_V14_Theme_AppCompat=0x7f0d00ef;
-        public static final int Base_V14_Theme_AppCompat_Dialog=0x7f0d00f0;
-        public static final int Base_V14_Theme_AppCompat_Light=0x7f0d00f1;
-        public static final int Base_V14_Theme_AppCompat_Light_Dialog=0x7f0d00f2;
-        public static final int Base_V21_Theme_AppCompat=0x7f0d00f3;
-        public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0d00f4;
-        public static final int Base_V21_Theme_AppCompat_Light=0x7f0d00f5;
-        public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0d00f6;
+        public static final int Base_V11_Theme_AppCompat=0x7f0d00ef;
+        public static final int Base_V11_Theme_AppCompat_Dialog=0x7f0d00f0;
+        public static final int Base_V11_Theme_AppCompat_Light=0x7f0d00f1;
+        public static final int Base_V11_Theme_AppCompat_Light_Dialog=0x7f0d00f2;
+        public static final int Base_V14_Theme_AppCompat=0x7f0d00f3;
+        public static final int Base_V14_Theme_AppCompat_Dialog=0x7f0d00f4;
+        public static final int Base_V14_Theme_AppCompat_Light=0x7f0d00f5;
+        public static final int Base_V14_Theme_AppCompat_Light_Dialog=0x7f0d00f6;
+        public static final int Base_V21_Theme_AppCompat=0x7f0d00f7;
+        public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0d00f8;
+        public static final int Base_V21_Theme_AppCompat_Light=0x7f0d00f9;
+        public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0d00fa;
         public static final int Base_V7_Theme_AppCompat=0x7f0d0038;
         public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0d0039;
         public static final int Base_V7_Theme_AppCompat_Light=0x7f0d003a;
@@ -2605,137 +2286,141 @@ containing a value of this type.
         public static final int Platform_AppCompat_Dialog=0x7f0d0065;
         public static final int Platform_AppCompat_Light=0x7f0d0066;
         public static final int Platform_AppCompat_Light_Dialog=0x7f0d0067;
-        public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0d0068;
-        public static final int RtlOverlay_Widget_AppCompat_ActionButton_CloseMode=0x7f0d0069;
-        public static final int RtlOverlay_Widget_AppCompat_ActionButton_Overflow=0x7f0d006a;
-        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0d006b;
-        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0d006c;
-        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0d006d;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0d006e;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0d006f;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0d0070;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0d0071;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0d0072;
-        public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0d0073;
-        public static final int TextAppearance_AppCompat=0x7f0d0074;
-        public static final int TextAppearance_AppCompat_Body1=0x7f0d0075;
-        public static final int TextAppearance_AppCompat_Body2=0x7f0d0076;
-        public static final int TextAppearance_AppCompat_Button=0x7f0d0077;
-        public static final int TextAppearance_AppCompat_Caption=0x7f0d0078;
-        public static final int TextAppearance_AppCompat_Display1=0x7f0d0079;
-        public static final int TextAppearance_AppCompat_Display2=0x7f0d007a;
-        public static final int TextAppearance_AppCompat_Display3=0x7f0d007b;
-        public static final int TextAppearance_AppCompat_Display4=0x7f0d007c;
-        public static final int TextAppearance_AppCompat_Headline=0x7f0d007d;
-        public static final int TextAppearance_AppCompat_Inverse=0x7f0d007e;
-        public static final int TextAppearance_AppCompat_Large=0x7f0d007f;
-        public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0d0080;
-        public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0d0081;
-        public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0d0082;
-        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0d0083;
-        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0d0084;
-        public static final int TextAppearance_AppCompat_Medium=0x7f0d0085;
-        public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0d0086;
-        public static final int TextAppearance_AppCompat_Menu=0x7f0d0087;
-        public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0d0088;
-        public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0d0089;
-        public static final int TextAppearance_AppCompat_Small=0x7f0d008a;
-        public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0d008b;
-        public static final int TextAppearance_AppCompat_Subhead=0x7f0d008c;
-        public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0d008d;
-        public static final int TextAppearance_AppCompat_Title=0x7f0d008e;
-        public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0d008f;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0d0090;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0d0091;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0d0092;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0d0093;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0d0094;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0d0095;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0d0096;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0d0097;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0d0098;
-        public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0d0099;
-        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0d009a;
-        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0d009b;
-        public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0d009c;
-        public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0d009d;
-        public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0d009e;
-        public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0d009f;
-        public static final int Theme_AppCompat=0x7f0d00a0;
-        public static final int Theme_AppCompat_CompactMenu=0x7f0d00a1;
-        public static final int Theme_AppCompat_Dialog=0x7f0d00a2;
-        public static final int Theme_AppCompat_DialogWhenLarge=0x7f0d00a3;
-        public static final int Theme_AppCompat_Light=0x7f0d00a4;
-        public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0d00a5;
-        public static final int Theme_AppCompat_Light_Dialog=0x7f0d00a6;
-        public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0d00a7;
-        public static final int Theme_AppCompat_Light_NoActionBar=0x7f0d00a8;
-        public static final int Theme_AppCompat_NoActionBar=0x7f0d00a9;
-        public static final int Theme_AppTheme=0x7f0d00aa;
-        public static final int Theme_IAPTheme=0x7f0d00ab;
-        public static final int Theme_TubeMap=0x7f0d00ac;
-        public static final int ThemeOverlay_AppCompat=0x7f0d00ad;
-        public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0d00ae;
-        public static final int ThemeOverlay_AppCompat_Dark=0x7f0d00af;
-        public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0d00b0;
-        public static final int ThemeOverlay_AppCompat_Light=0x7f0d00b1;
-        public static final int TubeMapActionBar=0x7f0d00b2;
-        public static final int TubelyButton=0x7f0d00b3;
-        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f0d00b4;
-        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f0d00b5;
-        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f0d00b6;
-        public static final int WalletFragmentDefaultStyle=0x7f0d00b7;
-        public static final int Widget_AppCompat_ActionBar=0x7f0d00b8;
-        public static final int Widget_AppCompat_ActionBar_Solid=0x7f0d00b9;
-        public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0d00ba;
-        public static final int Widget_AppCompat_ActionBar_TabText=0x7f0d00bb;
-        public static final int Widget_AppCompat_ActionBar_TabView=0x7f0d00bc;
-        public static final int Widget_AppCompat_ActionButton=0x7f0d00bd;
-        public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0d00be;
-        public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0d00bf;
-        public static final int Widget_AppCompat_ActionMode=0x7f0d00c0;
-        public static final int Widget_AppCompat_ActivityChooserView=0x7f0d00c1;
-        public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0d00c2;
-        public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0d00c3;
-        public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0d00c4;
-        public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0d00c5;
-        public static final int Widget_AppCompat_EditText=0x7f0d00c6;
-        public static final int Widget_AppCompat_Light_ActionBar=0x7f0d00c7;
-        public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0d00c8;
-        public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0d00c9;
-        public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0d00ca;
-        public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0d00cb;
-        public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0d00cc;
-        public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0d00cd;
-        public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0d00ce;
-        public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0d00cf;
-        public static final int Widget_AppCompat_Light_ActionButton=0x7f0d00d0;
-        public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0d00d1;
-        public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0d00d2;
-        public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0d00d3;
-        public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0d00d4;
-        public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0d00d5;
-        public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0d00d6;
-        public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0d00d7;
-        public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0d00d8;
-        public static final int Widget_AppCompat_Light_PopupMenu=0x7f0d00d9;
-        public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0d00da;
-        public static final int Widget_AppCompat_Light_SearchView=0x7f0d00db;
-        public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0d00dc;
-        public static final int Widget_AppCompat_ListPopupWindow=0x7f0d00dd;
-        public static final int Widget_AppCompat_ListView_DropDown=0x7f0d00de;
-        public static final int Widget_AppCompat_ListView_Menu=0x7f0d00df;
-        public static final int Widget_AppCompat_PopupMenu=0x7f0d00e0;
-        public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0d00e1;
-        public static final int Widget_AppCompat_PopupWindow=0x7f0d00e2;
-        public static final int Widget_AppCompat_ProgressBar=0x7f0d00e3;
-        public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0d00e4;
-        public static final int Widget_AppCompat_SearchView=0x7f0d00e5;
-        public static final int Widget_AppCompat_Spinner=0x7f0d00e6;
-        public static final int Widget_AppCompat_Spinner_DropDown=0x7f0d00e7;
-        public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0d00e8;
-        public static final int Widget_AppCompat_Toolbar=0x7f0d00e9;
-        public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0d00ea;
+        public static final int RecentStationTextView=0x7f0d0068;
+        public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0d0069;
+        public static final int RtlOverlay_Widget_AppCompat_ActionButton_CloseMode=0x7f0d006a;
+        public static final int RtlOverlay_Widget_AppCompat_ActionButton_Overflow=0x7f0d006b;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0d006c;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0d006d;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0d006e;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0d006f;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0d0070;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0d0071;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0d0072;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0d0073;
+        public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0d0074;
+        public static final int TextAppearance_AppCompat=0x7f0d0075;
+        public static final int TextAppearance_AppCompat_Body1=0x7f0d0076;
+        public static final int TextAppearance_AppCompat_Body2=0x7f0d0077;
+        public static final int TextAppearance_AppCompat_Button=0x7f0d0078;
+        public static final int TextAppearance_AppCompat_Caption=0x7f0d0079;
+        public static final int TextAppearance_AppCompat_Display1=0x7f0d007a;
+        public static final int TextAppearance_AppCompat_Display2=0x7f0d007b;
+        public static final int TextAppearance_AppCompat_Display3=0x7f0d007c;
+        public static final int TextAppearance_AppCompat_Display4=0x7f0d007d;
+        public static final int TextAppearance_AppCompat_Headline=0x7f0d007e;
+        public static final int TextAppearance_AppCompat_Inverse=0x7f0d007f;
+        public static final int TextAppearance_AppCompat_Large=0x7f0d0080;
+        public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0d0081;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0d0082;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0d0083;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0d0084;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0d0085;
+        public static final int TextAppearance_AppCompat_Medium=0x7f0d0086;
+        public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0d0087;
+        public static final int TextAppearance_AppCompat_Menu=0x7f0d0088;
+        public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0d0089;
+        public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0d008a;
+        public static final int TextAppearance_AppCompat_Small=0x7f0d008b;
+        public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0d008c;
+        public static final int TextAppearance_AppCompat_Subhead=0x7f0d008d;
+        public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0d008e;
+        public static final int TextAppearance_AppCompat_Title=0x7f0d008f;
+        public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0d0090;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0d0091;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0d0092;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0d0093;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0d0094;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0d0095;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0d0096;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0d0097;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0d0098;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0d0099;
+        public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0d009a;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0d009b;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0d009c;
+        public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0d009d;
+        public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0d009e;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0d009f;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0d00a0;
+        public static final int Theme_AppCompat=0x7f0d00a1;
+        public static final int Theme_AppCompat_CompactMenu=0x7f0d00a2;
+        public static final int Theme_AppCompat_Dialog=0x7f0d00a3;
+        public static final int Theme_AppCompat_DialogWhenLarge=0x7f0d00a4;
+        public static final int Theme_AppCompat_Light=0x7f0d00a5;
+        public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0d00a6;
+        public static final int Theme_AppCompat_Light_Dialog=0x7f0d00a7;
+        public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0d00a8;
+        public static final int Theme_AppCompat_Light_NoActionBar=0x7f0d00a9;
+        public static final int Theme_AppCompat_NoActionBar=0x7f0d00aa;
+        public static final int Theme_AppTheme=0x7f0d00ab;
+        public static final int Theme_DetailedStation=0x7f0d00ac;
+        public static final int Theme_IAPTheme=0x7f0d00ad;
+        public static final int Theme_TubeMap=0x7f0d00ae;
+        public static final int Theme_TubeMap_TubeMapActionBar=0x7f0d00af;
+        public static final int ThemeOverlay_AppCompat=0x7f0d00b0;
+        public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0d00b1;
+        public static final int ThemeOverlay_AppCompat_Dark=0x7f0d00b2;
+        public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0d00b3;
+        public static final int ThemeOverlay_AppCompat_Light=0x7f0d00b4;
+        public static final int TubelyButton=0x7f0d00b5;
+        public static final int TubelyLineBatchScroller=0x7f0d00b6;
+        public static final int TubelyNearByStationsScroller=0x7f0d00b7;
+        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f0d00b8;
+        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f0d00b9;
+        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f0d00ba;
+        public static final int WalletFragmentDefaultStyle=0x7f0d00bb;
+        public static final int Widget_AppCompat_ActionBar=0x7f0d00bc;
+        public static final int Widget_AppCompat_ActionBar_Solid=0x7f0d00bd;
+        public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0d00be;
+        public static final int Widget_AppCompat_ActionBar_TabText=0x7f0d00bf;
+        public static final int Widget_AppCompat_ActionBar_TabView=0x7f0d00c0;
+        public static final int Widget_AppCompat_ActionButton=0x7f0d00c1;
+        public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0d00c2;
+        public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0d00c3;
+        public static final int Widget_AppCompat_ActionMode=0x7f0d00c4;
+        public static final int Widget_AppCompat_ActivityChooserView=0x7f0d00c5;
+        public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0d00c6;
+        public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0d00c7;
+        public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0d00c8;
+        public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0d00c9;
+        public static final int Widget_AppCompat_EditText=0x7f0d00ca;
+        public static final int Widget_AppCompat_Light_ActionBar=0x7f0d00cb;
+        public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0d00cc;
+        public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0d00cd;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0d00ce;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0d00cf;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0d00d0;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0d00d1;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0d00d2;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0d00d3;
+        public static final int Widget_AppCompat_Light_ActionButton=0x7f0d00d4;
+        public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0d00d5;
+        public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0d00d6;
+        public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0d00d7;
+        public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0d00d8;
+        public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0d00d9;
+        public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0d00da;
+        public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0d00db;
+        public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0d00dc;
+        public static final int Widget_AppCompat_Light_PopupMenu=0x7f0d00dd;
+        public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0d00de;
+        public static final int Widget_AppCompat_Light_SearchView=0x7f0d00df;
+        public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0d00e0;
+        public static final int Widget_AppCompat_ListPopupWindow=0x7f0d00e1;
+        public static final int Widget_AppCompat_ListView_DropDown=0x7f0d00e2;
+        public static final int Widget_AppCompat_ListView_Menu=0x7f0d00e3;
+        public static final int Widget_AppCompat_PopupMenu=0x7f0d00e4;
+        public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0d00e5;
+        public static final int Widget_AppCompat_PopupWindow=0x7f0d00e6;
+        public static final int Widget_AppCompat_ProgressBar=0x7f0d00e7;
+        public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0d00e8;
+        public static final int Widget_AppCompat_SearchView=0x7f0d00e9;
+        public static final int Widget_AppCompat_Spinner=0x7f0d00ea;
+        public static final int Widget_AppCompat_Spinner_DropDown=0x7f0d00eb;
+        public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0d00ec;
+        public static final int Widget_AppCompat_Toolbar=0x7f0d00ed;
+        public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0d00ee;
     }
     public static final class xml {
         public static final int mainactivity=0x7f050000;
@@ -2748,41 +2433,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background in.codeseed.tubely:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit in.codeseed.tubely:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked in.codeseed.tubely:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd in.codeseed.tubely:contentInsetEnd}</code></td><td>
-             Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft in.codeseed.tubely:contentInsetLeft}</code></td><td>
-             Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight in.codeseed.tubely:contentInsetRight}</code></td><td>
-             Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart in.codeseed.tubely:contentInsetStart}</code></td><td>
-             Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout in.codeseed.tubely:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions in.codeseed.tubely:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
-           <tr><td><code>{@link #ActionBar_divider in.codeseed.tubely:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
-           <tr><td><code>{@link #ActionBar_elevation in.codeseed.tubely:elevation}</code></td><td> Elevation for the action bar itself </td></tr>
-           <tr><td><code>{@link #ActionBar_height in.codeseed.tubely:height}</code></td><td> Specifies a fixed height.</td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll in.codeseed.tubely:hideOnContentScroll}</code></td><td> Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator in.codeseed.tubely:homeAsUpIndicator}</code></td><td> Up navigation glyph </td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout in.codeseed.tubely:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_icon in.codeseed.tubely:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle in.codeseed.tubely:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding in.codeseed.tubely:itemPadding}</code></td><td>
-             Specifies padding that should be applied to the left and right sides of
-             system-provided items in the bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_logo in.codeseed.tubely:logo}</code></td><td> Specifies the drawable used for the application logo.</td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode in.codeseed.tubely:navigationMode}</code></td><td> The type of navigation to use.</td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme in.codeseed.tubely:popupTheme}</code></td><td>
-             Reference to a theme that should be used to inflate popups
-             shown by widgets in the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding in.codeseed.tubely:progressBarPadding}</code></td><td> Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle in.codeseed.tubely:progressBarStyle}</code></td><td> Specifies a style resource to use for an embedded progress bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle in.codeseed.tubely:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle in.codeseed.tubely:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
-           <tr><td><code>{@link #ActionBar_title in.codeseed.tubely:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle in.codeseed.tubely:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           <tr><td><code>{@link #ActionBar_background in.codeseed.tubely:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit in.codeseed.tubely:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked in.codeseed.tubely:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd in.codeseed.tubely:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft in.codeseed.tubely:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight in.codeseed.tubely:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart in.codeseed.tubely:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout in.codeseed.tubely:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions in.codeseed.tubely:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider in.codeseed.tubely:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation in.codeseed.tubely:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height in.codeseed.tubely:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll in.codeseed.tubely:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator in.codeseed.tubely:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout in.codeseed.tubely:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon in.codeseed.tubely:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle in.codeseed.tubely:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding in.codeseed.tubely:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo in.codeseed.tubely:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode in.codeseed.tubely:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme in.codeseed.tubely:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding in.codeseed.tubely:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle in.codeseed.tubely:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle in.codeseed.tubely:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle in.codeseed.tubely:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title in.codeseed.tubely:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle in.codeseed.tubely:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -2822,52 +2499,42 @@ containing a value of this type.
             0x7f01001a, 0x7f01001b, 0x7f010091
         };
         /**
-          <p>
-          @attr description
-           Specifies a background drawable for the action bar. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#background}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>
-          @attr description
-           Specifies a background drawable for the bottom component of a split action bar. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#backgroundSplit}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>
-          @attr description
-           Specifies a background drawable for a second stacked row of the action bar. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#backgroundStacked}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>
-          @attr description
-          
-             Minimum inset for content views within a bar. Navigation buttons and
-             menu views are excepted. Only valid for some themes and configurations.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#contentInsetEnd}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -2878,17 +2545,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>
-          @attr description
-          
-             Minimum inset for content views within a bar. Navigation buttons and
-             menu views are excepted. Only valid for some themes and configurations.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#contentInsetLeft}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -2899,17 +2561,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>
-          @attr description
-          
-             Minimum inset for content views within a bar. Navigation buttons and
-             menu views are excepted. Only valid for some themes and configurations.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#contentInsetRight}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -2920,17 +2577,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>
-          @attr description
-          
-             Minimum inset for content views within a bar. Navigation buttons and
-             menu views are excepted. Only valid for some themes and configurations.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#contentInsetStart}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -2941,26 +2593,22 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>
-          @attr description
-           Specifies a layout for custom navigation. Overrides navigationMode. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#customNavigationLayout}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>
-          @attr description
-           Options affecting how the action bar is displayed. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#displayOptions}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -2977,26 +2625,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>
-          @attr description
-           Specifies the drawable used for item dividers. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#divider}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>
-          @attr description
-           Elevation for the action bar itself 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#elevation}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3007,14 +2651,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>
-          @attr description
-           Specifies a fixed height. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#height}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3025,14 +2667,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>
-          @attr description
-           Set true to hide the action bar on a vertical nested scroll of content. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#hideOnContentScroll}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -3041,65 +2681,52 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>
-          @attr description
-           Up navigation glyph 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#homeAsUpIndicator}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>
-          @attr description
-           Specifies a layout to use for the "home" section of the action bar. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#homeLayout}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>
-          @attr description
-           Specifies the drawable used for the application icon. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#icon}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>
-          @attr description
-           Specifies a style resource to use for an indeterminate progress spinner. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#indeterminateProgressStyle}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>
-          @attr description
-          
-             Specifies padding that should be applied to the left and right sides of
-             system-provided items in the bar.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#itemPadding}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3110,26 +2737,22 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>
-          @attr description
-           Specifies the drawable used for the application logo. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#logo}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>
-          @attr description
-           The type of navigation to use. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#navigationMode}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be one of the following constant values.</p>
@@ -3138,33 +2761,26 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>normal</code></td><td>0</td><td> Normal static title text </td></tr>
-<tr><td><code>listMode</code></td><td>1</td><td> The action bar will use a selection list for navigation. </td></tr>
-<tr><td><code>tabMode</code></td><td>2</td><td> The action bar will use a series of horizontal tabs for navigation. </td></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>listMode</code></td><td>1</td><td></td></tr>
+<tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>
-          @attr description
-          
-             Reference to a theme that should be used to inflate popups
-             shown by widgets in the action bar.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#popupTheme}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>
-          @attr description
-           Specifies the horizontal padding on either end for an embedded progress bar. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#progressBarPadding}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3175,26 +2791,22 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>
-          @attr description
-           Specifies a style resource to use for an embedded progress bar. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#progressBarStyle}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>
-          @attr description
-           Specifies subtitle text used for navigationMode="normal" 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#subtitle}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -3203,26 +2815,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>
-          @attr description
-           Specifies a style to use for subtitle text. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#subtitleTextStyle}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>
-          @attr description
-           Specifies title text used for navigationMode="normal" 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#title}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -3231,19 +2839,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>
-          @attr description
-           Specifies a style to use for title text. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#titleTextStyle}
+          attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
@@ -3285,7 +2890,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name android:minWidth
         */
         public static final int ActionMenuItemView_android_minWidth = 0;
-        /**  Size of padding on either end of a divider. 
+        /** Attributes that can be used with a ActionMenuView.
          */
         public static final int[] ActionMenuView = {
             
@@ -3296,12 +2901,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background in.codeseed.tubely:background}</code></td><td> Specifies a background for the action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit in.codeseed.tubely:backgroundSplit}</code></td><td> Specifies a background for the split action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout in.codeseed.tubely:closeItemLayout}</code></td><td> Specifies a layout to use for the "close" item at the starting edge.</td></tr>
-           <tr><td><code>{@link #ActionMode_height in.codeseed.tubely:height}</code></td><td> Specifies a fixed height for the action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle in.codeseed.tubely:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle in.codeseed.tubely:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           <tr><td><code>{@link #ActionMode_background in.codeseed.tubely:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit in.codeseed.tubely:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout in.codeseed.tubely:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height in.codeseed.tubely:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle in.codeseed.tubely:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle in.codeseed.tubely:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -3315,47 +2920,40 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01001c
         };
         /**
-          <p>
-          @attr description
-           Specifies a background for the action mode bar. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#background}
+          attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>
-          @attr description
-           Specifies a background for the split action mode bar. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#backgroundSplit}
+          attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>
-          @attr description
-           Specifies a layout to use for the "close" item at the starting edge. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#closeItemLayout}
+          attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>
-          @attr description
-           Specifies a fixed height for the action mode bar. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#height}
+          attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3366,31 +2964,26 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>
-          @attr description
-           Specifies a style to use for subtitle text. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#subtitleTextStyle}
+          attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>
-          @attr description
-           Specifies a style to use for title text. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#titleTextStyle}
+          attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
@@ -3400,9 +2993,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable in.codeseed.tubely:expandActivityOverflowButtonDrawable}</code></td><td>
-             The drawable to show in the button for expanding the activities overflow popup.</td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount in.codeseed.tubely:initialActivityCount}</code></td><td> The maximal number of items initially shown in the activity list.</td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable in.codeseed.tubely:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount in.codeseed.tubely:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -3411,27 +3003,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001d, 0x7f01001e
         };
         /**
-          <p>
-          @attr description
-          
-             The drawable to show in the button for expanding the activities overflow popup.
-             <strong>Note:</strong> Clients would like to set this drawable
-             as a clue about the action the chosen activity will perform. For
-             example, if share activity is to be chosen the drawable should
-             give a clue that sharing is to be performed.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#expandActivityOverflowButtonDrawable}
+          attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>
-          @attr description
-           The maximal number of items initially shown in the activity list. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#initialActivityCount}
+          attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -3440,7 +3023,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
@@ -3450,11 +3032,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AdsAttrs_adSize in.codeseed.tubely:adSize}</code></td><td>
-    The size of the ad.</td></tr>
-           <tr><td><code>{@link #AdsAttrs_adSizes in.codeseed.tubely:adSizes}</code></td><td>
-    A comma-separated list of the supported ad sizes.</td></tr>
-           <tr><td><code>{@link #AdsAttrs_adUnitId in.codeseed.tubely:adUnitId}</code></td><td> The ad unit ID.</td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSize in.codeseed.tubely:adSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSizes in.codeseed.tubely:adSizes}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId in.codeseed.tubely:adUnitId}</code></td><td></td></tr>
            </table>
            @see #AdsAttrs_adSize
            @see #AdsAttrs_adSizes
@@ -3464,13 +3044,8 @@ containing a value of this type.
             0x7f01001f, 0x7f010020, 0x7f010021
         };
         /**
-          <p>
-          @attr description
-          
-    The size of the ad. It must be one of BANNER, FULL_BANNER, LEADERBOARD,
-    MEDIUM_RECTANGLE, SMART_BANNER, WIDE_SKYSCRAPER, or
-    &lt;width&gt;x&lt;height&gt;.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#adSize}
+          attribute's value can be found in the {@link #AdsAttrs} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -3479,18 +3054,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:adSize
         */
         public static final int AdsAttrs_adSize = 0;
         /**
-          <p>
-          @attr description
-          
-    A comma-separated list of the supported ad sizes. The sizes must be one of
-    BANNER, FULL_BANNER, LEADERBOARD, MEDIUM_RECTANGLE, SMART_BANNER,
-    WIDE_SKYSCRAPER, or &lt;width&gt;x&lt;height&gt;.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#adSizes}
+          attribute's value can be found in the {@link #AdsAttrs} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -3499,14 +3068,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:adSizes
         */
         public static final int AdsAttrs_adSizes = 1;
         /**
-          <p>
-          @attr description
-           The ad unit ID. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#adUnitId}
+          attribute's value can be found in the {@link #AdsAttrs} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -3515,7 +3082,6 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 2;
@@ -3525,17 +3091,17 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CardView_cardBackgroundColor in.codeseed.tubely:cardBackgroundColor}</code></td><td> Background color for CardView.</td></tr>
-           <tr><td><code>{@link #CardView_cardCornerRadius in.codeseed.tubely:cardCornerRadius}</code></td><td> Corner radius for CardView.</td></tr>
-           <tr><td><code>{@link #CardView_cardElevation in.codeseed.tubely:cardElevation}</code></td><td> Elevation for CardView.</td></tr>
-           <tr><td><code>{@link #CardView_cardMaxElevation in.codeseed.tubely:cardMaxElevation}</code></td><td> Maximum Elevation for CardView.</td></tr>
-           <tr><td><code>{@link #CardView_cardPreventCornerOverlap in.codeseed.tubely:cardPreventCornerOverlap}</code></td><td> Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.</td></tr>
-           <tr><td><code>{@link #CardView_cardUseCompatPadding in.codeseed.tubely:cardUseCompatPadding}</code></td><td> Add padding in API v21+ as well to have the same measurements with previous versions.</td></tr>
-           <tr><td><code>{@link #CardView_contentPadding in.codeseed.tubely:contentPadding}</code></td><td> Inner padding between the edges of the Card and children of the CardView.</td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingBottom in.codeseed.tubely:contentPaddingBottom}</code></td><td> Inner padding between the bottom edge of the Card and children of the CardView.</td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingLeft in.codeseed.tubely:contentPaddingLeft}</code></td><td> Inner padding between the left edge of the Card and children of the CardView.</td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingRight in.codeseed.tubely:contentPaddingRight}</code></td><td> Inner padding between the right edge of the Card and children of the CardView.</td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingTop in.codeseed.tubely:contentPaddingTop}</code></td><td> Inner padding between the top edge of the Card and children of the CardView.</td></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor in.codeseed.tubely:cardBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius in.codeseed.tubely:cardCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardElevation in.codeseed.tubely:cardElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation in.codeseed.tubely:cardMaxElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap in.codeseed.tubely:cardPreventCornerOverlap}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding in.codeseed.tubely:cardUseCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPadding in.codeseed.tubely:contentPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom in.codeseed.tubely:contentPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft in.codeseed.tubely:contentPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight in.codeseed.tubely:contentPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop in.codeseed.tubely:contentPaddingTop}</code></td><td></td></tr>
            </table>
            @see #CardView_cardBackgroundColor
            @see #CardView_cardCornerRadius
@@ -3555,9 +3121,8 @@ containing a value of this type.
             0x7f01002a, 0x7f01002b, 0x7f01002c
         };
         /**
-          <p>
-          @attr description
-           Background color for CardView. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#cardBackgroundColor}
+          attribute's value can be found in the {@link #CardView} array.
 
 
           <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -3567,14 +3132,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:cardBackgroundColor
         */
         public static final int CardView_cardBackgroundColor = 0;
         /**
-          <p>
-          @attr description
-           Corner radius for CardView. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#cardCornerRadius}
+          attribute's value can be found in the {@link #CardView} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3585,14 +3148,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:cardCornerRadius
         */
         public static final int CardView_cardCornerRadius = 1;
         /**
-          <p>
-          @attr description
-           Elevation for CardView. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#cardElevation}
+          attribute's value can be found in the {@link #CardView} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3603,14 +3164,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:cardElevation
         */
         public static final int CardView_cardElevation = 2;
         /**
-          <p>
-          @attr description
-           Maximum Elevation for CardView. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#cardMaxElevation}
+          attribute's value can be found in the {@link #CardView} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3621,14 +3180,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:cardMaxElevation
         */
         public static final int CardView_cardMaxElevation = 3;
         /**
-          <p>
-          @attr description
-           Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#cardPreventCornerOverlap}
+          attribute's value can be found in the {@link #CardView} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -3637,14 +3194,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:cardPreventCornerOverlap
         */
         public static final int CardView_cardPreventCornerOverlap = 5;
         /**
-          <p>
-          @attr description
-           Add padding in API v21+ as well to have the same measurements with previous versions. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#cardUseCompatPadding}
+          attribute's value can be found in the {@link #CardView} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -3653,14 +3208,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:cardUseCompatPadding
         */
         public static final int CardView_cardUseCompatPadding = 4;
         /**
-          <p>
-          @attr description
-           Inner padding between the edges of the Card and children of the CardView. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#contentPadding}
+          attribute's value can be found in the {@link #CardView} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3671,14 +3224,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:contentPadding
         */
         public static final int CardView_contentPadding = 6;
         /**
-          <p>
-          @attr description
-           Inner padding between the bottom edge of the Card and children of the CardView. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#contentPaddingBottom}
+          attribute's value can be found in the {@link #CardView} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3689,14 +3240,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:contentPaddingBottom
         */
         public static final int CardView_contentPaddingBottom = 10;
         /**
-          <p>
-          @attr description
-           Inner padding between the left edge of the Card and children of the CardView. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#contentPaddingLeft}
+          attribute's value can be found in the {@link #CardView} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3707,14 +3256,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:contentPaddingLeft
         */
         public static final int CardView_contentPaddingLeft = 7;
         /**
-          <p>
-          @attr description
-           Inner padding between the right edge of the Card and children of the CardView. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#contentPaddingRight}
+          attribute's value can be found in the {@link #CardView} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3725,14 +3272,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:contentPaddingRight
         */
         public static final int CardView_contentPaddingRight = 8;
         /**
-          <p>
-          @attr description
-           Inner padding between the top edge of the Card and children of the CardView. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#contentPaddingTop}
+          attribute's value can be found in the {@link #CardView} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3743,7 +3288,6 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:contentPaddingTop
         */
         public static final int CardView_contentPaddingTop = 9;
@@ -3753,7 +3297,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CompatTextView_textAllCaps in.codeseed.tubely:textAllCaps}</code></td><td> Present the text in ALL CAPS.</td></tr>
+           <tr><td><code>{@link #CompatTextView_textAllCaps in.codeseed.tubely:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #CompatTextView_textAllCaps
          */
@@ -3761,15 +3305,13 @@ containing a value of this type.
             0x7f01002d
         };
         /**
-          <p>
-          @attr description
-           Present the text in ALL CAPS. This may use a small-caps form when available. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#textAllCaps}
+          attribute's value can be found in the {@link #CompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:textAllCaps
         */
         public static final int CompatTextView_textAllCaps = 0;
@@ -3779,14 +3321,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barSize in.codeseed.tubely:barSize}</code></td><td> The size of the bars when they are parallel to each other </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color in.codeseed.tubely:color}</code></td><td> The drawing color for the bars </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize in.codeseed.tubely:drawableSize}</code></td><td> The total size of the drawable </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars in.codeseed.tubely:gapBetweenBars}</code></td><td> The max gap between the bars when they are parallel to each other </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize in.codeseed.tubely:middleBarArrowSize}</code></td><td> The size of the middle bar when top and bottom bars merge into middle bar to form an arrow </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars in.codeseed.tubely:spinBars}</code></td><td> Whether bars should rotate or not during transition </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness in.codeseed.tubely:thickness}</code></td><td> The thickness (stroke size) for the bar paint </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize in.codeseed.tubely:topBottomBarArrowSize}</code></td><td> The size of the top and bottom bars when they merge to the middle bar to form an arrow </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barSize in.codeseed.tubely:barSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color in.codeseed.tubely:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize in.codeseed.tubely:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars in.codeseed.tubely:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize in.codeseed.tubely:middleBarArrowSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars in.codeseed.tubely:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness in.codeseed.tubely:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize in.codeseed.tubely:topBottomBarArrowSize}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_barSize
            @see #DrawerArrowToggle_color
@@ -3802,9 +3344,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010032, 0x7f010033, 0x7f010034, 0x7f010035
         };
         /**
-          <p>
-          @attr description
-           The size of the bars when they are parallel to each other 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#barSize}
+          attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3815,14 +3356,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:barSize
         */
         public static final int DrawerArrowToggle_barSize = 6;
         /**
-          <p>
-          @attr description
-           The drawing color for the bars 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#color}
+          attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
           <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -3832,14 +3371,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>
-          @attr description
-           The total size of the drawable 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#drawableSize}
+          attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3850,14 +3387,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>
-          @attr description
-           The max gap between the bars when they are parallel to each other 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#gapBetweenBars}
+          attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3868,14 +3403,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>
-          @attr description
-           The size of the middle bar when top and bottom bars merge into middle bar to form an arrow 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#middleBarArrowSize}
+          attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3886,14 +3419,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:middleBarArrowSize
         */
         public static final int DrawerArrowToggle_middleBarArrowSize = 5;
         /**
-          <p>
-          @attr description
-           Whether bars should rotate or not during transition 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#spinBars}
+          attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -3902,14 +3433,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>
-          @attr description
-           The thickness (stroke size) for the bar paint 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#thickness}
+          attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3920,14 +3449,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /**
-          <p>
-          @attr description
-           The size of the top and bottom bars when they merge to the middle bar to form an arrow 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#topBottomBarArrowSize}
+          attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -3938,7 +3465,6 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:topBottomBarArrowSize
         */
         public static final int DrawerArrowToggle_topBottomBarArrowSize = 4;
@@ -3948,25 +3474,15 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td>
-             When set to false, prevents the layout from aligning its children's
-             baselines.</td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td>
-          When a linear layout is part of another layout that is baseline
-          aligned, it can specify which of its children to baseline align to
-          (that is, which child TextView).</td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td>
-             Should the layout be a column or a row?  Use "horizontal"
-             for a row, "vertical" for a column.</td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td>
-             Defines the maximum weight sum.</td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider in.codeseed.tubely:divider}</code></td><td> Drawable to use as a vertical divider between buttons.</td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding in.codeseed.tubely:dividerPadding}</code></td><td> Size of padding on either end of a divider.</td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild in.codeseed.tubely:measureWithLargestChild}</code></td><td>
-             When set to true, all children with a weight will be considered having
-             the minimum size of the largest child.</td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers in.codeseed.tubely:showDividers}</code></td><td> Setting for which dividers to show.</td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider in.codeseed.tubely:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding in.codeseed.tubely:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild in.codeseed.tubely:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers in.codeseed.tubely:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -3984,28 +3500,14 @@ containing a value of this type.
             0x7f010038
         };
         /**
-          <p>
-          @attr description
-          
-             When set to false, prevents the layout from aligning its children's
-             baselines. This attribute is particularly useful when the children
-             use different values for gravity. The default value is true.
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#baselineAligned}.
+          <p>This symbol is the offset where the {@link android.R.attr#baselineAligned}
+          attribute's value can be found in the {@link #LinearLayoutCompat} array.
           @attr name android:baselineAligned
         */
         public static final int LinearLayoutCompat_android_baselineAligned = 2;
         /**
-          <p>
-          @attr description
-          
-          When a linear layout is part of another layout that is baseline
-          aligned, it can specify which of its children to baseline align to
-          (that is, which child TextView).
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#baselineAlignedChildIndex}.
+          <p>This symbol is the offset where the {@link android.R.attr#baselineAlignedChildIndex}
+          attribute's value can be found in the {@link #LinearLayoutCompat} array.
           @attr name android:baselineAlignedChildIndex
         */
         public static final int LinearLayoutCompat_android_baselineAlignedChildIndex = 3;
@@ -4016,49 +3518,30 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_gravity = 0;
         /**
-          <p>
-          @attr description
-          
-             Should the layout be a column or a row?  Use "horizontal"
-             for a row, "vertical" for a column.  The default is
-             horizontal.
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#orientation}.
+          <p>This symbol is the offset where the {@link android.R.attr#orientation}
+          attribute's value can be found in the {@link #LinearLayoutCompat} array.
           @attr name android:orientation
         */
         public static final int LinearLayoutCompat_android_orientation = 1;
         /**
-          <p>
-          @attr description
-          
-             Defines the maximum weight sum. If unspecified, the sum is computed
-             by adding the layout_weight of all of the children. This can be
-             used for instance to give a single child 50% of the total available
-             space by giving it a layout_weight of 0.5 and setting the weightSum
-             to 1.0.
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#weightSum}.
+          <p>This symbol is the offset where the {@link android.R.attr#weightSum}
+          attribute's value can be found in the {@link #LinearLayoutCompat} array.
           @attr name android:weightSum
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>
-          @attr description
-           Drawable to use as a vertical divider between buttons. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#divider}
+          attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>
-          @attr description
-           Size of padding on either end of a divider. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#dividerPadding}
+          attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -4069,18 +3552,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>
-          @attr description
-          
-             When set to true, all children with a weight will be considered having
-             the minimum size of the largest child. If false, all children are
-             measured normally.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#measureWithLargestChild}
+          attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -4089,14 +3566,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>
-          @attr description
-           Setting for which dividers to show. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#showDividers}
+          attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -4110,7 +3585,6 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
@@ -4163,8 +3637,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ListPopupWindow_android_dropDownHorizontalOffset android:dropDownHorizontalOffset}</code></td><td> Amount of pixels by which the drop down should be offset horizontally.</td></tr>
-           <tr><td><code>{@link #ListPopupWindow_android_dropDownVerticalOffset android:dropDownVerticalOffset}</code></td><td> Amount of pixels by which the drop down should be offset vertically.</td></tr>
+           <tr><td><code>{@link #ListPopupWindow_android_dropDownHorizontalOffset android:dropDownHorizontalOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #ListPopupWindow_android_dropDownVerticalOffset android:dropDownVerticalOffset}</code></td><td></td></tr>
            </table>
            @see #ListPopupWindow_android_dropDownHorizontalOffset
            @see #ListPopupWindow_android_dropDownVerticalOffset
@@ -4173,20 +3647,14 @@ containing a value of this type.
             0x010102ac, 0x010102ad
         };
         /**
-          <p>
-          @attr description
-           Amount of pixels by which the drop down should be offset horizontally. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#dropDownHorizontalOffset}.
+          <p>This symbol is the offset where the {@link android.R.attr#dropDownHorizontalOffset}
+          attribute's value can be found in the {@link #ListPopupWindow} array.
           @attr name android:dropDownHorizontalOffset
         */
         public static final int ListPopupWindow_android_dropDownHorizontalOffset = 0;
         /**
-          <p>
-          @attr description
-           Amount of pixels by which the drop down should be offset vertically. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#dropDownVerticalOffset}.
+          <p>This symbol is the offset where the {@link android.R.attr#dropDownVerticalOffset}
+          attribute's value can be found in the {@link #ListPopupWindow} array.
           @attr name android:dropDownVerticalOffset
         */
         public static final int ListPopupWindow_android_dropDownVerticalOffset = 1;
@@ -4440,14 +3908,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuGroup_android_checkableBehavior android:checkableBehavior}</code></td><td> Whether the items are capable of displaying a check mark.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_enabled android:enabled}</code></td><td> Whether the items are enabled.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_id android:id}</code></td><td> The ID of the group.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_menuCategory android:menuCategory}</code></td><td>
-             The category applied to all items within this group.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_orderInCategory android:orderInCategory}</code></td><td>
-             The order within the category applied to all items within this group.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_visible android:visible}</code></td><td> Whether the items are shown/visible.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_checkableBehavior android:checkableBehavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuGroup_android_enabled android:enabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuGroup_android_id android:id}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuGroup_android_menuCategory android:menuCategory}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuGroup_android_orderInCategory android:orderInCategory}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuGroup_android_visible android:visible}</code></td><td></td></tr>
            </table>
            @see #MenuGroup_android_checkableBehavior
            @see #MenuGroup_android_enabled
@@ -4461,62 +3927,38 @@ containing a value of this type.
             0x010101df, 0x010101e0
         };
         /**
-          <p>
-          @attr description
-           Whether the items are capable of displaying a check mark. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#checkableBehavior}.
+          <p>This symbol is the offset where the {@link android.R.attr#checkableBehavior}
+          attribute's value can be found in the {@link #MenuGroup} array.
           @attr name android:checkableBehavior
         */
         public static final int MenuGroup_android_checkableBehavior = 5;
         /**
-          <p>
-          @attr description
-           Whether the items are enabled. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#enabled}.
+          <p>This symbol is the offset where the {@link android.R.attr#enabled}
+          attribute's value can be found in the {@link #MenuGroup} array.
           @attr name android:enabled
         */
         public static final int MenuGroup_android_enabled = 0;
         /**
-          <p>
-          @attr description
-           The ID of the group. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#id}.
+          <p>This symbol is the offset where the {@link android.R.attr#id}
+          attribute's value can be found in the {@link #MenuGroup} array.
           @attr name android:id
         */
         public static final int MenuGroup_android_id = 1;
         /**
-          <p>
-          @attr description
-          
-             The category applied to all items within this group.
-             (This will be or'ed with the orderInCategory attribute.)
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#menuCategory}.
+          <p>This symbol is the offset where the {@link android.R.attr#menuCategory}
+          attribute's value can be found in the {@link #MenuGroup} array.
           @attr name android:menuCategory
         */
         public static final int MenuGroup_android_menuCategory = 3;
         /**
-          <p>
-          @attr description
-          
-             The order within the category applied to all items within this group.
-             (This will be or'ed with the category attribute.)
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#orderInCategory}.
+          <p>This symbol is the offset where the {@link android.R.attr#orderInCategory}
+          attribute's value can be found in the {@link #MenuGroup} array.
           @attr name android:orderInCategory
         */
         public static final int MenuGroup_android_orderInCategory = 4;
         /**
-          <p>
-          @attr description
-           Whether the items are shown/visible. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#visible}.
+          <p>This symbol is the offset where the {@link android.R.attr#visible}
+          attribute's value can be found in the {@link #MenuGroup} array.
           @attr name android:visible
         */
         public static final int MenuGroup_android_visible = 2;
@@ -4526,37 +3968,23 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout in.codeseed.tubely:actionLayout}</code></td><td>
-             An optional layout to be used as an action view.</td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass in.codeseed.tubely:actionProviderClass}</code></td><td>
-             The name of an optional ActionProvider class to instantiate an action view
-             and perform operations such as default action for that menu item.</td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass in.codeseed.tubely:actionViewClass}</code></td><td>
-             The name of an optional View class to instantiate and use as an
-             action view.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td>
-             The alphabetic shortcut key.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td> Whether the item is capable of displaying a check mark.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td>
-             Whether the item is checked.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_enabled android:enabled}</code></td><td> Whether the item is enabled.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_icon android:icon}</code></td><td>
-             The icon associated with this item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_id android:id}</code></td><td> The ID of the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_menuCategory android:menuCategory}</code></td><td>
-             The category applied to the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td>
-             The numeric shortcut key.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td>
-             Name of a method on the Context used to inflate the menu that will be
-             called when the item is clicked.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_orderInCategory android:orderInCategory}</code></td><td>
-             The order within the category applied to the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td> The title associated with the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td>
-             The condensed title associated with the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td> Whether the item is shown/visible.</td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction in.codeseed.tubely:showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout in.codeseed.tubely:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass in.codeseed.tubely:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass in.codeseed.tubely:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_enabled android:enabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_icon android:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_id android:id}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_menuCategory android:menuCategory}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_orderInCategory android:orderInCategory}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction in.codeseed.tubely:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -4584,30 +4012,18 @@ containing a value of this type.
             0x7f01004a
         };
         /**
-          <p>
-          @attr description
-          
-             An optional layout to be used as an action view.
-             See {@link android.view.MenuItem#setActionView(android.view.View)}
-             for more info.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionLayout}
+          attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>
-          @attr description
-          
-             The name of an optional ActionProvider class to instantiate an action view
-             and perform operations such as default action for that menu item.
-             See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
-             for more info.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionProviderClass}
+          attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -4616,18 +4032,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>
-          @attr description
-          
-             The name of an optional View class to instantiate and use as an
-             action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
-             for more info.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionViewClass}
+          attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -4636,155 +4046,90 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
-          <p>
-          @attr description
-          
-             The alphabetic shortcut key.  This is the shortcut when using a keyboard
-             with alphabetic keys.
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#alphabeticShortcut}.
+          <p>This symbol is the offset where the {@link android.R.attr#alphabeticShortcut}
+          attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:alphabeticShortcut
         */
         public static final int MenuItem_android_alphabeticShortcut = 9;
         /**
-          <p>
-          @attr description
-           Whether the item is capable of displaying a check mark. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#checkable}.
+          <p>This symbol is the offset where the {@link android.R.attr#checkable}
+          attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:checkable
         */
         public static final int MenuItem_android_checkable = 11;
         /**
-          <p>
-          @attr description
-          
-             Whether the item is checked.  Note that you must first have enabled checking with
-             the checkable attribute or else the check mark will not appear.
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#checked}.
+          <p>This symbol is the offset where the {@link android.R.attr#checked}
+          attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:checked
         */
         public static final int MenuItem_android_checked = 3;
         /**
-          <p>
-          @attr description
-           Whether the item is enabled. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#enabled}.
+          <p>This symbol is the offset where the {@link android.R.attr#enabled}
+          attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:enabled
         */
         public static final int MenuItem_android_enabled = 1;
         /**
-          <p>
-          @attr description
-          
-             The icon associated with this item.  This icon will not always be shown, so
-             the title should be sufficient in describing this item.
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#icon}.
+          <p>This symbol is the offset where the {@link android.R.attr#icon}
+          attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:icon
         */
         public static final int MenuItem_android_icon = 0;
         /**
-          <p>
-          @attr description
-           The ID of the item. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#id}.
+          <p>This symbol is the offset where the {@link android.R.attr#id}
+          attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:id
         */
         public static final int MenuItem_android_id = 2;
         /**
-          <p>
-          @attr description
-          
-             The category applied to the item.
-             (This will be or'ed with the orderInCategory attribute.)
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#menuCategory}.
+          <p>This symbol is the offset where the {@link android.R.attr#menuCategory}
+          attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:menuCategory
         */
         public static final int MenuItem_android_menuCategory = 5;
         /**
-          <p>
-          @attr description
-          
-             The numeric shortcut key.  This is the shortcut when using a numeric (e.g., 12-key)
-             keyboard.
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#numericShortcut}.
+          <p>This symbol is the offset where the {@link android.R.attr#numericShortcut}
+          attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:numericShortcut
         */
         public static final int MenuItem_android_numericShortcut = 10;
         /**
-          <p>
-          @attr description
-          
-             Name of a method on the Context used to inflate the menu that will be
-             called when the item is clicked.
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#onClick}.
+          <p>This symbol is the offset where the {@link android.R.attr#onClick}
+          attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:onClick
         */
         public static final int MenuItem_android_onClick = 12;
         /**
-          <p>
-          @attr description
-          
-             The order within the category applied to the item.
-             (This will be or'ed with the category attribute.)
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#orderInCategory}.
+          <p>This symbol is the offset where the {@link android.R.attr#orderInCategory}
+          attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:orderInCategory
         */
         public static final int MenuItem_android_orderInCategory = 6;
         /**
-          <p>
-          @attr description
-           The title associated with the item. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#title}.
+          <p>This symbol is the offset where the {@link android.R.attr#title}
+          attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:title
         */
         public static final int MenuItem_android_title = 7;
         /**
-          <p>
-          @attr description
-          
-             The condensed title associated with the item.  This is used in situations where the
-             normal title may be too long to be displayed.
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#titleCondensed}.
+          <p>This symbol is the offset where the {@link android.R.attr#titleCondensed}
+          attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:titleCondensed
         */
         public static final int MenuItem_android_titleCondensed = 8;
         /**
-          <p>
-          @attr description
-           Whether the item is shown/visible. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#visible}.
+          <p>This symbol is the offset where the {@link android.R.attr#visible}
+          attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:visible
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>
-          @attr description
-           How this item should display in the Action Bar, if present. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#showAsAction}
+          attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -4793,32 +4138,12 @@ containing a value of this type.
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>never</code></td><td>0</td><td>
-                 Never show this item in an action bar, show it in the overflow menu instead.
-                 Mutually exclusive with "ifRoom" and "always".
-            </td></tr>
-<tr><td><code>ifRoom</code></td><td>1</td><td>
-                 Show this item in an action bar if there is room for it as determined
-                 by the system. Favor this option over "always" where possible.
-                 Mutually exclusive with "never" and "always".
-            </td></tr>
-<tr><td><code>always</code></td><td>2</td><td>
-                 Always show this item in an actionbar, even if it would override
-                 the system's limits of how much stuff to put there. This may make
-                 your action bar look bad on some screens. In most cases you should
-                 use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never".
-            </td></tr>
-<tr><td><code>withText</code></td><td>4</td><td>
-                 When this item is shown as an action in the action bar, show a text
-                 label with it even if it has an icon representation.
-            </td></tr>
-<tr><td><code>collapseActionView</code></td><td>8</td><td>
-                 This item's action view collapses to a normal menu
-                 item. When expanded, the action view takes over a
-                 larger segment of its container.
-            </td></tr>
+<tr><td><code>never</code></td><td>0</td><td></td></tr>
+<tr><td><code>ifRoom</code></td><td>1</td><td></td></tr>
+<tr><td><code>always</code></td><td>2</td><td></td></tr>
+<tr><td><code>withText</code></td><td>4</td><td></td></tr>
+<tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
@@ -4828,14 +4153,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td> Default background for the menu header.</td></tr>
-           <tr><td><code>{@link #MenuView_android_horizontalDivider android:horizontalDivider}</code></td><td> Default horizontal divider between rows of menu items.</td></tr>
-           <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td> Default background for each menu item.</td></tr>
-           <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td> Default disabled icon alpha for each menu item that shows an icon.</td></tr>
-           <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td> Default appearance of menu item text.</td></tr>
-           <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td> Default vertical divider between menu items.</td></tr>
-           <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td> Default animations for the menu.</td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing in.codeseed.tubely:preserveIconSpacing}</code></td><td> Whether space should be reserved in layout when an icon is missing.</td></tr>
+           <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_android_horizontalDivider android:horizontalDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing in.codeseed.tubely:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -4851,72 +4176,50 @@ containing a value of this type.
             0x0101012f, 0x01010130, 0x01010131, 0x7f01004b
         };
         /**
-          <p>
-          @attr description
-           Default background for the menu header. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#headerBackground}.
+          <p>This symbol is the offset where the {@link android.R.attr#headerBackground}
+          attribute's value can be found in the {@link #MenuView} array.
           @attr name android:headerBackground
         */
         public static final int MenuView_android_headerBackground = 4;
         /**
-          <p>
-          @attr description
-           Default horizontal divider between rows of menu items. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#horizontalDivider}.
+          <p>This symbol is the offset where the {@link android.R.attr#horizontalDivider}
+          attribute's value can be found in the {@link #MenuView} array.
           @attr name android:horizontalDivider
         */
         public static final int MenuView_android_horizontalDivider = 2;
         /**
-          <p>
-          @attr description
-           Default background for each menu item. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#itemBackground}.
+          <p>This symbol is the offset where the {@link android.R.attr#itemBackground}
+          attribute's value can be found in the {@link #MenuView} array.
           @attr name android:itemBackground
         */
         public static final int MenuView_android_itemBackground = 5;
         /**
-          <p>
-          @attr description
-           Default disabled icon alpha for each menu item that shows an icon. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#itemIconDisabledAlpha}.
+          <p>This symbol is the offset where the {@link android.R.attr#itemIconDisabledAlpha}
+          attribute's value can be found in the {@link #MenuView} array.
           @attr name android:itemIconDisabledAlpha
         */
         public static final int MenuView_android_itemIconDisabledAlpha = 6;
         /**
-          <p>
-          @attr description
-           Default appearance of menu item text. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#itemTextAppearance}.
+          <p>This symbol is the offset where the {@link android.R.attr#itemTextAppearance}
+          attribute's value can be found in the {@link #MenuView} array.
           @attr name android:itemTextAppearance
         */
         public static final int MenuView_android_itemTextAppearance = 1;
         /**
-          <p>
-          @attr description
-           Default vertical divider between menu items. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#verticalDivider}.
+          <p>This symbol is the offset where the {@link android.R.attr#verticalDivider}
+          attribute's value can be found in the {@link #MenuView} array.
           @attr name android:verticalDivider
         */
         public static final int MenuView_android_verticalDivider = 3;
         /**
-          <p>
-          @attr description
-           Default animations for the menu. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#windowAnimationStyle}.
+          <p>This symbol is the offset where the {@link android.R.attr#windowAnimationStyle}
+          attribute's value can be found in the {@link #MenuView} array.
           @attr name android:windowAnimationStyle
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>
-          @attr description
-           Whether space should be reserved in layout when an icon is missing. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#preserveIconSpacing}
+          attribute's value can be found in the {@link #MenuView} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -4925,7 +4228,6 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
@@ -4936,7 +4238,7 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor in.codeseed.tubely:overlapAnchor}</code></td><td> Whether the popup window should overlap its anchor view.</td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor in.codeseed.tubely:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -4951,9 +4253,8 @@ containing a value of this type.
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>
-          @attr description
-           Whether the popup window should overlap its anchor view. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#overlapAnchor}
+          attribute's value can be found in the {@link #PopupWindow} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -4962,7 +4263,6 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
@@ -4972,7 +4272,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor in.codeseed.tubely:state_above_anchor}</code></td><td> State identifier indicating the popup will be above the anchor.</td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor in.codeseed.tubely:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -4980,9 +4280,8 @@ containing a value of this type.
             0x7f01004d
         };
         /**
-          <p>
-          @attr description
-           State identifier indicating the popup will be above the anchor. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#state_above_anchor}
+          attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -4991,7 +4290,6 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
@@ -5002,21 +4300,20 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SearchView_android_focusable android:focusable}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td> The IME options to set on the query text field.</td></tr>
-           <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td> The input type to set on the query text field.</td></tr>
-           <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td> An optional maximum width of the SearchView.</td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon in.codeseed.tubely:closeIcon}</code></td><td> Close button icon </td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon in.codeseed.tubely:commitIcon}</code></td><td> Commit icon shown in the query suggestion row </td></tr>
-           <tr><td><code>{@link #SearchView_goIcon in.codeseed.tubely:goIcon}</code></td><td> Go button icon </td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault in.codeseed.tubely:iconifiedByDefault}</code></td><td>
-             The default state of the SearchView.</td></tr>
-           <tr><td><code>{@link #SearchView_layout in.codeseed.tubely:layout}</code></td><td> The layout to use for the search view.</td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground in.codeseed.tubely:queryBackground}</code></td><td> Background for the section containing the search query </td></tr>
-           <tr><td><code>{@link #SearchView_queryHint in.codeseed.tubely:queryHint}</code></td><td> An optional query hint string to be displayed in the empty query field.</td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon in.codeseed.tubely:searchIcon}</code></td><td> Search icon </td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground in.codeseed.tubely:submitBackground}</code></td><td> Background for the section containing the action (e.</td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout in.codeseed.tubely:suggestionRowLayout}</code></td><td> Layout for query suggestion rows </td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon in.codeseed.tubely:voiceIcon}</code></td><td> Voice button icon </td></tr>
+           <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon in.codeseed.tubely:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon in.codeseed.tubely:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon in.codeseed.tubely:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault in.codeseed.tubely:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout in.codeseed.tubely:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground in.codeseed.tubely:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint in.codeseed.tubely:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon in.codeseed.tubely:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground in.codeseed.tubely:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout in.codeseed.tubely:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon in.codeseed.tubely:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -5047,75 +4344,56 @@ containing a value of this type.
         */
         public static final int SearchView_android_focusable = 0;
         /**
-          <p>
-          @attr description
-           The IME options to set on the query text field. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#imeOptions}.
+          <p>This symbol is the offset where the {@link android.R.attr#imeOptions}
+          attribute's value can be found in the {@link #SearchView} array.
           @attr name android:imeOptions
         */
         public static final int SearchView_android_imeOptions = 3;
         /**
-          <p>
-          @attr description
-           The input type to set on the query text field. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#inputType}.
+          <p>This symbol is the offset where the {@link android.R.attr#inputType}
+          attribute's value can be found in the {@link #SearchView} array.
           @attr name android:inputType
         */
         public static final int SearchView_android_inputType = 2;
         /**
-          <p>
-          @attr description
-           An optional maximum width of the SearchView. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#maxWidth}.
+          <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
+          attribute's value can be found in the {@link #SearchView} array.
           @attr name android:maxWidth
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>
-          @attr description
-           Close button icon 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#closeIcon}
+          attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:closeIcon
         */
         public static final int SearchView_closeIcon = 7;
         /**
-          <p>
-          @attr description
-           Commit icon shown in the query suggestion row 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#commitIcon}
+          attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:commitIcon
         */
         public static final int SearchView_commitIcon = 11;
         /**
-          <p>
-          @attr description
-           Go button icon 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#goIcon}
+          attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:goIcon
         */
         public static final int SearchView_goIcon = 8;
         /**
-          <p>
-          @attr description
-          
-             The default state of the SearchView. If true, it will be iconified when not in
-             use and expanded when clicked.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#iconifiedByDefault}
+          attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -5124,38 +4402,32 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>
-          @attr description
-           The layout to use for the search view. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#layout}
+          attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>
-          @attr description
-           Background for the section containing the search query 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#queryBackground}
+          attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:queryBackground
         */
         public static final int SearchView_queryBackground = 13;
         /**
-          <p>
-          @attr description
-           An optional query hint string to be displayed in the empty query field. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#queryHint}
+          attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -5164,55 +4436,46 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>
-          @attr description
-           Search icon 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#searchIcon}
+          attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:searchIcon
         */
         public static final int SearchView_searchIcon = 9;
         /**
-          <p>
-          @attr description
-           Background for the section containing the action (e.g. voice search) 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#submitBackground}
+          attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:submitBackground
         */
         public static final int SearchView_submitBackground = 14;
         /**
-          <p>
-          @attr description
-           Layout for query suggestion rows 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#suggestionRowLayout}
+          attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 12;
         /**
-          <p>
-          @attr description
-           Voice button icon 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#voiceIcon}
+          attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:voiceIcon
         */
         public static final int SearchView_voiceIcon = 10;
@@ -5223,24 +4486,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Spinner_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_android_dropDownHorizontalOffset android:dropDownHorizontalOffset}</code></td><td>
-             Horizontal offset from the spinner widget for positioning the dropdown
-             in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_android_dropDownSelector android:dropDownSelector}</code></td><td> List selector to use for spinnerMode="dropdown" display.</td></tr>
-           <tr><td><code>{@link #Spinner_android_dropDownVerticalOffset android:dropDownVerticalOffset}</code></td><td>
-             Vertical offset from the spinner widget for positioning the dropdown in
-             spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td> Width of the dropdown in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
-           <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled in.codeseed.tubely:disableChildrenWhenDisabled}</code></td><td>
-             Whether this spinner should mark child views as enabled/disabled when
-             the spinner itself is enabled/disabled.</td></tr>
-           <tr><td><code>{@link #Spinner_popupPromptView in.codeseed.tubely:popupPromptView}</code></td><td>
-             Reference to a layout to use for displaying a prompt in the dropdown for
-             spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_prompt in.codeseed.tubely:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
-           <tr><td><code>{@link #Spinner_spinnerMode in.codeseed.tubely:spinnerMode}</code></td><td> Display mode for spinner options.</td></tr>
+           <tr><td><code>{@link #Spinner_android_dropDownHorizontalOffset android:dropDownHorizontalOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_android_dropDownSelector android:dropDownSelector}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_android_dropDownVerticalOffset android:dropDownVerticalOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled in.codeseed.tubely:disableChildrenWhenDisabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupPromptView in.codeseed.tubely:popupPromptView}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_prompt in.codeseed.tubely:prompt}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_spinnerMode in.codeseed.tubely:spinnerMode}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_background
            @see #Spinner_android_dropDownHorizontalOffset
@@ -5266,72 +4521,44 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Spinner_android_background = 1;
         /**
-          <p>
-          @attr description
-          
-             Horizontal offset from the spinner widget for positioning the dropdown
-             in spinnerMode="dropdown".
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#dropDownHorizontalOffset}.
+          <p>This symbol is the offset where the {@link android.R.attr#dropDownHorizontalOffset}
+          attribute's value can be found in the {@link #Spinner} array.
           @attr name android:dropDownHorizontalOffset
         */
         public static final int Spinner_android_dropDownHorizontalOffset = 5;
         /**
-          <p>
-          @attr description
-           List selector to use for spinnerMode="dropdown" display. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#dropDownSelector}.
+          <p>This symbol is the offset where the {@link android.R.attr#dropDownSelector}
+          attribute's value can be found in the {@link #Spinner} array.
           @attr name android:dropDownSelector
         */
         public static final int Spinner_android_dropDownSelector = 2;
         /**
-          <p>
-          @attr description
-          
-             Vertical offset from the spinner widget for positioning the dropdown in
-             spinnerMode="dropdown".
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#dropDownVerticalOffset}.
+          <p>This symbol is the offset where the {@link android.R.attr#dropDownVerticalOffset}
+          attribute's value can be found in the {@link #Spinner} array.
           @attr name android:dropDownVerticalOffset
         */
         public static final int Spinner_android_dropDownVerticalOffset = 6;
         /**
-          <p>
-          @attr description
-           Width of the dropdown in spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#dropDownWidth}.
+          <p>This symbol is the offset where the {@link android.R.attr#dropDownWidth}
+          attribute's value can be found in the {@link #Spinner} array.
           @attr name android:dropDownWidth
         */
         public static final int Spinner_android_dropDownWidth = 4;
         /**
-          <p>
-          @attr description
-           Gravity setting for positioning the currently selected item. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#gravity}.
+          <p>This symbol is the offset where the {@link android.R.attr#gravity}
+          attribute's value can be found in the {@link #Spinner} array.
           @attr name android:gravity
         */
         public static final int Spinner_android_gravity = 0;
         /**
-          <p>
-          @attr description
-           Background drawable to use for the dropdown in spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#popupBackground}.
+          <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
+          attribute's value can be found in the {@link #Spinner} array.
           @attr name android:popupBackground
         */
         public static final int Spinner_android_popupBackground = 3;
         /**
-          <p>
-          @attr description
-          
-             Whether this spinner should mark child views as enabled/disabled when
-             the spinner itself is enabled/disabled.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#disableChildrenWhenDisabled}
+          attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -5340,42 +4567,32 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:disableChildrenWhenDisabled
         */
         public static final int Spinner_disableChildrenWhenDisabled = 10;
         /**
-          <p>
-          @attr description
-          
-             Reference to a layout to use for displaying a prompt in the dropdown for
-             spinnerMode="dropdown". This layout must contain a TextView with the id
-             {@code @android:id/text1} to be populated with the prompt text.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#popupPromptView}
+          attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:popupPromptView
         */
         public static final int Spinner_popupPromptView = 9;
         /**
-          <p>
-          @attr description
-           The prompt to display when the spinner's dialog is shown. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#prompt}
+          attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:prompt
         */
         public static final int Spinner_prompt = 7;
         /**
-          <p>
-          @attr description
-           Display mode for spinner options. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#spinnerMode}
+          attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be one of the following constant values.</p>
@@ -5384,13 +4601,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>dialog</code></td><td>0</td><td> Spinner options will be presented to the user as a dialog window. </td></tr>
-<tr><td><code>dropdown</code></td><td>1</td><td>
-                 Spinner options will be presented to the user as an inline dropdown
-                 anchored to the spinner widget itself.
-            </td></tr>
+<tr><td><code>dialog</code></td><td>0</td><td></td></tr>
+<tr><td><code>dropdown</code></td><td>1</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:spinnerMode
         */
         public static final int Spinner_spinnerMode = 8;
@@ -5471,16 +4684,16 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td> Text to use when the switch is in the unchecked/"off" state.</td></tr>
-           <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td> Text to use when the switch is in the checked/"on" state.</td></tr>
-           <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td> Drawable to use as the "thumb" that switches back and forth.</td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText in.codeseed.tubely:showText}</code></td><td> Whether to draw on/off text.</td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack in.codeseed.tubely:splitTrack}</code></td><td> Whether to split the track and leave a gap for the thumb drawable.</td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth in.codeseed.tubely:switchMinWidth}</code></td><td> Minimum width for the switch component </td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding in.codeseed.tubely:switchPadding}</code></td><td> Minimum space between the switch and caption text </td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance in.codeseed.tubely:switchTextAppearance}</code></td><td> TextAppearance style for text displayed on the switch thumb.</td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding in.codeseed.tubely:thumbTextPadding}</code></td><td> Amount of padding on either side of text within the switch thumb.</td></tr>
-           <tr><td><code>{@link #SwitchCompat_track in.codeseed.tubely:track}</code></td><td> Drawable to use as the "track" that the switch thumb slides within.</td></tr>
+           <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText in.codeseed.tubely:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack in.codeseed.tubely:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth in.codeseed.tubely:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding in.codeseed.tubely:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance in.codeseed.tubely:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding in.codeseed.tubely:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track in.codeseed.tubely:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -5499,36 +4712,26 @@ containing a value of this type.
             0x7f010066, 0x7f010067
         };
         /**
-          <p>
-          @attr description
-           Text to use when the switch is in the unchecked/"off" state. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#textOff}.
+          <p>This symbol is the offset where the {@link android.R.attr#textOff}
+          attribute's value can be found in the {@link #SwitchCompat} array.
           @attr name android:textOff
         */
         public static final int SwitchCompat_android_textOff = 1;
         /**
-          <p>
-          @attr description
-           Text to use when the switch is in the checked/"on" state. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#textOn}.
+          <p>This symbol is the offset where the {@link android.R.attr#textOn}
+          attribute's value can be found in the {@link #SwitchCompat} array.
           @attr name android:textOn
         */
         public static final int SwitchCompat_android_textOn = 0;
         /**
-          <p>
-          @attr description
-           Drawable to use as the "thumb" that switches back and forth. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#thumb}.
+          <p>This symbol is the offset where the {@link android.R.attr#thumb}
+          attribute's value can be found in the {@link #SwitchCompat} array.
           @attr name android:thumb
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>
-          @attr description
-           Whether to draw on/off text. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#showText}
+          attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -5537,14 +4740,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>
-          @attr description
-           Whether to split the track and leave a gap for the thumb drawable. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#splitTrack}
+          attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -5553,14 +4754,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>
-          @attr description
-           Minimum width for the switch component 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#switchMinWidth}
+          attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -5571,14 +4770,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>
-          @attr description
-           Minimum space between the switch and caption text 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#switchPadding}
+          attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -5589,26 +4786,22 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>
-          @attr description
-           TextAppearance style for text displayed on the switch thumb. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#switchTextAppearance}
+          attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>
-          @attr description
-           Amount of padding on either side of text within the switch thumb. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#thumbTextPadding}
+          attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -5619,19 +4812,16 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>
-          @attr description
-           Drawable to use as the "track" that the switch thumb slides within. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#track}
+          attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:track
         */
         public static final int SwitchCompat_track = 3;
@@ -5641,124 +4831,89 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionBarDivider in.codeseed.tubely:actionBarDivider}</code></td><td> Custom divider drawable to use for elements in the action bar.</td></tr>
-           <tr><td><code>{@link #Theme_actionBarItemBackground in.codeseed.tubely:actionBarItemBackground}</code></td><td> Custom item state list drawable background for action bar items.</td></tr>
-           <tr><td><code>{@link #Theme_actionBarPopupTheme in.codeseed.tubely:actionBarPopupTheme}</code></td><td>
-             Reference to a theme that should be used to inflate popups
-             shown by widgets in the action bar.</td></tr>
-           <tr><td><code>{@link #Theme_actionBarSize in.codeseed.tubely:actionBarSize}</code></td><td>
-             Size of the Action Bar, including the contextual
-             bar used to present Action Modes.</td></tr>
-           <tr><td><code>{@link #Theme_actionBarSplitStyle in.codeseed.tubely:actionBarSplitStyle}</code></td><td>
-             Reference to a style for the split Action Bar.</td></tr>
-           <tr><td><code>{@link #Theme_actionBarStyle in.codeseed.tubely:actionBarStyle}</code></td><td> Reference to a style for the Action Bar </td></tr>
+           <tr><td><code>{@link #Theme_actionBarDivider in.codeseed.tubely:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground in.codeseed.tubely:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme in.codeseed.tubely:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSize in.codeseed.tubely:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSplitStyle in.codeseed.tubely:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle in.codeseed.tubely:actionBarStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_actionBarTabBarStyle in.codeseed.tubely:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabStyle in.codeseed.tubely:actionBarTabStyle}</code></td><td> Default style for tabs within an action bar </td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle in.codeseed.tubely:actionBarTabStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_actionBarTabTextStyle in.codeseed.tubely:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTheme in.codeseed.tubely:actionBarTheme}</code></td><td>
-             Reference to a theme that should be used to inflate the
-             action bar.</td></tr>
-           <tr><td><code>{@link #Theme_actionBarWidgetTheme in.codeseed.tubely:actionBarWidgetTheme}</code></td><td>
-             Reference to a theme that should be used to inflate widgets
-             and layouts destined for the action bar.</td></tr>
-           <tr><td><code>{@link #Theme_actionButtonStyle in.codeseed.tubely:actionButtonStyle}</code></td><td> Default action button style.</td></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle in.codeseed.tubely:actionDropDownStyle}</code></td><td> Default ActionBar dropdown style.</td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextAppearance in.codeseed.tubely:actionMenuTextAppearance}</code></td><td>
-             TextAppearance style that will be applied to text that
-             appears within action menu items.</td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextColor in.codeseed.tubely:actionMenuTextColor}</code></td><td> Color for text that appears within action menu items.</td></tr>
-           <tr><td><code>{@link #Theme_actionModeBackground in.codeseed.tubely:actionModeBackground}</code></td><td> Background drawable to use for action mode UI </td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme in.codeseed.tubely:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme in.codeseed.tubely:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionButtonStyle in.codeseed.tubely:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle in.codeseed.tubely:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance in.codeseed.tubely:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor in.codeseed.tubely:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground in.codeseed.tubely:actionModeBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_actionModeCloseButtonStyle in.codeseed.tubely:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseDrawable in.codeseed.tubely:actionModeCloseDrawable}</code></td><td> Drawable to use for the close action mode button </td></tr>
-           <tr><td><code>{@link #Theme_actionModeCopyDrawable in.codeseed.tubely:actionModeCopyDrawable}</code></td><td> Drawable to use for the Copy action button in Contextual Action Bar </td></tr>
-           <tr><td><code>{@link #Theme_actionModeCutDrawable in.codeseed.tubely:actionModeCutDrawable}</code></td><td> Drawable to use for the Cut action button in Contextual Action Bar </td></tr>
-           <tr><td><code>{@link #Theme_actionModeFindDrawable in.codeseed.tubely:actionModeFindDrawable}</code></td><td> Drawable to use for the Find action button in WebView selection action modes </td></tr>
-           <tr><td><code>{@link #Theme_actionModePasteDrawable in.codeseed.tubely:actionModePasteDrawable}</code></td><td> Drawable to use for the Paste action button in Contextual Action Bar </td></tr>
-           <tr><td><code>{@link #Theme_actionModePopupWindowStyle in.codeseed.tubely:actionModePopupWindowStyle}</code></td><td> PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
-           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable in.codeseed.tubely:actionModeSelectAllDrawable}</code></td><td> Drawable to use for the Select all action button in Contextual Action Bar </td></tr>
-           <tr><td><code>{@link #Theme_actionModeShareDrawable in.codeseed.tubely:actionModeShareDrawable}</code></td><td> Drawable to use for the Share action button in WebView selection action modes </td></tr>
-           <tr><td><code>{@link #Theme_actionModeSplitBackground in.codeseed.tubely:actionModeSplitBackground}</code></td><td> Background drawable to use for action mode UI in the lower split bar </td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable in.codeseed.tubely:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable in.codeseed.tubely:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable in.codeseed.tubely:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable in.codeseed.tubely:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable in.codeseed.tubely:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle in.codeseed.tubely:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable in.codeseed.tubely:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable in.codeseed.tubely:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground in.codeseed.tubely:actionModeSplitBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_actionModeStyle in.codeseed.tubely:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable in.codeseed.tubely:actionModeWebSearchDrawable}</code></td><td> Drawable to use for the Web Search action button in WebView selection action modes </td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable in.codeseed.tubely:actionModeWebSearchDrawable}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_actionOverflowButtonStyle in.codeseed.tubely:actionOverflowButtonStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_actionOverflowMenuStyle in.codeseed.tubely:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_activityChooserViewStyle in.codeseed.tubely:activityChooserViewStyle}</code></td><td> Default ActivityChooserView style.</td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle in.codeseed.tubely:activityChooserViewStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarButtonStyle in.codeseed.tubely:buttonBarButtonStyle}</code></td><td>
-             A style that may be applied to Buttons placed within a
-             LinearLayout with the style buttonBarStyle to form a button bar.</td></tr>
-           <tr><td><code>{@link #Theme_buttonBarStyle in.codeseed.tubely:buttonBarStyle}</code></td><td>
-         A style that may be applied to horizontal LinearLayouts
-         to form a button bar.</td></tr>
-           <tr><td><code>{@link #Theme_colorAccent in.codeseed.tubely:colorAccent}</code></td><td>
-             Bright complement to the primary branding color.</td></tr>
-           <tr><td><code>{@link #Theme_colorButtonNormal in.codeseed.tubely:colorButtonNormal}</code></td><td> The color applied to framework buttons in their normal state.</td></tr>
-           <tr><td><code>{@link #Theme_colorControlActivated in.codeseed.tubely:colorControlActivated}</code></td><td> The color applied to framework controls in their activated (ex.</td></tr>
-           <tr><td><code>{@link #Theme_colorControlHighlight in.codeseed.tubely:colorControlHighlight}</code></td><td> The color applied to framework control highlights (ex.</td></tr>
-           <tr><td><code>{@link #Theme_colorControlNormal in.codeseed.tubely:colorControlNormal}</code></td><td> The color applied to framework controls in their normal state.</td></tr>
-           <tr><td><code>{@link #Theme_colorPrimary in.codeseed.tubely:colorPrimary}</code></td><td>
-             The primary branding color for the app.</td></tr>
-           <tr><td><code>{@link #Theme_colorPrimaryDark in.codeseed.tubely:colorPrimaryDark}</code></td><td>
-             Dark variant of the primary branding color.</td></tr>
-           <tr><td><code>{@link #Theme_colorSwitchThumbNormal in.codeseed.tubely:colorSwitchThumbNormal}</code></td><td> The color applied to framework switch thumbs in their normal state.</td></tr>
-           <tr><td><code>{@link #Theme_dividerHorizontal in.codeseed.tubely:dividerHorizontal}</code></td><td> A drawable that may be used as a horizontal divider between visual elements.</td></tr>
-           <tr><td><code>{@link #Theme_dividerVertical in.codeseed.tubely:dividerVertical}</code></td><td> A drawable that may be used as a vertical divider between visual elements.</td></tr>
-           <tr><td><code>{@link #Theme_dropDownListViewStyle in.codeseed.tubely:dropDownListViewStyle}</code></td><td> ListPopupWindow compatibility </td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight in.codeseed.tubely:dropdownListPreferredItemHeight}</code></td><td> The preferred item height for dropdown lists.</td></tr>
-           <tr><td><code>{@link #Theme_editTextBackground in.codeseed.tubely:editTextBackground}</code></td><td> EditText background drawable.</td></tr>
-           <tr><td><code>{@link #Theme_editTextColor in.codeseed.tubely:editTextColor}</code></td><td> EditText text foreground color.</td></tr>
-           <tr><td><code>{@link #Theme_homeAsUpIndicator in.codeseed.tubely:homeAsUpIndicator}</code></td><td> Specifies a drawable to use for the 'home as up' indicator.</td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator in.codeseed.tubely:listChoiceBackgroundIndicator}</code></td><td> Drawable used as a background for selected list items.</td></tr>
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle in.codeseed.tubely:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarStyle in.codeseed.tubely:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorAccent in.codeseed.tubely:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal in.codeseed.tubely:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated in.codeseed.tubely:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight in.codeseed.tubely:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal in.codeseed.tubely:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary in.codeseed.tubely:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark in.codeseed.tubely:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal in.codeseed.tubely:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal in.codeseed.tubely:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical in.codeseed.tubely:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle in.codeseed.tubely:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight in.codeseed.tubely:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground in.codeseed.tubely:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextColor in.codeseed.tubely:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator in.codeseed.tubely:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator in.codeseed.tubely:listChoiceBackgroundIndicator}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_listPopupWindowStyle in.codeseed.tubely:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeight in.codeseed.tubely:listPreferredItemHeight}</code></td><td> The preferred list item height.</td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge in.codeseed.tubely:listPreferredItemHeightLarge}</code></td><td> A larger, more robust list item height.</td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall in.codeseed.tubely:listPreferredItemHeightSmall}</code></td><td> A smaller, sleeker list item height.</td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft in.codeseed.tubely:listPreferredItemPaddingLeft}</code></td><td> The preferred padding along the left edge of list items.</td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight in.codeseed.tubely:listPreferredItemPaddingRight}</code></td><td> The preferred padding along the right edge of list items.</td></tr>
-           <tr><td><code>{@link #Theme_panelBackground in.codeseed.tubely:panelBackground}</code></td><td> The background of a panel when it is inset from the left and right edges of the screen.</td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme in.codeseed.tubely:panelMenuListTheme}</code></td><td> Default Panel Menu style.</td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth in.codeseed.tubely:panelMenuListWidth}</code></td><td> Default Panel Menu width.</td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle in.codeseed.tubely:popupMenuStyle}</code></td><td> Default PopupMenu style.</td></tr>
-           <tr><td><code>{@link #Theme_popupWindowStyle in.codeseed.tubely:popupWindowStyle}</code></td><td> Default PopupWindow style.</td></tr>
-           <tr><td><code>{@link #Theme_searchViewStyle in.codeseed.tubely:searchViewStyle}</code></td><td> Style for the search query widget.</td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackground in.codeseed.tubely:selectableItemBackground}</code></td><td>
-             A style that may be applied to buttons or other selectable items
-             that should react to pressed and focus states, but that do not
-             have a clear visual border along the edges.</td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless in.codeseed.tubely:selectableItemBackgroundBorderless}</code></td><td> Background drawable for borderless standalone items that need focus/pressed states.</td></tr>
-           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle in.codeseed.tubely:spinnerDropDownItemStyle}</code></td><td> Default Spinner style.</td></tr>
-           <tr><td><code>{@link #Theme_spinnerStyle in.codeseed.tubely:spinnerStyle}</code></td><td> Default Spinner style.</td></tr>
-           <tr><td><code>{@link #Theme_switchStyle in.codeseed.tubely:switchStyle}</code></td><td> Default style for the Switch widget.</td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu in.codeseed.tubely:textAppearanceLargePopupMenu}</code></td><td> Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItem in.codeseed.tubely:textAppearanceListItem}</code></td><td> The preferred TextAppearance for the primary text of list items.</td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItemSmall in.codeseed.tubely:textAppearanceListItemSmall}</code></td><td> The preferred TextAppearance for the primary text of small list items.</td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle in.codeseed.tubely:textAppearanceSearchResultSubtitle}</code></td><td> Text color, typeface, size, and style for system search result subtitle.</td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle in.codeseed.tubely:textAppearanceSearchResultTitle}</code></td><td> Text color, typeface, size, and style for system search result title.</td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu in.codeseed.tubely:textAppearanceSmallPopupMenu}</code></td><td> Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
-           <tr><td><code>{@link #Theme_textColorSearchUrl in.codeseed.tubely:textColorSearchUrl}</code></td><td> Text color for urls in search suggestions, used by things like global search </td></tr>
-           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle in.codeseed.tubely:toolbarNavigationButtonStyle}</code></td><td> Default Toolar NavigationButtonStyle </td></tr>
-           <tr><td><code>{@link #Theme_toolbarStyle in.codeseed.tubely:toolbarStyle}</code></td><td> Default Toolbar style.</td></tr>
-           <tr><td><code>{@link #Theme_windowActionBar in.codeseed.tubely:windowActionBar}</code></td><td>
-             Flag indicating whether this window should have an Action Bar
-             in place of the usual title bar.</td></tr>
-           <tr><td><code>{@link #Theme_windowActionBarOverlay in.codeseed.tubely:windowActionBarOverlay}</code></td><td>
-             Flag indicating whether this window's Action Bar should overlay
-             application content.</td></tr>
-           <tr><td><code>{@link #Theme_windowActionModeOverlay in.codeseed.tubely:windowActionModeOverlay}</code></td><td>
-             Flag indicating whether action modes should overlay window content
-             when there is not reserved space for their UI (such as an Action Bar).</td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMajor in.codeseed.tubely:windowFixedHeightMajor}</code></td><td>
-             A fixed height for the window along the major axis of the screen,
-             that is, when in portrait.</td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMinor in.codeseed.tubely:windowFixedHeightMinor}</code></td><td>
-             A fixed height for the window along the minor axis of the screen,
-             that is, when in landscape.</td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMajor in.codeseed.tubely:windowFixedWidthMajor}</code></td><td>
-             A fixed width for the window along the major axis of the screen,
-             that is, when in landscape.</td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMinor in.codeseed.tubely:windowFixedWidthMinor}</code></td><td>
-             A fixed width for the window along the minor axis of the screen,
-             that is, when in portrait.</td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight in.codeseed.tubely:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge in.codeseed.tubely:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall in.codeseed.tubely:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft in.codeseed.tubely:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight in.codeseed.tubely:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelBackground in.codeseed.tubely:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme in.codeseed.tubely:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth in.codeseed.tubely:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle in.codeseed.tubely:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle in.codeseed.tubely:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle in.codeseed.tubely:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground in.codeseed.tubely:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless in.codeseed.tubely:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle in.codeseed.tubely:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle in.codeseed.tubely:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_switchStyle in.codeseed.tubely:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu in.codeseed.tubely:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem in.codeseed.tubely:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall in.codeseed.tubely:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle in.codeseed.tubely:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle in.codeseed.tubely:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu in.codeseed.tubely:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl in.codeseed.tubely:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle in.codeseed.tubely:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle in.codeseed.tubely:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar in.codeseed.tubely:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBarOverlay in.codeseed.tubely:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionModeOverlay in.codeseed.tubely:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor in.codeseed.tubely:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor in.codeseed.tubely:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor in.codeseed.tubely:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor in.codeseed.tubely:windowFixedWidthMinor}</code></td><td></td></tr>
            </table>
            @see #Theme_actionBarDivider
            @see #Theme_actionBarItemBackground
@@ -5868,51 +5023,38 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100b7, 0x7f0100b8, 0x7f0100b9
         };
         /**
-          <p>
-          @attr description
-           Custom divider drawable to use for elements in the action bar. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionBarDivider}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionBarDivider
         */
         public static final int Theme_actionBarDivider = 19;
         /**
-          <p>
-          @attr description
-           Custom item state list drawable background for action bar items. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionBarItemBackground}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionBarItemBackground
         */
         public static final int Theme_actionBarItemBackground = 20;
         /**
-          <p>
-          @attr description
-          
-             Reference to a theme that should be used to inflate popups
-             shown by widgets in the action bar.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionBarPopupTheme}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionBarPopupTheme
         */
         public static final int Theme_actionBarPopupTheme = 13;
         /**
-          <p>
-          @attr description
-          
-             Size of the Action Bar, including the contextual
-             bar used to present Action Modes.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionBarSize}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -5931,36 +5073,26 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionBarSize
         */
         public static final int Theme_actionBarSize = 18;
         /**
-          <p>
-          @attr description
-          
-             Reference to a style for the split Action Bar. This style
-             controls the split component that holds the menu/action
-             buttons. actionBarStyle is still used for the primary
-             bar.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionBarSplitStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionBarSplitStyle
         */
         public static final int Theme_actionBarSplitStyle = 15;
         /**
-          <p>
-          @attr description
-           Reference to a style for the Action Bar 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionBarStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionBarStyle
         */
         public static final int Theme_actionBarStyle = 14;
@@ -5975,14 +5107,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionBarTabBarStyle = 9;
         /**
-          <p>
-          @attr description
-           Default style for tabs within an action bar 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionBarTabStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionBarTabStyle
         */
         public static final int Theme_actionBarTabStyle = 8;
@@ -5997,104 +5127,74 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionBarTabTextStyle = 10;
         /**
-          <p>
-          @attr description
-          
-             Reference to a theme that should be used to inflate the
-             action bar. This will be inherited by any widget inflated
-             into the action bar.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionBarTheme}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionBarTheme
         */
         public static final int Theme_actionBarTheme = 16;
         /**
-          <p>
-          @attr description
-          
-             Reference to a theme that should be used to inflate widgets
-             and layouts destined for the action bar. Most of the time
-             this will be a reference to the current theme, but when
-             the action bar has a significantly different contrast
-             profile than the rest of the activity the difference
-             can become important. If this is set to @null the current
-             theme will be used.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionBarWidgetTheme}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionBarWidgetTheme
         */
         public static final int Theme_actionBarWidgetTheme = 17;
         /**
-          <p>
-          @attr description
-           Default action button style. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionButtonStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionButtonStyle
         */
         public static final int Theme_actionButtonStyle = 43;
         /**
-          <p>
-          @attr description
-           Default ActionBar dropdown style. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionDropDownStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 38;
         /**
-          <p>
-          @attr description
-          
-             TextAppearance style that will be applied to text that
-             appears within action menu items.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionMenuTextAppearance}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionMenuTextAppearance
         */
         public static final int Theme_actionMenuTextAppearance = 21;
         /**
-          <p>
-          @attr description
-           Color for text that appears within action menu items. 
- Color for text that appears within action menu items. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionMenuTextColor}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionMenuTextColor
         */
         public static final int Theme_actionMenuTextColor = 22;
         /**
-          <p>
-          @attr description
-           Background drawable to use for action mode UI 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionModeBackground}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionModeBackground
         */
         public static final int Theme_actionModeBackground = 25;
@@ -6109,110 +5209,92 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModeCloseButtonStyle = 24;
         /**
-          <p>
-          @attr description
-           Drawable to use for the close action mode button 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionModeCloseDrawable}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionModeCloseDrawable
         */
         public static final int Theme_actionModeCloseDrawable = 27;
         /**
-          <p>
-          @attr description
-           Drawable to use for the Copy action button in Contextual Action Bar 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionModeCopyDrawable}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionModeCopyDrawable
         */
         public static final int Theme_actionModeCopyDrawable = 29;
         /**
-          <p>
-          @attr description
-           Drawable to use for the Cut action button in Contextual Action Bar 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionModeCutDrawable}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionModeCutDrawable
         */
         public static final int Theme_actionModeCutDrawable = 28;
         /**
-          <p>
-          @attr description
-           Drawable to use for the Find action button in WebView selection action modes 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionModeFindDrawable}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionModeFindDrawable
         */
         public static final int Theme_actionModeFindDrawable = 33;
         /**
-          <p>
-          @attr description
-           Drawable to use for the Paste action button in Contextual Action Bar 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionModePasteDrawable}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionModePasteDrawable
         */
         public static final int Theme_actionModePasteDrawable = 30;
         /**
-          <p>
-          @attr description
-           PopupWindow style to use for action modes when showing as a window overlay. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionModePopupWindowStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionModePopupWindowStyle
         */
         public static final int Theme_actionModePopupWindowStyle = 35;
         /**
-          <p>
-          @attr description
-           Drawable to use for the Select all action button in Contextual Action Bar 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionModeSelectAllDrawable}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionModeSelectAllDrawable
         */
         public static final int Theme_actionModeSelectAllDrawable = 31;
         /**
-          <p>
-          @attr description
-           Drawable to use for the Share action button in WebView selection action modes 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionModeShareDrawable}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionModeShareDrawable
         */
         public static final int Theme_actionModeShareDrawable = 32;
         /**
-          <p>
-          @attr description
-           Background drawable to use for action mode UI in the lower split bar 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionModeSplitBackground}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionModeSplitBackground
         */
         public static final int Theme_actionModeSplitBackground = 26;
@@ -6227,14 +5309,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModeStyle = 23;
         /**
-          <p>
-          @attr description
-           Drawable to use for the Web Search action button in WebView selection action modes 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#actionModeWebSearchDrawable}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:actionModeWebSearchDrawable
         */
         public static final int Theme_actionModeWebSearchDrawable = 34;
@@ -6259,14 +5339,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionOverflowMenuStyle = 12;
         /**
-          <p>
-          @attr description
-           Default ActivityChooserView style. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#activityChooserViewStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:activityChooserViewStyle
         */
         public static final int Theme_activityChooserViewStyle = 50;
@@ -6277,42 +5355,28 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_android_windowIsFloating = 0;
         /**
-          <p>
-          @attr description
-          
-             A style that may be applied to Buttons placed within a
-             LinearLayout with the style buttonBarStyle to form a button bar.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#buttonBarButtonStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:buttonBarButtonStyle
         */
         public static final int Theme_buttonBarButtonStyle = 45;
         /**
-          <p>
-          @attr description
-          
-         A style that may be applied to horizontal LinearLayouts
-         to form a button bar.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#buttonBarStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:buttonBarStyle
         */
         public static final int Theme_buttonBarStyle = 44;
         /**
-          <p>
-          @attr description
-          
-             Bright complement to the primary branding color. By default, this is the color applied
-             to framework controls (via colorControlActivated).
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#colorAccent}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -6322,14 +5386,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:colorAccent
         */
         public static final int Theme_colorAccent = 77;
         /**
-          <p>
-          @attr description
-           The color applied to framework buttons in their normal state. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#colorButtonNormal}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -6339,14 +5401,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:colorButtonNormal
         */
         public static final int Theme_colorButtonNormal = 81;
         /**
-          <p>
-          @attr description
-           The color applied to framework controls in their activated (ex. checked) state. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#colorControlActivated}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -6356,14 +5416,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:colorControlActivated
         */
         public static final int Theme_colorControlActivated = 79;
         /**
-          <p>
-          @attr description
-           The color applied to framework control highlights (ex. ripples, list selectors). 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#colorControlHighlight}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -6373,14 +5431,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:colorControlHighlight
         */
         public static final int Theme_colorControlHighlight = 80;
         /**
-          <p>
-          @attr description
-           The color applied to framework controls in their normal state. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#colorControlNormal}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -6390,17 +5446,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:colorControlNormal
         */
         public static final int Theme_colorControlNormal = 78;
         /**
-          <p>
-          @attr description
-          
-             The primary branding color for the app. By default, this is the color applied to the
-             action bar background.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#colorPrimary}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -6410,17 +5461,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:colorPrimary
         */
         public static final int Theme_colorPrimary = 75;
         /**
-          <p>
-          @attr description
-          
-             Dark variant of the primary branding color. By default, this is the color applied to
-             the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#colorPrimaryDark}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -6430,14 +5476,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:colorPrimaryDark
         */
         public static final int Theme_colorPrimaryDark = 76;
         /**
-          <p>
-          @attr description
-           The color applied to framework switch thumbs in their normal state. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#colorSwitchThumbNormal}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -6447,50 +5491,42 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:colorSwitchThumbNormal
         */
         public static final int Theme_colorSwitchThumbNormal = 82;
         /**
-          <p>
-          @attr description
-           A drawable that may be used as a horizontal divider between visual elements. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#dividerHorizontal}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:dividerHorizontal
         */
         public static final int Theme_dividerHorizontal = 49;
         /**
-          <p>
-          @attr description
-           A drawable that may be used as a vertical divider between visual elements. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#dividerVertical}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:dividerVertical
         */
         public static final int Theme_dividerVertical = 48;
         /**
-          <p>
-          @attr description
-           ListPopupWindow compatibility 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#dropDownListViewStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:dropDownListViewStyle
         */
         public static final int Theme_dropDownListViewStyle = 67;
         /**
-          <p>
-          @attr description
-           The preferred item height for dropdown lists. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#dropdownListPreferredItemHeight}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -6501,57 +5537,48 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 39;
         /**
-          <p>
-          @attr description
-           EditText background drawable. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#editTextBackground}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:editTextBackground
         */
         public static final int Theme_editTextBackground = 56;
         /**
-          <p>
-          @attr description
-           EditText text foreground color. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#editTextColor}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:editTextColor
         */
         public static final int Theme_editTextColor = 55;
         /**
-          <p>
-          @attr description
-           Specifies a drawable to use for the 'home as up' indicator. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#homeAsUpIndicator}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:homeAsUpIndicator
         */
         public static final int Theme_homeAsUpIndicator = 42;
         /**
-          <p>
-          @attr description
-           Drawable used as a background for selected list items. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#listChoiceBackgroundIndicator}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 74;
@@ -6566,9 +5593,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_listPopupWindowStyle = 68;
         /**
-          <p>
-          @attr description
-           The preferred list item height. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#listPreferredItemHeight}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -6579,14 +5605,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:listPreferredItemHeight
         */
         public static final int Theme_listPreferredItemHeight = 62;
         /**
-          <p>
-          @attr description
-           A larger, more robust list item height. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#listPreferredItemHeightLarge}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -6597,14 +5621,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:listPreferredItemHeightLarge
         */
         public static final int Theme_listPreferredItemHeightLarge = 64;
         /**
-          <p>
-          @attr description
-           A smaller, sleeker list item height. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#listPreferredItemHeightSmall}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -6615,14 +5637,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:listPreferredItemHeightSmall
         */
         public static final int Theme_listPreferredItemHeightSmall = 63;
         /**
-          <p>
-          @attr description
-           The preferred padding along the left edge of list items. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#listPreferredItemPaddingLeft}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -6633,14 +5653,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:listPreferredItemPaddingLeft
         */
         public static final int Theme_listPreferredItemPaddingLeft = 65;
         /**
-          <p>
-          @attr description
-           The preferred padding along the right edge of list items. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#listPreferredItemPaddingRight}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -6651,38 +5669,32 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:listPreferredItemPaddingRight
         */
         public static final int Theme_listPreferredItemPaddingRight = 66;
         /**
-          <p>
-          @attr description
-           The background of a panel when it is inset from the left and right edges of the screen. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#panelBackground}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:panelBackground
         */
         public static final int Theme_panelBackground = 71;
         /**
-          <p>
-          @attr description
-           Default Panel Menu style. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#panelMenuListTheme}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 73;
         /**
-          <p>
-          @attr description
-           Default Panel Menu width. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#panelMenuListWidth}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -6693,227 +5705,184 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 72;
         /**
-          <p>
-          @attr description
-           Default PopupMenu style. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#popupMenuStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 53;
         /**
-          <p>
-          @attr description
-           Default PopupWindow style. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#popupWindowStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:popupWindowStyle
         */
         public static final int Theme_popupWindowStyle = 54;
         /**
-          <p>
-          @attr description
-           Style for the search query widget. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#searchViewStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:searchViewStyle
         */
         public static final int Theme_searchViewStyle = 61;
         /**
-          <p>
-          @attr description
-          
-             A style that may be applied to buttons or other selectable items
-             that should react to pressed and focus states, but that do not
-             have a clear visual border along the edges.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#selectableItemBackground}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:selectableItemBackground
         */
         public static final int Theme_selectableItemBackground = 46;
         /**
-          <p>
-          @attr description
-           Background drawable for borderless standalone items that need focus/pressed states. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#selectableItemBackgroundBorderless}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:selectableItemBackgroundBorderless
         */
         public static final int Theme_selectableItemBackgroundBorderless = 47;
         /**
-          <p>
-          @attr description
-           Default Spinner style. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#spinnerDropDownItemStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:spinnerDropDownItemStyle
         */
         public static final int Theme_spinnerDropDownItemStyle = 41;
         /**
-          <p>
-          @attr description
-           Default Spinner style. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#spinnerStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:spinnerStyle
         */
         public static final int Theme_spinnerStyle = 40;
         /**
-          <p>
-          @attr description
-           Default style for the Switch widget. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#switchStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:switchStyle
         */
         public static final int Theme_switchStyle = 57;
         /**
-          <p>
-          @attr description
-           Text color, typeface, size, and style for the text inside of a popup menu. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#textAppearanceLargePopupMenu}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:textAppearanceLargePopupMenu
         */
         public static final int Theme_textAppearanceLargePopupMenu = 36;
         /**
-          <p>
-          @attr description
-           The preferred TextAppearance for the primary text of list items. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#textAppearanceListItem}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:textAppearanceListItem
         */
         public static final int Theme_textAppearanceListItem = 69;
         /**
-          <p>
-          @attr description
-           The preferred TextAppearance for the primary text of small list items. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#textAppearanceListItemSmall}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:textAppearanceListItemSmall
         */
         public static final int Theme_textAppearanceListItemSmall = 70;
         /**
-          <p>
-          @attr description
-           Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#textAppearanceSearchResultSubtitle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:textAppearanceSearchResultSubtitle
         */
         public static final int Theme_textAppearanceSearchResultSubtitle = 59;
         /**
-          <p>
-          @attr description
-           Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#textAppearanceSearchResultTitle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:textAppearanceSearchResultTitle
         */
         public static final int Theme_textAppearanceSearchResultTitle = 58;
         /**
-          <p>
-          @attr description
-           Text color, typeface, size, and style for small text inside of a popup menu. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#textAppearanceSmallPopupMenu}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:textAppearanceSmallPopupMenu
         */
         public static final int Theme_textAppearanceSmallPopupMenu = 37;
         /**
-          <p>
-          @attr description
-           Text color for urls in search suggestions, used by things like global search 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#textColorSearchUrl}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:textColorSearchUrl
         */
         public static final int Theme_textColorSearchUrl = 60;
         /**
-          <p>
-          @attr description
-           Default Toolar NavigationButtonStyle 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#toolbarNavigationButtonStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:toolbarNavigationButtonStyle
         */
         public static final int Theme_toolbarNavigationButtonStyle = 52;
         /**
-          <p>
-          @attr description
-           Default Toolbar style. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#toolbarStyle}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:toolbarStyle
         */
         public static final int Theme_toolbarStyle = 51;
         /**
-          <p>
-          @attr description
-          
-             Flag indicating whether this window should have an Action Bar
-             in place of the usual title bar.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#windowActionBar}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -6922,18 +5891,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:windowActionBar
         */
         public static final int Theme_windowActionBar = 1;
         /**
-          <p>
-          @attr description
-          
-             Flag indicating whether this window's Action Bar should overlay
-             application content. Does nothing if the window would not
-             have an Action Bar.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#windowActionBarOverlay}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -6942,17 +5905,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:windowActionBarOverlay
         */
         public static final int Theme_windowActionBarOverlay = 2;
         /**
-          <p>
-          @attr description
-          
-             Flag indicating whether action modes should overlay window content
-             when there is not reserved space for their UI (such as an Action Bar).
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#windowActionModeOverlay}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -6961,18 +5919,12 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:windowActionModeOverlay
         */
         public static final int Theme_windowActionModeOverlay = 3;
         /**
-          <p>
-          @attr description
-          
-             A fixed height for the window along the major axis of the screen,
-             that is, when in portrait. Can be either an absolute dimension
-             or a fraction of the screen size in that dimension.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#windowFixedHeightMajor}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -6986,18 +5938,12 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:windowFixedHeightMajor
         */
         public static final int Theme_windowFixedHeightMajor = 7;
         /**
-          <p>
-          @attr description
-          
-             A fixed height for the window along the minor axis of the screen,
-             that is, when in landscape. Can be either an absolute dimension
-             or a fraction of the screen size in that dimension.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#windowFixedHeightMinor}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -7011,18 +5957,12 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:windowFixedHeightMinor
         */
         public static final int Theme_windowFixedHeightMinor = 5;
         /**
-          <p>
-          @attr description
-          
-             A fixed width for the window along the major axis of the screen,
-             that is, when in landscape. Can be either an absolute dimension
-             or a fraction of the screen size in that dimension.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#windowFixedWidthMajor}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -7036,18 +5976,12 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:windowFixedWidthMajor
         */
         public static final int Theme_windowFixedWidthMajor = 4;
         /**
-          <p>
-          @attr description
-          
-             A fixed width for the window along the minor axis of the screen,
-             that is, when in portrait. Can be either an absolute dimension
-             or a fraction of the screen size in that dimension.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#windowFixedWidthMinor}
+          attribute's value can be found in the {@link #Theme} array.
 
 
           <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -7061,7 +5995,6 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:windowFixedWidthMinor
         */
         public static final int Theme_windowFixedWidthMinor = 6;
@@ -7072,31 +6005,20 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td> Allows us to read in the minHeight attr pre-v16 </td></tr>
-           <tr><td><code>{@link #Toolbar_buttonGravity in.codeseed.tubely:buttonGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription in.codeseed.tubely:collapseContentDescription}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_collapseIcon in.codeseed.tubely:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd in.codeseed.tubely:contentInsetEnd}</code></td><td>
-             Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft in.codeseed.tubely:contentInsetLeft}</code></td><td>
-             Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight in.codeseed.tubely:contentInsetRight}</code></td><td>
-             Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart in.codeseed.tubely:contentInsetStart}</code></td><td>
-             Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd in.codeseed.tubely:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft in.codeseed.tubely:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight in.codeseed.tubely:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart in.codeseed.tubely:contentInsetStart}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_maxButtonHeight in.codeseed.tubely:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription in.codeseed.tubely:navigationContentDescription}</code></td><td>
-             Text to set as the content description for the navigation button
-             located at the start of the toolbar.</td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon in.codeseed.tubely:navigationIcon}</code></td><td>
-             Icon drawable to use for the navigation button located at
-             the start of the toolbar.</td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme in.codeseed.tubely:popupTheme}</code></td><td>
-             Reference to a theme that should be used to inflate popups
-             shown by widgets in the toolbar.</td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle in.codeseed.tubely:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription in.codeseed.tubely:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon in.codeseed.tubely:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme in.codeseed.tubely:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle in.codeseed.tubely:subtitle}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_subtitleTextAppearance in.codeseed.tubely:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_theme in.codeseed.tubely:theme}</code></td><td>
-             Specifies a theme override for a view.</td></tr>
+           <tr><td><code>{@link #Toolbar_theme in.codeseed.tubely:theme}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_title in.codeseed.tubely:title}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_titleMarginBottom in.codeseed.tubely:titleMarginBottom}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_titleMarginEnd in.codeseed.tubely:titleMarginEnd}</code></td><td></td></tr>
@@ -7107,7 +6029,7 @@ containing a value of this type.
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
-           @see #Toolbar_buttonGravity
+           @see #Toolbar_collapseContentDescription
            @see #Toolbar_collapseIcon
            @see #Toolbar_contentInsetEnd
            @see #Toolbar_contentInsetLeft
@@ -7143,31 +6065,25 @@ containing a value of this type.
         */
         public static final int Toolbar_android_gravity = 0;
         /**
-          <p>
-          @attr description
-           Allows us to read in the minHeight attr pre-v16 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#minHeight}.
+          <p>This symbol is the offset where the {@link android.R.attr#minHeight}
+          attribute's value can be found in the {@link #Toolbar} array.
           @attr name android:minHeight
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#buttonGravity}
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
-          <p>Must be one or more (separated by '|') of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>top</code></td><td>0x30</td><td> Push object to the top of its container, not changing its size. </td></tr>
-<tr><td><code>bottom</code></td><td>0x50</td><td> Push object to the bottom of its container, not changing its size. </td></tr>
-</table>
-          @attr name in.codeseed.tubely:buttonGravity
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name in.codeseed.tubely:collapseContentDescription
         */
-        public static final int Toolbar_buttonGravity = 18;
+        public static final int Toolbar_collapseContentDescription = 19;
         /**
           <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -7177,14 +6093,10 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name in.codeseed.tubely:collapseIcon
         */
-        public static final int Toolbar_collapseIcon = 19;
+        public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>
-          @attr description
-          
-             Minimum inset for content views within a bar. Navigation buttons and
-             menu views are excepted. Only valid for some themes and configurations.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#contentInsetEnd}
+          attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -7195,17 +6107,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 5;
         /**
-          <p>
-          @attr description
-          
-             Minimum inset for content views within a bar. Navigation buttons and
-             menu views are excepted. Only valid for some themes and configurations.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#contentInsetLeft}
+          attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -7216,17 +6123,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 6;
         /**
-          <p>
-          @attr description
-          
-             Minimum inset for content views within a bar. Navigation buttons and
-             menu views are excepted. Only valid for some themes and configurations.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#contentInsetRight}
+          attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -7237,17 +6139,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 7;
         /**
-          <p>
-          @attr description
-          
-             Minimum inset for content views within a bar. Navigation buttons and
-             menu views are excepted. Only valid for some themes and configurations.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#contentInsetStart}
+          attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -7258,7 +6155,6 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 4;
@@ -7279,12 +6175,8 @@ containing a value of this type.
         */
         public static final int Toolbar_maxButtonHeight = 16;
         /**
-          <p>
-          @attr description
-          
-             Text to set as the content description for the navigation button
-             located at the start of the toolbar.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#navigationContentDescription}
+          attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -7293,44 +6185,32 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>
-          @attr description
-          
-             Icon drawable to use for the navigation button located at
-             the start of the toolbar.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#navigationIcon}
+          attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>
-          @attr description
-          
-             Reference to a theme that should be used to inflate popups
-             shown by widgets in the toolbar.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#popupTheme}
+          attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:popupTheme
         */
         public static final int Toolbar_popupTheme = 8;
         /**
-          <p>
-          @attr description
-           Specifies subtitle text used for navigationMode="normal" 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#subtitle}
+          attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -7339,7 +6219,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:subtitle
         */
         public static final int Toolbar_subtitle = 3;
@@ -7354,19 +6233,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_subtitleTextAppearance = 10;
         /**
-          <p>
-          @attr description
-          
-             Specifies a theme override for a view. When a theme override is set, the
-             view will be inflated using a {@link android.content.Context} themed with
-             the specified resource. During XML inflation, any child views under the
-             view with a theme override will inherit the themed context.
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#theme}
+          attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:theme
         */
         public static final int Toolbar_theme = 17;
@@ -7480,10 +6352,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td>
-             Boolean that controls whether a view can take focus.</td></tr>
-           <tr><td><code>{@link #View_paddingEnd in.codeseed.tubely:paddingEnd}</code></td><td> Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
-           <tr><td><code>{@link #View_paddingStart in.codeseed.tubely:paddingStart}</code></td><td> Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
+           <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd in.codeseed.tubely:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart in.codeseed.tubely:paddingStart}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_paddingEnd
@@ -7493,25 +6364,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x010100da, 0x7f0100c7, 0x7f0100c8
         };
         /**
-          <p>
-          @attr description
-          
-             Boolean that controls whether a view can take focus.  By default the user can not
-             move focus to a view; by setting this attribute to true the view is
-             allowed to take focus.  This value does not impact the behavior of
-             directly calling {@link android.view.View#requestFocus}, which will
-             always request focus regardless of this view.  It only impacts where
-             focus navigation will try to move focus.
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#focusable}.
+          <p>This symbol is the offset where the {@link android.R.attr#focusable}
+          attribute's value can be found in the {@link #View} array.
           @attr name android:focusable
         */
         public static final int View_android_focusable = 0;
         /**
-          <p>
-          @attr description
-           Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#paddingEnd}
+          attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -7522,14 +6382,12 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:paddingEnd
         */
         public static final int View_paddingEnd = 2;
         /**
-          <p>
-          @attr description
-           Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}. 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#paddingStart}
+          attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -7540,7 +6398,6 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:paddingStart
         */
         public static final int View_paddingStart = 1;
@@ -7551,10 +6408,8 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewStubCompat_android_id android:id}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewStubCompat_android_inflatedId android:inflatedId}</code></td><td> Overrides the id of the inflated View with this value.</td></tr>
-           <tr><td><code>{@link #ViewStubCompat_android_layout android:layout}</code></td><td>
-             Supply an identifier for the layout resource to inflate when the ViewStub
-             becomes visible or when forced to do so.</td></tr>
+           <tr><td><code>{@link #ViewStubCompat_android_inflatedId android:inflatedId}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewStubCompat_android_layout android:layout}</code></td><td></td></tr>
            </table>
            @see #ViewStubCompat_android_id
            @see #ViewStubCompat_android_inflatedId
@@ -7570,24 +6425,14 @@ containing a value of this type.
         */
         public static final int ViewStubCompat_android_id = 0;
         /**
-          <p>
-          @attr description
-           Overrides the id of the inflated View with this value. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#inflatedId}.
+          <p>This symbol is the offset where the {@link android.R.attr#inflatedId}
+          attribute's value can be found in the {@link #ViewStubCompat} array.
           @attr name android:inflatedId
         */
         public static final int ViewStubCompat_android_inflatedId = 2;
         /**
-          <p>
-          @attr description
-          
-             Supply an identifier for the layout resource to inflate when the ViewStub
-             becomes visible or when forced to do so. The layout resource must be a
-             valid reference to a layout.
-        
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#layout}.
+          <p>This symbol is the offset where the {@link android.R.attr#layout}
+          attribute's value can be found in the {@link #ViewStubCompat} array.
           @attr name android:layout
         */
         public static final int ViewStubCompat_android_layout = 1;
@@ -7597,10 +6442,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_appTheme in.codeseed.tubely:appTheme}</code></td><td> Theme to be used for the Wallet selector </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_environment in.codeseed.tubely:environment}</code></td><td> Google Wallet environment to use </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode in.codeseed.tubely:fragmentMode}</code></td><td> Fragment mode </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle in.codeseed.tubely:fragmentStyle}</code></td><td> A style resource specifing attributes to customize the look and feel of WalletFragment </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_appTheme in.codeseed.tubely:appTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_environment in.codeseed.tubely:environment}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode in.codeseed.tubely:fragmentMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle in.codeseed.tubely:fragmentStyle}</code></td><td></td></tr>
            </table>
            @see #WalletFragmentOptions_appTheme
            @see #WalletFragmentOptions_environment
@@ -7611,9 +6456,8 @@ containing a value of this type.
             0x7f0100c9, 0x7f0100ca, 0x7f0100cb, 0x7f0100cc
         };
         /**
-          <p>
-          @attr description
-           Theme to be used for the Wallet selector 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#appTheme}
+          attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
           <p>Must be one of the following constant values.</p>
@@ -7625,14 +6469,12 @@ containing a value of this type.
 <tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
 <tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:appTheme
         */
         public static final int WalletFragmentOptions_appTheme = 0;
         /**
-          <p>
-          @attr description
-           Google Wallet environment to use 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#environment}
+          attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
           <p>Must be one of the following constant values.</p>
@@ -7645,14 +6487,12 @@ containing a value of this type.
 <tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
 <tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:environment
         */
         public static final int WalletFragmentOptions_environment = 1;
         /**
-          <p>
-          @attr description
-           Fragment mode 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#fragmentMode}
+          attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
           <p>Must be one of the following constant values.</p>
@@ -7664,19 +6504,16 @@ containing a value of this type.
 <tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
 <tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:fragmentMode
         */
         public static final int WalletFragmentOptions_fragmentMode = 3;
         /**
-          <p>
-          @attr description
-           A style resource specifing attributes to customize the look and feel of WalletFragment 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#fragmentStyle}
+          attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:fragmentStyle
         */
         public static final int WalletFragmentOptions_fragmentStyle = 2;
@@ -7686,19 +6523,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance in.codeseed.tubely:buyButtonAppearance}</code></td><td> Appearance of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight in.codeseed.tubely:buyButtonHeight}</code></td><td>
-             Height of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText in.codeseed.tubely:buyButtonText}</code></td><td> Text on the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth in.codeseed.tubely:buyButtonWidth}</code></td><td>
-             Width of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground in.codeseed.tubely:maskedWalletDetailsBackground}</code></td><td> Masked wallet details background </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground in.codeseed.tubely:maskedWalletDetailsButtonBackground}</code></td><td> "Change" button background in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance in.codeseed.tubely:maskedWalletDetailsButtonTextAppearance}</code></td><td> TextAppearance for the "Change" button in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance in.codeseed.tubely:maskedWalletDetailsHeaderTextAppearance}</code></td><td> TextAppearance for headers describing masked wallet details </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType in.codeseed.tubely:maskedWalletDetailsLogoImageType}</code></td><td> Type of the wallet logo image in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor in.codeseed.tubely:maskedWalletDetailsLogoTextColor}</code></td><td> Color of the Google Wallet logo text in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance in.codeseed.tubely:maskedWalletDetailsTextAppearance}</code></td><td> TextAppearance for masked wallet details </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance in.codeseed.tubely:buyButtonAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight in.codeseed.tubely:buyButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText in.codeseed.tubely:buyButtonText}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth in.codeseed.tubely:buyButtonWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground in.codeseed.tubely:maskedWalletDetailsBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground in.codeseed.tubely:maskedWalletDetailsButtonBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance in.codeseed.tubely:maskedWalletDetailsButtonTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance in.codeseed.tubely:maskedWalletDetailsHeaderTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType in.codeseed.tubely:maskedWalletDetailsLogoImageType}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor in.codeseed.tubely:maskedWalletDetailsLogoTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance in.codeseed.tubely:maskedWalletDetailsTextAppearance}</code></td><td></td></tr>
            </table>
            @see #WalletFragmentStyle_buyButtonAppearance
            @see #WalletFragmentStyle_buyButtonHeight
@@ -7718,9 +6553,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100d5, 0x7f0100d6, 0x7f0100d7
         };
         /**
-          <p>
-          @attr description
-           Appearance of the buy button. Must be one of "classic", "grayscale" and "monochrome" 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#buyButtonAppearance}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be one of the following constant values.</p>
@@ -7733,18 +6567,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:buyButtonAppearance
         */
         public static final int WalletFragmentStyle_buyButtonAppearance = 3;
         /**
-          <p>
-          @attr description
-          
-             Height of the buy button. This includes an 8dp padding (4dp on each side) used for
-             pressed and focused states of the button. The value can be a specific height, e.g.
-             "48dp", or special values "match_parent" and "wrap_content".
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#buyButtonHeight}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -7764,14 +6592,12 @@ containing a value of this type.
 <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:buyButtonHeight
         */
         public static final int WalletFragmentStyle_buyButtonHeight = 0;
         /**
-          <p>
-          @attr description
-           Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now" 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#buyButtonText}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be one of the following constant values.</p>
@@ -7784,18 +6610,12 @@ containing a value of this type.
 <tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
 <tr><td><code>book_now</code></td><td>3</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:buyButtonText
         */
         public static final int WalletFragmentStyle_buyButtonText = 2;
         /**
-          <p>
-          @attr description
-          
-             Width of the buy button. This includes an 8dp padding (4dp on each side) used for
-             pressed and focused states of the button. The value can be a specific width, e.g.
-             "300dp", or special values "match_parent" and "wrap_content".
-        
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#buyButtonWidth}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -7815,66 +6635,56 @@ containing a value of this type.
 <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:buyButtonWidth
         */
         public static final int WalletFragmentStyle_buyButtonWidth = 1;
         /**
-          <p>
-          @attr description
-           Masked wallet details background 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#maskedWalletDetailsBackground}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:maskedWalletDetailsBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
         /**
-          <p>
-          @attr description
-           "Change" button background in masked wallet details view 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#maskedWalletDetailsButtonBackground}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:maskedWalletDetailsButtonBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
         /**
-          <p>
-          @attr description
-           TextAppearance for the "Change" button in masked wallet details view 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#maskedWalletDetailsButtonTextAppearance}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:maskedWalletDetailsButtonTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
         /**
-          <p>
-          @attr description
-           TextAppearance for headers describing masked wallet details 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#maskedWalletDetailsHeaderTextAppearance}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:maskedWalletDetailsHeaderTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
         /**
-          <p>
-          @attr description
-           Type of the wallet logo image in masked wallet details view 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#maskedWalletDetailsLogoImageType}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be one of the following constant values.</p>
@@ -7886,14 +6696,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>classic</code></td><td>1</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:maskedWalletDetailsLogoImageType
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
         /**
-          <p>
-          @attr description
-           Color of the Google Wallet logo text in masked wallet details view 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#maskedWalletDetailsLogoTextColor}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -7903,19 +6711,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:maskedWalletDetailsLogoTextColor
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
         /**
-          <p>
-          @attr description
-           TextAppearance for masked wallet details 
+          <p>This symbol is the offset where the {@link in.codeseed.tubely.R.attr#maskedWalletDetailsTextAppearance}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name in.codeseed.tubely:maskedWalletDetailsTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;

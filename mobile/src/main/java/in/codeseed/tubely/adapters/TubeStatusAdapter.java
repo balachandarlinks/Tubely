@@ -152,6 +152,7 @@ public class TubeStatusAdapter extends RecyclerView.Adapter<TubeStatusAdapter.Vi
             itemView.setOnClickListener(this);
         }
 
+
         @Override
         public void onClick(View view) {
 

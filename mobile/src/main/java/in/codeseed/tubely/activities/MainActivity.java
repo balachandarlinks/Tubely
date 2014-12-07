@@ -1,6 +1,5 @@
 package in.codeseed.tubely.activities;
 
-import android.animation.LayoutTransition;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
@@ -25,11 +24,11 @@ import android.widget.SearchView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 import in.codeseed.tubely.R;
 import in.codeseed.tubely.data.TubelyDBContract;
 import in.codeseed.tubely.fragments.CurrentTubeStatusFragment;
+import in.codeseed.tubely.fragments.NearbyStationsFragment;
 import in.codeseed.tubely.fragments.WeekendTubeStatusFragment;
 import in.codeseed.tubely.service.DownloadTubeStatusIntentService;
 import in.codeseed.tubely.simplexml.allstations.Station;
@@ -38,6 +37,7 @@ import in.codeseed.tubely.util.Util;
 public class MainActivity extends BaseActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
+    private static final int IDLE_PAGE_LIMIT = 2;
 
     private ViewPager tubeStatusViewPager;
     private TubeStatusViewPagerAdapter tubeStatusViewPagerAdapter;
@@ -47,7 +47,6 @@ public class MainActivity extends BaseActivity {
     private MatrixCursor cursor;
     private CursorAdapter cursorAdapter;
     private SearchView searchView;
-    private long timeinMillis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,10 +55,12 @@ public class MainActivity extends BaseActivity {
         injectViews();
 
         tubeStatusViewPager.setAdapter(tubeStatusViewPagerAdapter);
+        tubeStatusViewPager.setOffscreenPageLimit(IDLE_PAGE_LIMIT);
+        tubeStatusViewPager.setCurrentItem(1, true);
 
         DownloadTubeStatusIntentService.startActionLoadStationsData(getApplicationContext());
 
-        if(isStationFacilityNeedToUpdate()){
+        /*if(isStationFacilityNeedToUpdate()){
             if(timeinMillis == 0){
                 DownloadTubeStatusIntentService.startActionTubeStatusCurrent(getApplicationContext());
                 DownloadTubeStatusIntentService.startActionTubeStatusWeekend(getApplicationContext());
@@ -67,11 +68,23 @@ public class MainActivity extends BaseActivity {
             }else{
                 DownloadTubeStatusIntentService.startActionStationFacilities(getApplicationContext());
             }
-        }
+        }*/
+
+
+        if(isStationFacilityNeedToUpdate())
+            DownloadTubeStatusIntentService.startActionStationFacilities(getApplicationContext());
+
 
         if(preferences.getBoolean(Util.SHARED_PREF_FIRST_TIME_WELCOME, true)) {
+            DownloadTubeStatusIntentService.startActionStationFacilities(getApplicationContext());
+            DownloadTubeStatusIntentService.startActionTubeStatusWeekend(getApplicationContext());
+            DownloadTubeStatusIntentService.startActionTubeStatusCurrent(getApplicationContext());
+
             Intent intent = new Intent(getApplicationContext(), WelcomeActivity.class);
             startActivity(intent);
+        }else{
+            DownloadTubeStatusIntentService.startActionTubeStatusWeekend(getApplicationContext());
+            DownloadTubeStatusIntentService.startActionTubeStatusCurrent(getApplicationContext());
         }
 
     }
@@ -79,6 +92,9 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onResume() {
         super.onResume();
+
+        if(searchView != null && searchView.isEnabled())
+            searchView.setIconified(true);
     }
 
     void injectViews(){
@@ -89,15 +105,7 @@ public class MainActivity extends BaseActivity {
     }
 
     boolean isStationFacilityNeedToUpdate(){
-        timeinMillis = preferences.getLong(Util.SHARED_PREF_STATION_FACILITIES, 0);
-        if(timeinMillis == 0)
-            return  true;
-
-        Date lastUpdate = new Date();
-        lastUpdate.setTime(timeinMillis);
-        long hoursDiff = Util.calculateHours(lastUpdate);
-
-        return (hoursDiff > 24) ? true : false;
+        return preferences.getBoolean(Util.SHARED_PREF_STATION_FACILITIES, true);
     }
 
     @Override
@@ -124,15 +132,12 @@ public class MainActivity extends BaseActivity {
         final MenuItem searchItem= menu.findItem(R.id.action_search);
         searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+        searchView.setIconified(true);
+        searchView.setQueryHint("Search a tube station..");
 
         int searchImgId = getResources().getIdentifier("android:id/search_button", null, null);
-        ImageView v = (ImageView) searchView.findViewById(searchImgId);
-        v.setImageResource(R.drawable.search);
-
-        searchView.setQueryHint("Search tube stations");
-        searchView.clearFocus();
-
-        searchView.setLayoutTransition(new LayoutTransition());
+        ImageView searchIcon = (ImageView) searchView.findViewById(searchImgId);
+        searchIcon.setImageResource(R.drawable.search);
 
         cursorAdapter = getSearchSuggestionsAdapter();
         searchView.setSuggestionsAdapter(cursorAdapter);
@@ -169,7 +174,6 @@ public class MainActivity extends BaseActivity {
         });
 
         return true;
-        //return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -228,10 +232,12 @@ public class MainActivity extends BaseActivity {
     private void updateSuggestions(String queryText){
         queryText = queryText.toLowerCase();
         data.clear();
-        for(Station station : Util.getAllStations().getStations()){
-            String temp = station.getName().toLowerCase();
-            if(temp.contains(queryText)){
-                data.add(station.getName());
+        if(Util.getAllStations() != null) {
+            for (Station station : Util.getAllStations().getStations()) {
+                String temp = station.getName().toLowerCase();
+                if (temp.contains(queryText)) {
+                    data.add(station.getName());
+                }
             }
         }
         if(data.isEmpty())
@@ -263,6 +269,7 @@ public class MainActivity extends BaseActivity {
 
         private CurrentTubeStatusFragment currentTubeStatusFragment;
         private WeekendTubeStatusFragment weekendTubeStatusFragment;
+        private NearbyStationsFragment nearbyStationsFragment;
 
         public TubeStatusViewPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -271,9 +278,12 @@ public class MainActivity extends BaseActivity {
         @Override
         public Fragment getItem(int i) {
             if (i == 0) {
+                nearbyStationsFragment = new NearbyStationsFragment();
+                return nearbyStationsFragment;
+            } else if (i == 1) {
                 currentTubeStatusFragment = new CurrentTubeStatusFragment();
                 return currentTubeStatusFragment;
-            } else if (i == 1) {
+            } else if(i == 2){
                 weekendTubeStatusFragment = new WeekendTubeStatusFragment();
                 return weekendTubeStatusFragment;
             }
@@ -282,15 +292,17 @@ public class MainActivity extends BaseActivity {
 
         @Override
         public int getCount() {
-            return 2;
+            return 3;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
             if (position == 0) {
-                return "Live Line Status";
+                return "Nearby Stations Beta";
             } else if (position == 1) {
-                return "Weekend Line Status";
+                return "Live";
+            } else if (position == 2){
+                return "Weekend";
             } else {
                 return "Tubely";
             }

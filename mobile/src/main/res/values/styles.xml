@@ -10,16 +10,51 @@
 
     <style name="Theme.TubeMap" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowActionBarOverlay">true</item>
-        <item name="actionBarStyle">@style/TubeMapActionBar</item>
+        <item name="actionBarStyle">@style/Theme.TubeMap.TubeMapActionBar</item>
     </style>
 
-    <style name="TubeMapActionBar" parent="Widget.AppCompat.Light.ActionBar">
+    <style name="Theme.TubeMap.TubeMapActionBar" parent="Widget.AppCompat.Light.ActionBar">
         <item name="background">@color/tubeMapActionBar</item>
     </style>
+
+    <style name="Theme.DetailedStation" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
 
     <style name="TubelyButton" parent="android:style/Widget.Button">
         <item name="android:background">@drawable/tubely_welcome_button</item>
     </style>
 
+
+    <style name="TubelyLineBatchScroller">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">horizontal</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/lines_batch_scroll_icon</item>
+        <item name="android:scrollbarSize">5dp</item>
+    </style>
+
+    <style name="TubelyNearByStationsScroller">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbarThumbVertical">@drawable/lines_batch_scroll_icon</item>
+        <item name="android:scrollbarSize">5dp</item>
+    </style>
+
+    <style name="RecentStationTextView" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
 
 </resources>

@@ -136,7 +136,7 @@
 			</contactDetails>
 			<servingLines>
 				<servingLine>Circle</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 				<servingLine>Metropolitan</servingLine>
 			</servingLines>
 			<zones>
@@ -213,7 +213,7 @@
 			<servingLines>
 				<servingLine>Circle</servingLine>
 				<servingLine>District</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>1</zone>
@@ -248,7 +248,7 @@
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City</trainName>
+						<trainName> Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -264,7 +264,7 @@
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City</trainName>
+						<trainName> Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -280,7 +280,7 @@
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City</trainName>
+						<trainName> Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -296,7 +296,7 @@
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City</trainName>
+						<trainName> Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -312,7 +312,7 @@
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City</trainName>
+						<trainName> Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -328,7 +328,7 @@
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City</trainName>
+						<trainName> Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -344,7 +344,7 @@
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City</trainName>
+						<trainName> Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -360,7 +360,7 @@
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City</trainName>
+						<trainName> Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -376,7 +376,7 @@
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City</trainName>
+						<trainName> Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -392,7 +392,7 @@
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City</trainName>
+						<trainName> Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -968,7 +968,7 @@
 			<servingLines>
 				<servingLine>Bakerloo</servingLine>
 				<servingLine>Circle</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 				<servingLine>Jubilee</servingLine>
 				<servingLine>Metropolitan</servingLine>
 			</servingLines>
@@ -1001,10 +1001,10 @@
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
 						<pointName>Metropolitan Booking Hall</pointName>
-						<pathDescription> 9, 17 stairs down to platforms 1 &amp; 2 9, 18 stairs down to platforms 3 &amp; 4</pathDescription>
+						<pathDescription> 9, 17 stairs down to platforms 1 and 2 9, 18 stairs down to platforms 3 and 4</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Circle, Hammersmith &amp; City</pointName>
+						<pointName>Circle, Hammersmith and City</pointName>
 						<pathDescription />
 						<path>
 							<heading>EASTBOUND</heading>
@@ -1024,7 +1024,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City</trainName>
+						<trainName> Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1040,7 +1040,7 @@
 					<name>Marylebone Road (South Side) - This Entrance is for Ticket Holders Only</name>
 					<entranceToBookingHall> 14, 8 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Circle, Hammersmith &amp; City</pointName>
+						<pointName>Circle, Hammersmith and City</pointName>
 						<pathDescription />
 						<path>
 							<heading>EASTBOUND</heading>
@@ -1064,7 +1064,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City</trainName>
+						<trainName> Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1165,7 +1165,7 @@
 			</facilities>
 			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<entrance>
-					<name>Balham High Road (East) &amp; Balham Station Road</name>
+					<name>Balham High Road (East) and Balham Station Road</name>
 					<entranceToBookingHall> 21, 10 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName />
@@ -1248,7 +1248,7 @@
 				<servingLine>Circle</servingLine>
 				<servingLine>District</servingLine>
 				<servingLine>Northern</servingLine>
-				<servingLine>Waterloo &amp; City</servingLine>
+				<servingLine>Waterloo and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>1</zone>
@@ -1271,7 +1271,7 @@
 			</facilities>
 			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<entrance>
-					<name>Bank Central Booking Hall Walbrook &amp; Queen Victoria Street (South)</name>
+					<name>Bank Central Booking Hall Walbrook and Queen Victoria Street (South)</name>
 					<entranceToBookingHall> 18 stairs down, subway (ramp down), ramp up, 2 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName>Central Line</pointName>
@@ -1286,7 +1286,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -1314,7 +1314,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City</trainName>
+						<trainName> Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1323,7 +1323,7 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Poultry (South) &amp; Queen Victoria Street (North)</name>
+					<name>Poultry (South) and Queen Victoria Street (North)</name>
 					<entranceToBookingHall> 20 stairs down, subway (ramp down), ramp up, 2 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName> Central Line</pointName>
@@ -1338,7 +1338,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -1366,7 +1366,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City</trainName>
+						<trainName> Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1390,7 +1390,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -1418,7 +1418,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City</trainName>
+						<trainName> Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1427,7 +1427,7 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Princes Street (West) &amp; Mansion House Street</name>
+					<name>Princes Street (West) and Mansion House Street</name>
 					<entranceToBookingHall> 16, 4 stairs down, subway, 2 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName> Central Line</pointName>
@@ -1442,7 +1442,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -1470,7 +1470,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City</trainName>
+						<trainName> Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1479,7 +1479,7 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Princes Street (East) &amp; Threadneedle Street (North)</name>
+					<name>Princes Street (East) and Threadneedle Street (North)</name>
 					<entranceToBookingHall> 9, 11 stairs down, subway, 2 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName> Central Line</pointName>
@@ -1494,7 +1494,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -1522,7 +1522,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City</trainName>
+						<trainName> Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1546,7 +1546,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -1574,7 +1574,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City</trainName>
+						<trainName> Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1598,7 +1598,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -1626,7 +1626,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City</trainName>
+						<trainName> Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1635,7 +1635,7 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Cornhill (South) &amp; Lombard Street (North)</name>
+					<name>Cornhill (South) and Lombard Street (North)</name>
 					<entranceToBookingHall> 16, 6 stairs down, subway, 2 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName> Central Line</pointName>
@@ -1650,7 +1650,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -1678,7 +1678,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City</trainName>
+						<trainName> Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1702,7 +1702,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -1730,7 +1730,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City</trainName>
+						<trainName> Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1754,7 +1754,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -1782,7 +1782,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City</trainName>
+						<trainName> Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1806,7 +1806,7 @@
 						<pathDescription>Lift (or 8 x 14, 6, 10 stairs) down, 21 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>Lift, long subway, or subway to Central Booking Hall then as that entrance (see above)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -1834,7 +1834,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City</trainName>
+						<trainName> Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1866,7 +1866,7 @@
 						<pathDescription>As Northern then 21 stairs up, subway, 13, 8, 16 stairs up</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>As Northern then 21 stairs up, long subway</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -1894,7 +1894,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City</trainName>
+						<trainName> Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1926,7 +1926,7 @@
 						<pathDescription>As Northern then 21 stairs up, subway, 13, 8, 16 stairs up</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>As Northern then 21 stairs up, long subway</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -1954,7 +1954,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City </trainName>
+						<trainName> Waterloo and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -1986,7 +1986,7 @@
 						<pathDescription>As Northern then 21 stairs up, subway, 13, 8, 16 stairs up</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>As Northern then 21 stairs up, long subway</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -2014,7 +2014,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City </trainName>
+						<trainName> Waterloo and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -2046,7 +2046,7 @@
 						<pathDescription>As Northern then 21 stairs up, subway, 13, 8, 16 stairs up</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription> As Northern then 21 stairs up, long subway</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -2074,7 +2074,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City </trainName>
+						<trainName> Waterloo and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -2106,7 +2106,7 @@
 						<pathDescription>As Northern then 21 stairs up, subway, 13, 8, 16 stairs up</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription> As Northern then 21 stairs up, long subway</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -2134,7 +2134,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Waterloo &amp; City </trainName>
+						<trainName> Waterloo and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -2211,7 +2211,7 @@
 			</contactDetails>
 			<servingLines>
 				<servingLine>Circle</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 				<servingLine>Metropolitan</servingLine>
 			</servingLines>
 			<zones>
@@ -2238,7 +2238,7 @@
 					<name>Aldersgate Street</name>
 					<entranceToBookingHall> 11, 12 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Metropolitan, Circle, Hammersmith &amp; City</pointName>
+						<pointName>Metropolitan, Circle, Hammersmith and City</pointName>
 						<pathDescription />
 						<path>
 							<heading>EASTBOUND</heading>
@@ -2266,7 +2266,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City </trainName>
+						<trainName> Hammersmith and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -2316,7 +2316,7 @@
 			<servingLines>
 				<servingLine>Circle</servingLine>
 				<servingLine>District</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>4</zone>
@@ -2355,7 +2355,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName> Hammersmith &amp; City</trainName>
+						<trainName> Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -2468,7 +2468,7 @@
 				<facility name="Lifts">0</facility>
 				<facility name="Escalators">0</facility>
 				<facility name="Gates">5</facility>
-				<facility name="Toilets">yes - male &amp; female coin op</facility>
+				<facility name="Toilets">yes - male and female coin op</facility>
 				<facility name="Photo Booths">0</facility>
 				<facility name="Cash Machines">0</facility>
 				<facility name="Payphones">0 in ticket halls, 0 on platforms</facility>
@@ -2639,7 +2639,7 @@
 				<facility name="Lifts">0</facility>
 				<facility name="Escalators">0</facility>
 				<facility name="Gates">3</facility>
-				<facility name="Toilets">yes M&amp;F (open between 0500-1500)</facility>
+				<facility name="Toilets">yes MandF (open between 0500-1500)</facility>
 				<facility name="Photo Booths">0</facility>
 				<facility name="Cash Machines">0</facility>
 				<facility name="Payphones">1</facility>
@@ -3782,7 +3782,7 @@
 			<servingLines>
 				<servingLine>Circle</servingLine>
 				<servingLine>District</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>2</zone>
@@ -3823,7 +3823,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -4928,9 +4928,9 @@
 			</Placemark>
 		</station>
 		<station id="1000042" type="tube" xmlns="">
-			<name>Chalfont &amp; Latimer</name>
+			<name>Chalfont and Latimer</name>
 			<contactDetails>
-				<address>Chalfont &amp; Latimer Station, London Underground Ltd., Station Approach, Little Chalfont, Amersham, Bucks, HP7 9PR</address>
+				<address>Chalfont and Latimer Station, London Underground Ltd., Station Approach, Little Chalfont, Amersham, Bucks, HP7 9PR</address>
 				<phone>0845 330 9878</phone>
 			</contactDetails>
 			<servingLines>
@@ -5016,9 +5016,9 @@
 			</openingHours>
 			<Placemark>
 				<name>
-					Chalfont &amp; Latimer Station
+					Chalfont and Latimer Station
 				</name>
-				<description>Chalfont &amp; Latimer Station, London Underground Ltd., Station Approach, Little Chalfont, Amersham, Bucks, HP7 9PR</description>
+				<description>Chalfont and Latimer Station, London Underground Ltd., Station Approach, Little Chalfont, Amersham, Bucks, HP7 9PR</description>
 				<Point>
 					<coordinates>
 						-.560534956448776200,51.668025473926090000,0
@@ -6593,7 +6593,7 @@
 				<facility name="Lifts">0</facility>
 				<facility name="Escalators">0</facility>
 				<facility name="Gates">4</facility>
-				<facility name="Toilets">yes M&amp;F (open between 0500-1500)</facility>
+				<facility name="Toilets">yes MandF (open between 0500-1500)</facility>
 				<facility name="Photo Booths">1</facility>
 				<facility name="Cash Machines">0</facility>
 				<facility name="Payphones">1</facility>
@@ -6675,7 +6675,7 @@
 				<facility name="Lifts">0</facility>
 				<facility name="Escalators">0</facility>
 				<facility name="Gates">3</facility>
-				<facility name="Toilets">yes M&amp;F (open between 0500-1500)</facility>
+				<facility name="Toilets">yes MandF (open between 0500-1500)</facility>
 				<facility name="Photo Booths">0</facility>
 				<facility name="Cash Machines">0</facility>
 				<facility name="Payphones">1</facility>
@@ -6953,14 +6953,14 @@
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
 						<pointName>District </pointName>
-						<pathDescription>Platforms 7 &amp; 8: 3, 11, 11 stairs down Platform 9 : 3, 8, 11 stairs down</pathDescription>
+						<pathDescription>Platforms 7 and 8: 3, 11, 11 stairs down Platform 9 : 3, 8, 11 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
 						<trainName>Central </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>District: Platforms 7 &amp; 8</trainName>
+						<trainName>District: Platforms 7 and 8</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -7419,7 +7419,7 @@
 			<servingLines>
 				<servingLine>Circle</servingLine>
 				<servingLine>District</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>3</zone>
@@ -7453,7 +7453,7 @@
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -7696,7 +7696,7 @@
 					<entranceToBookingHall>Level</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName />
-						<pathDescription>Platform 1: 13, 15 stairs down Platforms 2 &amp; 3: 10, 20 stairs down</pathDescription>
+						<pathDescription>Platform 1: 13, 15 stairs down Platforms 2 and 3: 10, 20 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
 						<trainName>Northern </trainName>
@@ -7708,7 +7708,7 @@
 					<entranceToBookingHall>2 steps up, footpath</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName />
-						<pathDescription>Platform 1: 13, 15 stairs down Platforms 2 &amp; 3: 10, 20 stairs down</pathDescription>
+						<pathDescription>Platform 1: 13, 15 stairs down Platforms 2 and 3: 10, 20 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
 						<trainName>Northern </trainName>
@@ -7753,9 +7753,9 @@
 			</Placemark>
 		</station>
 		<station id="1000073" type="tube" xmlns="">
-			<name>Elephant &amp; Castle</name>
+			<name>Elephant and Castle</name>
 			<contactDetails>
-				<address>Elephant &amp; Castle Underground Station, London Underground Ltd., London Rd, London, SE1 6LW</address>
+				<address>Elephant and Castle Underground Station, London Underground Ltd., London Rd, London, SE1 6LW</address>
 				<phone>0845 330 9872</phone>
 			</contactDetails>
 			<servingLines>
@@ -7783,7 +7783,7 @@
 			</facilities>
 			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<entrance>
-					<name>London Road / Elephant &amp; Castle (North Side)</name>
+					<name>London Road / Elephant and Castle (North Side)</name>
 					<entranceToBookingHall>Level</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName>Bakerloo </pointName>
@@ -7811,7 +7811,7 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Elephant &amp; Castle (South Side)</name>
+					<name>Elephant and Castle (South Side)</name>
 					<entranceToBookingHall>Level</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName>Bakerloo </pointName>
@@ -7889,9 +7889,9 @@
 			</openingHours>
 			<Placemark>
 				<name>
-					Elephant &amp; Castle Station
+					Elephant and Castle Station
 				</name>
-				<description>Elephant &amp; Castle Underground Station, London Underground Ltd., London Rd, London, SE1 6LW</description>
+				<description>Elephant and Castle Underground Station, London Underground Ltd., London Rd, London, SE1 6LW</description>
 				<Point>
 					<coordinates>
 						-.100729603883341970,51.495777047270740000,0
@@ -7917,7 +7917,7 @@
 				<facility name="Lifts">0</facility>
 				<facility name="Escalators">0</facility>
 				<facility name="Gates">4</facility>
-				<facility name="Toilets">yes M&amp;F (open between 0500-1500)</facility>
+				<facility name="Toilets">yes MandF (open between 0500-1500)</facility>
 				<facility name="Photo Booths">0</facility>
 				<facility name="Cash Machines">0</facility>
 				<facility name="Payphones">1</facility>
@@ -8406,7 +8406,7 @@
 			</contactDetails>
 			<servingLines>
 				<servingLine>Circle</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 				<servingLine>Metropolitan</servingLine>
 			</servingLines>
 			<zones>
@@ -8447,7 +8447,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -8469,7 +8469,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -8584,7 +8584,7 @@
 			</contactDetails>
 			<servingLines>
 				<servingLine>Circle</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 				<servingLine>Metropolitan</servingLine>
 			</servingLines>
 			<zones>
@@ -8611,7 +8611,7 @@
 					<name>Cowcross Street</name>
 					<entranceToBookingHall>1 step up</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Circle, Hammersmith &amp; City and Metropolitan</pointName>
+						<pointName>Circle, Hammersmith and City and Metropolitan</pointName>
 						<pathDescription>12, 16 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -8631,7 +8631,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -8643,7 +8643,7 @@
 					<name>Turnmill Street</name>
 					<entranceToBookingHall>No access to booking hall</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Circle, Hammersmith &amp; City and Metropolitan </pointName>
+						<pointName>Circle, Hammersmith and City and Metropolitan </pointName>
 						<pathDescription />
 						<path>
 							<heading>EASTBOUND</heading>
@@ -8655,7 +8655,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -9471,7 +9471,7 @@
 				<phone>0845 330 9878</phone>
 			</contactDetails>
 			<servingLines>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>2</zone>
@@ -9508,7 +9508,7 @@
 						</path>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -9526,7 +9526,7 @@
 						</path>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -9714,7 +9714,7 @@
 			</contactDetails>
 			<servingLines>
 				<servingLine>Circle</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 				<servingLine>Metropolitan</servingLine>
 			</servingLines>
 			<zones>
@@ -9755,7 +9755,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -9781,7 +9781,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -10824,9 +10824,9 @@
 			</Placemark>
 		</station>
 		<station id="1000108" type="tube" xmlns="">
-			<name>Highbury &amp; Islington</name>
+			<name>Highbury and Islington</name>
 			<contactDetails>
-				<address>Highbury &amp; Islington Underground Station, London Underground Ltd., Holloway Rd, London, N5 1RA</address>
+				<address>Highbury and Islington Underground Station, London Underground Ltd., Holloway Rd, London, N5 1RA</address>
 				<phone>0845 330 9877</phone>
 			</contactDetails>
 			<servingLines>
@@ -10906,9 +10906,9 @@
 			</openingHours>
 			<Placemark>
 				<name>
-					Highbury &amp; Islington Station
+					Highbury and Islington Station
 				</name>
-				<description>Highbury &amp; Islington Underground Station, London Underground Ltd., Holloway Rd, London, N5 1RA</description>
+				<description>Highbury and Islington Underground Station, London Underground Ltd., Holloway Rd, London, N5 1RA</description>
 				<Point>
 					<coordinates>
 						-.103964238784979300,51.546229491737870000,0
@@ -11447,7 +11447,7 @@
 				<facility name="Lifts">0</facility>
 				<facility name="Escalators">0</facility>
 				<facility name="Gates">4</facility>
-				<facility name="Toilets">yes M&amp;F (open between 0500-1500)</facility>
+				<facility name="Toilets">yes MandF (open between 0500-1500)</facility>
 				<facility name="Photo Booths">1</facility>
 				<facility name="Cash Machines">0</facility>
 				<facility name="Payphones">1</facility>
@@ -12557,7 +12557,7 @@
 				<phone>0845 330 9878</phone>
 			</contactDetails>
 			<servingLines>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>2</zone>
@@ -12593,7 +12593,7 @@
 						</path>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -12797,7 +12797,7 @@
 				<phone>0845 330 9878</phone>
 			</contactDetails>
 			<servingLines>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>2</zone>
@@ -12828,7 +12828,7 @@
 						<pathDescription> 11, 9, 20 stairs up</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -13206,7 +13206,7 @@
 			<servingLines>
 				<servingLine>Central</servingLine>
 				<servingLine>Circle</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 				<servingLine>Metropolitan</servingLine>
 			</servingLines>
 			<zones>
@@ -13233,7 +13233,7 @@
 					<name>Bishopsgate (East Side)</name>
 					<entranceToBookingHall>16, 16 stairs down, steep ramp down, steep ramp up, 7 stairs up, to National Rail Station, lift (or 10 stairs) down</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Circle, Hammersmith &amp; City and Metropolitan </pointName>
+						<pointName>Circle, Hammersmith and City and Metropolitan </pointName>
 						<pathDescription />
 						<path>
 							<heading>EASTBOUND</heading>
@@ -13257,7 +13257,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -13269,7 +13269,7 @@
 					<name>Bishopsgate (West Side)</name>
 					<entranceToBookingHall>Walkway, lift (or 15, 15 stairs) down, or escalator (or 15, 15 stairs) down, to National Rail Station, lift (or 10 stairs) down</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Circle, Hammersmith &amp; City and Metropolitan </pointName>
+						<pointName>Circle, Hammersmith and City and Metropolitan </pointName>
 						<pathDescription />
 						<path>
 							<heading>EASTBOUND</heading>
@@ -13293,7 +13293,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -13305,7 +13305,7 @@
 					<name>Blomfield Street / Eldon Street (Octagon Centre)</name>
 					<entranceToBookingHall>Level to National Rail Station, lift (or 10 stairs) down</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Circle, Hammersmith &amp; City and Metropolitan </pointName>
+						<pointName>Circle, Hammersmith and City and Metropolitan </pointName>
 						<pathDescription />
 						<path>
 							<heading>EASTBOUND</heading>
@@ -13329,7 +13329,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -13341,7 +13341,7 @@
 					<name>Old Broad Street</name>
 					<entranceToBookingHall>Level</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Circle, Hammersmith &amp; City and Metropolitan </pointName>
+						<pointName>Circle, Hammersmith and City and Metropolitan </pointName>
 						<pathDescription />
 						<path>
 							<heading>EASTBOUND</heading>
@@ -13365,7 +13365,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -13377,7 +13377,7 @@
 					<name>Liverpool Street (South Side) The Arcade</name>
 					<entranceToBookingHall>4, 14 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Circle, Hammersmith &amp; City and Metropolitan </pointName>
+						<pointName>Circle, Hammersmith and City and Metropolitan </pointName>
 						<pathDescription />
 						<path>
 							<heading>EASTBOUND</heading>
@@ -13401,7 +13401,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -13413,7 +13413,7 @@
 					<name>Bus Station / Liverpool Street (North Side)</name>
 					<entranceToBookingHall> Lift (or escalator (or 12, 16 stairs) down, 10 stairs) down </entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Circle, Hammersmith &amp; City and Metropolitan </pointName>
+						<pointName>Circle, Hammersmith and City and Metropolitan </pointName>
 						<pathDescription />
 						<path>
 							<heading>EASTBOUND</heading>
@@ -13437,7 +13437,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -14462,7 +14462,7 @@
 				<servingLine>Central</servingLine>
 				<servingLine>Circle</servingLine>
 				<servingLine>District</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>2</zone>
@@ -14506,7 +14506,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -14660,7 +14660,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below) </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -14688,7 +14688,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -14697,7 +14697,7 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Princes Street (West) &amp; Mansion House Street</name>
+					<name>Princes Street (West) and Mansion House Street</name>
 					<entranceToBookingHall>16, 4 stairs down, subway, 2 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName>Central Line</pointName>
@@ -14712,7 +14712,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below) </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -14740,7 +14740,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -14749,7 +14749,7 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Princes Street (East) &amp; Threadneedle Street (North)</name>
+					<name>Princes Street (East) and Threadneedle Street (North)</name>
 					<entranceToBookingHall>9, 11 stairs down, subway, 2 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName>Central Line</pointName>
@@ -14764,7 +14764,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below) </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -14792,7 +14792,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -14816,7 +14816,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below) </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -14844,7 +14844,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -14868,7 +14868,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below) </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -14896,7 +14896,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -14905,7 +14905,7 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Cornhill (South) &amp; Lombard Street (North)</name>
+					<name>Cornhill (South) and Lombard Street (North)</name>
 					<entranceToBookingHall>16, 6 stairs down, subway, 2 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName>Central Line</pointName>
@@ -14920,7 +14920,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below) </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -14948,7 +14948,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -14972,7 +14972,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below) </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15000,7 +15000,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15009,7 +15009,7 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Bank Central Booking Hall Walbrook &amp; Queen Victoria Street (South)</name>
+					<name>Bank Central Booking Hall Walbrook and Queen Victoria Street (South)</name>
 					<entranceToBookingHall>18 stairs down, subway (ramp down), ramp up, 2 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName>Central Line</pointName>
@@ -15024,7 +15024,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below) </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15052,7 +15052,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15061,7 +15061,7 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Poultry (South) &amp; Queen Victoria Street (North)</name>
+					<name>Poultry (South) and Queen Victoria Street (North)</name>
 					<entranceToBookingHall>20 stairs down, subway (ramp down), ramp up, 2 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName>Central Line</pointName>
@@ -15076,7 +15076,7 @@
 						<pathDescription>Escalator down along the Central Line platforms, 16, 8, 13, stairs down, subway, 21 stairs down, or subway to Northern Booking Hall then as that entrance (see below) </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>2 stairs up, steep ramp down, then Travalator (or 8 x 5, 11 stairs down with a long ramp down)</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15104,7 +15104,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15128,7 +15128,7 @@
 						<pathDescription>Lift (or 8 x 14, 6, 10 stairs) down, 21 stairs down </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>Lift, long subway, or subway to Central Booking Hall then as that entrance (see above) </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15156,7 +15156,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15180,7 +15180,7 @@
 						<pathDescription>Lift (or 8 x 14, 6, 10 stairs) down, 21 stairs down </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>Lift, long subway, or subway to Central Booking Hall then as that entrance (see above) </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15208,7 +15208,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15240,7 +15240,7 @@
 						<pathDescription>As Northern then 21 stairs up, subway, 13, 8, 16 stairs up</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>As Northern then 21 stairs up, long subway</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15268,7 +15268,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15300,7 +15300,7 @@
 						<pathDescription>As Northern then 21 stairs up, subway, 13, 8, 16 stairs up</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>As Northern then 21 stairs up, long subway</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15328,7 +15328,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15360,7 +15360,7 @@
 						<pathDescription>As Northern then 21 stairs up, subway, 13, 8, 16 stairs up</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City</pointName>
+						<pointName>Waterloo and City</pointName>
 						<pathDescription>As Northern then 21 stairs up, long subway</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15388,7 +15388,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15420,7 +15420,7 @@
 						<pathDescription>As Northern then 21 stairs up, subway, 13, 8, 16 stairs up</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City </pointName>
+						<pointName>Waterloo and City </pointName>
 						<pathDescription>As Northern then 21 stairs up, long subway</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15448,7 +15448,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15480,7 +15480,7 @@
 						<pathDescription>As Northern then 21 stairs up, subway, 13, 8, 16 stairs up</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City </pointName>
+						<pointName>Waterloo and City </pointName>
 						<pathDescription>As Northern then 21 stairs up, long subway</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15508,7 +15508,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15624,7 +15624,7 @@
 			</contactDetails>
 			<servingLines>
 				<servingLine>Circle</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 				<servingLine>Metropolitan</servingLine>
 				<servingLine>Northern</servingLine>
 			</servingLines>
@@ -15652,11 +15652,11 @@
 					<name>Moorfields (East Side)</name>
 					<entranceToBookingHall>2 steps up, through Arcade, 8, 9, 8 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Eastbound Circle, Hammersmith &amp; City, Metropolitan</pointName>
+						<pointName>Eastbound Circle, Hammersmith and City, Metropolitan</pointName>
 						<pathDescription>Subway </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Westbound Circle, Hammersmith &amp; City, Metropolitan and Thameslink</pointName>
+						<pointName>Westbound Circle, Hammersmith and City, Metropolitan and Thameslink</pointName>
 						<pathDescription>Subway, 14, 17 stairs down, subway, 8, 9, 10 stairs up </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15672,7 +15672,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15688,11 +15688,11 @@
 					<name>Moorgate (West Side)</name>
 					<entranceToBookingHall>Through Arcade, 8, 9, 8 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Eastbound Circle, Hammersmith &amp; City, Metropolitan</pointName>
+						<pointName>Eastbound Circle, Hammersmith and City, Metropolitan</pointName>
 						<pathDescription>Subway </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Westbound Circle, Hammersmith &amp; City, Metropolitan and Thameslink</pointName>
+						<pointName>Westbound Circle, Hammersmith and City, Metropolitan and Thameslink</pointName>
 						<pathDescription>Subway, 14, 17 stairs down, subway, 8, 9, 10 stairs up </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15708,7 +15708,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15724,11 +15724,11 @@
 					<name>Moorgate (East Side)</name>
 					<entranceToBookingHall>13, 6, 10 stairs down, subway</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Eastbound Circle, Hammersmith &amp; City, Metropolitan</pointName>
+						<pointName>Eastbound Circle, Hammersmith and City, Metropolitan</pointName>
 						<pathDescription>Subway </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Westbound Circle, Hammersmith &amp; City, Metropolitan and Thameslink</pointName>
+						<pointName>Westbound Circle, Hammersmith and City, Metropolitan and Thameslink</pointName>
 						<pathDescription>Subway, 14, 17 stairs down, subway, 8, 9, 10 stairs up </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15744,7 +15744,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15760,11 +15760,11 @@
 					<name>Moorfields (West Side)</name>
 					<entranceToBookingHall>Level</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Eastbound Circle, Hammersmith &amp; City and Metropolitan and Thameslink </pointName>
+						<pointName>Eastbound Circle, Hammersmith and City and Metropolitan and Thameslink </pointName>
 						<pathDescription>7, 16, 7 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Westbound Circle, Hammersmith &amp; City and Metropolitan and Thameslink</pointName>
+						<pointName>Westbound Circle, Hammersmith and City and Metropolitan and Thameslink</pointName>
 						<pathDescription>11, 15, 4 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -15780,7 +15780,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -15860,7 +15860,7 @@
 					<entranceToBookingHall>Level</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName />
-						<pathDescription>Platform 1: 8, 20 stairs down Platforms 2 &amp; 3: 15, 15 stairs down Platforms 4 &amp; 5: 18, 11 stairs down</pathDescription>
+						<pathDescription>Platform 1: 8, 20 stairs down Platforms 2 and 3: 15, 15 stairs down Platforms 4 and 5: 18, 11 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
 						<trainName>Northern </trainName>
@@ -17792,7 +17792,7 @@
 				<servingLine>Bakerloo</servingLine>
 				<servingLine>Circle</servingLine>
 				<servingLine>District</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>1</zone>
@@ -17834,7 +17834,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -17866,7 +17866,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -17898,7 +17898,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -17906,7 +17906,7 @@
 					<name>National Rail Station (Platform 8)</name>
 					<entranceToBookingHall>13, 13 stairs up, footbridge</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Hammersmith &amp; City Only </pointName>
+						<pointName>Hammersmith and City Only </pointName>
 						<pathDescription>14, 14 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
@@ -17922,7 +17922,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -17946,7 +17946,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -17970,7 +17970,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -17994,7 +17994,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -18018,7 +18018,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -18865,7 +18865,7 @@
 			<servingLines>
 				<servingLine>Circle</servingLine>
 				<servingLine>District</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>3</zone>
@@ -18905,7 +18905,7 @@
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -19868,7 +19868,7 @@
 				<phone>0845 330 9878</phone>
 			</contactDetails>
 			<servingLines>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>2</zone>
@@ -19899,7 +19899,7 @@
 						<pathDescription>15, 20 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -21951,7 +21951,7 @@
 			<servingLines>
 				<servingLine>Circle</servingLine>
 				<servingLine>District</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>2</zone>
@@ -21991,7 +21991,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -23368,9 +23368,9 @@
 			</Placemark>
 		</station>
 		<station id="1000237" type="tube" xmlns="">
-			<name>Totteridge &amp; Whetstone</name>
+			<name>Totteridge and Whetstone</name>
 			<contactDetails>
-				<address>Totteridge &amp; Whetstone Station, London Underground Ltd., Totteridge Lane, London, N20 9QP</address>
+				<address>Totteridge and Whetstone Station, London Underground Ltd., Totteridge Lane, London, N20 9QP</address>
 				<phone>0845 330 9879</phone>
 			</contactDetails>
 			<servingLines>
@@ -23429,9 +23429,9 @@
 			</openingHours>
 			<Placemark>
 				<name>
-					Totteridge &amp; Whetstone Station
+					Totteridge and Whetstone Station
 				</name>
-				<description>Totteridge &amp; Whetstone Station, London Underground Ltd., Totteridge Lane, London, N20 9QP</description>
+				<description>Totteridge and Whetstone Station, London Underground Ltd., Totteridge Lane, London, N20 9QP</description>
 				<Point>
 					<coordinates>
 						-.179261212923982800,51.630207704762380000,0
@@ -23912,7 +23912,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>District Westbound Platforms 3 &amp; 5</trainName>
+						<trainName>District Westbound Platforms 3 and 5</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -23952,7 +23952,7 @@
 				<facility name="Lifts">0</facility>
 				<facility name="Escalators">0</facility>
 				<facility name="Gates">3</facility>
-				<facility name="Toilets">yes M&amp;F (open between 0500-1500)</facility>
+				<facility name="Toilets">yes MandF (open between 0500-1500)</facility>
 				<facility name="Photo Booths">1</facility>
 				<facility name="Cash Machines">0</facility>
 				<facility name="Payphones">1</facility>
@@ -24076,7 +24076,7 @@
 			<servingLines>
 				<servingLine>Circle</servingLine>
 				<servingLine>District</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>3</zone>
@@ -24110,7 +24110,7 @@
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -25162,7 +25162,7 @@
 				<servingLine>Bakerloo</servingLine>
 				<servingLine>Jubilee</servingLine>
 				<servingLine>Northern</servingLine>
-				<servingLine>Waterloo &amp; City</servingLine>
+				<servingLine>Waterloo and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>1</zone>
@@ -25204,7 +25204,7 @@
 						<pathDescription>Escalator down, subway, 20 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City </pointName>
+						<pointName>Waterloo and City </pointName>
 						<pathDescription> 6 (or 5) stairs down, subway, ramp (or 14, 14 stairs) down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
@@ -25220,7 +25220,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -25244,7 +25244,7 @@
 						<pathDescription>Escalator down, subway, 20 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City </pointName>
+						<pointName>Waterloo and City </pointName>
 						<pathDescription> 6 (or 5) stairs down, subway, ramp (or 14, 14 stairs) down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
@@ -25260,7 +25260,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -25284,7 +25284,7 @@
 						<pathDescription>Escalator down, subway, 20 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City </pointName>
+						<pointName>Waterloo and City </pointName>
 						<pathDescription> 6 (or 5) stairs down, subway, ramp (or 14, 14 stairs) down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
@@ -25300,7 +25300,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -25324,7 +25324,7 @@
 						<pathDescription>Escalator down, subway, 20 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City </pointName>
+						<pointName>Waterloo and City </pointName>
 						<pathDescription> 6 (or 5) stairs down, subway, ramp (or 14, 14 stairs) down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
@@ -25340,7 +25340,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -25364,7 +25364,7 @@
 						<pathDescription>Escalator (or 3, 5 x 17, 11 stairs) down, subway, 20 stairs down </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City </pointName>
+						<pointName>Waterloo and City </pointName>
 						<pathDescription>Escalator (or 3, 5 x 17, 11 stairs) down, subway, escalator up, through barrier, 6 (or 5) stairs down, subway, ramp (or 14, 14 stairs) down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
@@ -25380,7 +25380,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -25404,7 +25404,7 @@
 						<pathDescription>Escalator (or 3, 5 x 17, 11 stairs) down, subway, 20 stairs down </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City </pointName>
+						<pointName>Waterloo and City </pointName>
 						<pathDescription>Escalator (or 3, 5 x 17, 11 stairs) down, subway, escalator up, through barrier, 6 (or 5) stairs down, subway, ramp (or 14, 14 stairs) down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
@@ -25420,7 +25420,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -25444,7 +25444,7 @@
 						<pathDescription>Escalator (or 3, 5 x 17, 11 stairs) down, subway, 20 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
-						<pointName>Waterloo &amp; City </pointName>
+						<pointName>Waterloo and City </pointName>
 						<pathDescription>Escalator (or 3, 5 x 17, 11 stairs) down, subway, escalator up, through barrier, 6 (or 5) stairs down, subway, ramp (or 14, 14 stairs) down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
@@ -25460,7 +25460,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -25484,7 +25484,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -25508,14 +25508,14 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Waterloo &amp; City</trainName>
+						<trainName>Waterloo and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
 			</entrances>
 			<openingHours>
 				<openingHour>
-					<entrance>Main &amp; Auxiliary Window</entrance>
+					<entrance>Main and Auxiliary Window</entrance>
 					<timeIntervals type="Mon-Fri">
 						<timeInterval>
 							<from>06:00</from>
@@ -26071,7 +26071,7 @@
 			<servingLines>
 				<servingLine>Circle</servingLine>
 				<servingLine>District</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 				<servingLine>Jubilee</servingLine>
 			</servingLines>
 			<zones>
@@ -26099,7 +26099,7 @@
 					<name>Manor Road</name>
 					<entranceToBookingHall>Level</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>District / Hammersmith &amp; City </pointName>
+						<pointName>District / Hammersmith and City </pointName>
 						<pathDescription>Lift (or 14, 14, 14 stairs) up</pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -26119,7 +26119,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -26490,7 +26490,7 @@
 				<phone>0845 330 9878</phone>
 			</contactDetails>
 			<servingLines>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>2</zone>
@@ -26527,7 +26527,7 @@
 						</path>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -26889,7 +26889,7 @@
 				<servingLine>Circle</servingLine>
 				<servingLine>District</servingLine>
 				<servingLine>East London</servingLine>
-				<servingLine>Hammersmith &amp; City</servingLine>
+				<servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 				<zone>2</zone>
@@ -26915,7 +26915,7 @@
 					<name>Whitechapel Road</name>
 					<entranceToBookingHall>7 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>District and Hammersmith &amp; City</pointName>
+						<pointName>District and Hammersmith and City</pointName>
 						<pathDescription />
 						<path>
 							<heading>EASTBOUND</heading>
@@ -26943,7 +26943,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -27709,7 +27709,7 @@
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -27753,7 +27753,7 @@
 			</Placemark>
 		</station>
 		<station id="1002025" type="dlr" xmlns="">
-			<name>Crossharbour &amp; London Arena</name>
+			<name>Crossharbour and London Arena</name>
 			<contactDetails>
 				<address>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -27785,7 +27785,7 @@
 			</openingHours>
 			<Placemark>
 				<name>
-					Crossharbour &amp; London Arena Station
+					Crossharbour and London Arena Station
 				</name>
 				<description>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -27839,7 +27839,7 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>ExCel West Park &amp; Ride</name>
+					<name>ExCel West Park and Ride</name>
 					<entranceToBookingHall />
 					<bookingHallToPlatform>
 						<pointName>Dlocklands </pointName>
@@ -28259,7 +28259,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -28279,7 +28279,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 				</entrance>
@@ -28578,14 +28578,14 @@
 			</facilities>
 			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<entrance>
-					<name>Hammersmith Broadway (South Side) (District &amp; Piccadilly)</name>
+					<name>Hammersmith Broadway (South Side) (District and Piccadilly)</name>
 					<entranceToBookingHall> Level </entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName />
 						<pathDescription>Walkway, lift (or 13, 13 stairs) down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -28602,14 +28602,14 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Queen Caroline Street (East Side) (District &amp; Piccadilly)</name>
+					<name>Queen Caroline Street (East Side) (District and Piccadilly)</name>
 					<entranceToBookingHall>Level</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName />
 						<pathDescription>Walkway, lift (or 13, 13 stairs) down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -28626,14 +28626,14 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Queen Caroline Street / Hammersmith Bridge Road (District &amp; Piccadilly)</name>
+					<name>Queen Caroline Street / Hammersmith Bridge Road (District and Piccadilly)</name>
 					<entranceToBookingHall>13, 13 stairs down, subway, 8, 20 stairs up, walkway</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName />
 						<pathDescription>Walkway, lift (or 13, 13 stairs) down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -28650,14 +28650,14 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Hammersmith Bridge Road (North Side) (District &amp; Piccadilly)</name>
+					<name>Hammersmith Bridge Road (North Side) (District and Piccadilly)</name>
 					<entranceToBookingHall>13, 14 stairs down, subway, 8, 20 stairs up, walkway</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName />
 						<pathDescription>Walkway, lift (or 13, 13 stairs) down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -28674,14 +28674,14 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Butterwick Bus and Coach Station (District &amp; Piccadilly)</name>
+					<name>Butterwick Bus and Coach Station (District and Piccadilly)</name>
 					<entranceToBookingHall>Level</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName />
 						<pathDescription>14, 13 stairs down</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -28698,14 +28698,14 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Beadon Road (Hammersmith &amp; City)</name>
+					<name>Beadon Road (Hammersmith and City)</name>
 					<entranceToBookingHall>Level</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName />
 						<pathDescription>Level</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -28722,14 +28722,14 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Hammersmith Broadway (North Side) (Hammersmith &amp; City)</name>
+					<name>Hammersmith Broadway (North Side) (Hammersmith and City)</name>
 					<entranceToBookingHall>Level</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName />
 						<pathDescription>Level</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City</trainName>
+						<trainName>Hammersmith and City</trainName>
 						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -28785,7 +28785,7 @@
 			</Placemark>
 		</station>
 		<station id="1000096" type="tube" xmlns="">
-			<name>Hammersmith (D &amp; P)</name>
+			<name>Hammersmith (District and Picc)</name>
 			<contactDetails>
 				<address>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -28845,7 +28845,7 @@
 			</openingHours>
 			<Placemark>
 				<name>
-					Hammersmith (D &amp; P) Station
+					Hammersmith (District and Picc) Station
 				</name>
 				<description>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -28914,7 +28914,7 @@
 			</Placemark>
 		</station>
 		<station id="1000101" type="tube" xmlns="">
-			<name>Harrow &amp; Wealdstone</name>
+			<name>Harrow and Wealdstone</name>
 			<contactDetails>
 				<address>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -28973,7 +28973,7 @@
 			</openingHours>
 			<Placemark>
 				<name>
-					Harrow &amp; Wealdstone Station
+					Harrow and Wealdstone Station
 				</name>
 				<description>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -29082,7 +29082,7 @@
 			</Placemark>
 		</station>
 		<station id="1000105" type="tube" xmlns="">
-			<name>Heathrow Terminals 1, 2, 3</name>
+			<name>Heathrow Terminals 123</name>
 			<contactDetails>
 				<address>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -29183,7 +29183,7 @@
 			</openingHours>
 			<Placemark>
 				<name>
-					Heathrow Terminals 1, 2, 3 Station
+					Heathrow Terminals 123 Station
 				</name>
 				<description>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -29519,7 +29519,7 @@
 			</Placemark>
 		</station>
 		<station id="1000129" type="tube" xmlns="">
-			<name>King's Cross St. Pancras</name>
+			<name>Kings Cross St Pancras</name>
 			<contactDetails>
 				<address>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -29538,7 +29538,7 @@
 					<name>Euston Road / King's Cross Forecourt</name>
 					<entranceToBookingHall>Metropolitan Line Booking Hall () </entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Metropolitan, Circle, Hammersmith &amp; City</pointName>
+						<pointName>Metropolitan, Circle, Hammersmith and City</pointName>
 						<pathDescription>Level () Victoria Line Booking Hall () </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -29570,7 +29570,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City </trainName>
+						<trainName>Hammersmith and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -29594,7 +29594,7 @@
 					<name>Pancras Road</name>
 					<entranceToBookingHall>16, 3 stairs down, subway then Subway, 11, 11 stairs down to Metropolitan Line Booking Hall or 7 stairs down to Northern, Piccadilly and Victoria Line Booking Hall</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Metropolitan, Circle, Hammersmith &amp; City</pointName>
+						<pointName>Metropolitan, Circle, Hammersmith and City</pointName>
 						<pathDescription>Level () Victoria Line Booking Hall () </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -29626,7 +29626,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City </trainName>
+						<trainName>Hammersmith and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -29650,7 +29650,7 @@
 					<name>King's Cross National Rail Station ( Suburban Platforms 9 - 11 )</name>
 					<entranceToBookingHall>16 stairs down, subway, 5 stairs down</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Metropolitan, Circle, Hammersmith &amp; City</pointName>
+						<pointName>Metropolitan, Circle, Hammersmith and City</pointName>
 						<pathDescription>Level () Victoria Line Booking Hall () </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -29682,7 +29682,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City </trainName>
+						<trainName>Hammersmith and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -29706,7 +29706,7 @@
 					<name>St. Pancras National Rail Station ( Platforms 1 - 4 )</name>
 					<entranceToBookingHall>7, 10, 12 stairs down, subway, 6, 13 stairs down, ramp down, ramp up, subway, 5 stairs up</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Metropolitan, Circle, Hammersmith &amp; City</pointName>
+						<pointName>Metropolitan, Circle, Hammersmith and City</pointName>
 						<pathDescription>Level () Victoria Line Booking Hall () </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -29738,7 +29738,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City </trainName>
+						<trainName>Hammersmith and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -29762,7 +29762,7 @@
 					<name>St. Pancras National Rail Station ( Platforms 5 - 7 )</name>
 					<entranceToBookingHall>7, 10, 11, 11, 6, 13 stairs down, ramp down, ramp up, subway, 5 stairs </entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Metropolitan, Circle, Hammersmith &amp; City</pointName>
+						<pointName>Metropolitan, Circle, Hammersmith and City</pointName>
 						<pathDescription>Level () Victoria Line Booking Hall () </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -29794,7 +29794,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City </trainName>
+						<trainName>Hammersmith and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -29818,7 +29818,7 @@
 					<name>Euston Road / Crestfield Street</name>
 					<entranceToBookingHall>19, 5 stairs down, subway then Subway, 11, 11 stairs down to Metropolitan Line Booking Hall or 7 stairs down to Northern, Piccadilly and Victoria Line Booking Hall</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Metropolitan, Circle, Hammersmith &amp; City</pointName>
+						<pointName>Metropolitan, Circle, Hammersmith and City</pointName>
 						<pathDescription>Level () Victoria Line Booking Hall () </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -29850,7 +29850,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City </trainName>
+						<trainName>Hammersmith and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -29874,7 +29874,7 @@
 					<name>Euston Road / Belgrove Street</name>
 					<entranceToBookingHall>20, 5 stairs down, subway then Subway, 11, 11 stairs down to Metropolitan Line Booking Hall or 7 stairs down to Northern, Piccadilly and Victoria Line Booking Hall</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Metropolitan, Circle, Hammersmith &amp; City</pointName>
+						<pointName>Metropolitan, Circle, Hammersmith and City</pointName>
 						<pathDescription>Level () Victoria Line Booking Hall () </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -29906,7 +29906,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City </trainName>
+						<trainName>Hammersmith and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -29930,7 +29930,7 @@
 					<name>Euston Road / Pancras Road</name>
 					<entranceToBookingHall>18, 3 stairs down, subway then Subway, 11, 11 stairs down to Metropolitan Line Booking Hall or 7 stairs down to Northern, Piccadilly and Victoria Line Booking Hall</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Metropolitan, Circle, Hammersmith &amp; City</pointName>
+						<pointName>Metropolitan, Circle, Hammersmith and City</pointName>
 						<pathDescription>Level () Victoria Line Booking Hall () </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -29962,7 +29962,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City </trainName>
+						<trainName>Hammersmith and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -29986,7 +29986,7 @@
 					<name>King's Cross National Rail Station ( Main Line Platforms 1 - 8 )</name>
 					<entranceToBookingHall>16, 5 stairs down then Subway, 11, 11 stairs down to Metropolitan Line Booking Hall or 7 stairs down to Northern, Piccadilly and Victoria Line Booking Hall</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Metropolitan, Circle, Hammersmith &amp; City</pointName>
+						<pointName>Metropolitan, Circle, Hammersmith and City</pointName>
 						<pathDescription>Level () Victoria Line Booking Hall () </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -30018,7 +30018,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City </trainName>
+						<trainName>Hammersmith and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -30042,7 +30042,7 @@
 					<name>St. Pancras National Rail Station ( Forecourt / Taxi Rank )</name>
 					<entranceToBookingHall>12, 12, 12 stairs down, 16, 3 (or 18, 3 ) stairs down, subway, (or long ramp down, 1 step down, along the street, 18, 3 stairs down, subway)</entranceToBookingHall>
 					<bookingHallToPlatform>
-						<pointName>Metropolitan, Circle, Hammersmith &amp; City</pointName>
+						<pointName>Metropolitan, Circle, Hammersmith and City</pointName>
 						<pathDescription>Level () Victoria Line Booking Hall () </pathDescription>
 					</bookingHallToPlatform>
 					<bookingHallToPlatform>
@@ -30074,7 +30074,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City </trainName>
+						<trainName>Hammersmith and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -30114,7 +30114,7 @@
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City </trainName>
+						<trainName>Hammersmith and City </trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -30158,7 +30158,7 @@
 					</timeIntervals>
 				</openingHour>
 				<openingHour>
-					<entrance>Met &amp; Circle</entrance>
+					<entrance>Met and Circle</entrance>
 					<timeIntervals type="Mon-Fri">
 						<timeInterval>
 							<from>05:00</from>
@@ -30181,7 +30181,7 @@
 			</openingHours>
 			<Placemark>
 				<name>
-					King's Cross St. Pancras Station
+					Kings Cross St Pancras Station
 				</name>
 				<description>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -30570,7 +30570,7 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>ExCel East Park &amp; Ride</name>
+					<name>ExCel East Park and Ride</name>
 					<entranceToBookingHall>Ramp (or 9 stairs) down, lift (or 12, 13, 13, 12 stairs) up</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName />
@@ -30868,7 +30868,7 @@
 			</Placemark>
 		</station>
 		<station id="1000203" type="tube" xmlns="">
-			<name>Shepherd's Bush Central</name>
+			<name>Shepherd's Bush</name>
 			<contactDetails>
 				<address>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -30934,7 +30934,7 @@
 			</openingHours>
 			<Placemark>
 				<name>
-					Shepherd's Bush Central Station
+					Shepherd's Bush Station
 				</name>
 				<description>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -30948,7 +30948,7 @@
 			</Placemark>
 		</station>
 		<station id="1000203" type="tube" xmlns="">
-			<name>Shepherd's Bush Hammersmith &amp; City</name>
+			<name>Shepherd's Bush Hammersmith and City</name>
 			<contactDetails>
 				<address>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -30971,7 +30971,7 @@
 						<pathDescription>14, 14, 14 stairs up</pathDescription>
 					</bookingHallToPlatform>
 					<platformToTrain>
-						<trainName>Hammersmith &amp; City Eastbound</trainName>
+						<trainName>Hammersmith and City Eastbound</trainName>
 						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
 					</platformToTrain>
 					<platformToTrain>
@@ -31005,7 +31005,7 @@
 			</openingHours>
 			<Placemark>
 				<name>
-					Shepherd's Bush Hammersmith &amp; City Station
+					Shepherd's Bush Hammersmith and City Station
 				</name>
 				<description>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -31208,7 +31208,7 @@
 					</platformToTrain>
 				</entrance>
 				<entrance>
-					<name>Palmer Street ( Mon - Fri 8.00am to 7.00pm, Sat &amp; Sun Closed )</name>
+					<name>Palmer Street ( Mon - Fri 8.00am to 7.00pm, Sat and Sun Closed )</name>
 					<entranceToBookingHall>Level</entranceToBookingHall>
 					<bookingHallToPlatform>
 						<pointName />
@@ -31226,7 +31226,7 @@
 			</entrances>
 			<openingHours>
 				<openingHour>
-					<entrance>Park &amp; Broadway</entrance>
+					<entrance>Park and Broadway</entrance>
 					<timeIntervals type="Mon-Fri">
 						<timeInterval>
 							<from>06:30</from>
@@ -31266,7 +31266,7 @@
 			</Placemark>
 		</station>
 		<station id="1000222" type="tube" xmlns="">
-			<name>St. John's Wood</name>
+			<name>St Johns Wood</name>
 			<contactDetails>
 				<address>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -31319,7 +31319,7 @@
 			</openingHours>
 			<Placemark>
 				<name>
-					St. John's Wood Station
+					St Johns Wood Station
 				</name>
 				<description>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -31333,7 +31333,7 @@
 			</Placemark>
 		</station>
 		<station id="1000225" type="tube" xmlns="">
-			<name>St. Paul's</name>
+			<name>St Pauls</name>
 			<contactDetails>
 				<address>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -31410,7 +31410,7 @@
 			</openingHours>
 			<Placemark>
 				<name>
-					St. Paul's Station
+					St Pauls Station
 				</name>
 				<description>
 					London Underground, 55 Broadway, London, SW1H 0BD

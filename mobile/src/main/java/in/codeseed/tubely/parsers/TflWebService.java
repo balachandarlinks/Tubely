@@ -13,7 +13,7 @@ import retrofit.http.Path;
  */
 public interface TflWebService {
 
-    @GET("/tfl/syndication/feeds/stations-facilities.xml?app_id=91795102&app_key=09149734c72d21e58a5b332965a12e82")
+    @GET("/tfl/syndication/feeds/stations_facilities.xml?app_id=91795102&app_key=09149734c72d21e58a5b332965a12e82")
     Root getStationsData();
 
     @GET("/TrackerNet/PredictionDetailed/{line}/{station}")
