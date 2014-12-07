@@ -1,0 +1,2406 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2500" height="1240" viewBox="-40 -60 2500,1240">
+	<title>Route map of London Underground, London Overground, Docklands Light Railway and Crossrail licensed under Creative Commons Attribution-Share Alike 4.0 International by Wikimedians</title>
+	<metadata id="license"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:cc="http://creativecommons.org/ns#">
+		<rdf:RDF>
+			<cc:Work rdf:about="">
+			<dc:format>image/svg+xml</dc:format>
+			<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+			<cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+			</cc:Work>
+			<cc:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+			<cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
+			<cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
+			<cc:requires rdf:resource="http://creativecommons.org/ns#Notice" />
+			<cc:requires rdf:resource="http://creativecommons.org/ns#Attribution" />
+			<cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+			<cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+			</cc:License>
+		</rdf:RDF>
+	</metadata>
+	<style type="text/css">
+text {font-family:Liberation Sans,Arial,sans-serif}
+.zone {font-size:35px;font-weight:bold;text-anchor:middle}
+.st {font-size:14px;fill:#000}
+.small {font-size:11px;fill:#000}
+.intline {font-size:11px;fill:#fff}
+.x {fill:#999}
+.b {font-weight:bold}
+.mid {text-anchor:middle}
+.end {text-anchor:end}
+.me {fill:none;stroke-width:5}
+.mes {fill:none;stroke-width:1.5;stroke:#fff;stroke-linecap:round}
+.meb {fill:none;stroke-width:5.5}
+.ftfl {fill:#009}
+.fbakerloo {fill:#894E24}
+.sbakerloo {stroke:#894E24}
+.fcentral {fill:#DC241F}
+.scentral {stroke:#DC241F}
+.fcircle {fill:#d90}
+.scircle {stroke:#FFCE00}
+.bcircle {stroke:#d90}
+.fdistrict {fill:#007229}
+.sdistrict {stroke:#007229}
+.fhnc {fill:#c78}
+.shnc {stroke:#D799AF}
+.bhnc {stroke:#c78}
+.fjubilee {fill:#777}
+.sjubilee {stroke:#868F98}
+.fmetropolitan {fill:#826}
+.smetropolitan {stroke:#751056}
+.fnorthern {fill:#000}
+.snorthern {stroke:#000}
+.fpiccadilly {fill:#0019A8}
+.spiccadilly {stroke:#0019A8}
+.fvictoria {fill:#09d}
+.svictoria {stroke:#00A0E2}
+.fwnc {fill:#5b9}
+.swnc {stroke:#76D0BD}
+.swnc2 {stroke:#0019A8;stroke-width:0.5;fill:none}
+.fdlr {fill:#00a4a7}
+.sdlr {stroke:#00a4a7}
+.sdlr2 {stroke:#fff;stroke-width:1;fill:none}
+.fog {fill:#E87511}
+.fogx {fill:#fb5}
+.sog {stroke:#E87511}
+.sogx {stroke:#fb5}
+.fcrossrail {fill:#7156A5}
+.scrossrail {stroke:#7156A5}
+.stl {stroke:#6C0;stroke-width:2;fill:none}
+.ftl {fill:#5b0}
+.rn {fill:#99f}
+.osib {fill:none;stroke:#fff;stroke-width:5}
+.osi {fill:none;stroke:#009;stroke-width:2.5}
+.branch {stroke:#fff;stroke-width:3;stroke-dasharray:4;fill:none}
+.tleg:hover {fill:#009;stroke-width:1;stroke:#009;cursor:pointer}
+.tleg:active {cursor:progress}
+.toff:hover {cursor:pointer}
+.toff:active {cursor:progress}
+.blink {fill:none;stroke-width:12;opacity:0;visibility:hidden;cursor:pointer}
+.pointer {cursor:pointer}
+.progress:active {cursor:progress}
+	</style>
+	<defs>
+		<path id="term" style="fill:none;stroke-width:5" d="M -8,0 H 8"/>
+		<use xlink:href="#term" id="termbakerloo" class="sbakerloo"/>
+		<use xlink:href="#term" id="termcentral" class="scentral"/>
+		<use xlink:href="#term" id="termcircle" class="scircle"/>
+		<use xlink:href="#term" id="termdistrict" class="sdistrict"/>
+		<use xlink:href="#term" id="termhnc" class="shnc"/>
+		<use xlink:href="#term" id="termjubilee" class="sjubilee"/>
+		<use xlink:href="#term" id="termmetropolitan" class="smetropolitan"/>
+		<use xlink:href="#term" id="termnorthern" class="snorthern"/>
+		<use xlink:href="#term" id="termpiccadilly" class="spiccadilly"/>
+		<use xlink:href="#term" id="termvictoria" class="svictoria"/>
+		<use xlink:href="#term" id="termdlr" class="sdlr"/>
+		<use xlink:href="#term" id="termog" class="sog"/>
+		<use xlink:href="#term" id="termogx" class="sogx"/>
+		<use xlink:href="#term" id="termcrossrail" class="scrossrail"/>
+		<path id="st" style="fill:none;stroke-width:5" d="M 1,0 H 7.5"/>
+		<use xlink:href="#st" id="stbakerloo" class="sbakerloo"/>
+		<use xlink:href="#st" id="stcentral" class="scentral"/>
+		<use xlink:href="#st" id="stcircle" class="scircle"/>
+		<use xlink:href="#st" id="stdistrict" class="sdistrict"/>
+		<use xlink:href="#st" id="sthnc" class="shnc"/>
+		<use xlink:href="#st" id="stjubilee" class="sjubilee"/>
+		<use xlink:href="#st" id="stmetropolitan" class="smetropolitan"/>
+		<use xlink:href="#st" id="stnorthern" class="snorthern"/>
+		<use xlink:href="#st" id="stpiccadilly" class="spiccadilly"/>
+		<use xlink:href="#st" id="stvictoria" class="svictoria"/>
+		<use xlink:href="#st" id="stdlr" class="sdlr"/>
+		<use xlink:href="#st" id="stog" class="sog"/>
+		<use xlink:href="#st" id="stogx" class="sogx"/>
+		<use xlink:href="#st" id="stcrossrail" class="scrossrail"/>
+		<circle id="sttl" cx="0" cy="0" r="3" class="ftl"/>
+		<path id="nr" style="fill:#ef2721" transform="translate(-6.25,-4)scale(0.25)" d="M 11,0 L 22,0
+		37,8 50,8 50,13 37,13
+		24,20 50,20 50,25 24,25
+		40,33 28,33
+		13,25 0,25 0,20 13,20
+		26,13 0,13 0,8 26,8
+		z"/>
+		<g id="intnr">
+			<circle cx="0" cy="0" r="8.5" fill="#fff"/>
+			<circle cx="0" cy="0" r="7" style="fill:#fff;stroke:#000;stroke-width:1"/>
+			<use xlink:href="#nr"/>
+		</g>
+		<g id="intnrx">
+			<circle cx="0" cy="0" r="8.5" fill="#fff"/>
+			<circle cx="0" cy="0" r="7" style="fill:#fff;stroke:#999;stroke-width:1"/>
+			<use xlink:href="#nr"/>
+		</g>
+		<g id="int">
+			<circle cx="0" cy="0" r="8.5" fill="#fff"/>
+			<circle cx="0" cy="0" r="6" style="fill:#fff;stroke:#000;stroke-width:3"/>
+		</g>
+		<g id="intx">
+			<circle cx="0" cy="0" r="8.5" fill="#fff"/>
+			<circle cx="0" cy="0" r="6" style="fill:#fff;stroke:#999;stroke-width:3"/>
+		</g>
+		<g id="cap2">
+			<rect x="-8.5" y="-8.5" width="31.25" height="17" rx="8.5" fill="#fff"/>
+			<rect x="-6" y="-6" width="26.5" height="12" rx="6" style="fill:#fff;stroke:#000;stroke-width:3"/>
+		</g>
+		<g id="cap2nr">
+			<rect x="-8.5" y="-8.5" width="31.25" height="17" rx="8.5" fill="#fff"/>
+			<rect x="-7" y="-7" width="28" height="14" rx="7" style="fill:#fff;stroke:#000;stroke-width:1"/>
+		</g>
+		<g id="cap3nr">
+			<rect x="-8.5" y="-8.5" width="38.25" height="17" rx="8.5" fill="#fff"/>
+			<rect x="-7" y="-7" width="35" height="14" rx="7" style="fill:#fff;stroke:#000;stroke-width:1"/>
+		</g>
+		<path id="STRg" style="fill:#fff;stroke:none" d="M 0,0 L 3,3 v -2.5 L 0,-2.5 -3,0.5 v 2.5 z"/>
+		<g id="airport" transform="rotate(-90)scale(0.04)translate(-250,-250)" style="stroke:none;fill:#000">
+			<polygon points="490,250 450,225 320,225 170,10 140,10 200,225 80,225 30,150 10,150 30,240 30,260 10,350 30,350 80,275 200,275 140,490 170,490 320,275 450,275"/>
+			<ellipse cx="441" cy="250" rx="50" ry="24" stroke="#000"/>
+		</g>
+	</defs>
+	<rect x="-200" y="-200" width="3000" height="3000" style="fill:#fff" id="bg" class="progress"/>
+	<g style="stroke-width:16;stroke:#ddf;fill:none;">
+		<path id="Thames" d="
+		M 320,1200
+		v -270 q 0,-40 32,-64
+		a 60,60 0 0,1 96,48
+		v 40 a 50,50 0 0,0 100,0
+		a 50,50 0 0,1 100,0
+		a 85,85 0 0,0 85,85
+		h 70 q 30,0 54,-18
+		l 124,-93 q 24,-18 54,-18
+		h 82 q 30,0 54,-18
+		l 40,-30 q 28,-21 28,-56
+		t 28,-56
+		l 126,-94.5 q 24,-18 54,-18
+		h 275 a 67,67 0 0,1 67,67
+		a 90,90 0 0,0 180,0
+		v -35 a 60,60 0 0,1 96,-48
+		l 112,84 a 60,60 0 0,0 72,0
+		l 800,-600
+		"/>
+	</g>
+	<use xlink:href="#Thames" style="stroke-width:15;stroke:#d9eafa;fill:none" id="Thames_stripe" class="progress"/>
+	<g id="routes" class="pointer">
+		<g class="me scrossrail">
+			<path id="Crossrail_route" d="
+			M 0,480
+			V 688.9 a 30,30 0 0,0 30,30
+			L 70,718.9
+			H 360 a 60,60 0 0,0 30,-10
+			l 125.2,-93.9 a 60,60 0 0,1 30,-10
+			H 1071.75 q 15,0 27,-9 
+			L 1207,514.5
+			l 36,-27 q 12,-9 27,-9
+			h 85 q 20,0 32,16
+			L 1392,500 q 12,16 32,16
+			
+			L 1662,516 q 15,0 27,9
+			L 1807.625,613 q 12,9 27,9
+			h 105 q 15,0 27,-9
+			l 8,-6 q 12,-9 27,-9
+			h 187 q 15,0 27,9
+			l 140,105
+			
+			M 1700,532.5
+			L 1710,540 a 50,50 0 0,0 30,10
+			h 57 a 50,50 0 0,0 30,-10
+			l 40,-30 a 50,50 0 0,0 20,-40
+			L 1887,420.5 a 50,50 0 0,1 20,-40
+			L 2377,28
+			
+			M 160,718.9
+			H 150
+			a 45,45 0 0,0 -45,45
+			V 995
+			"/>
+		</g>
+		<use xlink:href="#Crossrail_route" class="mes" id="Crossrail_stripe"/>
+		<g class="me swnc">
+			<path id="Waterloo_and_City_line_route" d="			
+			M 1469.5,558
+			v 5 q 0,20 -16,32
+			l -98,73.5 q -16,12 -16,32
+			V 741
+			"/>
+		</g>
+		<use xlink:href="#Waterloo_and_City_line_route" class="swnc2"/>
+		<g class="me sjubilee">
+			<path id="Jubilee_line_route" d="
+			M 651,162
+			V 294 a 15,15 0 0,0 15,15
+			H 861 q 20,0 32,16
+			l 300,400 q 12,16 32,16
+			L 1340,741 q 15,0 27,-9
+			l 64,-48 q 12,-9 27,-9
+			H 1710 q 15,0 27,-9
+			l 12,-9 q 12,-9 27,-9
+			h 230 a 20,20 0 0,0 20,-20
+			v -223 a 45,45 0 0,0 -9,-27
+			l -36,-48
+			"/>
+		</g>
+		<g class="me scentral">
+			<path id="Central_line_route" d="
+			M 340,723.9
+			H 937 q 15,0 27,-9
+			L 1212,529 q 12,-9 27,-9
+			H 1375 q 20,0 32,16 
+			l 15,20 q 12,16 32,16
+			q 15,0 27,-9
+			l 136,-102 q 12,-9 27,-9
+			h 136 q 15,0 27,-9
+			L 1983,311 a 30,30 0 0,0 6,-42
+			l -54,-72 q -9,-12 -9,-27
+			V 10 a 30,30 0 0,1 30,-30
+			H 2196
+			
+			M 624,723.9
+			H 525 q -15,0 -27,-9
+			l -300,-225 q -16,-12 -16,-32
+			V 277.5
+			
+			M 1926,150 a 30,30 0 0,1 30,-30
+			h 125 a 30,30 0 0,0 30,-30
+			v -50 a 30,30 0 0,0 -30,-30
+			h -120 a 30,30 0 0,0 -30,30
+			V 46
+			"/>
+		</g>
+		<g class="me svictoria">
+			<path id="Victoria_line_route" d="
+			M 1682,113
+			L 1418,113 a 30,30 0 0,0 -30,30
+			V 183 q 0,15 9,27
+			l 14,18.67 q 9,12 9,27
+			L 1420,334.5 a 40,40 0 0,1 -40,40
+			H 1193 a 40,40 0 0,0 -40,40
+			L 1153,418.5
+			V 735.33 q 0,20 12,36
+			L 1311,966
+			"/>
+		</g>
+		<g class="me snorthern">
+			<path id="Northern_line_route" d="
+			M 706,124.5
+			L 896,267 q 12,9 27,9
+			H 1165 a 37,37 0 0,1 37,37
+			L 1202,360 q 0,17.5 -22,32 t -22,32
+			L 1158,455 q 0,10 6,18
+			L 1275,621 q 9,12 9,27 t 9,27
+			l 102,136 a 30,30 0 0,1 -6.5,42
+			
+			M 854,4.5
+			L 1124,207 q 16,12 16,32
+			V 251 a 25,25 0 0,0 25,25
+			a 25,25 0 0,1 25,25
+			V 361 a 18.5,18.5 0 0,0 18.5,18.5
+			H 1389 a 90,90 0 0,1 90,90
+			V 765 q 0,20 -16,32
+			L 1000.5,1144
+			
+			M 980,99
+			q -12,-9 -27,-9
+			h -40
+			"/>
+		</g>
+		<g class="me sbakerloo">
+			<path id="Bakerloo_line_route" d="
+			M 527,221.5 L 541,232 a 40,40 0 0,1 16,32 
+			V 342 a 45,45 0 0,0 18,36 
+			L 876,603.75 a 45,45 0 0,0 54,0
+			l 8,-6 q 8,-6 12,-23 t 12,-23
+			L 971,544.5
+			L 1001,522 a 40,40 0 0,1 48,0 q 12,9 27,9
+			H 1101.5 q 20,0 32,16
+			L 1210,649 q 12,16 32,16
+			H 1259.5 q 20,0 32,16
+			l 51,68 q 12,16 32,16
+			L 1479,765
+			"/>
+		</g>
+		<g class="me spiccadilly">
+			<path id="Piccadilly_line_route" d="
+			M 60,299 H 340 a 44,44 0 0,1 44,44
+			L 384,693.4 a 40,40 0 0,0 16,32
+			L 560,845.4	a 45,45 0 0,0 27,9
+			L 627,854.4
+			H 1020.3 a 130.5,130.5 0 0,0 78.3,-26.1
+			q 16,-12 16,-32
+			V 720.8 q 0,-20 16,-32
+			L 1282,575.25 q 8,-6 8,-16
+			V 292 q 0,-20 16,-32
+			l 61,-45.75 q 16,-12 16,-32
+			V 130 q 0,-20 -16,-32
+			L 1241,3.5 q -12,-9 -27,-9
+			H 1104
+			
+			M 637,854.4
+			H 587 a 45,45 0 0,1 -27,-9
+			L 474,781 a 70,70 0 0,0 -84,0
+			L 164,950.5 q -12,9 -27,9
+			H 30
+			
+			M 164,950.5
+			l -60,45
+			a 20,20 0 1,1 -12,-36
+			"/><!--a 5n,5n 0 1,1 -3n,-9n-->
+		</g>
+		<use xlink:href="#STRg" x="72" y="979.5"/>
+		<use xlink:href="#STRg" transform="translate(130,976)rotate(233.13)"/>
+		<g class="me sdlr">
+			<path id="DLR_routes" d="
+			M 1481.5,574
+			l 12,-9 q 12,-9 27,-9
+			h 60 q 15,0 27,9
+			L 1619.5,574 q 12,9 27,9
+			L 1860,583
+			a 20,20 0 0,1 20,20
+			V 930
+			
+			M 1575,601
+			l 12,-9 q 12,-9 27,-9
+			L 1614,583
+			H 2370 a 20,20 0 0,0 20,-20
+			v -50
+			
+			M 1880,930
+			V 603 a 20,20 0 0,1 8,-16
+			l 4,-3 a 20,20 0 0,0 8,-16
+			V 450
+			
+			M 1950,272
+			L 2025,372 a 55,55 0 0,1 11,33
+			V 563 a 20,20 0 0,0 20,20
+			a 20,20 0 0,1 12,4
+			L 2212,695 q 12,9 27,9
+			H 2286.29
+			"/>
+		</g>
+		<use xlink:href="#DLR_routes" class="sdlr2" id="DLR_routes_stripe"/>
+		<use xlink:href="#Circle_line_route" class="meb bcircle"/>
+		<use xlink:href="#Hammersmith_and_City_line_route" class="meb bhnc"/>
+		<g class="me shnc">
+			<path id="Hammersmith_and_City_line_route" d="
+			M 981,559 q -16,12 -30.75,12.75 t -30.75,12.75 L 919.5,584.5
+			L 889.5,607 a 45,45 0 0,1 -27,9
+			H 772.5 a 50,50 0 0,0 -30,10
+			L 652.5,693.5 a 45,45 0 0,0 -18,36
+			V 835
+			
+			M 981,559
+			l 192,-144 a 148.2,148.2 0 0,1 207.5,29.64
+			L 1407,479 a 40,40 0 0,0 32,16
+			H 1563 a 46,46 0 0,1 36.8,18.4
+			l 18,24 q 12,16 32,16
+			H 1653 a 45,45 0 0,0 27,-9
+			L 1817.07,441.5 a 50,50 0 0,1 30,-10
+			V 431.5
+			H 2041 a 45,45 0 0,0 27,-9
+			L 2158,355
+			"/>
+		</g>
+		<g class="me scircle"><!--a 5n,5n 0 0,0 6n ,8n-->
+			<path id="Circle_line_route" d="
+			M 990,571 l -54,40.5 a 140.5,140.5 0 0,0 168.6,224.8
+			L 1430,592.5 a 50,50 0 0,1 30,-10
+			H 1563 a 41,41 0 0,0 0,-82.5
+			
+			M 984,563 q -16,12 -30.75,12.75 t -30.75,12.75 L 922.5,588.5
+			L 892.5,610 a 50,50 0 0,1 -30,10
+			H 772.5 a 45,45 0 0,0 -27,9
+			L 655.5,697.5 a 40,40 0 0,0 -16,32
+			V 835
+			
+			M 984,563
+			l 192,-144 a 143.2,143.2 0 0,1 200.48,28.64
+			L 1403,482 a 45,45 0 0,0 36,18
+			L 1563,500
+			"/>
+		</g>
+		<g class="me sdistrict">
+			<path id="District_Olympia_branch" d="
+			M 871,869.4
+			H 867 a 36,36 0 0,1 -36,-36
+			V 819
+			"/>
+		</g>
+		<use xlink:href="#District_Olympia_branch" class="branch" id="District_Olympia_branch_stripe"/>
+		<g class="me sdistrict">
+			<path id="District_line_route" d="
+			M 987,567 l -54,40.5 a 145.5,145.5 0 0,0 -29.1,203.7
+			a 36.375,36.375 0 0,1 -29.1,58.2
+			L 874.8,869.4
+			H 867 a 36,36 0 0,0 -36,36
+			L 831,1020 q 0,20 16,32
+			l 90,67.5
+			
+			M 340,728.9
+			L 359.67,728.9 a 60,60 0 0,1 36,12
+			L 551,857.4
+			a 60,60 0 0,0 36,12
+			L 587,869.4
+			H 1020 a 145.5,145.5 0 0,0 87.3,-29.1 
+			L 1433,596.5 a 45,45 0 0,1 27,-9
+			H 1563 a 46,46 0 0,0 27.6,-9.2
+			l 14.67,-11 q 12,-9 27,-9
+			H 1653 a 50,50 0 0,0 30,-10
+			L 1820.07,445.5 a 45,45 0 0,1 27,-9
+			V 436.5
+			H 2041 a 50,50 0 0,0 30,-10
+			L 2401,179
+			
+			M 637,869.4
+			H 587 a 60,60 0 0,1 -36,-12
+			l -36,-27 a 45,45 0 0,0 -54.75,0
+			L 361,905.4
+			"/><!--a 5n,5n 0 0,0 -n,7n--><!--a 5n,5n 0 0,1 -4n,8n-->
+		</g>
+		<g class="me sog">
+			<path id="East_London_line_Battersea_Park_branch" d="
+			M 1060,946 H 999
+			"/>
+		</g>
+		<use xlink:href="#East_London_line_Battersea_Park_branch" class="branch" id="East_London_line_Battersea_Park_branch_stripe"/>
+		<g class="me sog">
+			<path id="Watford_DC_line_route" d="
+			M 350,82.5
+			L 544,228 a 45,45 0 0,1 18,36
+			V 342 a 40,40 0 0,0 16,32
+			L 778,524
+			"/>
+			<use xlink:href="#Watford_DC_line_route" class="mes" id="Watford_DC_line_stripe"/>
+			<g id="overground_routes">
+				<g id="North_and_West_London_Lines_route">
+					<path id="West_London_line_route" d="
+					M 696.5,466
+					l -48,36 q -16,12 -16,32
+					v 100 q 0,20 16,32
+					l 161.5,121.125 q 16,12 16,32
+					V 925 q 0,20 16,32
+					L 842,957
+					l 20,15 q 12,9 27,9
+					h 60 a 30,30 0 0,1 30,30
+					v 5
+					"/>
+					<path id="North_London_line_route" d="
+					M 696.5,466
+					L 837.83,360 q 12,-9 27,-9
+					H 912.5 q 15,0 27,-9
+					L 963.5,324 q 16,-12 16,-32
+					V 256 a 30,30 0 0,1 30,-30
+					H 1127 q 15,0 27,9
+					l 68,51 q 12,9 27,9
+					h 684 q 15,0 27,9
+					l 20,15
+					
+					M 696.5,466
+					l -124,93 q -16,12 -16,32
+					v 141 q 0,20 -16,32
+					L 358,901.4
+					"/>
+				</g>
+				<path id="Gospel_Oak_to_Barking_line_route" d="
+				M 1030,216 q 15,0 27,-9
+				l 80,-60 q 12,-9 27,-9
+				h 700 q 40,0 64,32
+				l 54,72 q 12,16 32,16
+				h 51 q 20,0 32,16
+				L 2159.5,357
+				"/>
+				<path id="East_and_South_London_Lines_route" d="
+				M 1420,305
+				H 1520.625 q 20,0 32,16
+				l 138.375,184.5 q 9,12 9,27
+				L 1700,765 q 0,20 -16,32
+				L 1684,797
+				L 1497.33,937 q -12,9 -27,9
+				H 1049 a 60,60 0 0,0 -60,60
+				V 1016
+				
+				M 1700,532.5
+				V 765 q 0,20 16,32
+				l 72,54
+				
+				M 1700,532.5
+				V 887 q 0,20 -16,32
+				L 1404,1129
+				
+				M 1604,979
+				L 1576,1000 q -12,9 -27,9
+				H 1514
+				"/>
+			</g>
+		</g>
+		<use xlink:href="#North_and_West_London_Lines_route" class="mes" id="North_and_West_London_Lines_route_stripe"/>
+		<use xlink:href="#Gospel_Oak_to_Barking_line_route" class="mes" id="Gospel_Oak_to_Barking_line_route_stripe"/>
+		<use xlink:href="#East_and_South_London_Lines_route" class="mes" id="East_and_South_London_Lines_route_stripe"/>
+		<g class="me smetropolitan">
+			<path id="Metropolitan_line_route" d="
+			M 140,60 L 440,285 q 12,9 27,9 
+			H 861 a 55,55 0 0,1 44,22 
+			L 1046,504 a 15,15 0 0,0 21,3 
+			L 1179,423 a 138.2,138.2 0 0,1 193.48,27.64
+			L 1399,485 a 50,50 0 0,0 40,20
+			H 1563 a 36,36 0 0,1 36,36
+			
+			M 120,81 H 153 q 15,0 27,9
+			
+			M 279,164.25 q -16,-12 -16,-32
+			V 107.5
+			
+			M 60,294 H 480
+			"/>
+		</g>
+		<g class="me sog">
+			<g id="overground_routes_over">
+				<path id="Watford_DC_line_route_over" d="
+				M 778,524 a 45,45 0 0,0 54,0
+				L 1031.33,374.5 q 12,-9 27,-9
+				H 1200
+				"/>
+			</g>
+		</g>
+		<use xlink:href="#Watford_DC_line_route_over" class="mes" id="Watford_DC_line_over_stripe"/>
+		<g class="me sogx">
+			<g id="overground_routes_future">
+				<path id="Seven_Sisters_line_routes" d="
+				M 1563,500 q 0,-20 16,-32
+				l 40,-30 q 16,-12 16,-32
+				L 1635,290 q 0,-20 -16,-32
+				l -200,-150 q -16,-12 -16,-32
+				L 1403,8.5 a 30,30 0 0,0 -30,-30
+				h -40
+				
+				M 1403,8.5 a 30,30 0 0,1 30,-30
+				H 1683
+				"/>
+				<path id="Chingford_line_route" d="
+				M 1563,500 q 0,-20 16,-32
+				l 40,-30 q 16,-12 16,-32
+				L 1635,290
+				q 0,-20 16,-32
+				l 15,-11.25 q 16,-12 16,-32
+				V 23
+				"/>
+				<path id="Romford_to_Upminster_line_route" d="
+				M 2257,118
+				h 30 q 20,0 32,16
+				l 21.75,29 q 12,16 32,16
+				L 2401,179
+				"/>
+			</g>
+		</g>
+		<use xlink:href="#Seven_Sisters_line_routes" class="mes" id="Seven_Sisters_line_routes_stripe"/>
+		<use xlink:href="#Chingford_line_route" class="mes" id="Chingford_line_route_stripe"/>
+		<use xlink:href="#Romford_to_Upminster_line_route" class="mes" id="Romford_to_Upminster_line_route_stripe"/>
+		<path id="Central_line_route_over" class="me scentral" d="
+		M 182,277.5 V 350
+		"/>
+		<g class="me sdlr">
+			<path id="DLR_route_over" d="
+			M 1900,450
+			V 418 a 40,40 0 0,1 16,-32
+			l 76,-57
+			"/>
+		</g>
+		<use xlink:href="#DLR_route_over" class="sdlr2" id="DLR_route_stripe_over"/>
+	</g>
+	<g id="key_to_symbols_box" transform="translate(1810,945)">
+		<rect x="0" y="0" width="210" height="230" rx="25" style="fill:#fff;stroke:#009;stroke-width:2.5"/>
+		<path style="fill:none;stroke:#888;stroke-width:1" d="
+		M 100,25 V 228.75
+		M 1.25,73 H 208.25 v 1 H 1.25
+		M 1.25,112 H 208.25 v 1 H 1.25
+		M 1.25,157 H 208.25 v 1 H 1.25
+		M 1.25,197 H 208.25 v 1 H 1.25
+		"/>
+		<path style="stroke:none;fill:#009" d="
+		M 1.25,25
+		h 210
+		a 25,25 0 0,0 -25,-25
+		h -161.25
+		a 25,25 0 0,0 -25,25
+		"/>
+		<text x="105" y="17" class="b mid" style="font-size:15px;fill:#fff">Key to symbols</text>
+		<use xlink:href="#int" transform="translate(20,47)"/>
+		<use xlink:href="#cap2" transform="translate(45,39.5)rotate(90)"/>
+		<use xlink:href="#Bank_Monument_hub" transform="translate(65,35)"/>
+		<use xlink:href="#intnr" transform="translate(33,93)"/>
+		<use xlink:href="#cap2nr" transform="translate(68,85.5)rotate(90)"/>
+		<use xlink:href="#nr" transform="translate(68,92)"/>
+		<path class="osi" d="M 43,125 L 58,145"/>
+		<use xlink:href="#int" x="43" y="125"/>
+		<use xlink:href="#int" x="58" y="145"/>
+		<g class="me snorthern">
+			<path id="legend_branch" d="M 17.5,178 h 65"/>
+		</g>
+		<use xlink:href="#legend_branch" class="branch"/>
+		<use xlink:href="#airport" x="53" y="213"/>
+		<g class="b" style="font-size:12px;fill:#000">
+			<text x="108" y="45">Interchange<tspan x="108" dy="15">stations</tspan></text>
+			<text x="108" y="90">Interchanges for<tspan x="108" dy="15">National Rail</tspan></text>
+			<text x="108" y="132">Out of station<tspan x="108" dy="15">interchanges</tspan></text>
+			<text x="108" y="174">Branch line of<tspan x="108" dy="15">limited service</tspan></text>
+			<text x="108" y="217">Airport</text>
+		</g>
+	</g>
+	<g id="key_to_lines_box" transform="translate(2040,870)">
+		<rect x="0" y="0" width="410" height="305" rx="25" style="fill:#fff;stroke:#009;stroke-width:2.5"/>
+		<path style="fill:none;stroke:#888;stroke-width:2" d="
+		M 190,25 V 303.75
+		M 190,215 H 408.75
+		M 190,260 H 408.75
+		"/>
+		<path style="stroke:none;fill:#009" d="
+		M 1.25,25
+		h 410
+		a 25,25 0 0,0 -25,-25
+		h -361.25
+		a 25,25 0 0,0 -25,25
+		"/>
+		<text x="205" y="17" class="b mid" style="font-size:15px;fill:#fff">Key to lines</text>
+		<g class="me">
+			<path class="sbakerloo" d="M 10,65 h 170"/>
+			<path class="scentral" d="M 10,87 h 170"/>
+			<path class="scircle" d="M 10,109 h 170"/>
+			<path class="sdistrict" d="M 10,131 h 170"/>
+			<path class="shnc" d="M 10,153 h 170"/>
+			<path class="sjubilee" d="M 10,175 h 170"/>
+			<path class="smetropolitan" d="M 10,197 h 170"/>
+			<path class="snorthern" d="M 10,219 h 170"/>
+			<path class="spiccadilly" d="M 10,241 h 170"/>
+			<path class="svictoria" d="M 10,263 h 170"/>
+			<g class="swnc">
+				<path id="legend_swnc" d="M 10,285 h 170"/>
+			</g>
+			<g class="sog">
+				<path id="legend_sog" d="M 200,47 h 200"/>
+			</g>
+			<g class="sogx">
+				<path id="legend_sogx" d="M 200,149 h 200"/>
+			</g>
+			<g class="sdlr">
+				<path id="legend_sdlr" d="M 200,241 h 200"/>
+			</g>
+			<g class="scrossrail">
+				<path id="legend_scrossrail" d="M 200,285 h 200"/>
+			</g>
+		</g>
+		<use xlink:href="#legend_swnc" class="swnc2"/>
+		<use xlink:href="#legend_sog" class="mes"/>
+		<use xlink:href="#legend_sogx" class="mes"/>
+		<use xlink:href="#legend_sdlr" class="sdlr2"/>
+		<use xlink:href="#legend_scrossrail" class="mes"/>
+		<g class="st">
+			<g transform="translate(10,42)">
+				<text class="st">
+					<tspan x="15" y="0" class="b">Underground:</tspan>
+					<tspan x="0" dy="18" class="tleg" id="lbakerloo">Bakerloo line</tspan>
+					<tspan x="0" dy="22" class="tleg" id="lcentral">Central line</tspan>
+					<tspan x="0" dy="22" class="tleg" id="lcircle">Circle line</tspan>
+					<tspan x="0" dy="22" class="tleg" id="ldistrict">District line</tspan>
+					<tspan x="0" dy="22" class="tleg" id="lhnc">Hammersmith &amp; City line</tspan>
+					<tspan x="0" dy="22" class="tleg" id="ljubilee">Jubilee line</tspan>
+					<tspan x="0" dy="22" class="tleg" id="lmetropolitan">Metropolitan line</tspan>
+					<tspan x="0" dy="22" class="tleg" id="lnorthern">Northern line</tspan>
+					<tspan x="0" dy="22" class="tleg" id="lpiccadilly">Piccadilly line</tspan>
+					<tspan x="0" dy="22" class="tleg" id="lvictoria">Victoria line</tspan>
+					<tspan x="0" dy="22" class="tleg" id="lwnc">Waterloo &amp; City line</tspan>
+				</text>
+				<text x="0" dy="18" class="toff progress fbakerloo sbakerloo" id="Bakerloo_line_off" visibility="hidden">Bakerloo line
+					<set
+					begin="lbakerloo.click;Bakerloo_line_route.click"
+					end="bg.click;Thames_stripe.click;Bakerloo_line_blink.click;Bakerloo_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lbakerloo.click;Bakerloo_line_route.click"
+					end="bg.click;Thames_stripe.click;Bakerloo_line_blink.click;Bakerloo_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="40" class="toff fcentral scentral" id="Central_line_off" visibility="hidden">Central line
+					<set
+					begin="lcentral.click;Central_line_route.click"
+					end="bg.click;Thames_stripe.click;Central_line_blink.click;Central_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lcentral.click;Central_line_route.click"
+					end="bg.click;Thames_stripe.click;Central_line_blink.click;Central_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="62" class="toff fcircle scircle" id="Circle_line_off" visibility="hidden">Circle line
+					<set
+					begin="lcircle.click;Circle_line_route.click"
+					end="bg.click;Thames_stripe.click;Circle_line_blink.click;Circle_line_off.click;Circle_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lcircle.click;Circle_line_route.click"
+					end="bg.click;Thames_stripe.click;Circle_line_blink.click;Circle_line_off.click;Circle_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="84" class="toff fdistrict sdistrict" id="District_line_off" visibility="hidden">District line
+					<set
+					begin="ldistrict.click;District_line_route.click"
+					end="bg.click;Thames_stripe.click;District_line_blink.click;District_Olympia_branch_blink.click;District_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="ldistrict.click;District_line_route.click"
+					end="bg.click;Thames_stripe.click;District_line_blink.click;District_Olympia_branch_blink.click;District_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="106" class="toff fhnc shnc" id="Hammersmith_and_City_line_off" visibility="hidden">Hammersmith &amp; City line
+					<set
+					begin="lhnc.click;Hammersmith_and_City_line_route.click"
+					end="bg.click;Thames_stripe.click;Hammersmith_and_City_line_blink.click;Hammersmith_and_City_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lhnc.click;Hammersmith_and_City_line_route.click"
+					end="bg.click;Thames_stripe.click;Hammersmith_and_City_line_blink.click;Hammersmith_and_City_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="128" class="toff fjubilee sjubilee" id="Jubilee_line_off" visibility="hidden">Jubilee line
+					<set
+					begin="ljubilee.click;Jubilee_line_route.click"
+					end="bg.click;Thames_stripe.click;Jubilee_line_blink.click;Jubilee_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="ljubilee.click;Jubilee_line_route.click"
+					end="bg.click;Thames_stripe.click;Jubilee_line_blink.click;Jubilee_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="150" class="toff fmetropolitan smetropolitan" id="Metropolitan_line_off" visibility="hidden">Metropolitan line
+					<set
+					begin="lmetropolitan.click;Metropolitan_line_route.click"
+					end="bg.click;Thames_stripe.click;Metropolitan_line_blink.click;Metropolitan_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lmetropolitan.click;Metropolitan_line_route.click"
+					end="bg.click;Thames_stripe.click;Metropolitan_line_blink.click;Metropolitan_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="172" class="toff fnorthern snorthern" id="Northern_line_off" visibility="hidden">Northern line
+					<set
+					begin="lnorthern.click;Northern_line_route.click"
+					end="bg.click;Thames_stripe.click;Northern_line_blink.click;Northern_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lnorthern.click;Northern_line_route.click"
+					end="bg.click;Thames_stripe.click;Northern_line_blink.click;Northern_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="194" class="toff fpiccadilly spiccadilly" id="Piccadilly_line_off" visibility="hidden">Piccadilly line
+					<set
+					begin="lpiccadilly.click;Piccadilly_line_route.click"
+					end="bg.click;Thames_stripe.click;Piccadilly_line_blink.click;Piccadilly_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lpiccadilly.click;Piccadilly_line_route.click"
+					end="bg.click;Thames_stripe.click;Piccadilly_line_blink.click;Piccadilly_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="216" class="toff fvictoria svictoria" id="Victoria_line_off" visibility="hidden">Victoria line
+					<set
+					begin="lvictoria.click;Victoria_line_route.click"
+					end="bg.click;Thames_stripe.click;Victoria_line_blink.click;Victoria_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lvictoria.click;Victoria_line_route.click"
+					end="bg.click;Thames_stripe.click;Victoria_line_blink.click;Victoria_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="238" class="toff fwnc swnc" id="Waterloo_and_City_line_off" visibility="hidden">Waterloo &amp; City line
+					<set
+					begin="lwnc.click;Waterloo_and_City_line_route.click"
+					end="bg.click;Thames_stripe.click;Waterloo_and_City_line_blink.click;Waterloo_and_City_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lwnc.click;Waterloo_and_City_line_route.click"
+					end="bg.click;Thames_stripe.click;Waterloo_and_City_line_blink.click;Waterloo_and_City_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+			</g>
+			<g transform="translate(200,42)">
+				<text class="st">
+					<tspan x="15" y="0" class="b">Overground:</tspan>
+					<tspan x="0" dy="22" class="tleg" id="lse_london">East &amp; South London Lines</tspan>
+					<tspan x="0" dy="20" class="tleg" id="lnw_london">North &amp; West London Lines</tspan>
+					<tspan x="0" dy="20" class="tleg" id="lwatford">Watford DC Line</tspan>
+					<tspan x="0" dy="20" class="tleg" id="lgospel">Gospel Oak to Barking Line</tspan>
+					<tspan x="15" dy="20">To be acquired in 2015:</tspan>
+					<tspan x="0" dy="22" class="tleg" id="l7sisters">Seven Sisters Line</tspan>
+					<tspan x="0" dy="20" class="tleg" id="lchingford">Chingford Line</tspan>
+					<tspan x="0" dy="20" class="tleg" id="lromford">Romford to Upminster Line</tspan>
+				</text>
+				<text x="0" dy="22" class="toff fog sog" id="East_and_South_London_line_off" visibility="hidden">East &amp; South London Lines
+					<set
+					begin="lse_london.click;East_London_line_Battersea_Park_branch.click;East_and_South_London_Lines_route.click;East_and_South_London_Lines_route_stripe.click;East_London_line_Battersea_Park_branch_stripe.click"
+					end="bg.click;Thames_stripe.click;East_and_South_London_Lines_blink.click;East_London_line_Battersea_Park_branch_blink.click;East_and_South_London_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lse_london.click;East_London_line_Battersea_Park_branch.click;East_and_South_London_Lines_route.click;East_and_South_London_Lines_route_stripe.click;East_London_line_Battersea_Park_branch_stripe.click"
+					end="bg.click;Thames_stripe.click;East_and_South_London_Lines_blink.click;East_London_line_Battersea_Park_branch_blink.click;East_and_South_London_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="42" class="toff fog sog" id="North_and_West_London_line_off" visibility="hidden">North &amp; West London Lines
+					<set
+					begin="lnw_london.click;North_and_West_London_Lines_route.click;North_and_West_London_Lines_route_stripe.click"
+					end="bg.click;Thames_stripe.click;North_and_West_London_Lines_blink.click;North_and_West_London_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lnw_london.click;North_and_West_London_Lines_route.click;North_and_West_London_Lines_route_stripe.click"
+					end="bg.click;Thames_stripe.click;North_and_West_London_Lines_blink.click;North_and_West_London_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="62" class="toff fog sog" id="Watford_DC_line_off" visibility="hidden">Watford DC Line
+					<set
+					begin="lwatford.click;Watford_DC_line_route.click;Watford_DC_line_route_over.click;Watford_DC_line_over_stripe.click;Watford_DC_line_stripe.click"
+					end="bg.click;Thames_stripe.click;Watford_DC_line_blink.click;Watford_DC_line_blink_over.click;Watford_DC_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lwatford.click;Watford_DC_line_route.click;Watford_DC_line_route_over.click;Watford_DC_line_over_stripe.click;Watford_DC_line_stripe.click"
+					end="bg.click;Thames_stripe.click;Watford_DC_line_blink.click;Watford_DC_line_blink_over.click;Watford_DC_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="82" class="toff fog sog" id="Gospel_Oak_to_Barking_line_off" visibility="hidden">Gospel Oak to Barking Line
+					<set
+					begin="lgospel.click;Gospel_Oak_to_Barking_line_route.click;Gospel_Oak_to_Barking_line_route_stripe.click"
+					end="bg.click;Thames_stripe.click;Gospel_Oak_to_Barking_line_blink.click;Gospel_Oak_to_Barking_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lgospel.click;Gospel_Oak_to_Barking_line_route.click;Gospel_Oak_to_Barking_line_route_stripe.click"
+					end="bg.click;Thames_stripe.click;Gospel_Oak_to_Barking_line_blink.click;Gospel_Oak_to_Barking_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="124" class="toff fog sog" id="Seven_Sisters_line_off" visibility="hidden">Seven Sisters Line
+					<set
+					begin="l7sisters.click;Seven_Sisters_line_routes.click;Seven_Sisters_line_routes_stripe.click"
+					end="bg.click;Thames_stripe.click;Seven_Sisters_line_blink.click;Seven_Sisters_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="l7sisters.click;Seven_Sisters_line_routes.click;Seven_Sisters_line_routes_stripe.click"
+					end="bg.click;Thames_stripe.click;Seven_Sisters_line_blink.click;Seven_Sisters_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="144" class="toff fog sog" id="Chingford_line_off" visibility="hidden">Chingford Line
+					<set
+					begin="lchingford.click;Chingford_line_route.click;Chingford_line_route_stripe.click"
+					end="bg.click;Thames_stripe.click;Chingford_line_blink.click;Chingford_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lchingford.click;Chingford_line_route.click;Chingford_line_route_stripe.click"
+					end="bg.click;Thames_stripe.click;Chingford_line_blink.click;Chingford_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+				<text x="0" dy="164" class="toff fog sog" id="Romford_line_off" visibility="hidden">Romford to Upminster Line
+					<set
+					begin="lromford.click;Romford_to_Upminster_line_route.click;Romford_to_Upminster_line_route_stripe.click"
+					end="bg.click;Thames_stripe.click;Romford_to_Upminster_line_blink.click;Romford_line_off.click"
+					attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+					<animate
+					begin="lromford.click;Romford_to_Upminster_line_route.click;Romford_to_Upminster_line_route_stripe.click"
+					end="bg.click;Thames_stripe.click;Romford_to_Upminster_line_blink.click;Romford_line_off.click"
+					attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				</text>
+			</g>
+			<text x="200" y="236" class="tleg" id="ldlr">Docklands Light Railway (DLR)</text>
+			<text x="200" y="236" class="toff fdlr sdlr" id="DLR_off" visibility="hidden">Docklands Light Railway (DLR)
+				<set
+				begin="ldlr.click;DLR_routes.click;DLR_routes_stripe.click;DLR_route_over.click;DLR_route_stripe_over.click"
+				end="bg.click;Thames_stripe.click;DLR_blink.click;DLR_off.click"
+				attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				<animate
+				begin="ldlr.click;DLR_routes.click;DLR_routes_stripe.click;DLR_route_over.click;DLR_route_stripe_over.click"
+				end="bg.click;Thames_stripe.click;DLR_blink.click;DLR_off.click"
+				attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			</text>
+			<text x="200" y="279" class="tleg" id="lcrossrail">Crossrail (opening from 2015)</text>
+			<text x="200" y="279" class="toff fcrossrail scrossrail" id="Crossrail_off" visibility="hidden">Crossrail (opening from 2015)
+				<set
+				begin="lcrossrail.click;Crossrail_route.click;Crossrail_stripe.click"
+				end="bg.click;Thames_stripe.click;Crossrail_blink.click;Crossrail_off.click"
+				attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+				<animate
+				begin="lcrossrail.click;Crossrail_route.click;Crossrail_stripe.click"
+				end="bg.click;Thames_stripe.click;Crossrail_blink.click;Crossrail_off.click"
+				attributeName="stroke-width" attributeType="CSS" values="0; 2; 0" keyTimes="0; 0.5; 1" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			</text>
+		</g>
+	</g>
+	<g id="interactivity">
+		<use xlink:href="#Bakerloo_line_route" id="Bakerloo_line_blink" class="blink sbakerloo">
+			<set
+			begin="lbakerloo.click;Bakerloo_line_route.click"
+			end="bg.click;Thames_stripe.click;Bakerloo_line_blink.click;Bakerloo_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lbakerloo.click;Bakerloo_line_route.click"
+			end="bg.click;Thames_stripe.click;Bakerloo_line_blink.click;Bakerloo_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Central_line_route" id="Central_line_blink" class="blink scentral">
+			<set
+			begin="lcentral.click;Central_line_route.click;Central_line_route_over.click"
+			end="bg.click;Thames_stripe.click;Central_line_blink.click;Central_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lcentral.click;Central_line_route.click;Central_line_route_over.click"
+			end="bg.click;Thames_stripe.click;Central_line_blink.click;Central_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#District_line_route" id="District_line_blink" class="blink sdistrict">
+			<set
+			begin="ldistrict.click;District_line_route.click;District_Olympia_branch.click;District_Olympia_branch_stripe.click"
+			end="bg.click;Thames_stripe.click;District_line_blink.click;District_Olympia_branch_blink.click;District_line_off"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="ldistrict.click;District_line_route.click;District_Olympia_branch.click;District_Olympia_branch_stripe.click"
+			end="bg.click;Thames_stripe.click;District_line_blink.click;District_Olympia_branch_blink.click;District_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#District_Olympia_branch" id="District_Olympia_branch_blink" class="blink sdistrict">
+			<set
+			begin="ldistrict.click;District_line_route.click;District_Olympia_branch.click;District_Olympia_branch_stripe.click"
+			end="bg.click;Thames_stripe.click;District_line_blink.click;District_Olympia_branch_blink.click;District_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="ldistrict.click;District_line_route.click;District_Olympia_branch.click;District_Olympia_branch_stripe.click"
+			end="bg.click;Thames_stripe.click;District_line_blink.click;District_Olympia_branch_blink.click;District_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Jubilee_line_route" id="Jubilee_line_blink" class="blink sjubilee">
+			<set
+			begin="ljubilee.click;Jubilee_line_route.click"
+			end="bg.click;Thames_stripe.click;Jubilee_line_blink.click;Jubilee_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="ljubilee.click;Jubilee_line_route.click"
+			end="bg.click;Thames_stripe.click;Jubilee_line_blink.click;Jubilee_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Metropolitan_line_route" id="Metropolitan_line_blink" class="blink smetropolitan">
+			<set
+			begin="lmetropolitan.click;Metropolitan_line_route.click"
+			end="bg.click;Thames_stripe.click;Metropolitan_line_blink.click;Metropolitan_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lmetropolitan.click;Metropolitan_line_route.click"
+			end="bg.click;Thames_stripe.click;Metropolitan_line_blink.click;Metropolitan_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Northern_line_route" id="Northern_line_blink" class="blink snorthern">
+			<set
+			begin="lnorthern.click;Northern_line_route.click"
+			end="bg.click;Thames_stripe.click;Northern_line_blink.click;Northern_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lnorthern.click;Northern_line_route.click"
+			end="bg.click;Thames_stripe.click;Northern_line_blink.click;Northern_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Piccadilly_line_route" id="Piccadilly_line_blink" class="blink spiccadilly">
+			<set
+			begin="lpiccadilly.click;Piccadilly_line_route.click"
+			end="bg.click;Thames_stripe.click;Piccadilly_line_blink.click;Piccadilly_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lpiccadilly.click;Piccadilly_line_route.click"
+			end="bg.click;Thames_stripe.click;Piccadilly_line_blink.click;Piccadilly_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Victoria_line_route" id="Victoria_line_blink" class="blink svictoria">
+			<set
+			begin="lvictoria.click;Victoria_line_route.click"
+			end="bg.click;Thames_stripe.click;Victoria_line_blink.click;Victoria_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lvictoria.click;Victoria_line_route.click"
+			end="bg.click;Thames_stripe.click;Victoria_line_blink.click;Victoria_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Waterloo_and_City_line_route" id="Waterloo_and_City_line_blink" class="blink swnc">
+			<set
+			begin="lwnc.click;Waterloo_and_City_line_route.click"
+			end="bg.click;Thames_stripe.click;Waterloo_and_City_line_blink.click;Waterloo_and_City_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lwnc.click;Waterloo_and_City_line_route.click"
+			end="bg.click;Thames_stripe.click;Waterloo_and_City_line_blink.click;Waterloo_and_City_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#East_London_line_Battersea_Park_branch" id="East_London_line_Battersea_Park_branch_blink" class="blink sog">
+			<set
+			begin="lse_london.click;East_London_line_Battersea_Park_branch.click;East_and_South_London_Lines_route.click;East_and_South_London_Lines_route_stripe.click;East_London_line_Battersea_Park_branch_stripe.click"
+			end="bg.click;Thames_stripe.click;East_and_South_London_Lines_blink.click;East_London_line_Battersea_Park_branch_blink.click;East_and_South_London_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lse_london.click;East_London_line_Battersea_Park_branch.click;East_and_South_London_Lines_route.click;East_and_South_London_Lines_route_stripe.click;East_London_line_Battersea_Park_branch_stripe.click"
+			end="bg.click;Thames_stripe.click;East_and_South_London_Lines_blink.click;East_London_line_Battersea_Park_branch_blink.click;East_and_South_London_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#East_and_South_London_Lines_route" id="East_and_South_London_Lines_blink" class="blink sog">
+			<set
+			begin="lse_london.click;East_London_line_Battersea_Park_branch.click;East_and_South_London_Lines_route.click;East_and_South_London_Lines_route_stripe.click;East_London_line_Battersea_Park_branch_stripe.click"
+			end="bg.click;Thames_stripe.click;East_and_South_London_Lines_blink.click;East_London_line_Battersea_Park_branch_blink.click;East_and_South_London_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lse_london.click;East_London_line_Battersea_Park_branch.click;East_and_South_London_Lines_route.click;East_and_South_London_Lines_route_stripe.click;East_London_line_Battersea_Park_branch_stripe.click"
+			end="bg.click;Thames_stripe.click;East_and_South_London_Lines_blink.click;East_London_line_Battersea_Park_branch_blink.click;East_and_South_London_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#North_and_West_London_Lines_route" id="North_and_West_London_Lines_blink" class="blink sog">
+			<set
+			begin="lnw_london.click;North_and_West_London_Lines_route.click;North_and_West_London_Lines_route_stripe.click"
+			end="bg.click;Thames_stripe.click;North_and_West_London_Lines_blink.click;North_and_West_London_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lnw_london.click;North_and_West_London_Lines_route.click;North_and_West_London_Lines_route_stripe.click"
+			end="bg.click;Thames_stripe.click;North_and_West_London_Lines_blink.click;North_and_West_London_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Watford_DC_line_route" id="Watford_DC_line_blink" class="blink sog">
+			<set
+			begin="lwatford.click;Watford_DC_line_route.click;Watford_DC_line_route_over.click;Watford_DC_line_over_stripe.click;Watford_DC_line_stripe.click"
+			end="bg.click;Thames_stripe.click;Watford_DC_line_blink.click;Watford_DC_line_blink_over.click;Watford_DC_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lwatford.click;Watford_DC_line_route.click;Watford_DC_line_route_over.click;Watford_DC_line_over_stripe.click;Watford_DC_line_stripe.click"
+			end="bg.click;Thames_stripe.click;Watford_DC_line_blink.click;Watford_DC_line_blink_over.click;Watford_DC_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Watford_DC_line_route_over" id="Watford_DC_line_blink_over" class="blink sog">
+			<set
+			begin="lwatford.click;Watford_DC_line_route.click;Watford_DC_line_route_over.click;Watford_DC_line_over_stripe.click;Watford_DC_line_stripe.click"
+			end="bg.click;Thames_stripe.click;Watford_DC_line_blink.click;Watford_DC_line_blink_over.click;Watford_DC_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lwatford.click;Watford_DC_line_route.click;Watford_DC_line_route_over.click;Watford_DC_line_over_stripe.click;Watford_DC_line_stripe.click"
+			end="bg.click;Thames_stripe.click;Watford_DC_line_blink.click;Watford_DC_line_blink_over.click;Watford_DC_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Gospel_Oak_to_Barking_line_route" id="Gospel_Oak_to_Barking_line_blink" class="blink sog">
+			<set
+			begin="lgospel.click;Gospel_Oak_to_Barking_line_route.click;Gospel_Oak_to_Barking_line_route_stripe.click"
+			end="bg.click;Thames_stripe.click;Gospel_Oak_to_Barking_line_blink.click;Gospel_Oak_to_Barking_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lgospel.click;Gospel_Oak_to_Barking_line_route.click;Gospel_Oak_to_Barking_line_route_stripe.click"
+			end="bg.click;Thames_stripe.click;Gospel_Oak_to_Barking_line_blink.click;Gospel_Oak_to_Barking_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Seven_Sisters_line_routes" id="Seven_Sisters_line_blink" class="blink sogx">
+			<set
+			begin="l7sisters.click;Seven_Sisters_line_routes.click;Seven_Sisters_line_routes_stripe.click"
+			end="bg.click;Thames_stripe.click;Seven_Sisters_line_blink.click;Seven_Sisters_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="l7sisters.click;Seven_Sisters_line_routes.click;Seven_Sisters_line_routes_stripe.click"
+			end="bg.click;Thames_stripe.click;Seven_Sisters_line_blink.click;Seven_Sisters_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Chingford_line_route" id="Chingford_line_blink" class="blink sogx">
+			<set
+			begin="lchingford.click;Chingford_line_route.click;Chingford_line_route_stripe.click"
+			end="bg.click;Thames_stripe.click;Chingford_line_blink.click;Chingford_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lchingford.click;Chingford_line_route.click;Chingford_line_route_stripe.click"
+			end="bg.click;Thames_stripe.click;Chingford_line_blink.click;Chingford_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Romford_to_Upminster_line_route" id="Romford_to_Upminster_line_blink" class="blink sogx">
+			<set
+			begin="lromford.click;Romford_to_Upminster_line_route.click;Romford_to_Upminster_line_route_stripe.click"
+			end="bg.click;Thames_stripe.click;Romford_to_Upminster_line_blink.click;Romford_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lromford.click;Romford_to_Upminster_line_route.click;Romford_to_Upminster_line_route_stripe.click"
+			end="bg.click;Thames_stripe.click;Romford_to_Upminster_line_blink.click;Romford_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#DLR_routes" id="DLR_blink" class="blink sdlr">
+			<set
+			begin="ldlr.click;DLR_routes.click;DLR_routes_stripe.click;DLR_route_over.click;DLR_route_stripe_over.click"
+			end="bg.click;Thames_stripe.click;DLR_blink.click;DLR_off.click;DLR_over_blink.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="ldlr.click;DLR_routes.click;DLR_routes_stripe.click;DLR_route_over.click;DLR_route_stripe_over.click"
+			end="bg.click;Thames_stripe.click;DLR_blink.click;DLR_off.click;DLR_over_blink.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#DLR_route_over" id="DLR_over_blink" class="blink sdlr">
+			<set
+			begin="ldlr.click;DLR_routes.click;DLR_routes_stripe.click;DLR_route_over.click;DLR_route_stripe_over.click"
+			end="bg.click;Thames_stripe.click;DLR_blink.click;DLR_off.click;DLR_over_blink.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="ldlr.click;DLR_routes.click;DLR_routes_stripe.click;DLR_route_over.click;DLR_route_stripe_over.click"
+			end="bg.click;Thames_stripe.click;DLR_blink.click;DLR_off.click;DLR_over_blink.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Crossrail_route" id="Crossrail_blink" class="blink scrossrail">
+			<set
+			begin="lcrossrail.click;Crossrail_route.click;Crossrail_stripe.click"
+			end="bg.click;Thames_stripe.click;Crossrail_blink.click;Crossrail_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lcrossrail.click;Crossrail_route.click;Crossrail_stripe.click"
+			end="bg.click;Thames_stripe.click;Crossrail_blink.click;Crossrail_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Hammersmith_and_City_line_route" id="Hammersmith_and_City_line_blink" class="blink bhnc">
+			<set
+			begin="lhnc.click;Hammersmith_and_City_line_route.click"
+			end="bg.click;Thames_stripe.click;Hammersmith_and_City_line_blink.click;Hammersmith_and_City_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lhnc.click;Hammersmith_and_City_line_route.click" 
+			end="bg.click;Thames_stripe.click;Hammersmith_and_City_line_blink.click;Hammersmith_and_City_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+		<use xlink:href="#Circle_line_route" id="Circle_line_blink" class="blink bcircle">
+			<set
+			begin="lcircle.click;Circle_line_route.click"
+			end="bg.click;Thames_stripe.click;Circle_line_blink.click;Circle_line_off.click"
+			attributeName="visibility" attributeType="CSS" to="visible" repeatCount="indefinite" dur="0.5s" fill="remove"/>
+			<animate
+			begin="lcircle.click;Circle_line_route.click"
+			end="bg.click;Thames_stripe.click;Circle_line_blink.click;Circle_line_off.click"
+			attributeName="opacity" attributeType="CSS" dur="0.5s" fill="remove" repeatCount="indefinite"
+			values="0; 1; 0" keyTimes="0; 0.5; 1"/>
+		</use>
+	</g>
+	<path class="stl" id="Tramlink_route" d="
+	M 937,1119.5
+	h 51 q 7.5,0 13.5,4.5
+	l 35.33,26.5 q 6,4.5 13.5,4.5
+	h 665
+	
+	M 1350,1155
+	q 7.5,0 13.5,-4.5
+	l 22.67,-17 q 6,-4.5 13.5,-4.5
+	L 1404,1129
+	h 4.33 q 7.5,0 13.5,4.5
+	l 22.67,17 q 6,4.5 13.5,4.5
+	
+	M 1387.5,1155
+	a 10,10 0 0,1 -6,-18
+	
+	M 1530,1155
+	q 7.5,0 13.5,-4.5
+	l 80,-60 q 6,-4.5 13.5,-4.5
+	h 50
+	
+	M 1583.5,1120.5
+	q 6,-4.5 13.5,-4.5
+	h 30
+	"/>
+	<g id="station_nodes" opacity="1">
+		<g id="Multiple_interchanges_group">
+			<use xlink:href="#cap2" transform="translate(445,778)rotate(-53.13)" id="Acton_Town"/>
+			<use xlink:href="#int" x="1653" y="556" id="Aldgate_East"/>
+			<path class="osi" d="M 1074,169.5 H 1107"/>
+			<use xlink:href="#int" x="1074" y="169.5" id="Archway"/>
+			<use xlink:href="#int" x="1107" y="169.5" id="Upper_Holloway"/>
+			
+			<use xlink:href="#cap2" transform="translate(1038.5,519)rotate(-36.87)" id="Baker_Street"/>			
+			<g transform="translate(1474.5,558)">
+				<g id="Bank_Monument_hub">
+					<rect x="-8.5" y="-8.5" width="31.5" height="17" rx="8.5" fill="#fff" transform="rotate(53.13)"/>
+					<circle cx="20.25" cy="27" r="8.5" fill="#fff"/>
+					<rect x="-6" y="-6" width="26.5" height="12" rx="6" style="stroke:#000;stroke-width:3" transform="rotate(53.13)"/>
+					<circle cx="20.25" cy="27" r="6" style="stroke:#000;stroke-width:3"/>
+					<path d="M 0,0 l 20.25,27" style="stroke:#000;stroke-width:6"/>
+					<rect x="-4.5" y="-4.5" width="23.5" height="9" rx="4.5" style="fill:#fff;stroke:none" transform="rotate(53.13)"/>
+					<circle cx="20.25" cy="27" r="4.5" style="fill:#fff;stroke:none"/>
+					<path d="M 0,0 l 20.25,27" style="stroke:#fff;stroke-width:1.5"/>
+				</g>
+			</g>
+			
+			<use xlink:href="#Barbican_Farringdon_osi" class="osib"/>
+			<g class="osi">
+				<path id="Barbican_Farringdon_osi" d="M 1392,467.625 L 1392,500 1436,500"/>
+			</g>
+			<use xlink:href="#int" x="1436" y="500" id="Barbican"/>
+			<use xlink:href="#intnr" x="1392" y="467.625" id="Farringdon_circle"/>
+			<use xlink:href="#intnrx" x="1392" y="500" id="Farringdon_crossrail"/>
+			<use xlink:href="#intnr" x="2159.5" y="357" id="Barking"/>
+			<use xlink:href="#intnr" x="1372" y="639" id="Blackfriars"/>
+			<use xlink:href="#cap2" transform="translate(1602,118)rotate(90)" id="Blackhorse_Road"/>
+			<use xlink:href="#cap2" transform="translate(1105.5,608.5)rotate(233.13)" id="Bond_Street"/>
+			<path class="osi" d="M 1900,450 L 1912,434"/>
+			<use xlink:href="#int" x="1900" y="450" id="Bow_Church"/>
+			<use xlink:href="#int" x="1912" y="434" id="Bow_Road"/>
+			
+			<use xlink:href="#int" x="1700" y="675" id="Canada_Water"/>
+			
+			<path class="osi" d="M 1893.5,583 V 648 L 1880,661"/>
+			<use xlink:href="#Canary_Wharf_hub" style="stroke:#fff;stroke-width:17"/>
+			<g style="stroke:#000;stroke-width:15">
+				<path stroke-linejoin="round" id="Canary_Wharf_hub" d="M 1893.5,622 V 648 L 1880,635 z"/>
+			</g>
+			<use xlink:href="#Canary_Wharf_hub" style="stroke:#fff;stroke-width:7.5;fill:#fff"/>
+			<use xlink:href="#int" x="1893.5" y="583" id="Poplar"/>
+			<use xlink:href="#int" x="1880" y="661" id="Heron_Quays"/>
+			
+			<path class="osi" d="M 1165,276 l 22,-16.5"/>
+			<use xlink:href="#int" x="1187" y="259.75" id="Camden_Road"/>
+			<use xlink:href="#int" x="1165" y="276" id="Camden_Town"/>
+			<use xlink:href="#intnr" x="1432" y="594" id="Cannon_Street"/>
+			<use xlink:href="#cap2" transform="translate(2026,583)rotate(-53.13)" id="Canning_Town"/>
+			<use xlink:href="#intnr" x="1287" y="671.5" id="Charing_Cross"/>
+			<path class="osi" d="M 1240.5,946 V 964"/>
+			<use xlink:href="#intnr" x="1240.5" y="946" id="Clapham_High_Street"/>
+			<use xlink:href="#int" x="1240.5" y="964" id="Clapham_North"/>
+			<use xlink:href="#cap2" transform="translate(2180,583)rotate(90)" id="Custom_House_for_ExCeL"/>
+			
+			<use xlink:href="#intnr" x="340" y="723.9" id="Ealing_Broadway"/>
+			<use xlink:href="#cap2" transform="translate(405,748)rotate(-53.13)" id="Ealing_Common"/>
+			<use xlink:href="#cap2" transform="translate(871,869.4)rotate(-90)" id="Earls_Court"/>
+			<path class="osi" d="M 970,545.25 L 981,559"/>
+			<use xlink:href="#int" x="970" y="545.25" id="Edgware_Road_bakerloo"/>
+			<use xlink:href="#cap2" transform="translate(981,559)rotate(53.13)" id="Edgware_Road_circle"/>
+			<use xlink:href="#intnr" x="1479" y="765" id="Elephant_And_Castle"/>
+			<use xlink:href="#int" x="1302" y="691.5" id="Embankment"/>
+			<use xlink:href="#Euston_osi" class="osib"/>
+			<g class="osi">
+				<path id="Euston_osi" d="M 1212,376.85 L 1201.92,403.5"/>
+			</g>
+			<use xlink:href="#cap2nr" transform="translate(1212,376.85)rotate(233.13)" id="Euston"/>
+			<use xlink:href="#int" x="1201.92" y="403.5" id="Euston_Square_circle"/>
+			<use xlink:href="#nr" x="1207.5" y="370.85"/>
+			
+			<path class="osi" d="M 946,372 V 337"/>
+			<use xlink:href="#cap2" transform="translate(935,381)rotate(-36.87)" id="Finchley_Road"/>
+			<use xlink:href="#int" x="946" y="337" id="Finchley_Road_and_Frognal"/>
+			<use xlink:href="#intnr" x="1385" y="183" id="Finsbury_Park"/>
+			<path class="osi" d="M 2024,258 l 15,20"/>
+			<use xlink:href="#intx" transform="translate(2041,280)rotate(53.13)" id="Forest_Gate"/>
+			<use xlink:href="#int" transform="translate(2024,258)rotate(-90)" id="Wanstead_Park"/>
+			
+			<use xlink:href="#cap2" transform="translate(1020.3,869.4)rotate(-90)" id="Gloucester_Road"/>
+			<use xlink:href="#int" x="1153" y="672" id="Green_Park"/>
+			<use xlink:href="#int" x="449" y="836.4" id="Gunnersbury"/>
+			
+			<path class="osi" d="M 1635,278 L 1657.67,295"/>
+			<use xlink:href="#int" x="1657.67" y="295" id="Hackney_Central"/>
+			<use xlink:href="#intnrx" x="1635" y="278" id="Hackney_Downs"/>
+			<path class="osi" d="M 637,835 V 869.4"/>
+			<use xlink:href="#int" x="637" y="835" id="Hammersmith_circle"/>
+			<use xlink:href="#cap2" transform="translate(637,869.4)rotate(-90)" id="Hammersmith_district"/>
+			<path class="osi" d="M 372,620.4 L 384,643"/>
+			<use xlink:href="#int" x="372" y="620.4" id="Hanger_Lane"/>
+			<use xlink:href="#int" x="384" y="643" id="Park_Royal"/>
+			<use xlink:href="#intnr" x="528.5" y="219.5" id="Harrow_and_Wealdstone"/>
+			<use xlink:href="#int" x="105" y="995" id="Heathrow_4"/>
+			<use xlink:href="#airport" x="90" y="978"/>
+			<use xlink:href="#intnr" x="1420" y="300" id="Highbury_and_Islington"/>
+			<use xlink:href="#int" x="1290" y="520" id="Holborn"/>
+			
+			<use xlink:href="#West_Ruislip_Ickenham_osi" class="osib"/>
+			<g class="osi">
+				<path id="West_Ruislip_Ickenham_osi" d="M 182,277.5 L 156.67,296.5"/>
+			</g>
+			<use xlink:href="#intnr" x="182" y="277.5" id="West_Ruislip"/>
+			<use xlink:href="#int" x="156.67" y="296.5" id="Ickenham_metropolitan"/>
+			
+			<path class="osi" d="M 1128,210 L 1106.67,226"/>
+			<use xlink:href="#intnr" x="1128" y="210" id="Kentish_Town"/>
+			<use xlink:href="#int" x="1106.67" y="226" id="Kentish_Town_West"/>
+			<path class="osi" d="M 559.5,279 L 539.5,294"/>
+			<use xlink:href="#int" x="559.5" y="279" id="Kenton"/>
+			<use xlink:href="#int" x="539.5" y="294" id="Northwick_Park"/>
+			<use xlink:href="#intnr" x="828.5" y="819" id="Kensington_Olympia"/>
+			<use xlink:href="#cap3nr" transform="translate(1290,397)rotate(-90)" id="Kings_Cross_St_Pancras"/>
+			<use xlink:href="#nr" x="1290" y="385.5"/>
+			
+			<use xlink:href="#int" x="1255.5" y="595" id="Leicester_Square"/>
+			<path class="osi" d="M 1926,148 L 1940,186"/>
+			<use xlink:href="#int" x="1926" y="148" id="Leytonstone"/>
+			<use xlink:href="#int" x="1940" y="186" id="Leytonstone_High_Road"/>
+			<use xlink:href="#Liverpool_Street_Moorgate_osi" class="osib"/>
+			<g class="osi">
+				<path id="Liverpool_Street_Moorgate_osi" d="M 1563,500 L 1521,516 1479,500"/>
+			</g>
+			<use xlink:href="#intnr" x="1563" y="500" id="Liverpool_Street_circle"/>
+			<use xlink:href="#intnrx" x="1521" y="516" id="Liverpool_Street_crossrail"/>
+			<use xlink:href="#intnr" x="1479" y="500" id="Moorgate"/>
+			<use xlink:href="#intnr" x="1479" y="675" id="London_Bridge"/>
+			
+			<path class="osi" d="M 2090,243.25 V 266.5"/>
+			<use xlink:href="#intx" x="2090" y="243.25" id="Manor_Park"/>
+			<use xlink:href="#int" x="2090" y="266.5" id="Woodgrange_Park"/>
+			<use xlink:href="#int" x="1812.5" y="445" id="Mile_End"/>
+			
+			<use xlink:href="#int" x="877.3" y="723.9" id="Notting_Hill_Gate"/>
+			
+			<use xlink:href="#int" x="1153" y="573" id="Oxford_Circus"/>
+			
+			<path class="osi" d="M 921,586.5 L 936.625,605"/>
+			<use xlink:href="#intnr" x="921" y="586.5" id="Paddington_surface"/>
+			<use xlink:href="#intnr" x="936.625" y="605" id="Paddington_deep"/>
+			<use xlink:href="#int" x="1200.5" y="636.25" id="Piccadilly_Circus"/>
+			
+			<use xlink:href="#int" x="760.5" y="514" id="Queens_Park"/>
+			
+			<use xlink:href="#int" x="340" y="296.5" id="Rayners_Lane"/>
+			<use xlink:href="#intnr" x="360.5" y="903.4" id="Richmond"/>
+			<use xlink:href="#intnrx" x="2257" y="118" id="Romford"/>
+			
+			<path class="osi" d="M 1426.67,113 V 138"/>
+			<use xlink:href="#int" x="1426.67" y="113" id="Seven_Sisters"/>
+			<use xlink:href="#int" x="1426.67" y="138" id="South_Tottenham"/>
+			<use xlink:href="#int" x="1700" y="583" id="Shadwell"/>
+			<use xlink:href="#intnr" x="726" y="723.9" id="Shepherds_Bush"/>
+			<use xlink:href="#int" x="1284.5" y="931" id="Stockwell"/>
+			<use xlink:href="#cap2nr" transform="translate(1978.375,318.25)rotate(53.13)" id="Stratford"/>
+			<use xlink:href="#nr" x="1982.375" y="323.5"/>
+			<use xlink:href="#cap2" transform="translate(1020.3,719.5)rotate(233.13)translate(-148.5)" id="South_Kensington"/>
+			
+			<use xlink:href="#cap2" transform="translate(1208,532)rotate(233.13)" id="Tottenham_Court_Road"/>
+			<path class="osi" d="M 1563,585 L 1575,601"/>
+			<use xlink:href="#int" x="1575" y="601" id="Tower_Gateway"/>
+			<use xlink:href="#intnr" x="1563" y="585" id="Tower_Hill"/>
+			
+			<use xlink:href="#intnr" x="1176" y="786" id="Victoria"/>
+			
+			<path class="osi" d="M 1682,113 L 1700.75,138"/>
+			<use xlink:href="#int" x="1682" y="113" id="Walthamstow_Central"/>
+			<use xlink:href="#int" x="1700.75" y="138" id="Walthamstow_Queens_Road"/>
+			<use xlink:href="#int" x="1155.5" y="413" id="Warren_Street"/>
+			<use xlink:href="#intnr" x="1339.5" y="741" id="Waterloo"/>
+			<use xlink:href="#intnr" x="606.5" y="398.5" id="Wembley_Central"/>
+			<use xlink:href="#int" x="651" y="294" id="Wembley_Park"/>
+			<use xlink:href="#intnr" x="828.5" y="920" id="West_Brompton"/>
+			<use xlink:href="#intnr" x="2031" y="434" id="West_Ham"/>
+			<use xlink:href="#intnr" x="912.5" y="351" id="West_Hampstead"/>
+			<use xlink:href="#int" x="1236" y="741" id="Westminster"/>
+			<use xlink:href="#int" x="696.5" y="466" id="Willesden_Junction"/>
+			<use xlink:href="#int" x="1700" y="532.5" id="Whitechapel"/>
+			<path class="osi" d="M 624,723.9 L 637,742.9"/>
+			<use xlink:href="#int" x="624" y="723.9" id="White_City"/>
+			<use xlink:href="#int" x="637" y="742.9" id="Wood_Lane"/>
+			<path class="osi" d="M 2315.625,682 L 2286.29,704"/>
+			<use xlink:href="#intx" x="2315.625" y="682" id="Woolwich"/>
+			<use xlink:href="#intnr" x="2286.29" y="704" id="Woolwich_Arsenal"/>
+		</g>
+		<g id="Bakerloo_line_stations">
+			<use xlink:href="#stbakerloo" transform="translate(789,538.5)rotate(126.87)" id="Kilburn_Park"/>
+			<use xlink:href="#stbakerloo" transform="translate(819,561)rotate(126.87)" id="Maida_Vale"/>
+			<use xlink:href="#stbakerloo" transform="translate(849,583.5)rotate(126.87)" id="Warwick_Avenue"/>
+			<use xlink:href="#intnr" x="1001" y="522" id="Marylebone"/>
+			<use xlink:href="#stbakerloo" transform="translate(1098,531)rotate(90)" id="Regents_Park"/>
+			<use xlink:href="#stbakerloo" transform="translate(1420,765)rotate(90)" id="Lambeth_North"/>
+		</g>
+		<g id="Central_line_stations">
+			<use xlink:href="#stcentral" x="182" y="344" id="Ruislip_Gardens"/>
+			<use xlink:href="#intnr" x="182" y="394" id="South_Ruislip"/>
+			<use xlink:href="#stcentral" x="182" y="454" id="Northolt"/>
+			<use xlink:href="#intnr" x="232" y="515.4" id="Greenford"/>
+			<use xlink:href="#stcentral" transform="translate(292,560.4)rotate(126.87)" id="Perivale"/>
+			<use xlink:href="#stcentral" transform="translate(440,723.9)rotate(-90)" id="West_Acton"/>
+			<use xlink:href="#stcentral" transform="translate(530,723.9)rotate(-90)" id="North_Acton"/>
+			<use xlink:href="#stcentral" transform="translate(580,723.9)rotate(-90)" id="East_Acton"/>
+			<use xlink:href="#stcentral" transform="translate(806,723.9)rotate(90)" id="Holland_Park"/>
+			<use xlink:href="#stcentral" transform="translate(930,723.9)rotate(90)" id="Queensway"/>
+			<use xlink:href="#intnr" x="996" y="691" id="Lancaster_Gate"/>
+			<use xlink:href="#stcentral" transform="translate(1056,646)rotate(233.13)" id="Marble_Arch"/>
+			<use xlink:href="#stcentral" transform="translate(1340,520)rotate(-90)" id="Chancery_Lane"/>
+			<use xlink:href="#stcentral" transform="translate(1416,548)rotate(143.13)" id="St_Pauls"/>
+			<use xlink:href="#stcentral" transform="translate(1700,452)rotate(-90)" id="Bethnal_Green_central"/>
+			<use xlink:href="#stcentral" transform="translate(1959,229)rotate(143.13)" id="Leyton"/>
+			<use xlink:href="#stcentral" transform="translate(1926,106)rotate(180)" id="Snaresbrook"/>
+			<use xlink:href="#stcentral" transform="translate(1926,76)rotate(180)" id="South_Woodford"/>
+			<use xlink:href="#int" transform="translate(1928.5,46)rotate(180)" id="Woodford"/>
+			<use xlink:href="#stcentral" transform="translate(1926,10)rotate(180)" id="Buckhurst_Hill"/>
+			<use xlink:href="#stcentral" transform="translate(1956,-20)rotate(-90)" id="Loughton"/>
+			<use xlink:href="#stcentral" transform="translate(2026,-20)rotate(-90)" id="Debden"/>
+			<use xlink:href="#stcentral" transform="translate(2110,-20)rotate(-90)" id="Theydon_Bois"/>
+			<use xlink:href="#termcentral" transform="translate(2196,-20)rotate(-90)" id="Epping"/>
+			<use xlink:href="#stcentral" transform="translate(1956,120)rotate(90)" id="Wanstead"/>
+			<use xlink:href="#stcentral" transform="translate(1996,120)rotate(-90)" id="Redbridge"/>
+			<use xlink:href="#stcentral" transform="translate(2036,120)rotate(90)" id="Gants_Hill"/>
+			<use xlink:href="#stcentral" transform="translate(2076,120)rotate(-90)" id="Newbury_Park"/>
+			<use xlink:href="#stcentral" x="2111" y="90" id="Barkingside"/>
+			<use xlink:href="#stcentral" transform="translate(2111,66)rotate(180)" id="Fairlop"/>
+			<use xlink:href="#stcentral" x="2111" y="42" id="Hainault"/>
+			<use xlink:href="#stcentral" transform="translate(2076,10)rotate(90)" id="Grange_Hill"/>
+			<use xlink:href="#stcentral" transform="translate(2026,10)rotate(-90)" id="Chigwell"/>
+			<use xlink:href="#stcentral" transform="translate(1976,10)rotate(90)" id="Roding_Valley"/>
+		</g>
+		<g id="Circle_line_stations">
+			<use xlink:href="#stdistrict" transform="translate(1020.3,723.9)rotate(200)translate(145.5,0)" id="Bayswater_district"/>
+			<use xlink:href="#stcircle" transform="translate(1020.3,723.9)rotate(200)translate(140.5,0)" id="Bayswater_circle"/>
+			<use xlink:href="#stcircle" transform="translate(1020.3,723.9)rotate(-36.87)translate(-140.5,0)" id="High_Street_Kensington_circle"/>
+			<use xlink:href="#stdistrict" transform="translate(1020.3,723.9)rotate(-36.87)translate(-145.5,0)" id="High_Street_Kensington_district"/>
+			<use xlink:href="#stdistrict" transform="translate(1146,811.5)rotate(53.13)" id="Sloane_Square_district"/>
+			<use xlink:href="#stcircle" transform="translate(1143,807.5)rotate(53.13)" id="Sloane_Square_circle"/>
+			<use xlink:href="#stdistrict" transform="translate(1210,763.5)rotate(53.13)" id="St_Jamess_Park_district"/>
+			<use xlink:href="#stcircle" transform="translate(1207,759.5)rotate(53.13)" id="St_Jamess_Park_circle"/>
+			<use xlink:href="#stcircle" transform="translate(1340,660)rotate(233.13)" id="Temple_circle"/>
+			<use xlink:href="#stdistrict" transform="translate(1343,664)rotate(233.13)" id="Temple_district"/>
+			<use xlink:href="#stcircle" transform="translate(1400,615)rotate(233.13)" id="Mansion_House_circle"/>
+			<use xlink:href="#stdistrict" transform="translate(1403,619)rotate(233.13)" id="Mansion_House_district"/>
+			<use xlink:href="#stmetropolitan" transform="translate(1599,541.5)rotate(180)" id="Aldgate_metropolitan"/>
+			<use xlink:href="#stcircle" transform="translate(1604,541.5)rotate(180)" id="Aldgate_circle"/>
+			<use xlink:href="#sthnc" transform="translate(1111,461.5)rotate(233.13)" id="Great_Portland_Street_hnc"/>
+			<use xlink:href="#stcircle" transform="translate(1114,465.5)rotate(233.13)" id="Great_Portland_Street_circle"/>
+			<use xlink:href="#stmetropolitan" transform="translate(1117,469.5)rotate(233.13)" id="Great_Portland_Street_metropolitan"/>
+			<use xlink:href="#stcircle" transform="translate(800,620)rotate(90)" id="Royal_Oak_circle"/>
+			<use xlink:href="#sthnc" transform="translate(800,615)rotate(90)" id="Royal_Oak_hnc"/>
+			<use xlink:href="#sthnc" transform="translate(722.5,641)rotate(233.13)" id="Westbourne_Park_hnc"/>
+			<use xlink:href="#stcircle" transform="translate(725.5,645)rotate(233.13)" id="Westbourne_Park_circle"/>
+			<use xlink:href="#stcircle" transform="translate(689.5,672)rotate(53.13)" id="Ladbroke_Grove_circle"/>
+			<use xlink:href="#sthnc" transform="translate(686.5,668)rotate(53.13)" id="Ladbroke_Grove_hnc"/>
+			<use xlink:href="#sthnc" transform="translate(652.5,693.5)rotate(233.13)" id="Latimer_Road_hnc"/>
+			<use xlink:href="#stcircle" transform="translate(655.5,697.5)rotate(233.13)" id="Latimer_Road_circle"/>
+			<use xlink:href="#stcircle" x="639.5" y="772.9" id="Shepherds_Bush_Market_circle"/>
+			<use xlink:href="#sthnc" x="634.5" y="772.9" id="Shepherds_Bush_Market_hnc"/>
+			<use xlink:href="#stcircle" x="639.5" y="802.9" id="Goldhawk_Road_circle"/>
+			<use xlink:href="#sthnc" x="634.5" y="802.9" id="Goldhawk_Road_hnc"/>
+		</g>
+		<g id="District_line_stations">
+			<use xlink:href="#stdistrict" transform="translate(475,800.5)rotate(126.87)" id="Chiswick_Park"/>
+			<use xlink:href="#stdistrict" transform="translate(521,835)rotate(-53.13)" id="Turnham_Green_district"/>
+			<use xlink:href="#stdistrict" transform="translate(545,853)rotate(126.87)" id="Stamford_Brook"/>
+			<use xlink:href="#stdistrict" transform="translate(587,869.4)rotate(90)" id="Ravenscourt_Park"/>
+			<use xlink:href="#stdistrict" transform="translate(705,869.4)rotate(90)" id="Barons_Court_district"/>
+			<use xlink:href="#stdistrict" transform="translate(780,869.4)rotate(90)" id="West_Kensington"/>
+			<use xlink:href="#stdistrict" transform="translate(1755.5,494)rotate(53.13)" id="Stepney_Green_district"/>
+			<use xlink:href="#sthnc" transform="translate(1752.5,490)rotate(53.13)" id="Stepney_Green_hnc"/>
+			<use xlink:href="#sthnc" transform="translate(1982,431.5)rotate(-90)" id="Bromley_by_Bow_hnc"/>
+			<use xlink:href="#stdistrict" transform="translate(1982,436.5)rotate(-90)" id="Bromley_by_Bow_district"/>
+			<use xlink:href="#stdistrict" transform="translate(2071,426.5)rotate(53.13)" id="Plaistow_district"/>
+			<use xlink:href="#sthnc" transform="translate(2068,422.5)rotate(53.13)" id="Plaistow_hnc"/>
+			<use xlink:href="#stdistrict" transform="translate(2101,404)rotate(53.13)" id="Upton_Park_district"/>
+			<use xlink:href="#sthnc" transform="translate(2098,400)rotate(53.13)" id="Upton_Park_hnc"/>
+			<use xlink:href="#stdistrict" transform="translate(2131,381.5)rotate(53.13)" id="East_Ham_district"/>
+			<use xlink:href="#sthnc" transform="translate(2128,377.5)rotate(53.13)" id="East_Ham_hnc"/>
+			<use xlink:href="#stdistrict" transform="translate(2191,336.5)rotate(53.13)" id="Upney"/>
+			<use xlink:href="#stdistrict" transform="translate(2221,314)rotate(53.13)" id="Becontree"/>
+			<use xlink:href="#stdistrict" transform="translate(2251,291.5)rotate(53.13)" id="Dagenham_Heathway"/>
+			<use xlink:href="#stdistrict" transform="translate(2281,269)rotate(53.13)" id="Dagenham_East"/>
+			<use xlink:href="#stdistrict" transform="translate(2311,246.5)rotate(53.13)" id="Elm_Park"/>
+			<use xlink:href="#stdistrict" transform="translate(2341,224)rotate(233.13)" id="Hornchurch"/>
+			<use xlink:href="#stdistrict" transform="translate(2371,201.5)rotate(233.13)" id="Upminster_Bridge"/>
+			<use xlink:href="#intnr" x="2401" y="179" id="Upminster"/>
+			<use xlink:href="#stdistrict" transform="translate(831,960)rotate(180)" id="Fulham_Broadway"/>
+			<use xlink:href="#stdistrict" transform="translate(831,990)rotate(180)" id="Parsons_Green"/>
+			<use xlink:href="#stdistrict" transform="translate(831,1020)rotate(180)" id="Putney_Bridge"/>
+			<use xlink:href="#intnr" x="847" y="1052" id="East_Putney"/>
+			<use xlink:href="#stdistrict" transform="translate(877,1074.5)rotate(126.87)" id="Southfields"/>
+			<use xlink:href="#stdistrict" transform="translate(907,1097)rotate(126.87)" id="Wimbledon_Park"/>
+			<use xlink:href="#intnr" x="937" y="1119.5" id="Wimbledon"/>
+		</g>
+		<g id="Hammersmith_And_City_line_stations">
+		</g>
+		<g id="Jubilee_line_stations">
+			<use xlink:href="#termjubilee" x="651" y="162" id="Stanmore"/>
+			<use xlink:href="#stjubilee" x="651" y="192" id="Canons_Park"/>
+			<use xlink:href="#stjubilee" x="651" y="222" id="Queensbury"/>
+			<use xlink:href="#stjubilee" x="651" y="252" id="Kingsbury"/>
+			<use xlink:href="#stjubilee" transform="translate(681,309)rotate(90)" id="Neasden"/>
+			<use xlink:href="#stjubilee" transform="translate(741,309)rotate(90)" id="Dollis_Hill"/>
+			<use xlink:href="#stjubilee" transform="translate(801,309)rotate(90)" id="Willesden_Green"/>
+			<use xlink:href="#stjubilee" transform="translate(861,309)rotate(90)" id="Kilburn"/>
+			<use xlink:href="#stjubilee" transform="translate(957.5,411)rotate(143.13)" id="Swiss_Cottage"/>
+			<use xlink:href="#stjubilee" transform="translate(995,461)rotate(143.13)" id="St_Johns_Wood"/>
+			<use xlink:href="#intnr" x="1391" y="714" id="Southwark"/>
+			<use xlink:href="#stjubilee" transform="translate(1590,675)rotate(90)" id="Bermondsey"/>
+			<use xlink:href="#stjubilee" transform="translate(2000,648)rotate(90)" id="North_Greenwich"/>
+		</g>
+		<g id="Metropolitan_line_stations">
+			<use xlink:href="#termmetropolitan" transform="translate(140,60)rotate(-53.13)" id="Chesham"/>
+			<use xlink:href="#intnr" x="120" y="81" id="Amersham"/>
+			<use xlink:href="#intnr" x="180" y="90" id="Chalfont_And_Latimer"/>
+			<use xlink:href="#stmetropolitan" transform="translate(210,112.5)rotate(126.87)" id="Chorleywood"/>
+			<use xlink:href="#stmetropolitan" transform="translate(240,135)rotate(126.87)" id="Rickmansworth"/>
+			<use xlink:href="#termmetropolitan" x="263" y="107.5" id="Watford"/>
+			<use xlink:href="#stmetropolitan" x="263" y="130" id="Croxley"/>
+			<use xlink:href="#stmetropolitan" transform="translate(280,165)rotate(-53.13)" id="Moor_Park"/>
+			<use xlink:href="#stmetropolitan" transform="translate(310,187.5)rotate(-53.13)" id="Northwood"/>
+			<use xlink:href="#stmetropolitan" transform="translate(340,210)rotate(-53.13)" id="Northwood_Hills"/>
+			<use xlink:href="#stmetropolitan" transform="translate(370,232.5)rotate(-53.13)" id="Pinner"/>
+			<use xlink:href="#stmetropolitan" transform="translate(400,255)rotate(-53.13)" id="North_Harrow"/>
+			<use xlink:href="#stmetropolitan" transform="translate(420,294)rotate(90)" id="West_Harrow"/>
+			<use xlink:href="#intnr" x="480" y="294" id="Harrow_on_the_Hill"/>
+			<use xlink:href="#stmetropolitan" transform="translate(600,294)rotate(90)" id="Preston_Road"/>
+		</g>
+		<g id="Northern_line_stations">
+			<use xlink:href="#termnorthern" transform="translate(706,124.5)rotate(-53.13)" id="Edgware"/>
+			<use xlink:href="#stnorthern" transform="translate(738,148.5)rotate(-53.13)" id="Burnt_Oak"/>
+			<use xlink:href="#stnorthern" transform="translate(768,171)rotate(-53.13)" id="Colindale"/>
+			<use xlink:href="#stnorthern" transform="translate(798,193.5)rotate(-53.13)" id="Hendon_Central"/>
+			<use xlink:href="#stnorthern" transform="translate(828,216)rotate(-53.13)" id="Brent_Cross"/>
+			<use xlink:href="#stnorthern" transform="translate(858,238.5)rotate(-53.13)" id="Golders_Green"/>
+			<use xlink:href="#stnorthern" transform="translate(888,261)rotate(-53.13)" id="Hampstead"/>
+			<use xlink:href="#stnorthern" transform="translate(1010,276)rotate(90)" id="Belsize_Park"/>
+			<use xlink:href="#stnorthern" transform="translate(1090,276)rotate(90)" id="Chalk_Farm"/>
+			<use xlink:href="#termnorthern" transform="translate(913,90)rotate(90)" id="Mill_Hill_East"/>
+			<use xlink:href="#termnorthern" transform="translate(854,4.5)rotate(-53.13)" id="High_Barnet"/>
+			<use xlink:href="#stnorthern" transform="translate(884,27)rotate(-53.13)" id="Totteridge_And_Whetstone"/>
+			<use xlink:href="#stnorthern" transform="translate(914,49.5)rotate(-53.13)" id="Woodside_Park"/>
+			<use xlink:href="#stnorthern" transform="translate(944,72)rotate(-53.13)" id="West_Finchley"/>
+			<use xlink:href="#stnorthern" transform="translate(984,102)rotate(-53.13)" id="Finchley_Central"/>
+			<use xlink:href="#stnorthern" transform="translate(1014,124.5)rotate(-53.13)" id="East_Finchley"/>
+			<use xlink:href="#stnorthern" transform="translate(1044,147)rotate(-53.13)" id="Highgate"/>
+			<use xlink:href="#stnorthern" transform="translate(1108,195)rotate(-53.13)" id="Tufnell_Park"/>
+			<use xlink:href="#stnorthern" x="1202" y="332" id="Mornington_Crescent"/>
+			<use xlink:href="#stnorthern" x="1158" y="450" id="Goodge_Street"/>
+			<use xlink:href="#stnorthern" transform="translate(1389,469.5)rotate(110)translate(-90)" id="Angel"/>
+			<use xlink:href="#intnr" transform="translate(1389,469.5)rotate(150)translate(-90)rotate(-150)" id="Old_Street"/>
+			<use xlink:href="#stnorthern" x="1479" y="730" id="Borough"/>
+			<use xlink:href="#stnorthern" transform="translate(1388.5,853)rotate(53.13)" id="Kennington"/>
+			<use xlink:href="#stnorthern" transform="translate(1344.5,886)rotate(53.13)" id="Oval"/>
+			<use xlink:href="#stnorthern" transform="translate(1210.5,986.5)rotate(53.13)" id="Clapham_Common"/>
+			<use xlink:href="#stnorthern" transform="translate(1180.5,1009)rotate(53.13)" id="Clapham_South"/>
+			<use xlink:href="#intnr" x="1150.5" y="1031.5" id="Balham"/>
+			<use xlink:href="#stnorthern" transform="translate(1120.5,1054)rotate(53.13)" id="Tooting_Bec"/>
+			<use xlink:href="#stnorthern" transform="translate(1090.5,1076.5)rotate(53.13)" id="Tooting_Broadway"/>
+			<use xlink:href="#stnorthern" transform="translate(1060.5,1099)rotate(53.13)" id="Colliers_Wood"/>
+			<use xlink:href="#stnorthern" transform="translate(1030.5,1121.5)rotate(53.13)" id="South_Wimbledon"/>
+			<use xlink:href="#termnorthern" transform="translate(1000.5,1144)rotate(53.13)" id="Morden"/>
+		</g>
+		<g id="Piccadilly_line_stations">
+			<use xlink:href="#stpiccadilly" transform="translate(384,350)rotate(180)" id="South_Harrow"/>
+			<use xlink:href="#intnr" x="384" y="410" id="Sudbury_Hill"/>
+			<use xlink:href="#stpiccadilly" transform="translate(384,470)rotate(180)" id="Sudbury_Town"/>
+			<use xlink:href="#stpiccadilly" transform="translate(384,530)rotate(180)" id="Alperton"/>
+			<use xlink:href="#stpiccadilly" transform="translate(384,670)rotate(180)" id="North_Ealing"/>
+			<use xlink:href="#stpiccadilly" transform="translate(90,959.5)rotate(-90)" id="Heathrow_1_2_3"/>
+			<use xlink:href="#termpiccadilly" transform="translate(30,959.5)rotate(90)" id="Heathrow_5"/>
+			<use xlink:href="#stpiccadilly" transform="translate(164,950.5)rotate(53.13)" id="Hatton_Cross"/>
+			<use xlink:href="#stpiccadilly" transform="translate(194,928)rotate(53.13)" id="Hounslow_West"/>
+			<use xlink:href="#stpiccadilly" transform="translate(224,905.5)rotate(53.13)" id="Hounslow_Central"/>
+			<use xlink:href="#stpiccadilly" transform="translate(254,883)rotate(233.13)" id="Hounslow_East"/>
+			<use xlink:href="#stpiccadilly" transform="translate(284,860.5)rotate(233.13)" id="Osterley"/>
+			<use xlink:href="#stpiccadilly" transform="translate(314,838)rotate(233.13)" id="Boston_Manor"/>
+			<use xlink:href="#stpiccadilly" transform="translate(344,815.5)rotate(233.13)" id="Northfields"/>
+			<use xlink:href="#stpiccadilly" transform="translate(374,793)rotate(233.13)" id="South_Ealing"/>
+			<use xlink:href="#stpiccadilly" transform="translate(530,823)rotate(-53.13)" id="Turnham_Green_piccadilly"/>
+			<use xlink:href="#stpiccadilly" transform="translate(705,854.4)rotate(90)" id="Barons_Court_piccadilly"/>
+			<use xlink:href="#stpiccadilly" transform="translate(1114.6,766)rotate(180)" id="Knightsbridge"/>
+			<use xlink:href="#stpiccadilly" transform="translate(1114.6,726)rotate(180)" id="Hyde_Park_Corner"/>
+			<use xlink:href="#stpiccadilly" transform="translate(1281,575)rotate(233.13)" id="Covent_Garden"/>
+			<use xlink:href="#stpiccadilly" x="1290" y="457" id="Russell_Square"/>
+			<use xlink:href="#stpiccadilly" transform="translate(1306,260)rotate(53.13)" id="Caledonian_Road"/>
+			<use xlink:href="#stpiccadilly" transform="translate(1336,237.5)rotate(233.13)" id="Holloway_Road"/>
+			<use xlink:href="#stpiccadilly" transform="translate(1366,215)rotate(233.13)" id="Arsenal"/>
+			<use xlink:href="#stpiccadilly" transform="translate(1382.5,159)rotate(180)" id="Manor_House"/>
+			<use xlink:href="#stpiccadilly" transform="translate(1335,74)rotate(126.87)" id="Turnpike_Lane"/>
+			<use xlink:href="#stpiccadilly" transform="translate(1305,51.5)rotate(126.87)" id="Wood_Green"/>
+			<use xlink:href="#intnr" x="1275" y="29" id="Bounds_Green"/>
+			<use xlink:href="#stpiccadilly" transform="translate(1245,6.5)rotate(-53.13)" id="Arnos_Grove"/>
+			<use xlink:href="#stpiccadilly" transform="translate(1204,-5.5)rotate(90)" id="Southgate"/>
+			<use xlink:href="#stpiccadilly" transform="translate(1154,-5.5)rotate(-90)" id="Oakwood"/>
+			<use xlink:href="#termpiccadilly" transform="translate(1104,-5.5)rotate(90)" id="Cockfosters"/>
+		</g>
+		<g id="metropolitan_Piccadilly_stations_shared">
+			<use xlink:href="#termpiccadilly" transform="translate(60,299)rotate(90)" id="Uxbridge_piccadilly"/>
+			<use xlink:href="#termmetropolitan" transform="translate(60,294)rotate(90)" id="Uxbridge_metropolitan"/>
+			<use xlink:href="#stmetropolitan" transform="translate(100,294)rotate(-90)" id="Hillingdon_metropolitan"/>
+			<use xlink:href="#stpiccadilly" transform="translate(100,299)rotate(-90)" id="Hillingdon_piccadilly"/>
+			<use xlink:href="#stpiccadilly" transform="translate(220,299)rotate(90)" id="Ruislip_piccadilly"/>
+			<use xlink:href="#stmetropolitan" transform="translate(220,294)rotate(90)" id="Ruislip_metropolitan"/>
+			<use xlink:href="#stmetropolitan" transform="translate(260,294)rotate(-90)" id="Ruislip_Manor_metropolitan"/>
+			<use xlink:href="#stpiccadilly" transform="translate(260,299)rotate(-90)" id="Ruislip_Manor_piccadilly"/>
+			<use xlink:href="#stpiccadilly" transform="translate(300,299)rotate(90)" id="Eastcote_piccadilly"/>
+			<use xlink:href="#stmetropolitan" transform="translate(300,294)rotate(90)" id="Eastcote_metropolitan"/>
+		</g>
+		<g id="Victoria_line_stations">
+			<use xlink:href="#intnr" x="1522" y="113" id="Tottenham_Hale"/>
+			<use xlink:href="#stvictoria" transform="translate(1206,826)rotate(-36.87)" id="Pimlico"/>
+			<use xlink:href="#intnr" x="1236" y="866" id="Vauxhall"/>
+			<use xlink:href="#intnr" x="1311" y="966" id="Brixton"/>
+		</g>
+		<g id="Docklands_Light_Railway_stations">
+			<use xlink:href="#intnr" x="1747" y="583" id="Limehouse"/>
+			<use xlink:href="#stdlr" transform="translate(1800,583)rotate(-90)" id="Westferry"/>
+			<use xlink:href="#stdlr" transform="translate(1940,583)rotate(90)" id="Blackwall"/>
+			<use xlink:href="#stdlr" transform="translate(1980,583)rotate(-90)" id="East_India"/>
+			<use xlink:href="#stdlr" transform="translate(2135,583)rotate(-90)" id="Royal_Victoria"/>
+			<use xlink:href="#stdlr" transform="translate(2225,583)rotate(-90)" id="Prince_Regent"/>
+			<use xlink:href="#stdlr" transform="translate(2270,583)rotate(90)" id="Royal_Albert"/>
+			<use xlink:href="#stdlr" transform="translate(2315,583)rotate(-90)" id="Beckton_Park"/>
+			<use xlink:href="#stdlr" transform="translate(2360,583)rotate(90)" id="Cyprus"/>
+			<use xlink:href="#stdlr" transform="translate(2390,543)rotate(180)" id="Gallions_Reach"/>
+			<use xlink:href="#termdlr" x="2390" y="513" id="Beckton"/>
+			<use xlink:href="#stdlr" transform="translate(1940,368)rotate(53.13)" id="Pudding_Mill_Lane"/>
+			<use xlink:href="#stdlr" x="1900" y="480" id="Devons_Road"/>
+			<use xlink:href="#stdlr" x="1900" y="510" id="Langdon_Park"/>
+			<use xlink:href="#stdlr" x="1900" y="540" id="All_Saints"/>
+			<use xlink:href="#stdlr" transform="translate(1880,606)rotate(180)" id="West_India_Quay"/>
+			<use xlink:href="#stdlr" transform="translate(1880,690)rotate(180)" id="South_Quay"/>
+			<use xlink:href="#stdlr" transform="translate(1880,720)rotate(180)" id="Crossharbour"/>
+			<use xlink:href="#stdlr" transform="translate(1880,750)rotate(180)" id="Mudchute"/>
+			<use xlink:href="#stdlr" transform="translate(1880,780)rotate(180)" id="Island_Gardens"/>
+			<use xlink:href="#stdlr" x="1880" y="810" id="Cutty_Sark_for_Maritime_Greenwich"/>
+			<use xlink:href="#intnr" x="1880" y="840" id="Greenwich"/>
+			<use xlink:href="#stdlr" x="1880" y="870" id="Deptford_Bridge"/>
+			<use xlink:href="#stdlr" x="1880" y="900" id="Elverson_Road"/>
+			<use xlink:href="#intnr" x="1880" y="930" id="Lewisham"/>
+			<use xlink:href="#intnr" x="1950" y="272" id="Stratford_International"/>
+			<use xlink:href="#stdlr" transform="translate(2017.5,362)rotate(-36.87)" id="Stratford_High_Street"/>
+			<use xlink:href="#stdlr" x="2036" y="402" id="Abbey_Road"/>
+			<use xlink:href="#stdlr" x="2036" y="510" id="Star_Lane"/>
+			<use xlink:href="#stdlr" transform="translate(2092,605)rotate(126.87)" id="West_Silvertown"/>
+			<use xlink:href="#stdlr" transform="translate(2132,635)rotate(126.87)" id="Pontoon_Dock"/>
+			<use xlink:href="#stdlr" transform="translate(2172,665)rotate(126.87)" id="London_City_Airport"/>
+			<use xlink:href="#airport" x="2179" y="653"/>
+			<use xlink:href="#stdlr" transform="translate(2212,695)rotate(126.87)" id="King_George_V"/>
+		</g>
+		<g id="Watford_DC_line_stations">
+			<use xlink:href="#intnr" x="350" y="82.5" id="Watford_Junction"/>
+			<use xlink:href="#stog" transform="translate(380,105)rotate(-53.13)" id="Watford_High_Street"/>
+			<use xlink:href="#intnr" x="410" y="127.5" id="Bushey"/>
+			<use xlink:href="#stog" transform="translate(440,150)rotate(-53.13)" id="Carpenders_Park"/>
+			<use xlink:href="#stog" transform="translate(470,172.5)rotate(-53.13)" id="Hatch_End"/>
+			<use xlink:href="#stog" transform="translate(500,195)rotate(-53.13)" id="Headstone_Lane"/>
+			<use xlink:href="#stog" transform="translate(852,509)rotate(233.13)" id="Kilburn_High_Road"/>
+			<use xlink:href="#stog" transform="translate(924,455)rotate(233.13)" id="South_Hampstead"/>
+		</g>
+		<g id="West_London_line_stations">
+			<use xlink:href="#stog" transform="translate(892,981)rotate(-90)" id="Imperial_Wharf"/>
+			<use xlink:href="#intnr" x="984" y="1016" id="Clapham_Junction"/>
+		</g>
+		<g id="North_London_line_stations">
+			<use xlink:href="#stdistrict" transform="translate(401,875.4)rotate(53.13)" id="Kew_Gardens_district"/>
+			<use xlink:href="#stog" transform="translate(398,871.4)rotate(53.13)" id="Kew_Gardens_overground"/>
+			<use xlink:href="#stog" transform="translate(510.5,786.5)rotate(53.13)" id="South_Acton"/>
+			<use xlink:href="#stog" transform="translate(540.5,764)rotate(53.13)" id="Acton_Central"/>
+			<use xlink:href="#stog" transform="translate(756.5,421)rotate(233.13)" id="Kensal_Rise"/>
+			<use xlink:href="#stog" transform="translate(786.5,398.5)rotate(233.13)" id="Brondesbury_Park"/>
+			<use xlink:href="#stog" transform="translate(816.5,376)rotate(233.13)" id="Brondesbury"/>
+			<use xlink:href="#stog" x="979.5" y="262" id="Hampstead_Heath"/>
+			<use xlink:href="#int" x="1030" y="221" id="Gospel_Oak"/>
+			<use xlink:href="#stog" transform="translate(1315,295)rotate(90)" id="Caledonian_Road_and_Barnsbury"/>
+			<use xlink:href="#int" x="1500" y="300" id="Canonbury"/>
+			<use xlink:href="#stog" transform="translate(1595,295)rotate(90)" id="Dalston_Kingsland"/>
+			<use xlink:href="#stog" transform="translate(1770,295)rotate(90)" id="Homerton"/>
+			<use xlink:href="#stog" transform="translate(1850,295)rotate(90)" id="Hackney_Wick"/>
+		</g>
+		<g id="Gospel_Oak_to_Barking_line_stations">
+			<use xlink:href="#stog" transform="translate(1226,138)rotate(270)" id="Crouch_Hill"/>
+			<use xlink:href="#intnr" x="1326" y="138" id="Harringay_Green_Lanes"/>
+			<use xlink:href="#stog" transform="translate(1860,138)rotate(90)" id="Leyton_Midland_Road"/>
+		</g>
+		<g id="East_London_line_stations">
+			<use xlink:href="#stog" transform="translate(1570.625,345)rotate(143.13)" id="Dalston_Junction"/>
+			<use xlink:href="#stog" transform="translate(1593.125,375)rotate(143.13)" id="Haggerston"/>
+			<use xlink:href="#stog" transform="translate(1615.625,405)rotate(143.13)" id="Hoxton"/>
+			<use xlink:href="#stog" transform="translate(1683.125,495)rotate(-36.87)" id="Shoreditch_High_Street"/>
+			<use xlink:href="#stog" transform="translate(1700,622.5)rotate(180)" id="Wapping"/>
+			<use xlink:href="#stog" transform="translate(1700,652.5)rotate(180)" id="Rotherhithe"/>
+			<use xlink:href="#stog" transform="translate(1700,730)rotate(180)" id="Surrey_Quays"/>
+			<use xlink:href="#stogx" transform="translate(1644,827)rotate(233.13)" id="Surrey_Canal_Road"/>
+			<use xlink:href="#intnr" x="1584" y="872" id="Queens_Road_Peckham"/>
+			<use xlink:href="#intnr" x="1524" y="917" id="Peckham_Rye"/>
+			<use xlink:href="#intnr" x="1440" y="946" id="Denmark_Hill"/>
+			<use xlink:href="#stog" transform="translate(1060,946)rotate(90)" id="Wandsworth_Road"/>
+			<use xlink:href="#intnr" x="999" y="946" id="Battersea_Park"/>
+			<use xlink:href="#intnr" x="1788" y="851" id="New_Cross"/>
+			<use xlink:href="#intnr" x="1700" y="852" id="New_Cross_Gate"/>
+			<use xlink:href="#stog" transform="translate(1700,887)rotate(180)" id="Brockley"/>
+			<use xlink:href="#stog" transform="translate(1684,919)rotate(53.13)" id="Honor_Oak_Park"/>
+			<use xlink:href="#stog" transform="translate(1644,949)rotate(53.13)" id="Forest_Hill"/>
+			<use xlink:href="#intnr" x="1604" y="979" id="Sydenham"/>
+			<use xlink:href="#intnr" x="1514" y="1009" id="Crystal_Palace"/>
+			<use xlink:href="#stog" transform="translate(1524,1039)rotate(53.13)" id="Penge_West"/>
+			<use xlink:href="#stog" transform="translate(1484,1069)rotate(53.13)" id="Anerley"/>
+			<use xlink:href="#intnr" x="1444" y="1099" id="Norwood_Junction"/>
+			<use xlink:href="#intnr" x="1404" y="1129" id="West_Croydon"/>
+		</g>
+		<g id="Seven_Sisters_line_stations" opacity="1">
+			<use xlink:href="#termogx" transform="translate(1333,-21.5)rotate(270)" id="Enfield_Town"/>
+			<use xlink:href="#stogx" transform="translate(1373,-21.5)rotate(90)" id="Bush_Hill_Park"/>
+			<use xlink:href="#intnrx" x="1683" y="-21.5" id="Cheshunt"/>
+			<use xlink:href="#stogx" transform="translate(1603,-21.5)rotate(90)" id="Theobalds_Grove"/>
+			<use xlink:href="#stogx" transform="translate(1523,-21.5)rotate(270)" id="Turkey_Street"/>
+			<use xlink:href="#stogx" transform="translate(1443,-21.5)rotate(270)" id="Southbury"/>
+			<use xlink:href="#stogx" x="1403" y="8.5" id="Edmonton_Green"/>
+			<use xlink:href="#stogx" x="1403" y="31" id="Silver_Street"/>
+			<use xlink:href="#stogx" x="1403" y="53.5" id="White_Hart_Lane"/>
+			<use xlink:href="#stogx" x="1403" y="76" id="Bruce_Grove"/>
+			<use xlink:href="#stogx" transform="translate(1527,189)rotate(126.87)" id="Stamford_Hill"/>
+			<use xlink:href="#stogx" transform="translate(1567,219)rotate(126.87)" id="Stoke_Newington"/>
+			<use xlink:href="#stogx" transform="translate(1607,249)rotate(126.87)" id="Rectory_Road"/>
+			<use xlink:href="#stogx" x="1635" y="346" id="London_Fields"/>
+			<use xlink:href="#stogx" x="1635" y="376" id="Cambridge_Heath"/>
+			<use xlink:href="#stogx" x="1635" y="406" id="Bethnal_Green_overground"/>
+		</g>
+		<g id="Chingford_line_stations">
+			<use xlink:href="#termogx" x="1682" y="23" id="Chingford"/>
+			<use xlink:href="#stogx" x="1682" y="53" id="Highams_Park"/>
+			<use xlink:href="#stogx" x="1682" y="83" id="Wood_Street"/>
+			<use xlink:href="#stogx" transform="translate(1682,170)rotate(180)" id="St_James_Street"/>
+			<use xlink:href="#intnrx" transform="translate(1682,210)rotate(180)" id="Clapton"/>
+		</g>
+		<g id="Romford_to_Upminster_line_station">
+			<use xlink:href="#stogx" transform="translate(2330.25,149)rotate(143.13)" id="Emerson_Park"/>
+		</g>
+		<g id="Bakerloo_Overground_shared_stations">
+			<use xlink:href="#stbakerloo" transform="translate(557,342)rotate(180)" id="South_Kenton_bakerloo"/>
+			<use xlink:href="#stbakerloo" transform="translate(575,378)rotate(126.87)" id="North_Wembley_bakerloo"/>
+			<use xlink:href="#stbakerloo" transform="translate(635,423)rotate(126.87)" id="Stonebridge_Park_bakerloo"/>
+			<use xlink:href="#stbakerloo" transform="translate(665,445.5)rotate(126.87)" id="Harlesden_bakerloo"/>
+			<use xlink:href="#stbakerloo" transform="translate(725,490.5)rotate(126.87)" id="Kensal_Green_bakerloo"/>
+			<use xlink:href="#stog" transform="translate(562,342)rotate(180)" id="South_Kenton_overground"/>
+			<use xlink:href="#stog" transform="translate(578,374)rotate(126.87)" id="North_Wembley_overground"/>
+			<use xlink:href="#stog" transform="translate(638,419)rotate(126.87)" id="Stonebridge_Park_overground"/>
+			<use xlink:href="#stog" transform="translate(668,441.5)rotate(126.87)" id="Harlesden_overground"/>
+			<use xlink:href="#stog" transform="translate(728,486.5)rotate(126.87)" id="Kensal_Green_overground"/>
+		</g>
+		<g id="Crossrail_stations">
+			<use xlink:href="#stcrossrail" x="105" y="939.5" id="Heathrow_Central"/>
+			<use xlink:href="#intnrx" x="0" y="480" id="Reading"/>
+			<use xlink:href="#intnrx" x="0" y="510" id="Twyford"/>
+			<use xlink:href="#intnrx" x="0" y="540" id="Maidenhead"/>
+			<use xlink:href="#stcrossrail" x="0" y="570" id="Taplow"/>
+			<use xlink:href="#stcrossrail" x="0" y="600" id="Burnham"/>
+			<use xlink:href="#intnrx" x="0" y="630" id="Slough"/>
+			<use xlink:href="#stcrossrail" x="0" y="660" id="Langley"/>
+			<use xlink:href="#stcrossrail" transform="translate(40,718.9)rotate(270)" id="Iver"/>
+			<use xlink:href="#stcrossrail" transform="translate(90,718.9)rotate(270)" id="West_Drayton"/>
+			<use xlink:href="#intnrx" x="160" y="718.9" id="Hayes_And_Harlington"/>
+			<use xlink:href="#stcrossrail" transform="translate(200,718.9)rotate(90)" id="Southall"/>
+			<use xlink:href="#stcrossrail" transform="translate(240,718.9)rotate(270)" id="Hanwell"/>
+			<use xlink:href="#intnrx" x="280" y="718.9" id="West_Ealing"/>
+			<use xlink:href="#stcrossrail" transform="translate(460,656.4)rotate(53.13)" id="Acton_Main_Line"/>
+			<!--<use xlink:href="#stcrossrail" transform="translate(4000,4000)rotate(270)" id="Old_Oak_Common"/>
+			<use xlink:href="#stcrossrail" transform="translate(4000,4000)rotate(270)" id="Portobello_Central"/>-->
+			<use xlink:href="#intnrx" x="2355.625" y="712" id="Abbey_Wood"/>
+			<use xlink:href="#stcrossrail" transform="translate(2013,301)rotate(53.13)" id="Maryland"/>
+			<use xlink:href="#stcrossrail" transform="translate(2137,208)rotate(233.13)" id="Ilford"/>
+			<use xlink:href="#stcrossrail" transform="translate(2167,185.5)rotate(233.13)" id="Seven_Kings"/>
+			<use xlink:href="#stcrossrail" transform="translate(2197,163)rotate(233.13)" id="Goodmayes"/>
+			<use xlink:href="#stcrossrail" transform="translate(2227,140.5)rotate(233.13)" id="Chadwell_Heath"/>
+			<use xlink:href="#stcrossrail" transform="translate(2287,95.5)rotate(233.13)" id="Gidea_Park"/>
+			<use xlink:href="#stcrossrail" transform="translate(2317,73)rotate(233.13)" id="Harold_Wood"/>
+			<use xlink:href="#stcrossrail" transform="translate(2347,50.5)rotate(233.13)" id="Brentwood"/>
+			<use xlink:href="#intnrx" x="2377" y="28" id="Shenfield"/>
+		</g>
+		<g id="Tramlink_stations">
+			<use xlink:href="#sttl" x="1687" y="1086" id="Beckenham_Junction"/>
+			<use xlink:href="#sttl" x="1627" y="1116" id="Elmers_End"/>
+			<use xlink:href="#sttl" x="1713" y="1155" id="New_Addington"/>
+		</g>
+	</g>
+	<g id="text">
+		<g class="st" id="stname" transform="translate(0,4)" opacity="1">
+			<g id="stname_interchanges" class="b">
+				<text x="455" y="752">Acton Town</text>
+				<text x="1653" y="528" class="mid">Aldgate<tspan x="1653" dy="13">East</tspan></text>
+				<text x="1062" y="169.5" class="end">Archway</text>
+				<text x="1060" y="520">Baker Street</text>
+				<text x="1465" y="555" class="end">Bank</text>
+				<text x="1444" y="477" class="mid">Barbican</text>
+				<text x="2171" y="367.5">Barking</text>
+				<text x="1362" y="630" class="end">Blackfriars</text>
+				<text x="1602" y="88" class="mid">Blackhorse<tspan x="1602" dy="13">Road</tspan></text>
+				<text x="1085" y="593" class="end">Bond Street</text>
+				<text x="1909" y="407">Bow<tspan x="1909" dy="13">Road</tspan></text>
+				<text x="1910" y="455">Bow Church</text>
+				<text x="1198" y="256.5">Camden<tspan x="1218" dy="13">Road</tspan></text>
+				<text x="1180" y="293" class="end">Camden<tspan x="1180" dy="13">Town</tspan></text>
+				<text x="1694" y="688" class="end">Canada<tspan x="1694" dy="13">Water</tspan></text>
+				<text x="1868" y="636" class="end">Canary Wharf</text>
+				<text x="2045" y="557">Canning<tspan x="2045" dy="13">Town</tspan></text>
+				<text x="1427" y="580" class="end">Cannon Street</text>
+				<text x="1277" y="677" class="end">Charing Cross</text>
+				<text x="2213" y="613" class="end">Custom House<tspan x="2213" dy="13">for ExCeL</tspan></text>
+				<text x="340" y="692" class="mid">Ealing<tspan x="340" dy="13">Broadway</tspan></text>
+				<text x="395" y="749" class="end">Ealing<tspan x="395" dy="13">Common</tspan></text>
+				<text x="871" y="886.4" class="mid">Earl's<tspan x="871" dy="13">Court</tspan></text>
+				<text x="961" y="536" class="end">Edgware Road</text>
+				<text x="1490" y="765">Elephant &amp; Castle</text>
+				<text x="1282" y="695" class="end">Embankment</text>
+				<text x="1215" y="362">Euston</text>
+				<text x="1211" y="417">Euston<tspan x="1211" dy="13">Square</tspan></text>
+				<text x="1396" y="452">Farringdon</text>
+				<text x="957" y="368">Finchley<tspan x="963" dy="13">Road</tspan></text>
+				<text x="958" y="338">Finchley Road &amp; Frognal</text>
+				<text x="1375" y="183" class="end">Finsbury Park</text>
+				<text x="2050" y="287" class="x">Forest<tspan x="2050" dy="13">Gate</tspan></text>
+				<text x="1142" y="670" class="end">Green Park</text>
+				<text x="1020.3" y="884" class="mid">Gloucester<tspan x="1020.3" dy="13">Road</tspan></text>
+				<text x="439" y="828" class="end">Gunnersbury</text>
+				<text x="1647" y="312">Hackney<tspan x="1647" dy="13">Central</tspan></text>
+				<text x="1647" y="275" class="x">Hackney Downs</text>
+				<text x="647" y="843">Hammersmith</text>
+				<text x="537" y="209.5">Harrow &amp;<tspan x="550" dy="13">Wealdstone</tspan></text>
+				<text x="115" y="1005">Heathrow Terminal 4</text>
+				<text x="1868" y="660" class="end">Heron Quays</text>
+				<text x="1426" y="318">Highbury<tspan x="1426" dy="15">&amp; Islington</tspan></text>
+				<text x="1284" y="510" class="end">Holborn</text>
+				<text x="818" y="806" class="end">Kensington<tspan x="818" dy="15">(Olympia)</tspan></text>
+				<text x="1140" y="210">Kentish Town</text>
+				<text x="1133" y="243" class="end">Kentish Town West</text>
+				<text x="570" y="279">Kenton</text>
+				<text x="550" y="311" class="end">Northwick<tspan x="550" dy="13">Park</tspan></text>
+				<text x="1295" y="349">King's Cross<tspan x="1295" dy="15">St. Pancras</tspan></text>
+				<text x="1269" y="595">Leicester<tspan x="1273" dy="13">Square</tspan></text>
+				<text x="1935" y="160">Leytonstone</text>
+				<text x="1956" y="180">Leytonstone<tspan x="1956" dy="15">High Road</tspan></text>
+				<text x="1587" y="494">Liverpool<tspan x="1603" dy="13">Street</tspan></text>
+				<text x="1485" y="689">London<tspan x="1485" dy="13">Bridge</tspan></text>
+				<text x="2102" y="244" class="x">Manor Park</text>
+				<text x="1822.5" y="453.5">Mile<tspan x="1822.5" dy="13">End</tspan></text>
+				<text x="1484" y="602">Monument</text>
+				<text x="1484" y="483">Moorgate</text>
+				<text x="869" y="700.5" class="end">Notting<tspan x="869" dy="13">Hill Gate</tspan></text>
+				<text x="1164" y="574">Oxford<tspan x="1170" dy="13">Circus</tspan></text>
+				<text x="945" y="617">Paddington</text>
+				<text x="1213" y="637">Piccadilly<tspan x="1218" dy="13">Circus</tspan></text>
+				<text x="754" y="527" class="end">Queen's Park</text>
+				<text x="340" y="266.5" class="mid">Rayners<tspan x="340" dy="13">Lane</tspan></text>
+				<text x="371" y="913.9">Richmond</text>
+				<text x="1417" y="98">Seven Sisters</text>
+				<text x="1693" y="595" class="end">Shadwell</text>
+				<text x="713" y="699">Shepherd's<tspan x="735" dy="15">Bush</tspan></text>
+				<text x="1408" y="155">South<tspan x="1408" dy="13">Tottenham</tspan></text>
+				<text x="1296" y="933">Stockwell</text>
+				<text x="1962" y="318" class="end">Stratford</text>
+				<text x="1090" y="807.5" class="end">South<tspan x="1090" dy="13">Kensington</tspan></text>
+				<text x="1187" y="469">Tottenham<tspan x="1187" dy="13">Court<tspan x="1187" dy="13">Road</tspan></tspan></text>
+				<text x="1580" y="570" class="end">Tower Hill</text>
+				<text x="1121" y="169.5">Upper Holloway</text>
+				<text x="1190" y="790">Victoria</text>
+				<text x="1694" y="113">Walthamstow<tspan x="1736" dy="13">Central</tspan></text>
+				<text x="1694.75" y="155">Walthamstow<tspan x="1694.75" dy="13">Queen's Road</tspan></text>
+				<text x="2024" y="230" class="mid">Wanstead<tspan x="2024" dy="13">Park</tspan></text>
+				<text x="1143.5" y="413" class="end">Warren Street</text>
+				<text x="1355" y="749">Waterloo</text>
+				<text x="595" y="409" class="end">Wembley Central</text>
+				<text x="656" y="282">Wembley Park</text>
+				<text x="840.5" y="920">West Brompton</text>
+				<text x="2043" y="450">West<tspan x="2043" dy="13">Ham</tspan></text>
+				<text x="911" y="366" class="end">West<tspan x="911" dy="13">Hampstead</tspan></text>
+				<text x="1243" y="754">Westminster</text>
+				<text x="715" y="466.5">Willesden Junction</text>
+				<text x="1716" y="536">Whitechapel</text>
+				<text x="648" y="744">Wood Lane</text>
+				<text x="2102" y="267">Woodgrange Park</text>
+				<text x="2325.625" y="673.5" class="x">Woolwich</text>
+				<text x="2286.29" y="721" class="mid">Woolwich<tspan x="2286.29" dy="13">Arsenal</tspan></text>
+			</g>
+			<g id="stname_Bakerloo_line">
+				<g class="end">
+					<text x="545" y="342">South Kenton</text>
+					<text x="565" y="386.5">North Wembley</text>
+					<text x="625" y="431.5">Stonebridge Park</text>
+					<text x="655" y="454">Harlesden</text>
+					<text x="715" y="496">Kensal<tspan x="715" dy="13">Green</tspan></text>
+					<text x="779" y="547">Kilburn Park</text>
+					<text x="809" y="569.5">Maida Vale</text>
+					<text x="839" y="592">Warwick Avenue</text>
+					<text x="991" y="513.5">Marylebone</text>
+				</g>
+				<text x="1098" y="548" class="mid">Regent's<tspan x="1098" dy="15">Park</tspan></text>
+				<text x="1420" y="782" class="mid">Lambeth<tspan x="1420" dy="13">North</tspan></text>
+			</g>
+			<g id="stname_Central_line">
+				<text x="182" y="247.5" class="b mid">West<tspan x="182" dy="13">Ruislip</tspan></text>
+				<text x="194" y="344">Ruislip<tspan x="194" dy="13">Gardens</tspan></text>
+				<text x="194" y="394">South Ruislip</text>
+				<text x="194" y="454">Northolt</text>
+				<g class="end">
+					<text x="222" y="523.9">Greenford</text>
+					<text x="282" y="568.9">Perivale</text>
+					<text x="360" y="620.4" class="b">Hanger Lane</text>
+				</g>
+				<g class="mid">
+					<text x="440" y="693.9">West<tspan x="440" dy="13">Acton</tspan></text>
+					<text x="530" y="693.9">North<tspan x="530" dy="13">Acton</tspan></text>
+					<text x="580" y="693.9">East<tspan x="580" dy="13">Acton</tspan></text>
+				</g>
+				<text x="624" y="737" class="end b">White<tspan x="624" dy="13">City</tspan></text>
+				<text x="806" y="741" class="mid">Holland Park</text>
+				<text x="930" y="740.9" class="mid">Queensway</text>
+				<g class="end">
+					<text x="986" y="669.5">Lancaster<tspan x="986" dy="13">Gate</tspan></text>
+					<text x="1046" y="637.5">Marble Arch</text>
+				</g>
+				<text x="1340" y="490" class="mid">Chancery<tspan x="1340" dy="13">Lane</tspan></text>
+				<text x="1406" y="556.5" class="end">St. Paul's</text>
+				<text x="1700" y="435" class="mid">Bethnal Green</text>
+				<text x="1949" y="237.5" class="end">Leyton</text>
+				<g class="end">
+					<text x="1914" y="106">Snaresbrook</text>
+					<text x="1914" y="76">South Woodford</text>
+					<text x="1914" y="46" class="b">Woodford</text>
+					<text x="1914" y="10">Buckhurst Hill</text>
+				</g>
+				<g class="mid">
+					<text x="1956" y="-37">Loughton</text>
+					<text x="2026" y="-37">Debden</text>
+					<text x="2110" y="-37">Theydon Bois</text>
+					<text x="2196" y="-37">Epping</text>
+					<text x="1996" y="103">Redbridge</text>
+					<text x="2036" y="137">Gants<tspan x="2036" dy="13">Hill</tspan></text>
+					<text x="2076" y="90">Newbury<tspan x="2076" dy="13">Park</tspan></text>
+				</g>
+				<text x="1940" y="137">Wanstead</text>
+				<text x="2123" y="90">Barkingside</text>
+				<text x="2099" y="66" class="end">Fairlop</text>
+				<text x="2123" y="42">Hainault</text>
+				<g class="mid">
+					<text x="2076" y="27">Grange<tspan x="2076" dy="15">Hill</tspan></text>
+					<text x="2026" y="-7">Chigwell</text>
+					<text x="1976" y="27">Roding<tspan x="1976" dy="13">Valley</tspan></text>
+				</g>
+			</g>
+			<g id="stname_Circle_line">
+				<text x="872" y="667" class="end">Bayswater</text>
+				<text x="918" y="789.5">High Street<tspan x="918" dy="13">Kensington</tspan></text>
+				<text x="1143" y="828">Sloane<tspan x="1143" dy="13">Square</tspan></text>
+				<text x="1220" y="772">St. James's Park</text>
+				<text x="1336" y="647" class="end">Temple</text>
+				<text x="1390" y="601" class="end">Mansion<tspan x="1390" dy="13">House</tspan></text>
+				<text x="1587" y="541.5" class="end">Aldgate</text>
+				<text x="1101" y="443" class="end">Great Portland<tspan x="1101" dy="13">Street</tspan></text>
+				<text x="800" y="637" class="mid">Royal Oak</text>
+				<text x="732.5" y="619.5" class="end">Westbourne<tspan x="712.5" dy="13">Park</tspan></text>
+				<text x="699.5" y="680.5">Ladbroke Grove</text>
+				<text x="642.5" y="672" class="end">Latimer<tspan x="642.5" dy="13">Road</tspan></text>
+				<text x="651.5" y="767.9">Shepherd's<tspan x="651.5" dy="15">Bush Market</tspan></text>
+				<text x="651.5" y="804.9">Goldhawk<tspan x="651.5" dy="13">Road</tspan></text>
+			</g>
+			<g id="stname_District_line_and_Hammersmith_And_City_line">
+				<text x="465" y="809" class="end">Chiswick Park</text>
+				<text x="540" y="814.5">Turnham<tspan x="550" dy="13">Green</tspan></text>
+				<text x="535" y="855.5" class="end">Stamford<tspan x="535" dy="13">Brook</tspan></text>
+				<text x="587" y="886.4" class="mid">Ravenscourt<tspan x="587" dy="13">Park</tspan></text>
+				<text x="705" y="886.4" class="mid">Barons<tspan x="705" dy="13">Court</tspan></text>
+				<text x="780" y="886.4" class="mid">West<tspan x="780" dy="13">Kensington</tspan></text>
+				<text x="1765.5" y="502.5">Stepney Green</text>
+				<text x="1982" y="401.5" class="mid">Bromley-<tspan x="1982" dy="13">by-Bow</tspan></text>
+				<text x="2081" y="435">Plaistow</text>
+				<text x="2111" y="412.5">Upton Park</text>
+				<text x="2141" y="390">East Ham</text>
+				<text x="2201" y="345">Upney</text>
+				<text x="2231" y="322.5">Becontree</text>
+				<text x="2261" y="300">Dagenham Heathway</text>
+				<text x="2291" y="277.5">Dagenham East</text>
+				<text x="2321" y="255">Elm Park</text>
+				<g class="end">
+					<text x="2331" y="215.5">Hornchurch</text>
+					<text x="2361" y="193">Upminster Bridge</text>
+				</g>
+				<text x="2401" y="162" class="mid b">Upminster</text>
+				<g class="end">
+					<text x="819" y="960">Fulham Broadway</text>
+					<text x="819" y="990">Parsons Green</text>
+					<text x="819" y="1020">Putney Bridge</text>
+					<text x="837" y="1060.5">East Putney</text>
+					<text x="867" y="1083">Southfields</text>
+					<text x="897" y="1105.5">Wimbledon Park</text>
+					<text x="927" y="1128" class="b">Wimbledon</text>
+				</g>
+			</g>
+			<g id="stname_Jubilee_line">
+				<text x="663" y="162">Stanmore</text>
+				<text x="663" y="192">Canons Park</text>
+				<text x="663" y="222">Queensbury</text>
+				<text x="663" y="252">Kingsbury</text>
+				<g class="mid">
+					<text x="681" y="326">Neasden</text>
+					<text x="741" y="326">Dollis<tspan x="741" dy="13">Hill</tspan></text>
+					<text x="801" y="326">Willesden<tspan x="801" dy="13">Green</tspan></text>
+					<text x="861" y="326">Kilburn</text>
+				</g>
+				<text x="947.5" y="419.5" class="end">Swiss Cottage</text>
+				<text x="985" y="469.5" class="end">St. John's<tspan x="985" dy="13">Wood</tspan></text>
+				<text x="1401" y="722.5">Southwark</text>
+				<text x="1590" y="692" class="mid">Bermondsey</text>
+				<text x="2000" y="665" class="mid">North<tspan x="2000" dy="13">Greenwich</tspan></text>
+			</g>
+			<g id="stname_Metropolitan_line">
+				<text x="148.5" y="50">Chesham</text>
+				<text x="120" y="98" class="mid">Amersham</text>
+				<text x="188.5" y="80">Chalfont &amp; Latimer</text>
+				<text x="201.5" y="122.5" class="end">Chorleywood</text>
+				<text x="231.5" y="145" class="end">Rickmansworth</text>
+				<text x="275" y="107.5">Watford</text>
+				<text x="274" y="130">Croxley</text>
+				<text x="288.5" y="155">Moor Park</text>
+				<text x="318.5" y="177.5">Northwood</text>
+				<text x="348.5" y="200">Northwood Hills</text>
+				<text x="378.5" y="222.5">Pinner</text>
+				<text x="408.5" y="245">North Harrow</text>
+				<g class="mid">
+					<text x="60" y="316">Uxbridge</text>
+					<text x="100" y="277">Hillingdon</text>
+					<text x="140" y="316" class="b">Ickenham</text>
+					<text x="220" y="316">Ruislip</text>
+					<text x="260" y="264">Ruislip<tspan x="260" dy="13">Manor</tspan></text>
+					<text x="300" y="316">Eastcote</text>
+					<text x="420" y="311">West<tspan x="420" dy="13">Harrow</tspan></text>
+					<text x="480" y="264">Harrow-on-<tspan x="480" dy="13">the-Hill</tspan></text>
+					<text x="600" y="311">Preston<tspan x="600" dy="13">Road</tspan></text>
+				</g>
+			</g>
+			<g id="stname_Northern_line">
+				<text x="718" y="117.5">Edgware</text>
+				<text x="748" y="140">Burnt Oak</text>
+				<text x="778" y="162.5">Colindale</text>
+				<text x="808" y="185">Hendon Central</text>
+				<text x="838" y="207.5">Brent Cross</text>
+				<text x="868" y="230">Golders Green</text>
+				<text x="898" y="252.5">Hampstead</text>
+				<text x="1010" y="293" class="mid">Belsize<tspan x="1010" dy="13">Park</tspan></text>
+				<text x="1090" y="293" class="mid">Chalk<tspan x="1090" dy="13">Farm</tspan></text>
+				<text x="913" y="107" class="mid">Mill Hill East</text>
+				<text x="864" y="-4">High Barnet</text>
+				<text x="894" y="18.5">Totteridge &amp; Whetstone</text>
+				<text x="924" y="41">Woodside Park</text>
+				<text x="954" y="63.5">West Finchley</text>
+				<text x="994" y="93.5">Finchley Central</text>
+				<text x="1024" y="116">East Finchley</text>
+				<text x="1054" y="138.5">Highgate</text>
+				<text x="1116" y="187.5">Tufnell Park</text>
+				<text x="1214" y="325">Mornington<tspan x="1214" dy="13">Crescent</tspan></text>
+				<text x="1170" y="450">Goodge Street</text>
+				<text x="1418" y="401" class="end">Angel</text>
+				<text x="1455" y="425" class="end">Old Street</text>
+				<text x="1491" y="730">Borough</text>
+				<text x="1398.5" y="861.5">Kennington</text>
+				<text x="1354.5" y="894.5">Oval</text>
+				<text x="1229" y="962" class="end b">Clapham North</text>
+				<text x="1220.5" y="995">Clapham Common</text>
+				<text x="1190.5" y="1017.5">Clapham South</text>
+				<text x="1160.5" y="1040">Balham</text>
+				<text x="1130.5" y="1062.5">Tooting Bec</text>
+				<text x="1100.5" y="1085">Tooting Broadway</text>
+				<text x="1070.5" y="1107.5">Colliers Wood</text>
+				<text x="1040.5" y="1130">South Wimbledon</text>
+				<text x="990.5" y="1145.5" class="end">Morden</text>
+			</g>
+			<g id="stname_Piccadilly_line">
+				<g class="end">
+					<text x="372" y="350">South Harrow</text>
+					<text x="372" y="410">Sudbury Hill</text>
+					<text x="372" y="470">Sudbury Town</text>
+					<text x="372" y="530">Alperton</text>
+					<text x="372" y="643" class="b">Park Royal</text>
+					<text x="372" y="670">North Ealing</text>
+				</g>
+				<text x="30" y="976.5" class="mid">Heathrow<tspan x="30" dy="13">Terminal 5</tspan></text>
+				<text x="93" y="916" class="end">Heathrow<tspan x="93" dy="13">Terminals<tspan x="93" dy="13">1, 2, 3</tspan></tspan></text>
+				<text x="174" y="959">Hatton Cross</text>
+				<text x="204" y="936.5">Hounslow West</text>
+				<text x="234" y="908">Hounslow<tspan x="234" dy="13">Central</tspan></text>
+				<g class="end">
+					<text x="244" y="874.5">Hounslow East</text>
+					<text x="274" y="852">Osterley</text>
+					<text x="304" y="829.5">Boston Manor</text>
+					<text x="334" y="807">Northfields</text>
+					<text x="364" y="784.5">South Ealing</text>
+				</g>
+				<text x="1102.6" y="766" class="end">Knightsbridge</text>
+				<text x="1102.6" y="720" class="end">Hyde Park<tspan x="1102.6" dy="13">Corner</tspan></text>
+				<text x="1284" y="547" class="end">Covent<tspan x="1284" dy="13">Garden</tspan></text>
+				<text x="1302" y="452">Russell<tspan x="1302" dy="13">Square</tspan></text>
+				<text x="1302" y="278">Caledonian Road</text>
+				<g class="end">
+					<text x="1326" y="229">Holloway Road</text>
+					<text x="1356" y="206.5">Arsenal</text>
+					<text x="1370.5" y="159">Manor House</text>
+					<text x="1325" y="82.5">Turnpike Lane</text>
+					<text x="1295" y="60">Wood Green</text>
+					<text x="1265" y="37.5">Bounds Green</text>
+				</g>
+				<text x="1255" y="-15">Arnos<tspan x="1255" dy="13">Grove</tspan></text>
+				<g class="mid">
+					<text x="1204" y="11.5">Southgate</text>
+					<text x="1154" y="-22.5">Oakwood</text>
+					<text x="1104" y="11.5">Cockfosters</text>
+				</g>
+			</g>
+			<g id="stname_Victoria_line">
+				<text x="1522" y="129" class="mid">Tottenham Hale</text>
+				<text x="1216" y="817.5">Pimlico</text>
+				<text x="1246" y="857.5">Vauxhall</text>
+				<text x="1323" y="966">Brixton</text>
+			</g>
+			<g id="stname_Docklands_Light_Railway">
+				<text x="1575" y="618" class="mid b">Tower<tspan x="1575" dy="13">Gateway</tspan></text>
+				<text x="1747" y="600" class="mid">Limehouse</text>
+				<text x="1800" y="566" class="mid">Westferry</text>
+				<text x="1847" y="570" class="b">Poplar</text>
+				<g class="mid">
+					<text x="1940" y="600">Blackwall</text>
+					<text x="1980" y="566">East India</text>
+					<text x="2135" y="553">Royal<tspan x="2135" dy="13">Victoria</tspan></text>
+					<text x="2225" y="553">Prince<tspan x="2225" dy="13">Regent</tspan></text>
+					<text x="2270" y="600">Royal<tspan x="2270" dy="13">Albert</tspan></text>
+					<text x="2315" y="566">Beckton Park</text>
+					<text x="2360" y="600">Cyprus</text>
+				</g>
+				<text x="2378" y="543" class="end">Gallions Reach</text>
+				<text x="2378" y="513" class="end">Beckton</text>
+				<text x="1950" y="370.5">Pudding<tspan x="1950" dy="13">Mill Lane</tspan></text>
+				<text x="1912" y="480">Devons Road</text>
+				<text x="1912" y="510">Langdon Park</text>
+				<text x="1912" y="540">All Saints</text>
+				<g class="end">
+					<text x="1868" y="597">West India<tspan x="1868" dy="13">Quay</tspan></text>
+					<text x="1868" y="690">South Quay</text>
+					<text x="1868" y="720">Crossharbour</text>
+					<text x="1868" y="750">Mudchute</text>
+					<text x="1868" y="780">Island Gardens</text>
+				</g>
+				<text x="1892" y="810">Cutty Sark for Maritime Greenwich</text>
+				<text x="1892" y="840">Greenwich</text>
+				<text x="1892" y="870">Deptford Bridge</text>
+				<text x="1892" y="900">Elverson Road</text>
+				<text x="1892" y="930">Lewisham</text>
+				<text x="1938" y="266" class="end">Stratford<tspan x="1938" dy="13">International</tspan></text>
+				<text x="2027.5" y="347.5">Stratford<tspan x="2027.5" dy="13">High Street</tspan></text>
+				<text x="2048" y="388">Abbey<tspan x="2048" dy="15">Road</tspan></text>
+				<text x="2048" y="510">Star Lane</text>
+				<g class="end">
+					<text x="2082" y="610.5">West<tspan x="2099" dy="13">Silvertown</tspan></text>
+					<text x="2122" y="643.5">Pontoon Dock</text>
+					<text x="2162" y="667.5">London City<tspan x="2162" dy="13">Airport</tspan></text>
+					<text x="2202" y="703.5">King George V</text>
+				</g>
+			</g>
+			<g id="stname_Watford_DC_line" opacity="1">
+				<text x="358.5" y="72.5">Watford Junction</text>
+				<text x="388.5" y="95">Watford High Street</text>
+				<text x="418.5" y="117.5">Bushey</text>
+				<text x="448.5" y="140">Carpenders Park</text>
+				<text x="478.5" y="162.5">Hatch End</text>
+				<text x="508.5" y="185">Headstone Lane</text>
+				<g class="end">
+					<text x="842" y="487.5">Kilburn<tspan x="842" dy="13">High Road</tspan></text>
+					<text x="914" y="446.5">South Hampstead</text>
+				</g>
+			</g>
+			<g id="stname_West_London_line" opacity="1">
+				<text x="892" y="949" class="mid">Imperial<tspan x="892" dy="15">Wharf</tspan></text>
+				<text x="984" y="1033" class="mid b">Clapham<tspan x="984" dy="13">Junction</tspan></text>
+			</g>
+			<g id="stname_North_London_line" opacity="1">
+				<text x="411" y="883.9">Kew Gardens</text>
+				<text x="520.5" y="795">South Acton</text>
+				<text x="555" y="763">Acton<tspan x="555" dy="13">Central</tspan></text>
+				<g class="end">
+					<text x="746.5" y="412.5">Kensal Rise</text>
+					<text x="776.5" y="390">Brondesbury Park</text>
+					<text x="806.5" y="367.5">Brondesbury</text>
+				</g>
+				<text x="991.5" y="262">Hampstead Heath</text>
+				<text x="1047" y="204" class="b end">Gospel Oak</text>
+				<text x="1300" y="312">Caledonian Road<tspan x="1300" dy="13">&amp; Barnsbury</tspan></text>
+				<g class="mid">
+					<text x="1500" y="283" class="b mid">Canonbury</text>
+					<text x="1595" y="312">Dalston<tspan x="1595" dy="13">Kingsland</tspan></text>
+					<text x="1770" y="312">Homerton</text>
+					<text x="1850" y="312">Hackney<tspan x="1850" dy="15">Wick</tspan></text>
+				</g>
+			</g>
+			<g id="stname_Gospel_Oak_to_Barking_line">
+				<text x="1226" y="123" class="mid">Crouch Hill</text>
+				<text x="1326" y="110" class="mid">Harringay<tspan x="1326" dy="13">Green Lanes</tspan></text>
+				<text x="1860" y="155" class="mid">Leyton<tspan x="1860" dy="13">Midland Road</tspan></text>
+			</g>
+			<g id="stname_East_London_line">
+				<g class="end">
+					<text x="1560.625" y="353.5">Dalston Junction</text>
+					<text x="1583.125" y="383.5" class="end">Haggerston</text>
+					<text x="1605.625" y="413.5" class="end">Hoxton</text>
+				</g>
+				<text x="1679.625" y="467">Shoreditch<tspan x="1679.625" dy="13">High Street</tspan></text>
+				<g class="end">
+					<text x="1688" y="622.5">Wapping</text>
+					<text x="1688" y="652.5">Rotherhithe</text>
+					<text x="1688" y="730">Surrey Quays</text>
+					<text x="1634" y="818.5" class="x">Surrey Canal Road</text>
+					<text x="1574" y="850.5">Queens Road<tspan x="1574" dy="13">Peckham</tspan></text>
+					<text x="1514" y="908.5">Peckham Rye</text>
+					<text x="1247" y="930" class="b">Clapham High Street</text>
+				</g>
+				<text x="991" y="930">Battersea Park</text>
+				<g class="mid">
+					<text x="1440" y="964">Denmark Hill</text>
+					<text x="1060" y="964">Wandsworth<tspan x="1060" dy="13">Road</tspan></text>
+					<text x="1788" y="868">New Cross</text>
+				</g>
+				<text x="1688" y="846" class="end">New<tspan x="1688" dy="13">Cross Gate</tspan></text>
+				<text x="1688" y="887" class="end">Brockley</text>
+				<text x="1694" y="927.5">Honor Oak Park</text>
+				<text x="1654" y="957.5">Forest Hill</text>
+				<text x="1614" y="987.5">Sydenham</text>
+				<text x="1502" y="1009" class="end">Crystal Palace</text>
+				<text x="1534" y="1047.5">Penge West</text>
+				<text x="1494" y="1077.5">Anerley</text>
+				<text x="1454" y="1107.5">Norwood Junction</text>
+				<text x="1394" y="1120.5" class="end b">West Croydon</text>
+			</g>
+			<g id="stname_Seven_Sisters_line" class="x">
+				<g class="mid">
+					<text x="1333" y="-38.5">Enfield Town</text>
+					<text x="1373" y="-4.5">Bush<tspan x="1373" dy="13">Hill<tspan x="1373" dy="13">Park</tspan></tspan></text>
+					<text x="1683" y="-38.5">Cheshunt</text>
+					<text x="1603" y="-4.5">Theobalds Grove</text>
+					<text x="1523" y="-38.5">Turkey Street</text>
+					<text x="1433" y="-38.5">Southbury</text>
+				</g>
+				<text x="1415" y="8.5">Edmonton Green</text>
+				<text x="1415" y="31">Silver Street</text>
+				<text x="1415" y="53.5">White Hart Lane</text>
+				<text x="1415" y="76">Bruce Grove</text>
+				<g class="end">
+					<text x="1517" y="197.5">Stamford Hill</text>
+					<text x="1557" y="227.5">Stoke Newington</text>
+					<text x="1597" y="257.5">Rectory Road</text>
+				</g>
+				<text x="1647" y="346">London Fields</text>
+				<text x="1647" y="376">Cambridge Heath</text>
+				<text x="1647" y="406">Bethnal Green</text>
+			</g>
+			<g id="stname_Chingford_line" class="x">
+				<text x="1694" y="23">Chingford</text>
+				<text x="1694" y="53">Highams Park</text>
+				<text x="1694" y="83">Wood Street</text>
+				<text x="1670" y="170" class="end">St. James Street</text>
+				<text x="1670" y="210" class="end">Clapton</text>
+			</g>
+			<g id="stname_Romford_to_Upminster_line" class="x">
+				<text x="2320.25" y="157.5" class="end">Emerson Park</text>
+			</g>
+			<g id="stname_Crossrail" class="x">
+				<text x="116" y="927">Heathrow<tspan x="116" dy="13">Central</tspan></text>
+				<text x="12" y="480">Reading</text>
+				<text x="12" y="510">Twyford</text>
+				<text x="12" y="540">Maidenhead</text>
+				<text x="12" y="570">Taplow</text>
+				<text x="12" y="600">Burnham</text>
+				<text x="12" y="630">Slough</text>
+				<text x="12" y="660">Langley</text>
+				<g class="mid">
+					<text x="40" y="701.9">Iver</text>
+					<text x="90" y="686.9">West<tspan x="90" dy="15">Drayton</tspan></text>
+					<text x="160" y="686.9">Hayes &amp;<tspan x="160" dy="15">Harlington</tspan></text>
+					<text x="200" y="735.9">Southall</text>
+					<text x="240" y="701.9">Hanwell</text>
+					<text x="280" y="735.9">West Ealing</text>
+				</g>
+				<text x="470" y="664.9">Acton Main<tspan x="470" dy="13">Line</tspan></text>
+				<!--<text x="4000" y="4000">Old Oak Common</text>
+				<text x="4000" y="4000">Portobello Central</text>-->
+				<text x="2367.625" y="705">Abbey<tspan x="2367.625" dy="15">Wood</tspan></text>
+				<text x="2018" y="316.5">Maryland</text>
+				<g class="end">
+					<text x="2127" y="199.5">Ilford</text>
+					<text x="2157" y="175">Seven Kings</text>
+					<text x="2187" y="152.5">Goodmayes</text>
+					<text x="2217" y="130">Chadwell Heath</text>
+					<text x="2247" y="107.5" class="b">Romford</text>
+					<text x="2277" y="85">Gidea Park</text>
+					<text x="2307" y="62.5">Harold Wood</text>
+					<text x="2337" y="40">Brentwood</text>
+					<text x="2367" y="17.5">Shenfield</text>
+				</g>
+			</g>
+			<g class="small">
+				<g id="stname_Tramlink">
+					<text x="1697" y="1086">Beckenham Junction</text>
+					<text x="1637" y="1116">Elmers End</text>
+					<text x="1723" y="1155">New Addington</text>
+				</g>
+				<g class="b">
+					<text transform="translate(812,546)rotate(36.87)" class="fbakerloo">Bakerloo line</text>
+					<text transform="translate(1186,633)rotate(53.13)" class="fbakerloo end">Bakerloo<tspan x="0" dy="10">line</tspan></text>
+					<text x="475" y="732" class="fcentral">Central line</text>
+					<text transform="translate(1942,332)rotate(-36.87)" class="fcentral end">Central line</text>
+					<g class="fcircle">
+						<text transform="translate(714,665)rotate(-36.87)">Circle line</text>
+						<text transform="translate(1020.3,723.9)rotate(207)translate(129,0)rotate(90)" class="mid">Circle</text>
+						<text transform="translate(1020.3,723.9)rotate(220)translate(129,0)rotate(90)" class="mid">line</text>
+					</g>
+					<g class="fdistrict">
+						<text x="908" y="878">District line</text>
+						<g class="end">
+							<text transform="translate(474,835)rotate(-36.87)">District line</text>
+							<text transform="translate(2218,305)rotate(-36.87)">District line</text>
+							<text transform="translate(908,1088)rotate(36.87)">District line</text>
+						</g>
+						<text transform="translate(1020.3,723.9)rotate(167)translate(158,0)rotate(-90)" class="mid">District</text>
+						<text transform="translate(1020.3,723.9)rotate(155)translate(158,0)rotate(-90)" class="mid">line</text>
+					</g>
+					<text transform="translate(620,837)rotate(90)" class="fhnc end">Hammersmith<tspan x="0" dy="10">&amp; City line</tspan></text>
+					<text transform="translate(2144,354)rotate(-36.87)" class="fhnc end">H&amp;C line</text>
+					<text x="780" y="301.5" class="fjubilee">Jubilee line</text>
+					<text transform="translate(2014,450)rotate(90)" class="fjubilee">Jubilee line</text>
+					<text x="780" y="284" class="fmetropolitan">Metropolitan line</text>
+					<text transform="translate(424,284.5)rotate(36.87)" class="fmetropolitan end">Metropolitan line</text>
+					<g class="fnorthern">
+						<text transform="translate(857,19)rotate(36.87)">Northern line</text>
+						<text transform="translate(781,193)rotate(36.87)">Northern line</text>
+						<text transform="translate(1291,916)rotate(-36.87)">Northern line</text>
+					</g>
+					<g class="fpiccadilly">
+						<text transform="translate(328,839)rotate(-36.87)" class="end">Piccadilly line</text>
+						<text transform="translate(391,430)rotate(90)">Piccadilly line</text>
+						<text transform="translate(1372,89)rotate(36.87)" class="end">Piccadilly line</text>
+					</g>
+					<text x="1612" y="121" class="fvictoria">Victoria line</text>
+					<text transform="translate(1231,876)rotate(53.13)" class="fvictoria">Victoria line</text>
+					<text transform="translate(1361,676)rotate(-36.87)" class="fwnc">Waterloo &amp; City line</text>
+					<g class="fdlr">
+						<text x="1645" y="575">DLR</text>
+						<text transform="translate(1961,275)rotate(53.13)">DLR</text>
+						<text transform="translate(2198,674)rotate(36.87)">DLR</text>
+						<text transform="translate(1887,665)rotate(90)">Docklands Light Railway</text>
+					</g>
+					<g class="fog">
+						<text transform="translate(417,145)rotate(36.87)">Overground</text>
+						<text transform="translate(597,527)rotate(-36.87)">Overground</text>
+						<text x="1612" y="146">Overground</text>
+						<text x="1810" y="284" class="mid">Overground</text>
+						<text transform="translate(1707,700)rotate(90)">Overground</text>
+						<text x="1145" y="373" class="end">Overground</text>
+						<text transform="translate(2136.5,344)rotate(53.13)" class="end">Overground</text>
+					</g>
+					<text transform="translate(1623,330)rotate(90)" class="fogx">Overground</text>
+					<text transform="translate(2311.5,110)rotate(53.13)" class="fogx">Overground</text>
+					<g class="fcrossrail">
+						<text x="113" y="728" class="end">Crossrail</text>
+						<text transform="translate(2228,629)rotate(36.87)">Crossrail</text>
+						<text transform="translate(2158,204)rotate(-36.87)">Crossrail</text>
+					</g>
+					<text x="1200" y="1147.5" class="ftl">Tramlink</text>
+				</g>
+			</g>
+			<text x="1040" y="911" class="rn b">River Thames</text>
+		</g>
+	</g>
+	<g id="title_header" transform="translate(-40,-60)">
+		<path class="ftfl" style="stroke:none" d="M -10,0 L 0,0 v 27 h 930 q 15,0 27,-9 l 12,-9 q 12,-9 27,-9 z"/>
+		<text x="7" y="20" class="b" style="font-size:20px;fill:#fff">Route map of London Underground, London Overground, Docklands Light Railway and Crossrail</text>
+	</g>
+</svg>

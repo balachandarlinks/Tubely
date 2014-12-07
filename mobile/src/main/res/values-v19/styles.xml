@@ -1,0 +1,31 @@
+<resources>
+
+
+    <style name="Theme.AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/TubelyButton</item>
+    </style>
+
+    <style name="Theme.TubeMap" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionBarStyle">@style/Theme.TubeMap.TubeMapActionBar</item>
+    </style>
+
+    <style name="Theme.TubeMap.TubeMapActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="background">@color/tubeMapActionBar</item>
+    </style>
+
+    <style name="Theme.DetailedStation" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="TubelyButton" parent="android:style/Widget.Button">
+        <item name="android:background">@drawable/tubely_welcome_button</item>
+    </style>
+
+
+</resources>

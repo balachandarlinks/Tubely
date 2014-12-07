@@ -158,7 +158,7 @@
         <Station
             Name="Burnt Oak"
             Code="BUR"
-            Lines="Barnet"
+            Lines="Northern"
             />
         <Station
             Name="Caledonian Road"
@@ -481,12 +481,12 @@
             Lines="Bakerloo"
             />
         <Station
-            Name="HarStation and Wealdstone"
+            Name="Harrow and Wealdstone"
             Code="HAW"
             Lines="Bakerloo"
             />
         <Station
-            Name="HarStation on the Hill"
+            Name="Harrow on the Hill"
             Code="HOH"
             Lines="Metropolitan"
             />
@@ -496,17 +496,17 @@
             Lines="Piccadilly"
             />
         <Station
-            Name="HeathStation Terminal 4"
-            Code="HTF"
-            Lines="2,3,Piccadilly"
+            Name="Heathrow Terminal 4"
+            Code="HRF"
+            Lines="Piccadilly"
             />
         <Station
-            Name="HeathStation Terminal 5"
+            Name="Heathrow Terminal 5"
             Code="HRV"
             Lines="Piccadilly"
             />
         <Station
-            Name="HeathStation Terminals 123"
+            Name="Heathrow Terminals 123"
             Code="HRC"
             Lines="Piccadilly"
             />
@@ -626,14 +626,14 @@
             Lines="Bakerloo"
             />
         <Station
-            Name="King&apos;s Cross St Pancras"
+            Name="Kings Cross St Pancras"
             Code="KXX"
-            Lines="Jubilee"
+            Lines="Metropolitan,Northern,Piccadilly,Circle,Victoria,Hammersmith and City"
             />
         <Station
             Name="Kingsbury"
             Code="KBY"
-            Lines="Metropolitan,Northern,Piccadilly,Circle,Victoria,Hammersmith and City"
+            Lines="Jubilee"
             />
         <Station
             Name="Knightsbridge"
@@ -653,12 +653,12 @@
         <Station
             Name="Leicester Square"
             Code="LSQ"
-            Lines="Hammersmith and City,Circle"
+            Lines="Piccadilly,Northern"
             />
         <Station
             Name="Leyton"
             Code="LEY"
-            Lines="Piccadilly,Northern"
+            Lines="Central"
             />
         <Station
             Name="Leytonstone"
@@ -668,62 +668,62 @@
         <Station
             Name="Liverpool Street"
             Code="LST"
-            Lines="Central"
+            Lines="Metropolitan,Central,Circle,Hammersmith and City"
             />
         <Station
             Name="London Bridge"
             Code="LON"
-            Lines="Metropolitan,Central,Circle,Hammersmith and City"
+            Lines="Northern,Jubilee"
             />
         <Station
             Name="Loughton"
             Code="LTN"
-            Lines="Northern,Jubilee"
+            Lines="Central"
             />
         <Station
             Name="Maida Vale"
             Code="MDV"
-            Lines="Central"
+            Lines="Bakerloo"
             />
         <Station
             Name="Manor House"
             Code="MNR"
-            Lines="Bakerloo"
+            Lines="Piccadilly"
             />
         <Station
             Name="Mansion House"
             Code="MAN"
-            Lines="Piccadilly"
+            Lines="District,Circle"
             />
         <Station
             Name="Marble Arch"
             Code="MAR"
-            Lines="District,Circle"
+            Lines="Central"
             />
         <Station
             Name="Marylebone"
             Code="MYB"
-            Lines="Central"
+            Lines="Bakerloo"
             />
         <Station
             Name="Mile End"
             Code="MLE"
-            Lines="Bakerloo"
+            Lines="District,Hammersmith and City,Central"
             />
         <Station
             Name="Mill Hill East"
             Code="MHE"
-            Lines="District,Hammersmith and City,Central"
+            Lines="Northern"
             />
         <Station
             Name="Monument"
             Code="MON"
-            Lines="Northern"
+            Lines="District,Circle"
             />
         <Station
             Name="Moor Park"
             Code="MPK"
-            Lines="District,Circle"
+            Lines="Metropolitan"
             />
         <Station
             Name="Moorgate"
@@ -733,7 +733,7 @@
         <Station
             Name="Morden"
             Code="MOR"
-            Lines="Metropolitan"
+            Lines="Northern"
             />
         <Station
             Name="Mornington Crescent"
@@ -743,12 +743,12 @@
         <Station
             Name="Neasden"
             Code="NEA"
-            Lines="Northern"
+            Lines="Jubilee"
             />
         <Station
             Name="Newbury Park"
             Code="NEP"
-            Lines="Jubilee"
+            Lines="Central"
             />
         <Station
             Name="North Acton"
@@ -758,32 +758,32 @@
         <Station
             Name="North Ealing"
             Code="NEL"
-            Lines="Central"
+            Lines="Piccadilly"
             />
         <Station
             Name="North Greenwich"
             Code="NGW"
-            Lines="Piccadilly"
+            Lines="Jubilee"
             />
         <Station
-            Name="North HarStation"
+            Name="North Harrow"
             Code="NHR"
-            Lines="Jubilee"
+            Lines="Metropolitan"
             />
         <Station
             Name="North Wembley"
             Code="NWM"
-            Lines="Metropolitan"
+            Lines="Bakerloo"
             />
         <Station
             Name="Northfields"
             Code="NFD"
-            Lines="Bakerloo"
+            Lines="Piccadilly"
             />
         <Station
             Name="Northolt"
             Code="NHT"
-            Lines="Piccadilly"
+            Lines="Central"
             />
         <Station
             Name="Northwick Park"
@@ -803,22 +803,22 @@
         <Station
             Name="Notting Hill Gate"
             Code="NHG"
-            Lines="Metropolitan"
+            Lines="District,Central,Circle"
             />
         <Station
             Name="Oakwood"
             Code="OAK"
-            Lines="District,Central,Circle"
+            Lines="Piccadilly"
             />
         <Station
             Name="Old Street"
             Code="OLD"
-            Lines="Piccadilly"
+            Lines="Northern"
             />
         <Station
             Name="Olympia"
             Code="OLY"
-            Lines="Northern"
+            Lines="District"
             />
         <Station
             Name="Osterley"
@@ -838,9 +838,20 @@
         <Station
             Name="Paddington"
             Code="PAD"
-            Lines="Hammersmith and City,District,Circle,Bakerloo,"
+            Lines="Bakerloo"
             />
         <Station
+            Name="Paddington (District and circle)"
+            Code="PAD"
+            Lines="District,Circle"
+            />
+        <Station
+            Name="Paddington (H&C)"
+            Code="PAD"
+            Lines="Hammersmith and City"
+            />
+					
+       <Station
             Name="Park Royal"
             Code="PRY"
             Lines="Piccadilly"
@@ -976,7 +987,7 @@
             Lines="Piccadilly"
             />
         <Station
-            Name="South HarStation"
+            Name="South Harrow"
             Code="SHR"
             Lines="Piccadilly"
             />
@@ -1153,7 +1164,7 @@
         <Station
             Name="Upton Park"
             Code="UPK"
-            Lines="Newham"
+            Lines="District,Hammersmith and City"
             />
         <Station
             Name="Uxbridge"
@@ -1236,7 +1247,7 @@
             Lines="Jubilee"
             />
         <Station
-            Name="West HarStation"
+            Name="West Harrow"
             Code="WHR"
             Lines="Metropolitan"
             />
@@ -1295,5 +1306,11 @@
             Code="WFD"
             Lines="Central"
             />
+        <Station
+            Name="Woodside Park"
+            Code="WSP"
+            Lines="Northern"
+            />
+
     </Stations>
 </AllStations>

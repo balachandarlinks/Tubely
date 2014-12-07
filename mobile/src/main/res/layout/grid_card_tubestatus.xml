@@ -29,8 +29,7 @@
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
-        </RelativeLayout>>
-
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/tubeStatus"
@@ -39,9 +38,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
+            android:singleLine="true"
             android:text="Good Service" />
 
     </LinearLayout>
-
 
 </android.support.v7.widget.CardView>
