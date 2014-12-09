@@ -506,7 +506,12 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
                 //Log.d(TAG, "Train Prediction Failure"  + error.getMessage());
                 platformRefresh.setVisibility(View.VISIBLE);
                 trainPredictionLinearLayout.setVisibility(View.GONE);
-                platformRefreshTextView.setText(error.getResponse().getReason());
+
+                if(null != error.getResponse()) {
+                    platformRefreshTextView.setText(error.getResponse().getReason());
+                }else {
+                    platformRefreshTextView.setText(getResources().getString(R.string.unknown_error));
+                }
                 refreshAnimator.cancel();
                 Toast.makeText(getApplicationContext(), "Sorry! We did our best.", Toast.LENGTH_SHORT).show();
             }

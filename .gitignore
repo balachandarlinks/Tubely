@@ -13,6 +13,8 @@ bin/
 gen/
 
 # Gradle files
+.idea
+.navigation
 .gradle/
 build/
 mobile/build/
