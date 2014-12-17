@@ -1,6 +1,7 @@
 package in.codeseed.tubely.fragments;
 
 
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
@@ -14,6 +15,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.BounceInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -43,7 +45,6 @@ public class NearbyStationsFragment extends Fragment implements GooglePlayServic
     private final static String TAG = NearbyStationsFragment.class.getSimpleName();
     private static String MAP_URL = "http://maps.google.com/maps?saddr=CURLAT,CURLONG&daddr=DESLAT,DESLONG&mode=walking";
 
-    //private ListView stationsListView;
     private RelativeLayout stationsLoader;
     private ImageView stationsLoaderImageView;
     private TextView stationsLoaderTextView;
@@ -53,6 +54,7 @@ public class NearbyStationsFragment extends Fragment implements GooglePlayServic
 
     private LocationClient locationClient;
     private Location currentLocation;
+    private ObjectAnimator mStationsLoaderImageViewanimator;
 
     public NearbyStationsFragment() {
         // Required empty public constructor
@@ -69,6 +71,11 @@ public class NearbyStationsFragment extends Fragment implements GooglePlayServic
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
         injectViews(view);
+        mStationsLoaderImageViewanimator = ObjectAnimator.ofFloat(stationsLoaderImageView, "rotation", 360);
+        mStationsLoaderImageViewanimator.setRepeatCount(ObjectAnimator.INFINITE);
+        mStationsLoaderImageViewanimator.setDuration(600);
+        mStationsLoaderImageViewanimator.setInterpolator(new BounceInterpolator());
+
         preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
         locationClient = new LocationClient(getActivity().getApplicationContext(), this, this);
         stationsLoaderImageView.setOnClickListener(new View.OnClickListener() {
@@ -191,6 +198,8 @@ public class NearbyStationsFragment extends Fragment implements GooglePlayServic
         @Override
         protected void onPreExecute() {
             nearbyStationsLayout.removeAllViews();
+            stationsLoader.setVisibility(View.VISIBLE);
+            mStationsLoaderImageViewanimator.start();
         }
 
         @Override
@@ -206,14 +215,15 @@ public class NearbyStationsFragment extends Fragment implements GooglePlayServic
 
         @Override
         protected void onPostExecute(Void aVoid) {
-
+            mStationsLoaderImageViewanimator.cancel();
             nearbyStations = sortNearByStations(nearbyStations);
             if(nearbyStations.isEmpty()){
                 String nearByStationsRadious = preferences.getString(Util.SHARED_PREF_NEARBY_STATIONS_RADIOUS, "1000");
                 nearbyStationsLayout.setVisibility(View.INVISIBLE);
                 stationsLoader.setVisibility(View.VISIBLE);
                 stationsLoaderTextView.setText("No Nearby Stations in " + nearByStationsRadious + " m radius! \n Open Settings to change the radius.");
-                Toast.makeText(getActivity().getApplicationContext(), "No nearby stations!", Toast.LENGTH_SHORT).show();
+                if(Util.NEARBY_FRAGMENTS_VISIBLE)
+                    Toast.makeText(getActivity().getApplicationContext(), "No nearby stations!", Toast.LENGTH_SHORT).show();
             }else {
                 nearbyStationsLayout.setVisibility(View.VISIBLE);
                 stationsLoader.setVisibility(View.INVISIBLE);

@@ -17,6 +17,8 @@ public class Util {
     public static final String SHARED_PREF_FIRST_TIME_WELCOME = "tubely_first_time_welcome";
     public static final String SHARED_PREF_NEARBY_STATIONS_RADIOUS = "pref_neaby_stations_distance";
 
+    public static boolean NEARBY_FRAGMENTS_VISIBLE = false;
+
     private static AllStations allStations;
 
     public Util(){

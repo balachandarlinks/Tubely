@@ -1,47 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Root>
 	<name>Transport for London Stations facilities</name>
-	<open>0</open>
 	<description>Transport for London Stations facilities</description>
-	<Header>
-		<Identifier>TfL | Station information</Identifier>
-		<DisplayTitle>TfL | Station information</DisplayTitle>
-		<Version>1.0</Version>
-		<PublishDateTime canonical="2010-02-04 11:54:08:000">Thu, 04 Feb 2010 11:54:08 +0100</PublishDateTime>
-		<Author>webteam@tfl.gov.uk</Author>
-		<Owner>Transport for London</Owner>
-		<RefreshRate>259200</RefreshRate>
-		<Max_Latency>1440</Max_Latency>
-		<TimeToError>2880</TimeToError>
-		<Schedule>Every quarter</Schedule>
-		<Attribution>
-			<Url>http://www.tfl.gov.uk/</Url>
-			<Text>(c) Transport for London</Text>
-			<Logo>http://www.tfl.gov.uk/tfl-global/images/roundel.gif</Logo>
-		</Attribution>
-		<Language>en</Language>
-	</Header>
-	<Style id="tubeStyle">
-		<IconStyle>
-			<Icon>
-				<href>http://www.tfl.gov.uk/tfl-global/images/syndication/roundel-tube.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="dlrStyle">
-		<IconStyle>
-			<Icon>
-				<href>http://www.tfl.gov.uk/tfl-global/images/syndication/roundel-dlr.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="overgroundStyle">
-		<IconStyle>
-			<Icon>
-				<href>http://www.tfl.gov.uk/tfl-global/images/syndication/roundel-overground.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
 	<stations>
 		<station id="1000002" type="tube" xmlns="">
 			<name>Acton Town</name>
@@ -4385,7 +4345,6 @@
 				<phone>0845 330 9871</phone>
 			</contactDetails>
 			<servingLines>
-				<servingLine>East London</servingLine>
 				<servingLine>Jubilee</servingLine>
 			</servingLines>
 			<zones>
@@ -10513,6 +10472,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Piccadilly</servingLine>
 			</servingLines>
 			<zones>
 				<zone>6</zone>
@@ -19795,72 +19755,6 @@
 				<styleUrl>#tubeStyle</styleUrl>
 			</Placemark>
 		</station>
-		<station id="1000195" type="tube" xmlns="">
-			<name>Rotherhithe</name>
-			<contactDetails>
-				<address>Rotherhithe Station, London Underground Ltd., Brunel Rd, London, SE16 4LF</address>
-				<phone>0845 330 9878</phone>
-			</contactDetails>
-			<servingLines>
-				<servingLine>East London</servingLine>
-			</servingLines>
-			<zones>
-				<zone>2</zone>
-			</zones>
-			<facilities>
-				<facility name="Ticket Halls">1</facility>
-				<facility name="Lifts">0</facility>
-				<facility name="Escalators">2</facility>
-				<facility name="Gates">3</facility>
-				<facility name="Toilets">no</facility>
-				<facility name="Photo Booths">0</facility>
-				<facility name="Cash Machines">0</facility>
-				<facility name="Payphones">1 in ticket halls, 0 on platforms</facility>
-				<facility name="Car park">no</facility>
-				<facility name="Vending Machines">0 snack, 0 drink</facility>
-				<facility name="Help Points">0 on platforms, 0 in ticket halls, 0 elsewhere</facility>
-				<facility name="Bridge">no</facility>
-				<facility name="Waiting Room">no</facility>
-				<facility name="Other Facilities">routeways platform to ticket hall.</facility>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Brunel Road</name>
-					<entranceToBookingHall>1 step up</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Escalator (or 12, 13, 12 stairs) down, 15, 9, 15 stairs down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>East London</trainName>
-						<platformToTrainSteps>LEVEL_200</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-				<openingHour>
-					<entrance>Main entrance: </entrance>
-					<timeIntervals type="Mon-Fri">
-						<timeInterval>
-							<from>07:00</from>
-							<to>10:30</to>
-						</timeInterval>
-					</timeIntervals>
-				</openingHour>
-			</openingHours>
-			<Placemark>
-				<name>
-					Rotherhithe Station
-				</name>
-				<description>Rotherhithe Station, London Underground Ltd., Brunel Rd, London, SE16 4LF</description>
-				<Point>
-					<coordinates>
-						-.052180998321318894,51.501005694266450000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#tubeStyle</styleUrl>
-			</Placemark>
-		</station>
 		<station id="1000196" type="tube" xmlns="">
 			<name>Royal Oak</name>
 			<contactDetails>
@@ -24825,92 +24719,6 @@
 				<styleUrl>#tubeStyle</styleUrl>
 			</Placemark>
 		</station>
-		<station id="1000251" type="tube" xmlns="">
-			<name>Wapping</name>
-			<contactDetails>
-				<address>Wapping Station, London Underground Ltd., Wapping High St, London, E1 9NQ</address>
-				<phone>0845 330 9878</phone>
-			</contactDetails>
-			<servingLines>
-				<servingLine>East London</servingLine>
-			</servingLines>
-			<zones>
-				<zone>2</zone>
-			</zones>
-			<facilities>
-				<facility name="Ticket Halls">1</facility>
-				<facility name="Lifts">2</facility>
-				<facility name="Escalators">0</facility>
-				<facility name="Gates">3</facility>
-				<facility name="Toilets">no</facility>
-				<facility name="Photo Booths">0</facility>
-				<facility name="Cash Machines">0</facility>
-				<facility name="Payphones">0 in ticket halls, 0 on platforms</facility>
-				<facility name="Car park">no</facility>
-				<facility name="Vending Machines">0 snack, 0 drink</facility>
-				<facility name="Help Points">0 on platforms, 0 in ticket halls, 0 elsewhere</facility>
-				<facility name="Bridge">no</facility>
-				<facility name="Waiting Room">no</facility>
-				<facility name="Other Facilities">routeways platform to ticket hall.</facility>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Wapping High Street</name>
-					<entranceToBookingHall>Slight ramp up</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>2 steps up, lift down, 4, 21 stairs down or </pathDescription>
-						<path>
-							<heading>NORTHBOUND</heading>
-							<pathDescription>2 steps up, 3 x 15, 12, 15, 12 stairs down, 4 steps up, 4, 21 stairs down </pathDescription>
-						</path>
-						<path>
-							<heading>NORTHBOUND</heading>
-							<pathDescription>2 steps up, 3 x 15, 12, 15, 12, 21 stairs down</pathDescription>
-						</path>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>East London</trainName>
-						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-				<openingHour>
-					<entrance>Main entrance: </entrance>
-					<timeIntervals type="Mon-Fri">
-						<timeInterval>
-							<from>07:00</from>
-							<to>11:30</to>
-						</timeInterval>
-					</timeIntervals>
-					<timeIntervals type="Sat">
-						<timeInterval>
-							<from>09:30</from>
-							<to>15:00</to>
-						</timeInterval>
-					</timeIntervals>
-					<timeIntervals type="Sun">
-						<timeInterval>
-							<from>10:30</from>
-							<to>13:30</to>
-						</timeInterval>
-					</timeIntervals>
-				</openingHour>
-			</openingHours>
-			<Placemark>
-				<name>
-					Wapping Station
-				</name>
-				<description>Wapping Station, London Underground Ltd., Wapping High St, London, E1 9NQ</description>
-				<Point>
-					<coordinates>
-						-.055846250896647850,51.504268283481814000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#tubeStyle</styleUrl>
-			</Placemark>
-		</station>
 		<station id="1000252" type="tube" xmlns="">
 			<name>Warren Street</name>
 			<contactDetails>
@@ -27445,236 +27253,6 @@
 				<styleUrl>#tubeStyle</styleUrl>
 			</Placemark>
 		</station>
-		<station id="1002003" type="dlr" xmlns="">
-			<name>All Saints</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>East India Dock Road</name>
-					<entranceToBookingHall> Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 16, 11 stairs down)</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands</trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					All Saints Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.012751749577122285,51.511010078082435000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002011" type="dlr" xmlns="">
-			<name>Beckton</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Woolwich Manor Way</name>
-					<entranceToBookingHall> Ramp (or 10 stairs) up</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription> Level</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Beckton Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						.060942442359961540,51.515133282604730000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002012" type="dlr" xmlns="">
-			<name>Beckton Park</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Strait Road</name>
-					<entranceToBookingHall> Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription> Ramp (or 12 stairs) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Beckton Park Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						.054897746701542370,51.508943792676580000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002018" type="dlr" xmlns="">
-			<name>Blackwall</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Ditchburn Street</name>
-					<entranceToBookingHall> Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription> Lift (or 9, 16, 4, 16, 16 stairs) up</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Blackwall Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.007108496961494498,51.508216114618390000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002019" type="dlr" xmlns="">
-			<name>Bow Church</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Bow Road</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 16, 11 stairs) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Bow Church Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.020691424393872180,51.527333106708156000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
 		<station id="1000032" type="tube" xmlns="">
 			<name>Bromley-By-Bow</name>
 			<contactDetails>
@@ -27685,6 +27263,8 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>District</servingLine>
+                <servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -27752,402 +27332,8 @@
 				<styleUrl>#tubeStyle</styleUrl>
 			</Placemark>
 		</station>
-		<station id="1002025" type="dlr" xmlns="">
-			<name>Crossharbour and London Arena</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Crossharbour</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift, (or 16, 16 stairs) up</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Crossharbour and London Arena Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.014614325661385941,51.495698374116300000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1001079" type="dlr" xmlns="">
-			<name>Custom House</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Victoria Dock Road</name>
-					<entranceToBookingHall>Ramp (8 stairs) up</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName>Dlocklands </pointName>
-						<pathDescription>lift (or 16, 16 stairs) up, footbridge, lift (or 16, 14 stairs) down ()</pathDescription>
-					</bookingHallToPlatform>
-					<bookingHallToPlatform>
-						<pointName>Silverlink </pointName>
-						<pathDescription>()</pathDescription>
-						<path>
-							<heading>EASTBOUND</heading>
-							<pathDescription>Level ()</pathDescription>
-						</path>
-						<path>
-							<heading>WESTBOUND</heading>
-							<pathDescription>Lift (or 16, 14 stairs) up, footbridge, Lift (or 16, 16 stairs) down</pathDescription>
-						</path>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-				<entrance>
-					<name>ExCel West Park and Ride</name>
-					<entranceToBookingHall />
-					<bookingHallToPlatform>
-						<pointName>Dlocklands </pointName>
-						<pathDescription>lift (or 16, 16 stairs) up, footbridge, lift (or 16, 14 stairs) down ()</pathDescription>
-					</bookingHallToPlatform>
-					<bookingHallToPlatform>
-						<pointName>Silverlink </pointName>
-						<pathDescription>()</pathDescription>
-						<path>
-							<heading>EASTBOUND</heading>
-							<pathDescription>Level ()</pathDescription>
-						</path>
-						<path>
-							<heading>WESTBOUND</heading>
-							<pathDescription>Lift (or 16, 14 stairs) up, footbridge, Lift (or 16, 16 stairs) down</pathDescription>
-						</path>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Custom House Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						.027684411363851222,51.509543816964380000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002027" type="dlr" xmlns="">
-			<name>Cutty Sark</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Creek Road</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (2 x escalators) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-				<entrance>
-					<name>Greenwich Church Street</name>
-					<entranceToBookingHall />
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (2 x escalators) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Cutty Sark Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.010858772708086980,51.481694371850814000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002028" type="dlr" xmlns="">
-			<name>Cyprus</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Strait Road</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Ramp (or 12 stairs) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Cyprus Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						.063538519717122620,51.508791930274770000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002029" type="dlr" xmlns="">
-			<name>Deptford Bridge</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Deptford Bridge (North Side)</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 5 x 10 stairs) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-				<entrance>
-					<name>Deptford Bridge (South Side)</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 5, 5 x 10 stairs) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Deptford Bridge Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.021550621322944774,51.474284721273506000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002030" type="dlr" xmlns="">
-			<name>Devons Road</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Devons Road</name>
-					<entranceToBookingHall>Ramp (or 4 steps) down</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 16, 9 stairs) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Devons Road Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.017224616322978142,51.522175080544790000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002033" type="dlr" xmlns="">
-			<name>East India</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Aspen Way</name>
-					<entranceToBookingHall>Lift (or 3 x 14 stairs) up</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or escalator or 14, 16 stairs) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-				<entrance>
-					<name>South Side</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 15, 16 stairs) up, walkway, lift (or 14, 16 stairs) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					East India Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.002748663563422358,51.509041249107980000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
 		<station id="1000071" type="tube" xmlns="">
-			<name>Edgware Road Bakerloo</name>
+			<name>Edgware Road (Bakerloo)</name>
 			<contactDetails>
 				<address>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -28156,6 +27342,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Bakerloo</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -28322,184 +27509,6 @@
 				<styleUrl>#tubeStyle</styleUrl>
 			</Placemark>
 		</station>
-		<station id="1002035" type="dlr" xmlns="">
-			<name>Elverson Road</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Elverson Road</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<path>
-							<heading>NORTHBOUND</heading>
-							<pathDescription>ramp down</pathDescription>
-						</path>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-				<entrance>
-					<name>Connington Road</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<path>
-							<heading>NORTHBOUND</heading>
-							<pathDescription>ramp down</pathDescription>
-						</path>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Elverson Road Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.017467307436164158,51.468819427590320000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002039" type="dlr" xmlns="">
-			<name>Gallions Reach</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Slip road off Eastern Access Road</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 12, 16, 12 stairs) up</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Gallions Reach Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						.072220032947865110,51.509538091545025000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1001123" type="dlr" xmlns="">
-			<name>Greenwich</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Greenwich High Road</name>
-					<entranceToBookingHall>Ramp down, subway</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<path>
-							<heading>NORTHBOUND</heading>
-							<pathDescription>Lift (or 10, 7, 14 stairs) up</pathDescription>
-						</path>
-						<path>
-							<heading>NORTHBOUND</heading>
-							<pathDescription>Lift (or 12, 12, 7 stairs) up</pathDescription>
-						</path>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-				<entrance>
-					<name>Tarves Way</name>
-					<entranceToBookingHall>Ramp down, subway</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<path>
-							<heading>NORTHBOUND</heading>
-							<pathDescription>Lift (or 10, 7, 14 stairs) up</pathDescription>
-						</path>
-						<path>
-							<heading>NORTHBOUND</heading>
-							<pathDescription>Lift (or 12, 12, 7 stairs) up</pathDescription>
-						</path>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Greenwich Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.014198816568398007,51.477757816350250000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
 		<station id="1000094" type="tube" xmlns="">
 			<name>Gunnersbury</name>
 			<contactDetails>
@@ -28510,6 +27519,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>District</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -28794,6 +27804,8 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>District</servingLine>
+                <servingLine>Piccadilly</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -28868,6 +27880,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Bakerloo</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -28923,6 +27936,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Bakerloo</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -28996,6 +28010,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Metropolitan</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -29091,6 +28106,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Piccadilly</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -29196,98 +28212,6 @@
 				<styleUrl>#tubeStyle</styleUrl>
 			</Placemark>
 		</station>
-		<station id="1002046" type="dlr" xmlns="">
-			<name>Heron Quays</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Heron Quays</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift or 11 stairs up, 1 step down, 12, 12, 16, 16 stairs up</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Heron Quays Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.021744064999687465,51.503067915299190000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002048" type="dlr" xmlns="">
-			<name>Island Gardens</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Manchester Road</name>
-					<entranceToBookingHall>Ramp down</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 12, 8, 12, 12, 12 stairs) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Island Gardens Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.009489509781986224,51.486671636732005000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
 		<station id="1000122" type="tube" xmlns="">
 			<name>Kensal Green</name>
 			<contactDetails>
@@ -29298,6 +28222,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Bakerloo</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -29347,6 +28272,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>District</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -29396,6 +28322,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Bakerloo</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -29445,6 +28372,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>District</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -29528,6 +28456,12 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Metropolitan</servingLine>
+                <servingLine>Northern</servingLine>
+                <servingLine>Piccadilly</servingLine>
+                <servingLine>Circle</servingLine>
+                <servingLine>Victoria</servingLine>
+                <servingLine>Hammersmith and City</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -30194,209 +29128,6 @@
 				<styleUrl>#tubeStyle</styleUrl>
 			</Placemark>
 		</station>
-		<station id="1001177" type="dlr" xmlns="">
-			<name>Lewisham</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Loampit Vale</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Ramp down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Lewisham Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.014706587477352798,51.466074537491664000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1001180" type="dlr" xmlns="">
-			<name>Limehouse</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Butcher Row</name>
-					<entranceToBookingHall>Level (or 6 stairs up)</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 7, 16, 16 stairs) up</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Limehouse Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.039712576574314410,51.512498517496160000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002061" type="dlr" xmlns="">
-			<name>Mudchute</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Eastferry Road</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<path>
-							<heading>NORTHBOUND</heading>
-							<pathDescription>Ramp down</pathDescription>
-						</path>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-				<entrance>
-					<name>Spindrift Avenue</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<path>
-							<heading>NORTHBOUND</heading>
-							<pathDescription>Ramp down or 12, 4 stairs down</pathDescription>
-						</path>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Mudchute Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.015091214701629630,51.490364179631120000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1000155" type="tube" xmlns="">
-			<name>New Cross</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Amersham Vale</name>
-					<entranceToBookingHall>Ramp up</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Level</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>East London</trainName>
-						<platformToTrainSteps>LEVEL_300</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-				<openingHour>
-					<entrance>Main entrance: </entrance>
-				</openingHour>
-			</openingHours>
-			<Placemark>
-				<name>
-					New Cross Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.032594570758595160,51.476674202455730000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#tubeStyle</styleUrl>
-			</Placemark>
-		</station>
 		<station id="1000156" type="tube" xmlns="">
 			<name>New Cross Gate</name>
 			<contactDetails>
@@ -30456,6 +29187,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Bakerloo</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -30495,156 +29227,6 @@
 				<styleUrl>#tubeStyle</styleUrl>
 			</Placemark>
 		</station>
-		<station id="1002064" type="dlr" xmlns="">
-			<name>Poplar</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Castor Lane</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 8, 16, 16 stairs) up</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Poplar Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.017228773736863470,51.507488443277030000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002065" type="dlr" xmlns="">
-			<name>Prince Regent</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Connaught Road</name>
-					<entranceToBookingHall>Lift (or 7, 16, 16, 16 stairs) up</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 12, 16 stairs) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-				<entrance>
-					<name>ExCel East Park and Ride</name>
-					<entranceToBookingHall>Ramp (or 9 stairs) down, lift (or 12, 13, 13, 12 stairs) up</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 12, 16 stairs) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Prince Regent Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						.033295484514232420,51.509320665460960000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002066" type="dlr" xmlns="">
-			<name>Pudding Mill Lane</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Pudding Mill Lane</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Slight ramp up, lift (or 16, 16 stairs) up</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Pudding Mill Lane Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.013174228379466220,51.534400840867900000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
 		<station id="1000186" type="tube" xmlns="">
 			<name>Queen's Park</name>
 			<contactDetails>
@@ -30655,6 +29237,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Bakerloo</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -30710,6 +29293,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>District</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -30767,104 +29351,6 @@
 					</coordinates>
 				</Point>
 				<styleUrl>#tubeStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002070" type="dlr" xmlns="">
-			<name>Royal Albert</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Royal Albert Dock Spine Road</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 16, 16, 5 stairs) down</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Royal Albert Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						.046216593557986540,51.508196344367040000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002071" type="dlr" xmlns="">
-			<name>Royal Victoria</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Victoria Dock Road</name>
-					<entranceToBookingHall>Lift (or 16, 16 stairs) up</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<path>
-							<heading>EASTBOUND</heading>
-							<pathDescription>Lift (or 16, 14 stairs) down </pathDescription>
-						</path>
-						<path>
-							<heading>WESTBOUND</heading>
-							<pathDescription>Lift (or 16, 16, 8 stairs) down</pathDescription>
-						</path>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Royal Victoria Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						.018078557359541534,51.509062110622175000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
 			</Placemark>
 		</station>
 		<station id="1000203" type="tube" xmlns="">
@@ -30948,7 +29434,7 @@
 			</Placemark>
 		</station>
 		<station id="1000203" type="tube" xmlns="">
-			<name>Shepherd's Bush Hammersmith and City</name>
+			<name>Shepherd's Bush</name>
 			<contactDetails>
 				<address>
 					London Underground, 55 Broadway, London, SW1H 0BD
@@ -30957,6 +29443,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Central</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -31028,6 +29515,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Bakerloo</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -31079,52 +29567,6 @@
 				<styleUrl>#tubeStyle</styleUrl>
 			</Placemark>
 		</station>
-		<station id="1002074" type="dlr" xmlns="">
-			<name>South Quay</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>South Quay</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 16, 6, 16, 16 stairs) up</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					South Quay Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.019101694079593993,51.500532011008650000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
 		<station id="1000221" type="tube" xmlns="">
 			<name>St. James's Park</name>
 			<contactDetails>
@@ -31135,6 +29577,8 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>District</servingLine>
+                <servingLine>Circle</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -31275,6 +29719,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Jubilee</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -31342,6 +29787,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Central</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -31433,6 +29879,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Bakerloo</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -31482,52 +29929,6 @@
 				<styleUrl>#tubeStyle</styleUrl>
 			</Placemark>
 		</station>
-		<station id="1002076" type="dlr" xmlns="">
-			<name>Tower Gateway</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Minories</name>
-					<entranceToBookingHall>Lift (or escalator or 11, 3 x 16 stairs) up</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Level</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Tower Gateway Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.074530960965560940,51.510566638763080000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
 		<station id="1000256" type="tube" xmlns="">
 			<name>Wembley Central</name>
 			<contactDetails>
@@ -31538,6 +29939,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Bakerloo</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -31583,104 +29985,6 @@
 				<styleUrl>#tubeStyle</styleUrl>
 			</Placemark>
 		</station>
-		<station id="1002084" type="dlr" xmlns="">
-			<name>West India Quay</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>Market Road</name>
-					<entranceToBookingHall>Ramp (or 11 stairs) up</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<pointName />
-						<pathDescription>Lift (or 4 x 11, 12 stairs) up</pathDescription>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					West India Quay Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.020148081137071500,51.506638439327860000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
-		<station id="1002083" type="dlr" xmlns="">
-			<name>Westferry</name>
-			<contactDetails>
-				<address>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</address>
-				<phone>
-				</phone>
-			</contactDetails>
-			<servingLines>
-			</servingLines>
-			<zones>
-			</zones>
-			<facilities>
-			</facilities>
-			<entrances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<entrance>
-					<name>West India Dock Road / Limehouse Causeway</name>
-					<entranceToBookingHall>Level</entranceToBookingHall>
-					<bookingHallToPlatform>
-						<path>
-							<heading>EASTBOUND</heading>
-							<pathDescription>Lift (or 14, 16, 16 stairs) up</pathDescription>
-						</path>
-						<path>
-							<heading>WESTBOUND</heading>
-							<pathDescription>Lift (or 16, 16, 16 stairs) up</pathDescription>
-						</path>
-					</bookingHallToPlatform>
-					<platformToTrain>
-						<trainName>Docklands </trainName>
-						<platformToTrainSteps>LEVEL_100</platformToTrainSteps>
-					</platformToTrain>
-				</entrance>
-			</entrances>
-			<openingHours>
-			</openingHours>
-			<Placemark>
-				<name>
-					Westferry Station
-				</name>
-				<description>
-					London Underground, 55 Broadway, London, SW1H 0BD
-				</description>
-				<Point>
-					<coordinates>
-						-.025791956499847963,51.509431782335305000,0
-					</coordinates>
-				</Point>
-				<styleUrl>#dlrStyle</styleUrl>
-			</Placemark>
-		</station>
 		<station id="1000271" type="tube" xmlns="">
 			<name>Willesden Junction</name>
 			<contactDetails>
@@ -31691,6 +29995,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>Bakerloo</servingLine>
 			</servingLines>
 			<zones>
 			</zones>
@@ -31740,6 +30045,7 @@
 				</phone>
 			</contactDetails>
 			<servingLines>
+                <servingLine>District</servingLine>
 			</servingLines>
 			<zones>
 			</zones>

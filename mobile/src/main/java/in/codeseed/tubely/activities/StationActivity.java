@@ -407,7 +407,9 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     }
 
     public void loadTrainsInPlatforms(View view){
-        loadTrainPrediction(mLinesSpinner.getSelectedItem().toString());
+        String selectedLine = mLinesSpinner.getSelectedItem().toString();
+        if(!selectedLine.isEmpty())
+            loadTrainPrediction(mLinesSpinner.getSelectedItem().toString());
     }
 
     boolean isNetworkConnected(){
