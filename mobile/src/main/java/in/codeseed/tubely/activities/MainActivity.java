@@ -57,19 +57,27 @@ public class MainActivity extends BaseActivity {
         tubeStatusViewPager.setAdapter(tubeStatusViewPagerAdapter);
         tubeStatusViewPager.setOffscreenPageLimit(IDLE_PAGE_LIMIT);
         tubeStatusViewPager.setCurrentItem(1, true);
+        tubeStatusViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if(position == 0)
+                    Util.NEARBY_FRAGMENTS_VISIBLE = true;
+                else
+                    Util.NEARBY_FRAGMENTS_VISIBLE = false;
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
 
         DownloadTubeStatusIntentService.startActionLoadStationsData(getApplicationContext());
-
-        /*if(isStationFacilityNeedToUpdate()){
-            if(timeinMillis == 0){
-                DownloadTubeStatusIntentService.startActionTubeStatusCurrent(getApplicationContext());
-                DownloadTubeStatusIntentService.startActionTubeStatusWeekend(getApplicationContext());
-                DownloadTubeStatusIntentService.startActionStationFacilities(getApplicationContext());
-            }else{
-                DownloadTubeStatusIntentService.startActionStationFacilities(getApplicationContext());
-            }
-        }*/
-
 
         if(isStationFacilityNeedToUpdate())
             DownloadTubeStatusIntentService.startActionStationFacilities(getApplicationContext());
