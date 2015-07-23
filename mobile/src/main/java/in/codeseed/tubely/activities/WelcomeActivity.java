@@ -8,45 +8,44 @@ import android.preference.PreferenceManager;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import in.codeseed.tubely.R;
 import in.codeseed.tubely.util.Util;
 
 public class WelcomeActivity extends BaseActivity {
 
-    SectionsPagerAdapter mSectionsPagerAdapter;
+    @Bind(R.id.indicator_one)
+    TextView indicatorOne;
+    @Bind(R.id.indicator_two)
+    TextView indicatorTwo;
+    @Bind(R.id.indicator_three)
+    TextView indicatorThree;
+    @Bind(R.id.indicator_four)
+    TextView indicatorFour;
+    @Bind(R.id.welcome_viewpager)
     ViewPager mViewPager;
-    private TextView indicatorOne, indicatorTwo, indicatorThree, indicatorFour;
-    SharedPreferences preferences;
-    SharedPreferences.Editor preferenceEditor;
+    SectionsPagerAdapter mSectionsPagerAdapter;
+    private SharedPreferences mSharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+        ButterKnife.bind(this);
 
-        indicatorOne = (TextView) findViewById(R.id.indicator_one);
-        indicatorTwo = (TextView) findViewById(R.id.indicator_two);
-        indicatorThree = (TextView) findViewById(R.id.indicator_three);
-        indicatorFour = (TextView) findViewById(R.id.indicator_four);
-
-        preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        preferenceEditor = preferences.edit();
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
-
         mViewPager.setPageTransformer(true, new DepthPageTransformer());
-
         mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int i, float v, int i2) {
@@ -80,35 +79,46 @@ public class WelcomeActivity extends BaseActivity {
 
             }
         });
-
     }
 
     public void closeWelcomeActivity(View view){
-        preferenceEditor.putBoolean(Util.SHARED_PREF_FIRST_TIME_WELCOME, false);
-        preferenceEditor.commit();
+        mSharedPreferences.edit().putBoolean(Util.SHARED_PREF_FIRST_TIME_WELCOME, false);
+        mSharedPreferences.edit().commit();
         finish();
     }
 
+    public static class PlaceholderFragment extends Fragment {
+        private static final String ARG_SECTION_NUMBER = "section_number";
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_welcome, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-
-        if (id == R.id.action_settings) {
-            return true;
+        public PlaceholderFragment() {
         }
 
-        return super.onOptionsItemSelected(item);
-    }
+        public static PlaceholderFragment newInstance(int sectionNumber) {
+            PlaceholderFragment fragment = new PlaceholderFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }
 
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstancmeState) {
+
+            int temp = getArguments().getInt(ARG_SECTION_NUMBER);
+            View rootView;
+            if (temp == 1)
+                rootView = inflater.inflate(R.layout.fragment_welcome_page1, container, false);
+            else if (temp == 2)
+                rootView = inflater.inflate(R.layout.fragment_welcome_page2, container, false);
+            else if (temp == 3)
+                rootView = inflater.inflate(R.layout.fragment_welcome_page3, container, false);
+            else
+                rootView = inflater.inflate(R.layout.fragment_welcome_page4, container, false);
+
+            return rootView;
+        }
+    }
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
@@ -125,39 +135,6 @@ public class WelcomeActivity extends BaseActivity {
         public int getCount() {
             // Show 3 total pages.
             return 4;
-        }
-    }
-
-    public static class PlaceholderFragment extends Fragment {
-        private static final String ARG_SECTION_NUMBER = "section_number";
-
-        public static PlaceholderFragment newInstance(int sectionNumber) {
-            PlaceholderFragment fragment = new PlaceholderFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstancmeState) {
-
-            int temp = getArguments().getInt(ARG_SECTION_NUMBER);
-            View rootView;
-            if(temp == 1)
-                rootView = inflater.inflate(R.layout.fragment_welcome_page1, container, false);
-            else if(temp == 2)
-                rootView = inflater.inflate(R.layout.fragment_welcome_page2, container, false);
-            else if(temp == 3)
-                rootView = inflater.inflate(R.layout.fragment_welcome_page3, container, false);
-            else
-                rootView = inflater.inflate(R.layout.fragment_welcome_page4, container, false);
-
-            return rootView;
         }
     }
 

@@ -13,9 +13,9 @@ public class Util {
     public static final String STATION_TABLE_SPLITTER = "#123#";
     public static final String SHARED_PREF_TUBESTATUS_CURRENT = "tubestatus_current_lastupdate";
     public static final String SHARED_PREF_TUBESTATUS_WEEKEND = "tubestatus_weekend_lastupdate";
-    public static final String SHARED_PREF_STATION_FACILITIES = "stations_facilities_update";
     public static final String SHARED_PREF_FIRST_TIME_WELCOME = "tubely_first_time_welcome";
     public static final String SHARED_PREF_NEARBY_STATIONS_RADIOUS = "pref_neaby_stations_distance";
+    public static final String SHARED_PREF_DB_UPDATE_CODE = "pref_db_update_code";
 
     public static boolean NEARBY_FRAGMENTS_VISIBLE = false;
 

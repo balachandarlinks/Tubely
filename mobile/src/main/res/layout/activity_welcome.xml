@@ -15,14 +15,14 @@
 
         <TextView
             android:id="@+id/title_textview"
-            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:textSize="30sp"
             android:gravity="center"
             android:text="TUBELY"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
@@ -32,20 +32,20 @@
         android:layout_weight="0.64">
 
         <android.support.v4.view.ViewPager
-            android:id="@+id/pager"
+            android:id="@+id/welcome_viewpager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp" />
 
     </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.01"
-        android:layout_margin="5dp"
         android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:layout_weight="0.01"
         android:background="@null"
         android:weightSum="5">
 
@@ -56,42 +56,42 @@
 
         <TextView
             android:id="@+id/indicator_one"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="@color/colorPrimary"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.25"/>
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.25"
+            android:background="@color/colorPrimary" />
 
         <TextView
             android:id="@+id/indicator_two"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:padding="5dp"
-            android:background="@color/colorAccent"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.25"/>
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.25"
+            android:background="@color/colorAccent"
+            android:padding="5dp" />
 
         <TextView
             android:id="@+id/indicator_three"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:padding="5dp"
-            android:background="@color/colorAccent"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.25"/>
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.25"
+            android:background="@color/colorAccent"
+            android:padding="5dp" />
 
         <TextView
             android:id="@+id/indicator_four"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:padding="5dp"
-            android:background="@color/colorAccent"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.25"/>
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.25"
+            android:background="@color/colorAccent"
+            android:padding="5dp" />
 
         <Space
             android:layout_width="0dp"
@@ -103,8 +103,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:minHeight="50dp"
         android:layout_weight="0.15"
+        android:minHeight="50dp"
         android:orientation="vertical"
         android:weightSum="1">
 
@@ -114,20 +114,20 @@
             android:layout_weight="0.25"/>
 
         <Button
-            android:gravity="center"
-            android:layout_margin="5dp"
-            android:textColor="@android:color/white"
-            android:background="@drawable/tubely_welcome_button"
-            android:text="LETS START"
-            android:textSize="18sp"
-            android:textStyle="bold"
             android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="0.75"
+            android:background="@drawable/tubely_welcome_button"
+            android:gravity="center"
+            android:onClick="closeWelcomeActivity"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
-            android:layout_gravity="center"
-            android:layout_height="0dp"
-            android:layout_weight="0.75"
-            android:onClick="closeWelcomeActivity" />
+            android:text="LETS START"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

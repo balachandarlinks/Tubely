@@ -1,23 +1,26 @@
 package in.codeseed.tubely.activities;
 
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import in.codeseed.tubely.R;
+
 
 public class TubeMapActivity extends BaseActivity {
 
-    private SubsamplingScaleImageView tubeMap;
+    @Bind(R.id.tube_map)
+    SubsamplingScaleImageView tubeMap;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tube_map);
-
-        tubeMap = (SubsamplingScaleImageView) findViewById(R.id.tube_map);
+        ButterKnife.bind(this);
 
         tubeMap.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,20 +40,11 @@ public class TubeMapActivity extends BaseActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        //getMenuInflater().inflate(R.menu.menu_tube_map, menu);
-        return true;
-    }
-
-    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         int id = item.getItemId();
 
-        if (id == R.id.action_settings) {
-            return true;
-        }else if(id == android.R.id.home){
+        if (id == android.R.id.home) {
             finish();
             return true;
         }

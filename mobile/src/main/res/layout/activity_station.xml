@@ -23,7 +23,7 @@
                 android:weightSum="1">
 
                 <View
-                    android:id="@+id/header_colorbar"
+                    android:id="@+id/train_prediction_header_colorbar"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.5"
@@ -41,21 +41,21 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp">
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
 
                 <LinearLayout
-                    android:layout_centerInParent="true"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
                     <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
                         android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:name="com.google.android.gms.maps.SupportMapFragment"
                         map:mapType="normal"
                         map:uiRotateGestures="true"
                         map:uiScrollGestures="true"
@@ -72,34 +72,34 @@
                         <Button
                             android:id="@+id/pinItButton"
                             android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="1dp"
                             android:layout_weight="0.5"
+                            android:background="@drawable/tubely_button"
                             android:gravity="center"
-                            android:textColor="@android:color/white"
+                            android:onClick="pinStationToHome"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
-                            android:text="Pin to Home"
-                            android:textSize="14sp"
-                            android:layout_margin="1dp"
                             android:singleLine="true"
-                            android:background="@drawable/tubely_button"
-                            android:layout_height="50dp"
-                            android:onClick="pinStationToHome"/>
+                            android:text="Pin to Home"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
 
                         <Button
                             android:id="@+id/directMeButton"
                             android:layout_width="0dp"
-                            android:layout_weight="0.5"
-                            android:gravity="center"
+                            android:layout_height="50dp"
                             android:layout_margin="1dp"
-                            android:textColor="@android:color/white"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/tubely_button"
+                            android:gravity="center"
+                            android:onClick="directToGoogleMap"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
-                            android:text="DIRECT ME"
-                            android:textSize="14sp"
                             android:singleLine="true"
-                            android:background="@drawable/tubely_button"
-                            android:layout_height="50dp"
-                            android:onClick="directToGoogleMap"/>
+                            android:text="DIRECT ME"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -115,11 +115,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:orientation="vertical">
+            android:paddingTop="16dp">
 
             <android.support.v7.widget.CardView
                 xmlns:card1="http://schemas.android.com/apk/res-auto"
@@ -128,35 +128,35 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:minHeight="50dp"
-                card1:cardElevation="2dp"
-                card1:cardCornerRadius="2dp">
+                card1:cardCornerRadius="2dp"
+                card1:cardElevation="2dp">
 
                 <LinearLayout
-                    android:id="@+id/lines_linear_layout"
-                    android:background="@color/colorPrimary"
+                    android:id="@+id/train_prediction_header_layout"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:background="@color/colorPrimary"
                     android:weightSum="1">
 
                     <TextView
-                        android:text="LINE"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:background="@android:color/transparent"
-                        android:textColor="@android:color/white"
-                        android:gravity="center_vertical"
-                        android:layout_marginLeft="16dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.4"/>
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:text="LINE"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
                     <Spinner
                         android:id="@+id/lines_spinner"
-                        android:background="@android:color/transparent"
                         android:layout_width="0dp"
-                        android:layout_gravity="right|center_vertical"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.5"/>
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="0.5"
+                        android:background="@android:color/transparent" />
 
                     <ImageView
                         android:id="@+id/lines_spinner_arrow"
@@ -170,12 +170,12 @@
                 </LinearLayout>
 
                 <FrameLayout
-                    android:layout_marginTop="50dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp">
 
                     <LinearLayout
-                        android:id="@+id/train_prediction_linear_layout"
+                        android:id="@+id/train_prediction_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
@@ -189,33 +189,33 @@
 
                         <ImageView
                             android:id="@+id/platform_refresh_imageview"
-                            android:minHeight="50dp"
-                            android:onClick="loadTrainsInPlatforms"
-                            android:src="@drawable/refresh_material"
-                            android:scaleType="centerInside"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_centerInParent="true"/>
+                            android:layout_centerInParent="true"
+                            android:minHeight="50dp"
+                            android:onClick="loadTrainsInPlatforms"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/refresh_material" />
 
                         <Space
                             android:id="@+id/between_space"
-                            android:layout_below="@id/platform_refresh_imageview"
                             android:layout_width="match_parent"
-                            android:layout_height="25dp" />
+                            android:layout_height="25dp"
+                            android:layout_below="@id/platform_refresh_imageview" />
 
                         <TextView
                             android:id="@+id/platform_refresh_textview"
-                            android:alpha="0.5"
-                            android:gravity="center"
-                            android:textColor="@android:color/black"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/between_space"/>
+                            android:layout_below="@id/between_space"
+                            android:alpha="0.5"
+                            android:gravity="center"
+                            android:textColor="@android:color/black" />
 
                         <Space
-                            android:layout_below="@id/platform_refresh_textview"
                             android:layout_width="match_parent"
-                            android:layout_height="20dp"/>
+                            android:layout_height="20dp"
+                            android:layout_below="@id/platform_refresh_textview" />
 
                     </RelativeLayout>
 
@@ -228,16 +228,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="50dp"
-                card2:cardElevation="2dp"
-                card2:cardCornerRadius="2dp">
+                card2:cardCornerRadius="2dp"
+                card2:cardElevation="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -246,39 +246,39 @@
                         android:layout_weight="2">
 
                         <TextView
-                            android:text="CONTACT"
-                            android:textSize="16sp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:alpha="0.8"
                             android:gravity="left"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
+                            android:text="CONTACT"
                             android:textAllCaps="true"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/station_phone"
-                            android:text=""
-                            android:textSize="16sp"
-                            android:alpha="0.8"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:gravity="right"
                             android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:layout_height="wrap_content"/>
+                            android:alpha="0.8"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
                     <TextView
                         android:id="@+id/station_address"
-                        android:text="-"
-                        android:layout_gravity="center"
-                        android:gravity="left"
-                        android:layout_marginTop="5dp"
-                        android:textSize="12sp"
-                        android:alpha="0.8"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:alpha="0.8"
+                        android:gravity="left"
+                        android:text="-"
+                        android:textSize="12sp" />
 
                     <Space
                         android:layout_width="match_parent"
@@ -293,38 +293,38 @@
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="50dp"
-                            android:orientation="vertical"
                             android:layout_weight="3"
+                            android:orientation="vertical"
                             android:weightSum="3">
 
                             <TextView
-                                android:text="ZONES"
-                                android:alpha="0.8"
-                                android:gravity="center_vertical"
-                                android:textStyle="bold"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
-                                android:layout_weight="1"/>
+                                android:layout_weight="1"
+                                android:alpha="0.8"
+                                android:gravity="center_vertical"
+                                android:text="ZONES"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/zones_textview"
-                                android:text="-"
-                                android:textSize="12dp"
-                                android:alpha="0.8"
-                                android:gravity="center_vertical|left"
-                                android:layout_gravity="center"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
-                                android:layout_weight="2"/>
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:alpha="0.8"
+                                android:gravity="center_vertical|left"
+                                android:text="-"
+                                android:textSize="12dp" />
 
                         </LinearLayout>
 
                     </LinearLayout>
 
                     <HorizontalScrollView
+                        style="@style/TubelyLineBatchScroller"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        style="@style/TubelyLineBatchScroller">
+                        android:layout_height="wrap_content">
 
                         <in.codeseed.tubely.customviews.LinesBatchLayout
                             android:id="@+id/lines_batch_layout"

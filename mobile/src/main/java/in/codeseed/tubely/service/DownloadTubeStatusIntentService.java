@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import in.codeseed.tubely.R;
 import in.codeseed.tubely.data.TubelyDBContract;
 import in.codeseed.tubely.parsers.TflWebService;
 import in.codeseed.tubely.pojos.Tube;
@@ -42,6 +43,10 @@ public class DownloadTubeStatusIntentService extends IntentService {
     private static final String ACTION_STATION_FACILITIES = "in.codeseed.tubely.service.action.STATION_FACILITIES";
     private static final String ACTION_LOAD_STATIONS_DATA = "in.codeseed.tubely.service.action.LOAD_STATIONS_DATA";
 
+    public DownloadTubeStatusIntentService() {
+        super("DownloadTubeStatusIntentService");
+    }
+
     public static void startActionTubeStatusCurrent(Context context) {
         Intent intent = new Intent(context, DownloadTubeStatusIntentService.class);
         intent.setAction(ACTION_TUBESTATUS_CURRENT);
@@ -64,10 +69,6 @@ public class DownloadTubeStatusIntentService extends IntentService {
         Intent intent = new Intent(context, DownloadTubeStatusIntentService.class);
         intent.setAction(ACTION_LOAD_STATIONS_DATA);
         context.startService(intent);
-    }
-
-    public DownloadTubeStatusIntentService() {
-        super("DownloadTubeStatusIntentService");
     }
 
     @Override
@@ -283,7 +284,7 @@ public class DownloadTubeStatusIntentService extends IntentService {
                     .build());
 
             SharedPreferences.Editor preferenceEditor = PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit();
-            preferenceEditor.putBoolean(Util.SHARED_PREF_STATION_FACILITIES, false);
+            preferenceEditor.putInt(Util.SHARED_PREF_DB_UPDATE_CODE, getResources().getInteger(R.integer.db_code));
             preferenceEditor.commit();
         }
         try{

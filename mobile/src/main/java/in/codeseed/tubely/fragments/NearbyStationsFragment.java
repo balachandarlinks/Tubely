@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.location.Location;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -22,10 +21,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesClient;
-import com.google.android.gms.location.LocationClient;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -38,21 +33,20 @@ import in.codeseed.tubely.pojos.NearByStation;
 import in.codeseed.tubely.simplexml.allstations.Station;
 import in.codeseed.tubely.util.Util;
 
-public class NearbyStationsFragment extends Fragment implements GooglePlayServicesClient.ConnectionCallbacks,
-        GooglePlayServicesClient.OnConnectionFailedListener {
+public class NearbyStationsFragment extends Fragment {//implements GooglePlayServicesClient.ConnectionCallbacks,
+    //GooglePlayServicesClient.OnConnectionFailedListener {
 
 
     private final static String TAG = NearbyStationsFragment.class.getSimpleName();
     private static String MAP_URL = "http://maps.google.com/maps?saddr=CURLAT,CURLONG&daddr=DESLAT,DESLONG&mode=walking";
-
+    private static LayoutInflater layoutInflater;
     private RelativeLayout stationsLoader;
     private ImageView stationsLoaderImageView;
     private TextView stationsLoaderTextView;
     private LinearLayout nearbyStationsLayout;
-    private static LayoutInflater layoutInflater;
     private SharedPreferences preferences;
 
-    private LocationClient locationClient;
+    //private LocationClient locationClient;
     private Location currentLocation;
     private ObjectAnimator mStationsLoaderImageViewanimator;
 
@@ -77,7 +71,7 @@ public class NearbyStationsFragment extends Fragment implements GooglePlayServic
         mStationsLoaderImageViewanimator.setInterpolator(new BounceInterpolator());
 
         preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
-        locationClient = new LocationClient(getActivity().getApplicationContext(), this, this);
+        //locationClient = new LocationClient(getActivity().getApplicationContext(), this, this);
         stationsLoaderImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,8 +83,8 @@ public class NearbyStationsFragment extends Fragment implements GooglePlayServic
     @Override
     public void onResume() {
         super.onResume();
-        if(locationClient.isConnected())
-            startAsyncStationsUpdate();
+        /*if(locationClient.isConnected())
+            startAsyncStationsUpdate();*/
     }
 
     public void injectViews(View rootView){
@@ -121,23 +115,23 @@ public class NearbyStationsFragment extends Fragment implements GooglePlayServic
 
     @Override
     public void onStart() {
-        locationClient.connect();
+        //locationClient.connect();
         super.onStart();
     }
 
     @Override
     public void onStop() {
-        locationClient.disconnect();
+        //locationClient.disconnect();
         super.onStop();
     }
 
-    @Override
+/*    @Override
     public void onConnected(Bundle bundle) {
-        currentLocation = locationClient.getLastLocation();
-        startAsyncStationsUpdate();
+       // currentLocation = locationClient.getLastLocation();
+        //startAsyncStationsUpdate();
 
         Log.d(TAG, "Location Connected!");
-    }
+    }*/
 
     public void startAsyncStationsUpdate(){
 
@@ -151,7 +145,7 @@ public class NearbyStationsFragment extends Fragment implements GooglePlayServic
         stationsLoaderTextView.setText("Not able to get your current Location. Check your GPS.");
     }
 
-    @Override
+/*    @Override
     public void onDisconnected() {
         Log.d(TAG, "Location Disconnected!");
     }
@@ -159,11 +153,11 @@ public class NearbyStationsFragment extends Fragment implements GooglePlayServic
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) {
         Log.d(TAG, "Location Connection Failed!");
-    }
+    }*/
 
     private void directToGooglMap(NearByStation station){
-        Location currentLocation = locationClient.getLastLocation();
-        if(currentLocation != null){
+        //Location currentLocation = locationClient.getLastLocation();
+        /*if(currentLocation != null){
             String curLat, curLong, desLat, desLong;
             curLat = String.valueOf(currentLocation.getLatitude());
             curLong = String.valueOf(currentLocation.getLongitude());
@@ -186,7 +180,7 @@ public class NearbyStationsFragment extends Fragment implements GooglePlayServic
 
         }else{
             Toast.makeText(getActivity().getApplicationContext(),"Your current location is not available! Check your GPS.", Toast.LENGTH_SHORT).show();
-        }
+        }*/
     }
 
     private class UpdateNearbyStations extends AsyncTask<Void, Void, Void>{

@@ -11,6 +11,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import in.codeseed.tubely.R;
 import in.codeseed.tubely.fragments.DetailedTubeStatusFragment;
 import in.codeseed.tubely.fragments.TubeStationsFragment;
@@ -18,19 +20,18 @@ import in.codeseed.tubely.pojos.Tube;
 
 public class StatusAndStationsActivity extends BaseActivity implements ActionBar.TabListener {
 
-    private SectionsPagerAdapter mSectionsPagerAdapter;
-    private ViewPager mViewPager;
-
     private static Tube tube;
     private static String twitterHandle;
+    @Bind(R.id.status_stations_viewpager)
+    ViewPager mViewPager;
+    private SectionsPagerAdapter mSectionsPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_status_and_stations);
-
+        ButterKnife.bind(this);
         //Get data
-
         Bundle bundle = getIntent().getBundleExtra("data");
         tube = (Tube) bundle.getSerializable("tube_data");
         twitterHandle = getIntent().getStringExtra("twitter_handle");
@@ -49,12 +50,7 @@ public class StatusAndStationsActivity extends BaseActivity implements ActionBar
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
-
-        // When swiping between different sections, select the corresponding
-        // tab. We can also use ActionBar.Tab#select() to do this if we have
-        // a reference to the Tab.
         mViewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
             @Override
             public void onPageSelected(int position) {
@@ -64,10 +60,6 @@ public class StatusAndStationsActivity extends BaseActivity implements ActionBar
 
         // For each of the sections in the app, add a tab to the action bar.
         for (int i = 0; i < mSectionsPagerAdapter.getCount(); i++) {
-            // Create a tab with text corresponding to the page title defined by
-            // the adapter. Also specify this Activity object, which implements
-            // the TabListener interface, as the callback (listener) for when
-            // this tab is selected.
             actionBar.addTab(
                     actionBar.newTab()
                             .setText(mSectionsPagerAdapter.getPageTitle(i))
@@ -112,12 +104,6 @@ public class StatusAndStationsActivity extends BaseActivity implements ActionBar
 
     @Override
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
-    }
-
-
-    public void callSettings(){
-        Intent settingsIntent = new Intent(this, TubelySettingsActivity.class);
-        startActivity(settingsIntent);
     }
 
     public void createTweet(){

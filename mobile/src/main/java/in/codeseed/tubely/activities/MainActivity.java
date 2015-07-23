@@ -25,6 +25,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import in.codeseed.tubely.R;
 import in.codeseed.tubely.data.TubelyDBContract;
 import in.codeseed.tubely.fragments.CurrentTubeStatusFragment;
@@ -34,66 +36,69 @@ import in.codeseed.tubely.service.DownloadTubeStatusIntentService;
 import in.codeseed.tubely.simplexml.allstations.Station;
 import in.codeseed.tubely.util.Util;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements ViewPager.OnPageChangeListener {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     private static final int IDLE_PAGE_LIMIT = 2;
-
-    private ViewPager tubeStatusViewPager;
-    private TubeStatusViewPagerAdapter tubeStatusViewPagerAdapter;
-    private SharedPreferences preferences;
-    private SharedPreferences.Editor preferenceEditor;
-    private ArrayList<String> data;
-    private MatrixCursor cursor;
-    private CursorAdapter cursorAdapter;
-    private SearchView searchView;
+    @Bind(R.id.tubeStatusViewPager)
+    ViewPager mTubeStatusViewPager;
+    SharedPreferences mSharedPreferences;
+    private TubeStatusViewPagerAdapter mTubeStatusViewPagerAdapter;
+    private ArrayList<String> mSuggestedStations;
+    private MatrixCursor mSuggestionsCursor;
+    private CursorAdapter mSuggestionsCursorAdapter;
+    private SearchView mSearchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
-        injectViews();
+        ButterKnife.bind(this);
 
-        tubeStatusViewPager.setAdapter(tubeStatusViewPagerAdapter);
-        tubeStatusViewPager.setOffscreenPageLimit(IDLE_PAGE_LIMIT);
-        tubeStatusViewPager.setCurrentItem(1, true);
-        tubeStatusViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
-            }
+        mTubeStatusViewPagerAdapter = new TubeStatusViewPagerAdapter(getSupportFragmentManager());
+        mTubeStatusViewPager.setAdapter(mTubeStatusViewPagerAdapter);
+        mTubeStatusViewPager.setOffscreenPageLimit(IDLE_PAGE_LIMIT);
+        mTubeStatusViewPager.setCurrentItem(1, true);
+        mTubeStatusViewPager.setOnPageChangeListener(this);
 
-            @Override
-            public void onPageSelected(int position) {
-                if(position == 0)
-                    Util.NEARBY_FRAGMENTS_VISIBLE = true;
-                else
-                    Util.NEARBY_FRAGMENTS_VISIBLE = false;
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
-
+        //Load Tube Stations Code into Memory -> Util.allStations.
         DownloadTubeStatusIntentService.startActionLoadStationsData(getApplicationContext());
 
-        if(isStationFacilityNeedToUpdate())
-            DownloadTubeStatusIntentService.startActionStationFacilities(getApplicationContext());
-
-
-        if(preferences.getBoolean(Util.SHARED_PREF_FIRST_TIME_WELCOME, true)) {
-            DownloadTubeStatusIntentService.startActionStationFacilities(getApplicationContext());
+        if (isFirstAppStart()) {
             DownloadTubeStatusIntentService.startActionTubeStatusWeekend(getApplicationContext());
             DownloadTubeStatusIntentService.startActionTubeStatusCurrent(getApplicationContext());
+            DownloadTubeStatusIntentService.startActionStationFacilities(getApplicationContext());
 
-            Intent intent = new Intent(getApplicationContext(), WelcomeActivity.class);
-            startActivity(intent);
+            Intent welcomeIntent = new Intent(getApplicationContext(), WelcomeActivity.class);
+            startActivity(welcomeIntent);
         }else{
+            if (isStationFacilityNeedToUpdate())
+                DownloadTubeStatusIntentService.startActionStationFacilities(getApplicationContext());
+
             DownloadTubeStatusIntentService.startActionTubeStatusWeekend(getApplicationContext());
             DownloadTubeStatusIntentService.startActionTubeStatusCurrent(getApplicationContext());
         }
+    }
+
+    private boolean isFirstAppStart() {
+        return mSharedPreferences.getBoolean(Util.SHARED_PREF_FIRST_TIME_WELCOME, true);
+    }
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+        Util.NEARBY_FRAGMENTS_VISIBLE = position == 0;
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
 
     }
 
@@ -101,26 +106,20 @@ public class MainActivity extends BaseActivity {
     protected void onResume() {
         super.onResume();
 
-        if(searchView != null && searchView.isEnabled())
-            searchView.setIconified(true);
-    }
-
-    void injectViews(){
-        preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        preferenceEditor = PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit();
-        tubeStatusViewPager = (ViewPager) findViewById(R.id.tubeStatusViewPager);
-        tubeStatusViewPagerAdapter = new TubeStatusViewPagerAdapter(getSupportFragmentManager());
+        if (mSearchView != null && mSearchView.isEnabled())
+            mSearchView.setIconified(true);
     }
 
     boolean isStationFacilityNeedToUpdate(){
-        return preferences.getBoolean(Util.SHARED_PREF_STATION_FACILITIES, true);
+        final int new_db_code = getResources().getInteger(R.integer.db_code);
+        final int current_db_code = mSharedPreferences.getInt(Util.SHARED_PREF_DB_UPDATE_CODE, 0);
+        return new_db_code > current_db_code;
     }
 
     @Override
     public void onBackPressed() {
-        //super.onBackPressed();
-        if(!searchView.isIconified()){
-            searchView.setIconified(true);
+        if (!mSearchView.isIconified()) {
+            mSearchView.setIconified(true);
             return;
         }else{
             super.onBackPressed();
@@ -138,45 +137,45 @@ public class MainActivity extends BaseActivity {
         //Search Config
         final SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         final MenuItem searchItem= menu.findItem(R.id.action_search);
-        searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
-        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
-        searchView.setIconified(true);
-        searchView.setQueryHint("Search a tube station..");
+        mSearchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        mSearchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+        mSearchView.setIconified(true);
+        mSearchView.setQueryHint("Search a tube station..");
 
-        int searchImgId = getResources().getIdentifier("android:id/search_button", null, null);
-        ImageView searchIcon = (ImageView) searchView.findViewById(searchImgId);
+        final int searchImgId = getResources().getIdentifier("android:id/search_button", null, null);
+        ImageView searchIcon = (ImageView) mSearchView.findViewById(searchImgId);
         searchIcon.setImageResource(R.drawable.search);
 
-        cursorAdapter = getSearchSuggestionsAdapter();
-        searchView.setSuggestionsAdapter(cursorAdapter);
+        mSuggestionsCursorAdapter = getSearchSuggestionsAdapter();
+        mSearchView.setSuggestionsAdapter(mSuggestionsCursorAdapter);
 
-        searchView.setOnSearchClickListener(new View.OnClickListener() {
+        mSearchView.setOnSearchClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
             }
         });
 
-        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
+        mSearchView.setOnCloseListener(new SearchView.OnCloseListener() {
             @Override
             public boolean onClose() {
-                searchView.clearFocus();
+                mSearchView.clearFocus();
                 return false;
             }
         });
 
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                searchView.clearFocus();
+                mSearchView.clearFocus();
                 return true;
             }
 
             @Override
             public boolean onQueryTextChange(String queryText) {
                 updateSuggestions(queryText);
-                cursor = getCursor(data);
-                cursorAdapter.swapCursor(cursor);
+                mSuggestionsCursor = getSuggestionsCursor(mSuggestedStations);
+                mSuggestionsCursorAdapter.swapCursor(mSuggestionsCursor);
                 return true;
             }
         });
@@ -212,14 +211,14 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    CursorAdapter getSearchSuggestionsAdapter(){
+    private CursorAdapter getSearchSuggestionsAdapter() {
 
-        data = new ArrayList<>();
-        cursor = getCursor(data);
-        return new SuggestionsAdapter(getApplicationContext(), cursor, true);
+        mSuggestedStations = new ArrayList<>();
+        mSuggestionsCursor = getSuggestionsCursor(mSuggestedStations);
+        return new SuggestionsAdapter(getApplicationContext(), mSuggestionsCursor, true);
     }
 
-    private MatrixCursor getCursor(final ArrayList<String> suggestions) {
+    private MatrixCursor getSuggestionsCursor(final ArrayList<String> suggestions) {
 
         final String[] columns = new String[] {TubelyDBContract.StationTable._ID, "suggest_intent_data"};
         final Object[] object = new Object[] { 0, "default" };
@@ -239,17 +238,17 @@ public class MainActivity extends BaseActivity {
 
     private void updateSuggestions(String queryText){
         queryText = queryText.toLowerCase();
-        data.clear();
+        mSuggestedStations.clear();
         if(Util.getAllStations() != null) {
             for (Station station : Util.getAllStations().getStations()) {
                 String temp = station.getName().toLowerCase();
                 if (temp.contains(queryText)) {
-                    data.add(station.getName());
+                    mSuggestedStations.add(station.getName());
                 }
             }
         }
-        if(data.isEmpty())
-            data.add("No stations found!");
+        if (mSuggestedStations.isEmpty())
+            mSuggestedStations.add("No stations found!");
     }
 
     @Override
@@ -268,7 +267,7 @@ public class MainActivity extends BaseActivity {
             startActivity(intent);
             return true;
         }else if(id == R.id.action_search){
-            searchView.findFocus();
+            mSearchView.findFocus();
         }
         return super.onOptionsItemSelected(item);
     }

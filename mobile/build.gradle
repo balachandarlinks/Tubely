@@ -1,5 +1,25 @@
 apply plugin: 'com.android.application'
 
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/twitter4j-core-4.0.2.jar')
+    compile('com.squareup.retrofit:converter-simplexml:1.7.1') {
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'xpp3', module: 'xpp3'
+    }
+    compile project(':ssimageview')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile 'com.android.support:cardview-v7:22.2.1'
+    compile 'com.android.support:support-v13:22.2.1'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'org.ow2.asm:asm:4.0'
+    compile 'com.google.android.gms:play-services:7.5.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile files('libs/svg-android-1.1.jar')
+}
+
 android {
     signingConfigs {
         Release {
@@ -16,15 +36,28 @@ android {
         }
     }
 
-    compileSdkVersion 21
+    compileSdkVersion 22
     buildToolsVersion "20.0.0"
 
     defaultConfig {
         applicationId "in.codeseed.tubely"
         minSdkVersion 14
-        targetSdkVersion 21
+        targetSdkVersion 22
         versionCode 14
         versionName "1.0.5"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
     }
 
     buildTypes {
@@ -34,53 +67,21 @@ android {
         }
     }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
-    }
-
-    packagingOptions {
-        exclude 'META-INF/LICENSE.txt'
-    }
-
     productFlavors {
         Amazon {
             minSdkVersion 14
             applicationId 'in.codeseed.tubely'
             signingConfig signingConfigs.AmazonAppStore
-            targetSdkVersion 21
+            targetSdkVersion 22
         }
         Playstore {
             minSdkVersion 14
             applicationId 'in.codeseed.tubely'
             signingConfig signingConfigs.Release
-            targetSdkVersion 21
+            targetSdkVersion 22
         }
     }
 }
-
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile files('libs/twitter4j-core-4.0.2.jar')
-    compile('org.roboguice:roboguice:2.0') {
-        exclude module: 'asm'
-    }
-    compile('com.squareup.retrofit:converter-simplexml:1.7.1') {
-        exclude group: 'stax', module: 'stax-api'
-        exclude group: 'xpp3', module: 'xpp3'
-    }
-    compile project(':ssimageview')
-    compile 'com.android.support:appcompat-v7:21.0.2'
-    compile 'com.android.support:recyclerview-v7:21.0.2'
-    compile 'com.android.support:cardview-v7:21.0.2'
-    compile 'com.android.support:support-v13:21.0.2'
-    compile 'com.android.support:support-v4:21.0.2'
-    compile 'org.ow2.asm:asm:4.0'
-    compile 'com.google.android.gms:play-services:6.1.71'
-    compile 'com.squareup.retrofit:retrofit:1.7.1'
-    compile files('libs/svg-android-1.1.jar')
-}
-
 
 
 

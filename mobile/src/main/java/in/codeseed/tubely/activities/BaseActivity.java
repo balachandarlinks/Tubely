@@ -1,15 +1,13 @@
 package in.codeseed.tubely.activities;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 
 /**
  * Created by bala on 25/10/14.
  */
 
-//TODO: Extend RoboActionBarActivity once roboguice 3.0 comes out. TBD.
-
-public class BaseActivity extends ActionBarActivity {
+public class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
