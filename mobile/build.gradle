@@ -6,13 +6,13 @@ android {
             keyAlias 'tubely'
             keyPassword 'iloveandroid'
             storeFile file('/home/bala/Google Drive/Tubely/tubely_key.jks')
-            storePassword 'iloveandroid'
+            storePassword 'xxx'
         }
         AmazonAppStore {
             keyAlias 'tubely'
             keyPassword 'iloveandroid'
             storeFile file('/home/bala/Google Drive/Tubely/tubely_key.jks')
-            storePassword 'iloveandroid'
+            storePassword 'xxx'
         }
     }
 
