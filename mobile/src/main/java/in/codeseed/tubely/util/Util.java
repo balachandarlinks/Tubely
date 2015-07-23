@@ -1,5 +1,11 @@
 package in.codeseed.tubely.util;
 
+import android.app.Activity;
+import android.widget.Toast;
+
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
+
 import java.util.Date;
 
 import in.codeseed.tubely.R;
@@ -9,14 +15,13 @@ import in.codeseed.tubely.simplexml.allstations.AllStations;
  * Created by bala on 18/10/14.
  */
 public class Util {
-
     public static final String STATION_TABLE_SPLITTER = "#123#";
     public static final String SHARED_PREF_TUBESTATUS_CURRENT = "tubestatus_current_lastupdate";
     public static final String SHARED_PREF_TUBESTATUS_WEEKEND = "tubestatus_weekend_lastupdate";
     public static final String SHARED_PREF_FIRST_TIME_WELCOME = "tubely_first_time_welcome";
     public static final String SHARED_PREF_NEARBY_STATIONS_RADIOUS = "pref_neaby_stations_distance";
     public static final String SHARED_PREF_DB_UPDATE_CODE = "pref_db_update_code";
-
+    private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 1000;
     public static boolean NEARBY_FRAGMENTS_VISIBLE = false;
 
     private static AllStations allStations;
@@ -129,5 +134,22 @@ public class Util {
                 break;
         }
         return lineColorResource;
+    }
+
+    public boolean checkPlayServices(Activity activity) {
+        int resultCode = GooglePlayServicesUtil
+                .isGooglePlayServicesAvailable(activity.getApplicationContext());
+        if (resultCode != ConnectionResult.SUCCESS) {
+            if (GooglePlayServicesUtil.isUserRecoverableError(resultCode)) {
+                GooglePlayServicesUtil.getErrorDialog(resultCode, activity,
+                        PLAY_SERVICES_RESOLUTION_REQUEST).show();
+            } else {
+                Toast.makeText(activity,
+                        "Location based services will not work without Google play services!", Toast.LENGTH_LONG)
+                        .show();
+            }
+            return false;
+        }
+        return true;
     }
 }

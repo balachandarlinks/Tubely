@@ -135,7 +135,7 @@ public class DownloadTubeStatusIntentService extends IntentService {
                 .setEndpoint("http://data.tfl.gov.uk")
                 .build();
 
-        //restAdapter.setLogLevel(RestAdapter.LogLevel.BASIC);
+        restAdapter.setLogLevel(RestAdapter.LogLevel.FULL);
 
         TflWebService tflWebService = restAdapter.create(TflWebService.class);
         try {
@@ -154,8 +154,6 @@ public class DownloadTubeStatusIntentService extends IntentService {
 
         if(!tubeList.isEmpty())
             bulkUpdateLineWeekendStatus(tubeList);
-
-
     }
 
     private void updateStationDetails() {

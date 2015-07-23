@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.location.Location;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -21,6 +22,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -33,8 +38,8 @@ import in.codeseed.tubely.pojos.NearByStation;
 import in.codeseed.tubely.simplexml.allstations.Station;
 import in.codeseed.tubely.util.Util;
 
-public class NearbyStationsFragment extends Fragment {//implements GooglePlayServicesClient.ConnectionCallbacks,
-    //GooglePlayServicesClient.OnConnectionFailedListener {
+public class NearbyStationsFragment extends Fragment implements GoogleApiClient.ConnectionCallbacks,
+        GoogleApiClient.OnConnectionFailedListener {
 
 
     private final static String TAG = NearbyStationsFragment.class.getSimpleName();
@@ -45,10 +50,10 @@ public class NearbyStationsFragment extends Fragment {//implements GooglePlaySer
     private TextView stationsLoaderTextView;
     private LinearLayout nearbyStationsLayout;
     private SharedPreferences preferences;
-
-    //private LocationClient locationClient;
+    private GoogleApiClient mGoogleApiClient;
     private Location currentLocation;
     private ObjectAnimator mStationsLoaderImageViewanimator;
+    private Util util;
 
     public NearbyStationsFragment() {
         // Required empty public constructor
@@ -58,7 +63,18 @@ public class NearbyStationsFragment extends Fragment {//implements GooglePlaySer
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_nearby_stations, container, false);
+        this.util = new Util();
+        if (util.checkPlayServices(getActivity()))
+            buildGoogleApiClient();
         return rootView;
+    }
+
+    protected synchronized void buildGoogleApiClient() {
+        mGoogleApiClient = new GoogleApiClient.Builder(getActivity())
+                .addConnectionCallbacks(this)
+                .addOnConnectionFailedListener(this)
+                .addApi(LocationServices.API)
+                .build();
     }
 
     @Override
@@ -71,7 +87,6 @@ public class NearbyStationsFragment extends Fragment {//implements GooglePlaySer
         mStationsLoaderImageViewanimator.setInterpolator(new BounceInterpolator());
 
         preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
-        //locationClient = new LocationClient(getActivity().getApplicationContext(), this, this);
         stationsLoaderImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,9 +98,10 @@ public class NearbyStationsFragment extends Fragment {//implements GooglePlaySer
     @Override
     public void onResume() {
         super.onResume();
-        /*if(locationClient.isConnected())
-            startAsyncStationsUpdate();*/
+        if (mGoogleApiClient.isConnected())
+            startAsyncStationsUpdate();
     }
+
 
     public void injectViews(View rootView){
         layoutInflater = LayoutInflater.from(getActivity().getApplicationContext());
@@ -115,23 +131,27 @@ public class NearbyStationsFragment extends Fragment {//implements GooglePlaySer
 
     @Override
     public void onStart() {
-        //locationClient.connect();
         super.onStart();
+        if (mGoogleApiClient != null) {
+            mGoogleApiClient.connect();
+        }
     }
 
     @Override
     public void onStop() {
-        //locationClient.disconnect();
         super.onStop();
+        if (mGoogleApiClient != null) {
+            mGoogleApiClient.disconnect();
+        }
     }
 
-/*    @Override
+    @Override
     public void onConnected(Bundle bundle) {
-       // currentLocation = locationClient.getLastLocation();
-        //startAsyncStationsUpdate();
+        currentLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+        startAsyncStationsUpdate();
 
         Log.d(TAG, "Location Connected!");
-    }*/
+    }
 
     public void startAsyncStationsUpdate(){
 
@@ -145,19 +165,9 @@ public class NearbyStationsFragment extends Fragment {//implements GooglePlaySer
         stationsLoaderTextView.setText("Not able to get your current Location. Check your GPS.");
     }
 
-/*    @Override
-    public void onDisconnected() {
-        Log.d(TAG, "Location Disconnected!");
-    }
-
-    @Override
-    public void onConnectionFailed(ConnectionResult connectionResult) {
-        Log.d(TAG, "Location Connection Failed!");
-    }*/
-
     private void directToGooglMap(NearByStation station){
-        //Location currentLocation = locationClient.getLastLocation();
-        /*if(currentLocation != null){
+        Location currentLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+        if (currentLocation != null) {
             String curLat, curLong, desLat, desLong;
             curLat = String.valueOf(currentLocation.getLatitude());
             curLong = String.valueOf(currentLocation.getLongitude());
@@ -180,7 +190,17 @@ public class NearbyStationsFragment extends Fragment {//implements GooglePlaySer
 
         }else{
             Toast.makeText(getActivity().getApplicationContext(),"Your current location is not available! Check your GPS.", Toast.LENGTH_SHORT).show();
-        }*/
+        }
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+        mGoogleApiClient.connect();
+    }
+
+    @Override
+    public void onConnectionFailed(ConnectionResult connectionResult) {
+
     }
 
     private class UpdateNearbyStations extends AsyncTask<Void, Void, Void>{

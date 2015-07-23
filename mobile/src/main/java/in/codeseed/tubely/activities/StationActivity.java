@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.drawable.ColorDrawable;
+import android.location.Location;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -28,6 +29,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -52,8 +56,8 @@ import retrofit.RetrofitError;
 import retrofit.client.Response;
 import retrofit.converter.SimpleXMLConverter;
 
-public class StationActivity extends BaseActivity implements LoaderManager.LoaderCallbacks<Cursor>, ObservableScrollView.CallBack {
-    //, GooglePlayServicesClient.ConnectionCallbacks, GooglePlayServicesClient.OnConnectionFailedListener, {
+public class StationActivity extends BaseActivity implements LoaderManager.LoaderCallbacks<Cursor>, ObservableScrollView.CallBack,
+        GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
     private static final String TAG = StationActivity.class.getSimpleName();
     private static final int STATION_DATA_LOADER = 1;
@@ -89,6 +93,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     @Bind(R.id.train_prediction_header_colorbar)
     View mHeaderColorBar;
     private GoogleMap mMap;
+    private Util util;
     private ArrayAdapter mLinesSpinnerAdapter;
     private ColorDrawable actionBarBackground;
     private ObjectAnimator refreshAnimator;
@@ -104,7 +109,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     private String address;
     private String phone;
     private String zone;
-    //private LocationClient mLocationClient;
+    private GoogleApiClient mGoogleApiClient;
     private boolean directionEnabled = false;
     private boolean stationLocationEnabled = false;
 
@@ -133,7 +138,10 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_station);
         ButterKnife.bind(this);
-        //mLocationClient = new LocationClient(this, this, this);
+
+        util = new Util();
+        if (util.checkPlayServices(this))
+            buildGoogleApiClient();
 
         getIntentData();
         setUpActionBar();
@@ -151,7 +159,13 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
 
     }
 
-
+    protected synchronized void buildGoogleApiClient() {
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .addConnectionCallbacks(this)
+                .addOnConnectionFailedListener(this)
+                .addApi(LocationServices.API)
+                .build();
+    }
 
     public void setUpAnimators(){
         refreshAnimator = ObjectAnimator.ofFloat(mPlatformRefreshImageView, "rotation", 360);
@@ -314,14 +328,18 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     @Override
     protected void onStart() {
         super.onStart();
-        //mLocationClient.connect();
+        if (mGoogleApiClient != null) {
+            mGoogleApiClient.connect();
+        }
     }
 
     @Override
     protected void onStop() {
-        //mLocationClient.disconnect();
         directionEnabled = false;
         super.onStop();
+        if (mGoogleApiClient != null) {
+            mGoogleApiClient.disconnect();
+        }
     }
 
     @Override
@@ -564,9 +582,9 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
         }
     }
 
-/*    @Override
+    @Override
     public void onConnected(Bundle bundle) {
-        Location currentLocation = mLocationClient.getLastLocation();
+        Location currentLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
         if(currentLocation != null) {
             currentLatitude = currentLocation.getLatitude();
             currentLongitude = currentLocation.getLongitude();
@@ -575,14 +593,14 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     }
 
     @Override
-    public void onDisconnected() {
-
+    public void onConnectionSuspended(int i) {
+        mGoogleApiClient.connect();
     }
 
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) {
 
-    }*/
+    }
 
     @Override
     public void onScrollChanged(int l, int oldl, int t, int oldt) {
