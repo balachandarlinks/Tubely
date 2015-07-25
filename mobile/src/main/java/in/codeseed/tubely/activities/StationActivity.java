@@ -61,6 +61,8 @@ import retrofit.converter.SimpleXMLConverter;
 public class StationActivity extends BaseActivity implements LoaderManager.LoaderCallbacks<Cursor>, ObservableScrollView.CallBack,
         GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
+    private static final String TAG = StationActivity.class.getSimpleName();
+
     @Bind(R.id.station_address) TextView mStationAddress;
     @Bind(R.id.station_phone) TextView mStationPhone;
     @Bind(R.id.zones_textview) TextView mZoneTextView;
@@ -78,7 +80,6 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     @Bind(R.id.train_prediction_header_colorbar) View mHeaderColorBar;
     @Bind(R.id.station_swipe_refresh) SwipeRefreshLayout mStationSwipeRefresh;
 
-    private static final String TAG = StationActivity.class.getSimpleName();
     private static final int STATION_DATA_LOADER = 1;
     private static String MAP_URL = "http://maps.google.com/maps?saddr=CURLAT,CURLONG&daddr=DESLAT,DESLONG&mode=transit";
 
@@ -101,6 +102,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     private double currentLatitude, currentLongitude;
     private boolean directionEnabled = false;
     private boolean stationLocationEnabled = false;
+    private boolean callFromShortcut = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -140,6 +142,10 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
 
         switch (item.getItemId()) {
             case android.R.id.home:
+                if(callFromShortcut){
+                    Intent homeIntent = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(homeIntent);
+                }
                 finish();
                 return true;
             default:
@@ -212,6 +218,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
         stationName = getIntent().getStringExtra("station");
         stationCode = getIntent().getStringExtra("code");
         stationLine = getIntent().getStringExtra("line");
+        callFromShortcut = getIntent().getBooleanExtra("shortcut", false);
         stationLines = stationLine.split(",");
         mLinesBatchLayout.setLines(stationLines);
     }
@@ -539,6 +546,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
         stationIntent.putExtra("station", stationName);
         stationIntent.putExtra("code", stationCode);
         stationIntent.putExtra("line", stationLine);
+        stationIntent.putExtra("shortcut", true);
 
         Intent shortcutIntent = new Intent();
         shortcutIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, stationIntent);

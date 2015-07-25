@@ -37,7 +37,7 @@
     <color name="colorPurple">#CE93D8</color>
     <color name="colorLightBlue">#81D4FA</color>
 
-    <color name="tubeMapActionBar">#55c5cae9</color>
+    <color name="tubeMapActionBar">@color/colorPrimary</color>
 
     <!-- ActionBar Color Style -->
     <color name="page_title_strip">#7986cb</color>

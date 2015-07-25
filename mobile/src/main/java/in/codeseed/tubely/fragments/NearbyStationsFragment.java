@@ -72,6 +72,7 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
 
         if (util.checkPlayServices(getActivity()))
             buildGoogleApiClient();
+
         return rootView;
     }
 
@@ -104,7 +105,7 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
     @Override
     public void onResume() {
         super.onResume();
-        if (mGoogleApiClient.isConnected())
+        if (mGoogleApiClient != null && mGoogleApiClient.isConnected())
             startAsyncStationsUpdate();
     }
 
