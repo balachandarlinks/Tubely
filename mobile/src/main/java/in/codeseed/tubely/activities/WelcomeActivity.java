@@ -14,21 +14,18 @@ import android.widget.TextView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.OnPageChange;
 import in.codeseed.tubely.R;
 import in.codeseed.tubely.util.Util;
 
 public class WelcomeActivity extends BaseActivity {
 
-    @Bind(R.id.indicator_one)
-    TextView indicatorOne;
-    @Bind(R.id.indicator_two)
-    TextView indicatorTwo;
-    @Bind(R.id.indicator_three)
-    TextView indicatorThree;
-    @Bind(R.id.indicator_four)
-    TextView indicatorFour;
-    @Bind(R.id.welcome_viewpager)
-    ViewPager mViewPager;
+    @Bind(R.id.indicator_one) TextView indicatorOne;
+    @Bind(R.id.indicator_two) TextView indicatorTwo;
+    @Bind(R.id.indicator_three) TextView indicatorThree;
+    @Bind(R.id.indicator_four) TextView indicatorFour;
+    @Bind(R.id.welcome_viewpager) ViewPager mViewPager;
     SectionsPagerAdapter mSectionsPagerAdapter;
     private SharedPreferences mSharedPreferences;
 
@@ -46,45 +43,36 @@ public class WelcomeActivity extends BaseActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager.setAdapter(mSectionsPagerAdapter);
         mViewPager.setPageTransformer(true, new DepthPageTransformer());
-        mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int i, float v, int i2) {
-
-            }
-
-            @Override
-            public void onPageSelected(int page) {
-                indicatorOne.setBackgroundColor(getResources().getColor(R.color.colorAccent));
-                indicatorTwo.setBackgroundColor(getResources().getColor(R.color.colorAccent));
-                indicatorThree.setBackgroundColor(getResources().getColor(R.color.colorAccent));
-                indicatorFour.setBackgroundColor(getResources().getColor(R.color.colorAccent));
-                switch (page){
-                    case 0:
-                        indicatorOne.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                        break;
-                    case 1:
-                        indicatorTwo.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                        break;
-                    case 2:
-                        indicatorThree.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                        break;
-                    case 3:
-                        indicatorFour.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                        break;
-                }
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int i) {
-
-            }
-        });
     }
 
+    @OnClick(R.id.lets_start_button)
     public void closeWelcomeActivity(View view){
-        mSharedPreferences.edit().putBoolean(Util.SHARED_PREF_FIRST_TIME_WELCOME, false);
-        mSharedPreferences.edit().commit();
+        SharedPreferences.Editor editor = mSharedPreferences.edit();
+        editor.putBoolean(Util.SHARED_PREF_FIRST_TIME_WELCOME, false);
+        editor.apply();
         finish();
+    }
+
+    @OnPageChange(R.id.welcome_viewpager)
+    public void onPageSelected(int position) {
+        indicatorOne.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+        indicatorTwo.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+        indicatorThree.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+        indicatorFour.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+        switch (position){
+            case 0:
+                indicatorOne.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                break;
+            case 1:
+                indicatorTwo.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                break;
+            case 2:
+                indicatorThree.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                break;
+            case 3:
+                indicatorFour.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                break;
+        }
     }
 
     public static class PlaceholderFragment extends Fragment {

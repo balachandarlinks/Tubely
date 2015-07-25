@@ -114,6 +114,7 @@
             android:layout_weight="0.25"/>
 
         <Button
+            android:id="@+id/lets_start_button"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_gravity="center"
@@ -121,7 +122,6 @@
             android:layout_weight="0.75"
             android:background="@drawable/tubely_welcome_button"
             android:gravity="center"
-            android:onClick="closeWelcomeActivity"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
             android:text="LETS START"
