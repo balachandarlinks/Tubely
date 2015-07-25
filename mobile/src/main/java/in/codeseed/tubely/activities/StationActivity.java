@@ -5,20 +5,20 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.location.Location;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -41,6 +41,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.OnItemSelected;
 import in.codeseed.tubely.R;
 import in.codeseed.tubely.customviews.LinesBatchLayout;
 import in.codeseed.tubely.customviews.ObservableScrollView;
@@ -59,59 +61,72 @@ import retrofit.converter.SimpleXMLConverter;
 public class StationActivity extends BaseActivity implements LoaderManager.LoaderCallbacks<Cursor>, ObservableScrollView.CallBack,
         GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
+    @Bind(R.id.station_address) TextView mStationAddress;
+    @Bind(R.id.station_phone) TextView mStationPhone;
+    @Bind(R.id.zones_textview) TextView mZoneTextView;
+    @Bind(R.id.platform_refresh_textview) TextView mPlatformRefreshTextView;
+    @Bind(R.id.platform_refresh_imageview) ImageView mPlatformRefreshImageView;
+    @Bind(R.id.lines_spinner_arrow) ImageView mLinesSpinnerArrow;
+    @Bind(R.id.directMeButton) Button mDirectMeButton;
+    @Bind(R.id.pinItButton) Button mPinItButton;
+    @Bind(R.id.lines_spinner) Spinner mLinesSpinner;
+    @Bind(R.id.station_scrollview) ObservableScrollView mScrollView;
+    @Bind(R.id.platform_refresh) RelativeLayout mPlatformRefresh;
+    @Bind(R.id.train_prediction_layout) LinearLayout mTrainPredictionLinearLayout;
+    @Bind(R.id.train_prediction_header_layout) LinearLayout mTrainPredictionHeader;
+    @Bind(R.id.lines_batch_layout) LinesBatchLayout mLinesBatchLayout;
+    @Bind(R.id.train_prediction_header_colorbar) View mHeaderColorBar;
+    @Bind(R.id.station_swipe_refresh) SwipeRefreshLayout mStationSwipeRefresh;
+
     private static final String TAG = StationActivity.class.getSimpleName();
     private static final int STATION_DATA_LOADER = 1;
     private static String MAP_URL = "http://maps.google.com/maps?saddr=CURLAT,CURLONG&daddr=DESLAT,DESLONG&mode=transit";
-    @Bind(R.id.station_address)
-    TextView mStationAddress;
-    @Bind(R.id.station_phone)
-    TextView mStationPhone;
-    @Bind(R.id.zones_textview)
-    TextView mZoneTextView;
-    @Bind(R.id.platform_refresh_textview)
-    TextView mPlatformRefreshTextView;
-    @Bind(R.id.platform_refresh_imageview)
-    ImageView mPlatformRefreshImageView;
-    @Bind(R.id.lines_spinner_arrow)
-    ImageView mLinesSpinnerArrow;
-    @Bind(R.id.directMeButton)
-    Button mDirectMeButton;
-    @Bind(R.id.pinItButton)
-    Button mPinItButton;
-    @Bind(R.id.lines_spinner)
-    Spinner mLinesSpinner;
-    @Bind(R.id.station_scrollview)
-    ObservableScrollView mScrollView;
-    @Bind(R.id.platform_refresh)
-    RelativeLayout mPlatformRefresh;
-    @Bind(R.id.train_prediction_layout)
-    LinearLayout mTrainPredictionLinearLayout;
-    @Bind(R.id.train_prediction_header_layout)
-    LinearLayout mTrainPredictionHeader;
-    @Bind(R.id.lines_batch_layout)
-    LinesBatchLayout mLinesBatchLayout;
-    @Bind(R.id.train_prediction_header_colorbar)
-    View mHeaderColorBar;
+
     private GoogleMap mMap;
     private Util util;
     private ArrayAdapter mLinesSpinnerAdapter;
     private ColorDrawable actionBarBackground;
     private ObjectAnimator refreshAnimator;
     private ObjectAnimator platformCardAnimator;
-
-    private int mActionBarAlpha = 0;
-    private double latitude, longitude;
-    private double currentLatitude, currentLongitude;
     private String stationName;
     private String stationCode;
     private String stationLine;
     private String[] stationLines;
     private String address;
-    private String phone;
+    private String phoneNumber;
     private String zone;
     private GoogleApiClient mGoogleApiClient;
+    private int mActionBarAlpha = 0;
+    private double latitude, longitude;
+    private double currentLatitude, currentLongitude;
     private boolean directionEnabled = false;
     private boolean stationLocationEnabled = false;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_station);
+        ButterKnife.bind(this);
+
+        util = Util.getInstance(getApplicationContext());
+
+        if (util.checkPlayServices(this))
+            buildGoogleApiClient();
+
+        getIntentData();
+        setUpActionBar();
+        setLinesSpinner();
+        setUpSwipeRefresh();
+        setUpAnimators();
+
+        mScrollView.setOverScrollMode(ScrollView.OVER_SCROLL_NEVER);
+        mScrollView.setCallBack(this);
+
+        LoaderManager lm = getSupportLoaderManager();
+        lm.initLoader(STATION_DATA_LOADER, null, this);
+        lm.getLoader(STATION_DATA_LOADER).forceLoad();
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -123,206 +138,13 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
-
         }
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_station);
-        ButterKnife.bind(this);
-
-        util = new Util();
-        if (util.checkPlayServices(this))
-            buildGoogleApiClient();
-
-        getIntentData();
-        setUpActionBar();
-        setUpAnimators();
-        setUpViewListeners();
-
-        mScrollView.setOverScrollMode(ScrollView.OVER_SCROLL_NEVER);
-        mScrollView.setCallBack(this);
-
-        setLinesSpinner();
-
-        LoaderManager lm = getSupportLoaderManager();
-        lm.initLoader(STATION_DATA_LOADER, null, this);
-        lm.getLoader(STATION_DATA_LOADER).forceLoad();
-
-    }
-
-    protected synchronized void buildGoogleApiClient() {
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .addConnectionCallbacks(this)
-                .addOnConnectionFailedListener(this)
-                .addApi(LocationServices.API)
-                .build();
-    }
-
-    public void setUpAnimators(){
-        refreshAnimator = ObjectAnimator.ofFloat(mPlatformRefreshImageView, "rotation", 360);
-        refreshAnimator.setDuration(600);
-        refreshAnimator.setInterpolator(new LinearInterpolator());
-        refreshAnimator.setRepeatCount(ObjectAnimator.INFINITE);
-
-        platformCardAnimator = ObjectAnimator.ofFloat(mTrainPredictionLinearLayout, "alpha", 0.0f, 1.0f);
-        platformCardAnimator.setDuration(500);
-        platformCardAnimator.setInterpolator(new LinearInterpolator());
-    }
-
-    public void setUpViewListeners(){
-        mStationPhone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                callDialer(v);
-            }
-        });
-
-        mLinesSpinnerArrow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                popupSpinner();
-            }
-        });
-
-        mLinesSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String line = (String) mLinesSpinnerAdapter.getItem(position);
-
-                if (!line.isEmpty())
-                    loadTrainPrediction(line);
-                else
-                    setError();
-
-                setLineColorToViews(line);
-                actionBarBackground.setAlpha(mActionBarAlpha);
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-    }
-
-    public void popupSpinner(){
-        mLinesSpinner.performClick();
-    }
-
-    public void setError(){
-        mPlatformRefreshTextView.setText(getResources().getString(R.string.departure_not_avail));
-    }
-
-    public void setUpActionBar(){
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("");
-        actionBarBackground = new ColorDrawable();
-        actionBarBackground.setColor(getResources().getColor(getLineColor(stationLines[0])));
-        getSupportActionBar().setBackgroundDrawable(actionBarBackground);
-        actionBarBackground.setAlpha(0);
-    }
-
-    public void getIntentData(){
-        stationName = getIntent().getStringExtra("station");
-        stationCode = getIntent().getStringExtra("code");
-        stationLine = getIntent().getStringExtra("line");
-        stationLines = stationLine.split(",");
-        mLinesBatchLayout.setLines(stationLines);
-    }
-
-    public void setLinesSpinner(){
-        if (stationLine.isEmpty()) {
-            mLinesSpinner.setEnabled(false);
-            mLinesSpinnerArrow.setVisibility(View.INVISIBLE);
-        }
-        mLinesSpinnerArrow.setVisibility(View.VISIBLE);
-        mLinesSpinnerAdapter = new ArrayAdapter(getApplicationContext(), R.layout.lines_spinner_item, stationLines);
-        mLinesSpinner.setAdapter(mLinesSpinnerAdapter);
-        mLinesSpinnerAdapter.setDropDownViewResource(R.layout.lines_spinner_dropdown_item);
-        mLinesSpinner.setSelection(0);
-
-
-    }
-
-    public void setLineColorToViews(String line){
-        int lineColor = getLineColor(line);
-        mTrainPredictionHeader.setBackgroundResource(lineColor);
-        mHeaderColorBar.setBackgroundResource(lineColor);
-        actionBarBackground.setColor(getResources().getColor(lineColor));
-        mDirectMeButton.setBackgroundResource(lineColor);
-        mPinItButton.setBackgroundResource(lineColor);
-    }
-
-    public int getLineColor(String line){
-
-        int lineColor;
-
-        switch (line){
-            case "Bakerloo":
-
-                lineColor = R.color.bakerloo_bg;
-                break;
-
-            case "Central":
-                lineColor = R.color.central_bg;
-                break;
-
-            case "Circle":
-                lineColor = R.color.circle_bg;
-                break;
-
-            case "District":
-                lineColor = R.color.district_bg;
-                break;
-
-            case "DLR":
-                lineColor = R.color.dlr_bg;
-                break;
-
-            case "Hammersmith and City":
-                lineColor = R.color.hsmithandcity_bg;
-                break;
-
-            case "Jubilee":
-                lineColor = R.color.jubilee_bg;
-                break;
-
-            case "Metropolitan":
-                lineColor = R.color.metropoliton_bg;
-                break;
-
-            case "Northern":
-                lineColor = R.color.northern_bg;
-                break;
-
-            case "Overground":
-                lineColor = R.color.overground_bg;
-                break;
-
-            case "Piccadilly":
-                lineColor = R.color.piccadilly_bg;
-                break;
-
-            case "Victoria":
-                lineColor = R.color.victoria_bg;
-                break;
-
-            case "Waterloo and City":
-                lineColor = R.color.waterlooandcity_bg;
-                break;
-            default:
-                lineColor = R.color.colorPrimary;
-        }
-        return lineColor;
     }
 
     @Override
@@ -342,6 +164,111 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
         }
     }
 
+    @OnClick(R.id.station_phone)
+    public void callStation(View view)
+    {
+        util.callDialer(phoneNumber);
+    }
+
+    @OnClick(R.id.lines_spinner_arrow)
+    public void openStationsPopupSpinner(View view){
+        popupSpinner();
+    }
+
+    @OnItemSelected(R.id.lines_spinner)
+    public void stationSelected(int position){
+        String line = (String) mLinesSpinnerAdapter.getItem(position);
+
+        if (!line.isEmpty()) {
+            mStationSwipeRefresh.setColorSchemeResources(util.getLineColorResource(line));
+            setPlatformLoader();
+            loadTrainPrediction(line);
+        } else {
+            setError();
+        }
+
+        setLineColorToViews(line);
+        actionBarBackground.setAlpha(mActionBarAlpha);
+    }
+
+    protected synchronized void buildGoogleApiClient() {
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .addConnectionCallbacks(this)
+                .addOnConnectionFailedListener(this)
+                .addApi(LocationServices.API)
+                .build();
+    }
+
+    public void setUpActionBar() {
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("");
+        actionBarBackground = new ColorDrawable();
+        actionBarBackground.setColor(getResources().getColor(util.getLineColorResource(stationLines[0])));
+        getSupportActionBar().setBackgroundDrawable(actionBarBackground);
+        actionBarBackground.setAlpha(0);
+    }
+
+    public void getIntentData() {
+        stationName = getIntent().getStringExtra("station");
+        stationCode = getIntent().getStringExtra("code");
+        stationLine = getIntent().getStringExtra("line");
+        stationLines = stationLine.split(",");
+        mLinesBatchLayout.setLines(stationLines);
+    }
+
+    public void setLinesSpinner() {
+        if (stationLine.isEmpty()) {
+            mLinesSpinner.setEnabled(false);
+            mLinesSpinnerArrow.setVisibility(View.INVISIBLE);
+        }
+        mLinesSpinnerArrow.setVisibility(View.VISIBLE);
+        mLinesSpinnerAdapter = new ArrayAdapter(getApplicationContext(), R.layout.lines_spinner_item, stationLines);
+        mLinesSpinner.setAdapter(mLinesSpinnerAdapter);
+        mLinesSpinnerAdapter.setDropDownViewResource(R.layout.lines_spinner_dropdown_item);
+        mLinesSpinner.setSelection(0);
+
+
+    }
+
+    public void setUpAnimators() {
+        refreshAnimator = ObjectAnimator.ofFloat(mPlatformRefreshImageView, "rotation", 360);
+        refreshAnimator.setDuration(600);
+        refreshAnimator.setInterpolator(new LinearInterpolator());
+        refreshAnimator.setRepeatCount(ObjectAnimator.INFINITE);
+
+        platformCardAnimator = ObjectAnimator.ofFloat(mTrainPredictionLinearLayout, "alpha", 0.0f, 1.0f);
+        platformCardAnimator.setDuration(500);
+        platformCardAnimator.setInterpolator(new LinearInterpolator());
+    }
+
+    public void popupSpinner() {
+        mLinesSpinner.performClick();
+    }
+
+    public void setError() {
+        mPlatformRefreshTextView.setText(getResources().getString(R.string.departure_not_avail));
+    }
+
+    private void setUpSwipeRefresh() {
+        mStationSwipeRefresh.setColorSchemeResources(util.getLineColorResource(mLinesSpinner.getSelectedItem().toString()));
+        mStationSwipeRefresh.setProgressViewOffset(false, 0, util.getActionBarHeight() + 50);
+        mStationSwipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                refreshPlatform();
+            }
+        });
+    }
+
+    public void setLineColorToViews(String line) {
+        int lineColor = util.getLineColorResource(line);
+        mTrainPredictionHeader.setBackgroundResource(lineColor);
+        mHeaderColorBar.setBackgroundResource(lineColor);
+        actionBarBackground.setColor(getResources().getColor(lineColor));
+        mDirectMeButton.setBackgroundResource(lineColor);
+        mPinItButton.setBackgroundResource(lineColor);
+    }
+
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         StationCursorLoader stationCursorLoader = new StationCursorLoader(getApplicationContext(),
@@ -355,39 +282,39 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
 
     @Override
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
-        if(cursor.moveToFirst()){
+        if (cursor.moveToFirst()) {
             String lat = cursor.getString(cursor.getColumnIndex(TubelyDBContract.StationTable.COLUMN_LAT));
             String longt = cursor.getString(cursor.getColumnIndex(TubelyDBContract.StationTable.COLUMN_LONG));
 
-            if(!lat.equalsIgnoreCase("") && !longt.equalsIgnoreCase("")) {
+            if (!lat.equalsIgnoreCase("") && !longt.equalsIgnoreCase("")) {
                 try {
                     latitude = Double.parseDouble(lat);
                     longitude = Double.parseDouble(longt);
                     stationLocationEnabled = true;
-                }catch (Exception e){
+                } catch (Exception e) {
                     //Log.d(TAG, e.getMessage());
                 }
             }
 
-            phone = cursor.getString(cursor.getColumnIndex(TubelyDBContract.StationTable.COLUMN_PHONE));
+            phoneNumber = cursor.getString(cursor.getColumnIndex(TubelyDBContract.StationTable.COLUMN_PHONE));
             address = cursor.getString(cursor.getColumnIndex(TubelyDBContract.StationTable.COLUMN_ADDRESS));
             address = address.trim();
 
             zone = cursor.getString(cursor.getColumnIndex(TubelyDBContract.StationTable.COLUMN_ZONES));
             zone = zone.replace(Util.STATION_TABLE_SPLITTER, " ,");
 
-            if(!phone.equalsIgnoreCase(""))
-                mStationPhone.setText(phone);
+            if (!phoneNumber.equalsIgnoreCase(""))
+                mStationPhone.setText(phoneNumber);
 
 
-            if(!address.equalsIgnoreCase(""))
+            if (!address.equalsIgnoreCase(""))
                 mStationAddress.setText(address);
 
-            if(!zone.equalsIgnoreCase(""))
+            if (!zone.equalsIgnoreCase(""))
                 mZoneTextView.setText(zone);
 
             setupMap(latitude, longitude);
-        }else{
+        } else {
             //Log.d(TAG, "Cursor Empty");
             stationLocationEnabled = false;
         }
@@ -400,7 +327,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     }
 
     public void setupMap(double latitude, double longitude) {
-        if(stationLocationEnabled) {
+        if (stationLocationEnabled) {
             LatLng LOCATION = new LatLng(latitude, longitude);
             mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
             if (mMap != null) {
@@ -419,39 +346,33 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
                 mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
             }
-        }else{
-            Toast.makeText(getApplicationContext(),"Station Location Not available", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getApplicationContext(), "Station Location Not available", Toast.LENGTH_SHORT).show();
         }
     }
 
-    public void loadTrainsInPlatforms(View view){
+    public void refreshPlatform()
+    {
         String selectedLine = mLinesSpinner.getSelectedItem().toString();
-        if(!selectedLine.isEmpty())
+        if (!selectedLine.isEmpty())
             loadTrainPrediction(mLinesSpinner.getSelectedItem().toString());
     }
 
-    boolean isNetworkConnected(){
-        ConnectivityManager conn = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = conn.getActiveNetworkInfo();
-        if(networkInfo != null && networkInfo.isConnected())
-            return true;
-        else
-            return false;
+    @OnClick(R.id.platform_refresh_imageview)
+    public void loadTrainsInPlatforms(View view) {
+        setPlatformLoader();
+        refreshPlatform();
     }
 
-    public void loadTrainPrediction(String lineName){
+    public void loadTrainPrediction(String lineName) {
 
-        if(!isNetworkConnected()){
+        if (!util.isNetworkConnected()) {
             mPlatformRefresh.setVisibility(View.VISIBLE);
             mTrainPredictionLinearLayout.setVisibility(View.GONE);
             mPlatformRefreshTextView.setText("No Internet connection!");
+            mStationSwipeRefresh.setRefreshing(false);
             return;
         }
-
-        mTrainPredictionLinearLayout.setVisibility(View.GONE);
-        mPlatformRefresh.setVisibility(View.VISIBLE);
-        mPlatformRefreshTextView.setText("Loading " + mLinesSpinner.getSelectedItem().toString() + " trains..");
-        refreshAnimator.start();
 
         RestAdapter restAdapter = new RestAdapter.Builder()
                 .setEndpoint("http://cloud.tfl.gov.uk")
@@ -462,19 +383,20 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
 
         TflWebService tflWebService = restAdapter.create(TflWebService.class);
         String lineCode;
-        if(lineName.equalsIgnoreCase("Circle")){
+        if (lineName.equalsIgnoreCase("Circle")) {
             lineCode = "H";
-        }else{
-            lineCode = lineName.substring(0,1).toUpperCase();
+        } else {
+            lineCode = lineName.substring(0, 1).toUpperCase();
         }
-        tflWebService.getTrainPrediction(lineCode, stationCode , new Callback<TrainPrediction>() {
+        tflWebService.getTrainPrediction(lineCode, stationCode, new Callback<TrainPrediction>() {
             @Override
             public void success(TrainPrediction trainPrediction, Response response) {
                 //Log.d(TAG, "Train Prediction Success : " + response.getStatus() + "---" + response.getReason() );
 
                 refreshAnimator.cancel();
+                mStationSwipeRefresh.setRefreshing(false);
 
-                if(trainPrediction == null || null == trainPrediction.getPlatforms() || trainPrediction.getPlatforms().isEmpty()){
+                if (trainPrediction == null || null == trainPrediction.getPlatforms() || trainPrediction.getPlatforms().isEmpty()) {
                     mPlatformRefreshTextView.setText("Sorry. No service at this moment!");
                     return;
                 }
@@ -484,12 +406,12 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
                 mTrainPredictionLinearLayout.setVisibility(View.VISIBLE);
 
                 LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
-                for(TrainPlatform platform : trainPrediction.getPlatforms()){
+                for (TrainPlatform platform : trainPrediction.getPlatforms()) {
                     View platformHeader = inflater.inflate(R.layout.card_platform_name, null, false);
-                    ((TextView)platformHeader.findViewById(R.id.platform_name)).setText(platform.getDirection());
+                    ((TextView) platformHeader.findViewById(R.id.platform_name)).setText(platform.getDirection());
                     mTrainPredictionLinearLayout.addView(platformHeader);
 
-                    if(null != platform.getTrainList()) {
+                    if (null != platform.getTrainList()) {
                         for (Train train : platform.getTrainList()) {
                             View trainView = inflater.inflate(R.layout.card_platform_train, null, false);
                             ((TextView) trainView.findViewById(R.id.destination)).setText(train.getDestination());
@@ -511,7 +433,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
 
                             mTrainPredictionLinearLayout.addView(line);
                         }
-                    }else {
+                    } else {
                         View trainView = inflater.inflate(R.layout.card_platform_train, null, false);
                         ((TextView) trainView.findViewById(R.id.destination)).setText("No service at this moment!");
                         ((TextView) trainView.findViewById(R.id.time)).setText("");
@@ -525,11 +447,12 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
             public void failure(RetrofitError error) {
                 //Log.d(TAG, "Train Prediction Failure"  + error.getMessage());
                 mPlatformRefresh.setVisibility(View.VISIBLE);
+                mStationSwipeRefresh.setRefreshing(false);
                 mTrainPredictionLinearLayout.setVisibility(View.GONE);
 
-                if(null != error.getResponse()) {
+                if (null != error.getResponse()) {
                     mPlatformRefreshTextView.setText(error.getResponse().getReason());
-                }else {
+                } else {
                     mPlatformRefreshTextView.setText(getResources().getString(R.string.unknown_error));
                 }
                 refreshAnimator.cancel();
@@ -538,22 +461,15 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
         });
     }
 
-    private void callDialer(View view){
-        if(phone.equalsIgnoreCase("")){
-            Toast.makeText(getApplicationContext(), "Phone number not available!", Toast.LENGTH_SHORT).show();
-        }else {
-            Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phone));
-
-            if (callIntent.resolveActivity(getPackageManager()) != null) {
-                startActivity(callIntent);
-            }else{
-                Toast.makeText(getApplicationContext(), "Kindly install a dialer to make calls!!", Toast.LENGTH_LONG).show();
-            }
-        }
+    private void setPlatformLoader() {
+        mTrainPredictionLinearLayout.setVisibility(View.GONE);
+        mPlatformRefresh.setVisibility(View.VISIBLE);
+        mPlatformRefreshTextView.setText("Loading " + mLinesSpinner.getSelectedItem().toString() + " trains..");
+        refreshAnimator.start();
     }
 
-    public void directToGoogleMap(View view){
-        if(directionEnabled && stationLocationEnabled){
+    public void directToGoogleMap(View view) {
+        if (directionEnabled && stationLocationEnabled) {
             String curLat, curLong, desLat, desLong;
             curLat = String.valueOf(currentLatitude);
             curLong = String.valueOf(currentLongitude);
@@ -570,13 +486,13 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
             mapIntent.setData(Uri.parse(MAP_URL));
             if (mapIntent.resolveActivity(getPackageManager()) != null) {
                 startActivity(mapIntent);
-            }else{
+            } else {
                 Toast.makeText(getApplicationContext(), "Kindly install a browser or Google maps applicaton for directions!", Toast.LENGTH_LONG).show();
             }
 
-        }else{
-            if(!stationLocationEnabled)
-                Toast.makeText(getApplicationContext(),"Station Location Not available", Toast.LENGTH_SHORT).show();
+        } else {
+            if (!stationLocationEnabled)
+                Toast.makeText(getApplicationContext(), "Station Location Not available", Toast.LENGTH_SHORT).show();
             else
                 Toast.makeText(getApplicationContext(), "Current Location Not Available!", Toast.LENGTH_SHORT).show();
         }
@@ -585,7 +501,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     @Override
     public void onConnected(Bundle bundle) {
         Location currentLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-        if(currentLocation != null) {
+        if (currentLocation != null) {
             currentLatitude = currentLocation.getLatitude();
             currentLongitude = currentLocation.getLongitude();
             directionEnabled = true;
@@ -609,7 +525,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
         final int newAlpha = (int) (ratio * 255);
         actionBarBackground.setAlpha(newAlpha);
 
-        if(newAlpha > 100)
+        if (newAlpha > 100)
             getSupportActionBar().setTitle(stationName);
         else
             getSupportActionBar().setTitle("");
@@ -618,24 +534,23 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     }
 
     public void pinStationToHome(View view) {
-        Intent shortcutIntent = new Intent(getApplicationContext(),StationActivity.class);
-        shortcutIntent.setAction(Intent.ACTION_MAIN);
-        shortcutIntent.putExtra("station", stationName);
-        shortcutIntent.putExtra("code", stationCode);
-        shortcutIntent.putExtra("line",stationLine);
+        Intent stationIntent = new Intent(getApplicationContext(), StationActivity.class);
+        stationIntent.setAction(Intent.ACTION_MAIN);
+        stationIntent.putExtra("station", stationName);
+        stationIntent.putExtra("code", stationCode);
+        stationIntent.putExtra("line", stationLine);
 
-        Intent addIntent = new Intent();
-        addIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
-        addIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, stationName);
-        addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, Intent.ShortcutIconResource.fromContext(getApplicationContext(),R.drawable.ic_launcher));
-
-        addIntent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
-        getApplicationContext().sendBroadcast(addIntent);
+        Intent shortcutIntent = new Intent();
+        shortcutIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, stationIntent);
+        shortcutIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, stationName);
+        shortcutIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, Intent.ShortcutIconResource.fromContext(getApplicationContext(), R.drawable.ic_launcher));
+        shortcutIntent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
+        getApplicationContext().sendBroadcast(shortcutIntent);
 
         Toast.makeText(getApplicationContext(), stationName + " " + getResources().getString(R.string.shortcut_added), Toast.LENGTH_LONG).show();
     }
 
-    private static class StationCursorLoader extends CursorLoader{
+    private static class StationCursorLoader extends CursorLoader {
 
         public StationCursorLoader(Context context, Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
             super(context, uri, projection, selection, selectionArgs, sortOrder);
@@ -652,5 +567,4 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
         }
 
     }
-
 }

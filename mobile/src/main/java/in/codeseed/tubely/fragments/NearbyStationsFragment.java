@@ -60,10 +60,16 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
     }
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        this.util = Util.getInstance(getActivity().getApplicationContext());
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_nearby_stations, container, false);
-        this.util = new Util();
+
         if (util.checkPlayServices(getActivity()))
             buildGoogleApiClient();
         return rootView;

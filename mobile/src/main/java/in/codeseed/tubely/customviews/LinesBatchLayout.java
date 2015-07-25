@@ -21,17 +21,21 @@ public class LinesBatchLayout extends LinearLayout{
     private String[] lines;
     private TextView mLineTextView;
     private Space mSpaceView;
+    private Util util;
 
     public LinesBatchLayout(Context context) {
         super(context);
+        util = Util.getInstance(getContext().getApplicationContext());
     }
 
     public LinesBatchLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
+        util = Util.getInstance(getContext().getApplicationContext());
     }
 
     public LinesBatchLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        util = Util.getInstance(getContext().getApplicationContext());
     }
 
     public String[] getLines() {
@@ -53,7 +57,7 @@ public class LinesBatchLayout extends LinearLayout{
                 mSpaceView.setLayoutParams(new ViewGroup.LayoutParams(SPACE_BETWEEN_LINE_BATCHES, ViewGroup.LayoutParams.WRAP_CONTENT));
 
                 mLineTextView.setText(line);
-                mLineTextView.setBackgroundResource(Util.getLineColorResource(line));
+                mLineTextView.setBackgroundResource(util.getLineColorResource(line));
 
                 addView(mLineTextView);
                 addView(mSpaceView);

@@ -1,6 +1,14 @@
 package in.codeseed.tubely.util;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.Uri;
+import android.support.annotation.ColorInt;
+import android.support.annotation.ColorRes;
+import android.util.TypedValue;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -15,6 +23,9 @@ import in.codeseed.tubely.simplexml.allstations.AllStations;
  * Created by bala on 18/10/14.
  */
 public class Util {
+
+    private static Util instance = null;
+
     public static final String STATION_TABLE_SPLITTER = "#123#";
     public static final String SHARED_PREF_TUBESTATUS_CURRENT = "tubestatus_current_lastupdate";
     public static final String SHARED_PREF_TUBESTATUS_WEEKEND = "tubestatus_weekend_lastupdate";
@@ -23,11 +34,19 @@ public class Util {
     public static final String SHARED_PREF_DB_UPDATE_CODE = "pref_db_update_code";
     private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 1000;
     public static boolean NEARBY_FRAGMENTS_VISIBLE = false;
-
     private static AllStations allStations;
 
-    public Util(){
+    private Context appContext;
 
+    protected Util(Context appContext){
+        this.appContext = appContext;
+    }
+
+    public static Util getInstance(Context appContext){
+        if(instance == null) {
+            instance = new Util(appContext);
+        }
+        return instance;
     }
 
     public static long calculateHours(Date date){
@@ -74,7 +93,7 @@ public class Util {
         Util.allStations = allStations;
     }
 
-    public static int getLineColorResource(String line){
+    public int getLineColorResource(String line){
 
         int lineColorResource = R.color.colorPrimary;
         switch (line){
@@ -151,5 +170,40 @@ public class Util {
             return false;
         }
         return true;
+    }
+
+    public boolean isNetworkConnected() {
+        ConnectivityManager conn = (ConnectivityManager) appContext.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = conn.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected())
+            return true;
+        else
+            return false;
+    }
+
+    public void callDialer(String phoneNumber) {
+        if (phoneNumber.equalsIgnoreCase("")) {
+            Toast.makeText(appContext, "Phone number not available!", Toast.LENGTH_SHORT).show();
+        } else {
+            Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phoneNumber));
+            callIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+            if (callIntent.resolveActivity(appContext.getPackageManager()) != null) {
+                appContext.startActivity(callIntent);
+            } else {
+                Toast.makeText(appContext, "Kindly install a dialer to make calls!!", Toast.LENGTH_LONG).show();
+            }
+        }
+    }
+
+    public int getActionBarHeight()
+    {
+        TypedValue typedValue = new TypedValue();
+        int actionBarHeight = 0;
+        if (appContext.getTheme().resolveAttribute(android.R.attr.actionBarSize, typedValue, true))
+        {
+            actionBarHeight = TypedValue.complexToDimensionPixelSize(typedValue.data,appContext.getResources().getDisplayMetrics());
+        }
+        return actionBarHeight;
     }
 }

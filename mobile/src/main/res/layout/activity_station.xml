@@ -1,5 +1,13 @@
-<in.codeseed.tubely.customviews.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/station_swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<in.codeseed.tubely.customviews.ObservableScrollView
+
     android:id="@+id/station_scrollview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -51,9 +59,9 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+                    <fragment
                         android:id="@+id/map"
-                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        class="com.google.android.gms.maps.SupportMapFragment"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
                         map:mapType="normal"
@@ -66,7 +74,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="0dp"
                         android:layout_weight="1">
 
                         <Button
@@ -109,8 +117,6 @@
             </RelativeLayout>
 
         </FrameLayout>
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -193,7 +199,6 @@
                             android:layout_height="match_parent"
                             android:layout_centerInParent="true"
                             android:minHeight="50dp"
-                            android:onClick="loadTrainsInPlatforms"
                             android:scaleType="centerInside"
                             android:src="@drawable/refresh_material" />
 
@@ -342,6 +347,6 @@
 
     </LinearLayout>
 
-
-
 </in.codeseed.tubely.customviews.ObservableScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
