@@ -30,6 +30,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import in.codeseed.tubely.R;
 import in.codeseed.tubely.adapters.TubeStatusWeekendAdapter;
 import in.codeseed.tubely.data.TubelyDBContract;
@@ -40,20 +42,16 @@ import in.codeseed.tubely.util.Util;
 
 public class WeekendTubeStatusFragment extends Fragment implements LoaderManager.LoaderCallbacks<Cursor>{
 
-    /*
-    @InjectView(R.id.cts_dummytext) private TextView ctsDummyText;
-    @InjectView(R.id.current_tubestatus_container) private FrameLayout currentTubeStatusContainer;
-    */
+    @Bind(R.id.tubeStatusRecyclerView) RecyclerView recyclerView;
+    @Bind(R.id.tubeLoader) RelativeLayout tubeLoader;
+    @Bind(R.id.tubeLoaderTextView) TextView tubeLoaderTextView;
+    @Bind(R.id.tubeStatusLastUpdate) TextView tubeStatusLastUpdate;
+    @Bind(R.id.tubeLoaderImageView) ImageView tubeLoaderImageView;
+    @Bind(R.id.tubeFragmentSwipeRefresh) SwipeRefreshLayout swipeRefreshLayout;
 
     private static final String TAG = WeekendTubeStatusFragment.class.getSimpleName();
     private static final int LOADER_WEEKEND_TUBESTATUS_ID = 2;
 
-
-    private RecyclerView recyclerView;
-    private SwipeRefreshLayout swipeRefreshLayout;
-    private RelativeLayout tubeLoader;
-    private TextView tubeLoaderTextView, tubeStatusLastUpdate;
-    private ImageView tubeLoaderImageView;
     private GridLayoutManager gridLayoutManager;
     private TubeStatusWeekendAdapter tubeStatusAdapter;
     private WeekendTubeStatusLoader weekendTubeStatusLoader;
@@ -63,6 +61,13 @@ public class WeekendTubeStatusFragment extends Fragment implements LoaderManager
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_tubestatus, container, false);
+        ButterKnife.bind(this, rootView);
+        return rootView;
     }
 
     @Override
@@ -83,16 +88,10 @@ public class WeekendTubeStatusFragment extends Fragment implements LoaderManager
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_tubestatus, container, false);
-    }
-
-    @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         tubeList = new ArrayList<>();
-        injectResources(view);
 
         //Setup swipe refresh Layout
         swipeRefreshLayout.setColorSchemeResources(R.color.circle_bg, R.color.overground_bg, R.color.victoria_bg, R.color.dlr_bg);
@@ -137,16 +136,6 @@ public class WeekendTubeStatusFragment extends Fragment implements LoaderManager
         //Start the intent service to update current tube status
         if(isNetworkConnected())
             updateCurrentTubeStatus();
-    }
-
-    private void injectResources(View view){
-
-        recyclerView = (RecyclerView) view.findViewById(R.id.tubeStatusRecyclerView);
-        tubeLoader = (RelativeLayout)view.findViewById(R.id.tubeLoader);
-        tubeLoaderTextView = (TextView) view.findViewById(R.id.tubeLoaderTextView);
-        tubeLoaderImageView = (ImageView) view.findViewById(R.id.tubeLoaderImageView);
-        swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.tubeFragmentSwipeRefresh);
-        tubeStatusLastUpdate = (TextView) view.findViewById(R.id.tubeStatusLastUpdate);
     }
 
     private void updateCurrentTubeStatus(){

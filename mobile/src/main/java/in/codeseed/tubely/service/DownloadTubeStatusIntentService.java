@@ -104,7 +104,7 @@ public class DownloadTubeStatusIntentService extends IntentService {
                 .setEndpoint("http://cloud.tfl.gov.uk")
                 .build();
 
-        //restAdapter.setLogLevel(RestAdapter.LogLevel.BASIC);
+        //restAdapter.setLogLevel(RestAdapter.LogLevel.FULL);
 
         TflWebService tflWebService = restAdapter.create(TflWebService.class);
         try {
@@ -132,10 +132,10 @@ public class DownloadTubeStatusIntentService extends IntentService {
 
         RestAdapter restAdapter = new RestAdapter.Builder()
                 .setConverter(new SimpleXMLConverter())
-                .setEndpoint("http://data.tfl.gov.uk")
+                .setEndpoint("https://data.tfl.gov.uk")
                 .build();
 
-        restAdapter.setLogLevel(RestAdapter.LogLevel.FULL);
+        //restAdapter.setLogLevel(RestAdapter.LogLevel.FULL);
 
         TflWebService tflWebService = restAdapter.create(TflWebService.class);
         try {
@@ -157,22 +157,6 @@ public class DownloadTubeStatusIntentService extends IntentService {
     }
 
     private void updateStationDetails() {
-
-        /*DONT READ FROM API. MAKE IT LOCAL*/
-        /*RestAdapter restAdapter = new RestAdapter.Builder()
-                .setConverter(new SimpleXMLConverter())
-                .setEndpoint("http://data.tfl.gov.uk/")
-                .build();
-
-        TflWebService tflWebService = restAdapter.create(TflWebService.class);
-        try {
-
-            Root root = tflWebService.getStationsData();
-            if(root != null && root.getStations() != null)
-                bulkInsertStationFacilties(root.getStations());
-        }catch (Exception e){
-            Log.d(TAG, String.valueOf(e.getMessage()));
-        }*/
 
         Serializer serializer = new Persister();
         try {
@@ -211,7 +195,6 @@ public class DownloadTubeStatusIntentService extends IntentService {
                     .build());
         }
         try {
-
             getContentResolver().applyBatch(TubelyDBContract.CONTENT_AUTHORITY, ops);
             getContentResolver().notifyChange(TubelyDBContract.LineStatusEntry.CONTENT_URI.buildUpon().appendPath("current").build(), null);
             updateLastUpdatedTime(Util.SHARED_PREF_TUBESTATUS_CURRENT);
@@ -283,7 +266,7 @@ public class DownloadTubeStatusIntentService extends IntentService {
 
             SharedPreferences.Editor preferenceEditor = PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit();
             preferenceEditor.putInt(Util.SHARED_PREF_DB_UPDATE_CODE, getResources().getInteger(R.integer.db_code));
-            preferenceEditor.commit();
+            preferenceEditor.apply();
         }
         try{
             getContentResolver().applyBatch(TubelyDBContract.CONTENT_AUTHORITY, ops);
@@ -298,7 +281,7 @@ public class DownloadTubeStatusIntentService extends IntentService {
 
         SharedPreferences.Editor preferenceEditor = PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit();
         preferenceEditor.putLong(key, new Date().getTime());
-        preferenceEditor.commit();
+        preferenceEditor.apply();
     }
 
 
