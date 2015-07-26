@@ -30,7 +30,7 @@ public class Util {
     public static final String SHARED_PREF_TUBESTATUS_CURRENT = "tubestatus_current_lastupdate";
     public static final String SHARED_PREF_TUBESTATUS_WEEKEND = "tubestatus_weekend_lastupdate";
     public static final String SHARED_PREF_FIRST_TIME_WELCOME = "tubely_first_time_welcome";
-    public static final String SHARED_PREF_NEARBY_STATIONS_RADIOUS = "pref_neaby_stations_distance";
+    public static final String SHARED_PREF_NEARBY_STATIONS_RADIOUS_IN_MILES = "pref_neaby_stations_distance_in_miles";
     public static final String SHARED_PREF_DB_UPDATE_CODE = "pref_db_update_code";
     private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 1000;
     public static boolean NEARBY_FRAGMENTS_VISIBLE = false;

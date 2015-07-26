@@ -237,10 +237,10 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
             mStationsLoaderImageViewanimator.cancel();
             nearbyStations = sortNearByStations(nearbyStations);
             if(nearbyStations.isEmpty()){
-                String nearByStationsRadious = mPreferences.getString(Util.SHARED_PREF_NEARBY_STATIONS_RADIOUS, "1000");
+                String nearByStationsRadious = mPreferences.getString(Util.SHARED_PREF_NEARBY_STATIONS_RADIOUS_IN_MILES, "1");
                 mNearbyStationsLayout.setVisibility(View.INVISIBLE);
                 mStationsLoader.setVisibility(View.VISIBLE);
-                mStationsLoaderTextView.setText("No Nearby Stations in " + nearByStationsRadious + " m radius! \n Open Settings to change the radius.");
+                mStationsLoaderTextView.setText("No Nearby Stations in " + nearByStationsRadious + " miles radius! \n Open Settings to change the radius.");
                 Snackbar.make(mNearbyStationsRootLayout, "No nearby tube stations found", Snackbar.LENGTH_SHORT).show();
             }else {
                 mNearbyStationsLayout.setVisibility(View.VISIBLE);
@@ -316,8 +316,8 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
         }
 
         public int nearbyStationsRadious(){
-            String radious = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext()).getString(Util.SHARED_PREF_NEARBY_STATIONS_RADIOUS, "1000");
-            return Integer.parseInt(radious);
+            String radious = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext()).getString(Util.SHARED_PREF_NEARBY_STATIONS_RADIOUS_IN_MILES, "1");
+            return Integer.parseInt(radious) * 1609;
         }
 
         private ArrayList<NearByStation> sortNearByStations(ArrayList<NearByStation> nearByStations){

@@ -305,7 +305,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
         @Override
         public CharSequence getPageTitle(int position) {
             if (position == 0) {
-                return "Nearby Stations Beta";
+                return "Nearby Stations";
             } else if (position == 1) {
                 return "Live";
             } else if (position == 2){
