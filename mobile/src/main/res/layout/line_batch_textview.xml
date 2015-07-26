@@ -5,8 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:textStyle="bold"
-    android:textSize="12sp"
     android:padding="5dp"
-    android:minHeight="30dp"
+    android:minHeight="25dp"
     android:textColor="@android:color/white">
 </TextView>

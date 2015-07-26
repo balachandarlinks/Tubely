@@ -73,7 +73,7 @@
                     android:padding="5dp"
                     style="@style/TubelyLineBatchScroller">
 
-                    <in.codeseed.tubely.customviews.LinesBatchLayout
+                    <in.codeseed.tubely.customviews.BatchListLayout
                         android:id="@+id/lines_batch_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -81,7 +81,7 @@
                         android:paddingRight="15dp"
                         android:orientation="horizontal">
 
-                    </in.codeseed.tubely.customviews.LinesBatchLayout>
+                    </in.codeseed.tubely.customviews.BatchListLayout>
 
                 </HorizontalScrollView>
 

@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,7 +13,6 @@ import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -40,12 +38,15 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.OnItemSelected;
 import in.codeseed.tubely.R;
-import in.codeseed.tubely.customviews.LinesBatchLayout;
+import in.codeseed.tubely.customviews.BatchListLayout;
 import in.codeseed.tubely.customviews.ObservableScrollView;
 import in.codeseed.tubely.data.TubelyDBContract;
 import in.codeseed.tubely.parsers.TflWebService;
@@ -77,7 +78,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     @Bind(R.id.platform_refresh) RelativeLayout mPlatformRefresh;
     @Bind(R.id.train_prediction_layout) LinearLayout mTrainPredictionLinearLayout;
     @Bind(R.id.train_prediction_header_layout) LinearLayout mTrainPredictionHeader;
-    @Bind(R.id.lines_batch_layout) LinesBatchLayout mLinesBatchLayout;
+    @Bind(R.id.lines_batch_layout) BatchListLayout mBatchListLayout;
     @Bind(R.id.train_prediction_header_colorbar) View mHeaderColorBar;
     @Bind(R.id.station_swipe_refresh) SwipeRefreshLayout mStationSwipeRefresh;
 
@@ -104,6 +105,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     private boolean directionEnabled = false;
     private boolean stationLocationEnabled = false;
     private boolean callFromShortcut = false;
+    private List<Train> refinedTrainList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -221,7 +223,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
         stationLine = getIntent().getStringExtra("line");
         callFromShortcut = getIntent().getBooleanExtra("shortcut", false);
         stationLines = stationLine.split(",");
-        mLinesBatchLayout.setLines(stationLines);
+        mBatchListLayout.setLines(stationLines);
     }
 
     public void setLinesSpinner() {
@@ -234,8 +236,6 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
         mLinesSpinner.setAdapter(mLinesSpinnerAdapter);
         mLinesSpinnerAdapter.setDropDownViewResource(R.layout.lines_spinner_dropdown_item);
         mLinesSpinner.setSelection(0);
-
-
     }
 
     public void setUpAnimators() {
@@ -427,19 +427,34 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
                     ((TextView) platformHeader.findViewById(R.id.platform_name)).setText(platform.getDirection());
                     mTrainPredictionLinearLayout.addView(platformHeader);
 
-                    if (null != platform.getTrainList()) {
-                        for (Train train : platform.getTrainList()) {
+                    List<Train> trainList = platform.getTrainList();
+
+                    if (null != trainList) {
+
+                        refinedTrainList = new ArrayList<>();
+
+                        for (Train tempTrain : trainList) {
+                            int trainPosition = getTrainPositionInRefinedTrainList(tempTrain.getDestination());
+                            if (trainPosition != -1) {
+                                refinedTrainList.get(trainPosition).addTrainTime(Util.getMinutes(tempTrain.getSeconds()));
+                            } else {
+                                refinedTrainList.add(tempTrain);
+                            }
+                        }
+
+                        for (Train train : refinedTrainList) {
                             View trainView = inflater.inflate(R.layout.card_platform_train, null, false);
                             ((TextView) trainView.findViewById(R.id.destination)).setText(train.getDestination());
                             ((TextView) trainView.findViewById(R.id.current_location)).setText(train.getLocation());
 
-                            //Calculate Seconds to Mins
-                            int seconds = Integer.parseInt(train.getSeconds());
-                            int minutes = seconds / 60;
-
-                            String timeValue = minutes + " mins ";
-
+                            String timeValue = Util.getMinutes(train.getSeconds());
                             ((TextView) trainView.findViewById(R.id.time)).setText(timeValue);
+
+                            if (!train.getNextTrainTimeInSeconds().isEmpty())
+                                ((BatchListLayout) trainView.findViewById(R.id.trainTimesBatchLayout)).setTrainTimes(mLinesSpinner.getSelectedItem().toString(), train.getNextTrainTimeInSeconds());
+                            else
+                                (trainView.findViewById(R.id.trainTimesBatchLayout)).setVisibility(View.GONE);
+
                             mTrainPredictionLinearLayout.addView(trainView);
 
                             TextView line = new TextView(getApplicationContext());
@@ -475,6 +490,15 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
 
             }
         });
+    }
+
+    private int getTrainPositionInRefinedTrainList(String destination) {
+        for(int position = 0 ; position < refinedTrainList.size(); position++){
+            if(refinedTrainList.get(position).getDestination().equalsIgnoreCase(destination)){
+                return position;
+            }
+        }
+        return -1;
     }
 
     private void setPlatformLoader() {

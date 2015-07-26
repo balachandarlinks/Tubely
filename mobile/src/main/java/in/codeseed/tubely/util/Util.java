@@ -49,6 +49,14 @@ public class Util {
         return instance;
     }
 
+    public static String getMinutes(String seconds){
+        int secondsInt = Integer.parseInt(seconds);
+        int minutes = secondsInt / 60;
+
+        String timeValue = minutes + " mins ";
+        return timeValue;
+    }
+
     public static long calculateHours(Date date){
 
         long diff = new Date().getTime() - date.getTime();

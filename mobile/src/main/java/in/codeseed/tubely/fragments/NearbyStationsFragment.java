@@ -36,7 +36,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import in.codeseed.tubely.R;
 import in.codeseed.tubely.activities.StationActivity;
-import in.codeseed.tubely.customviews.LinesBatchLayout;
+import in.codeseed.tubely.customviews.BatchListLayout;
 import in.codeseed.tubely.data.TubelyDBContract;
 import in.codeseed.tubely.pojos.NearByStation;
 import in.codeseed.tubely.simplexml.allstations.Station;
@@ -269,12 +269,12 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
 
                     TextView stationName = (TextView) nearbyStationCard.findViewById(R.id.nearby_station_name);
                     TextView stationDistance = (TextView) nearbyStationCard.findViewById(R.id.nearby_station_distance);
-                    LinesBatchLayout linesBatchLayout = (LinesBatchLayout) nearbyStationCard.findViewById(R.id.lines_batch_layout);
+                    BatchListLayout batchListLayout = (BatchListLayout) nearbyStationCard.findViewById(R.id.lines_batch_layout);
 
 
                     stationName.setText(station.getName());
                     String[] lines = station.getLines().split(Util.STATION_TABLE_SPLITTER);
-                    linesBatchLayout.setLines(lines);
+                    batchListLayout.setLines(lines);
                     stationDistance.setText("~" + String.valueOf((int) station.getDistanceFromCurrentLocation()) + " m");
 
                     mNearbyStationsLayout.addView(nearbyStationCard);

@@ -3,6 +3,9 @@ package in.codeseed.tubely.simplexml.platform;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Root;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by bala on 4/11/14.
  */
@@ -18,6 +21,8 @@ public class Train {
     @Attribute(name = "Destination", required = false)
     private String destination;
 
+    private List<String> nextTrainTimeInSeconds = new ArrayList<>();
+
     public String getSeconds() {
         return seconds;
     }
@@ -28,5 +33,13 @@ public class Train {
 
     public String getDestination() {
         return destination;
+    }
+
+    public void addTrainTime(String time){
+        nextTrainTimeInSeconds.add(time);
+    }
+
+    public List<String> getNextTrainTimeInSeconds() {
+        return nextTrainTimeInSeconds;
     }
 }

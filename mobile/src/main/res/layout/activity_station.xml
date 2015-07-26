@@ -331,7 +331,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                        <in.codeseed.tubely.customviews.LinesBatchLayout
+                        <in.codeseed.tubely.customviews.BatchListLayout
                             android:id="@+id/lines_batch_layout"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
