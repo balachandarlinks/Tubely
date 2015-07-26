@@ -105,6 +105,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     private boolean directionEnabled = false;
     private boolean stationLocationEnabled = false;
     private boolean callFromShortcut = false;
+    private boolean platformStatusLoadedAtleastOnce = false;
     private List<Train> refinedTrainList;
 
     @Override
@@ -370,14 +371,26 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
         refreshPlatform();
     }
 
+    @Override
+    public void onBackPressed() {
+        if(callFromShortcut){
+            Intent homeIntent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(homeIntent);
+        }
+        super.onBackPressed();
+    }
+
     public void loadTrainPrediction(String lineName) {
 
         if (!util.isNetworkConnected()) {
-            mPlatformRefresh.setVisibility(View.VISIBLE);
-            mTrainPredictionLinearLayout.setVisibility(View.GONE);
-            mPlatformRefreshTextView.setText("No Internet connection!");
+            if(!platformStatusLoadedAtleastOnce) {
+                mPlatformRefresh.setVisibility(View.VISIBLE);
+                mTrainPredictionLinearLayout.setVisibility(View.GONE);
+                mPlatformRefreshTextView.setText("No Internet connection!");
+                refreshAnimator.cancel();
+            }
             mStationSwipeRefresh.setRefreshing(false);
-            refreshAnimator.cancel();
+
             Snackbar.make(mStationSwipeRefresh, getString(R.string.network_error), Snackbar.LENGTH_SHORT)
                     .setAction(R.string.retry, new View.OnClickListener() {
                         @Override
@@ -409,6 +422,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
             public void success(TrainPrediction trainPrediction, Response response) {
                 //Log.d(TAG, "Train Prediction Success : " + response.getStatus() + "---" + response.getReason() );
 
+                platformStatusLoadedAtleastOnce =  true;
                 refreshAnimator.cancel();
                 mStationSwipeRefresh.setRefreshing(false);
 
@@ -477,6 +491,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
             @Override
             public void failure(RetrofitError error) {
                 //Log.d(TAG, "Train Prediction Failure"  + error.getMessage());
+                platformStatusLoadedAtleastOnce = false;
                 mPlatformRefresh.setVisibility(View.VISIBLE);
                 mStationSwipeRefresh.setRefreshing(false);
                 mTrainPredictionLinearLayout.setVisibility(View.GONE);
@@ -502,10 +517,12 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     }
 
     private void setPlatformLoader() {
-        mTrainPredictionLinearLayout.setVisibility(View.GONE);
-        mPlatformRefresh.setVisibility(View.VISIBLE);
-        mPlatformRefreshTextView.setText("Loading " + mLinesSpinner.getSelectedItem().toString() + " trains..");
-        refreshAnimator.start();
+        if(!platformStatusLoadedAtleastOnce) {
+            mTrainPredictionLinearLayout.setVisibility(View.GONE);
+            mPlatformRefresh.setVisibility(View.VISIBLE);
+            mPlatformRefreshTextView.setText("Loading " + mLinesSpinner.getSelectedItem().toString() + " trains..");
+            refreshAnimator.start();
+        }
     }
 
     public void directToGoogleMap(View view) {
