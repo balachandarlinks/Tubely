@@ -9,6 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
@@ -299,7 +300,6 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
                     longitude = Double.parseDouble(longt);
                     stationLocationEnabled = true;
                 } catch (Exception e) {
-                    //Log.d(TAG, e.getMessage());
                 }
             }
 
@@ -322,7 +322,6 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
 
             setupMap(latitude, longitude);
         } else {
-            //Log.d(TAG, "Cursor Empty");
             stationLocationEnabled = false;
         }
 
@@ -354,7 +353,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
 
             }
         } else {
-            Toast.makeText(getApplicationContext(), "Station Location Not available", Toast.LENGTH_SHORT).show();
+            Snackbar.make(mStationSwipeRefresh, getString(R.string.station_location_not_found), Snackbar.LENGTH_SHORT).show();
         }
     }
 
@@ -378,6 +377,16 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
             mTrainPredictionLinearLayout.setVisibility(View.GONE);
             mPlatformRefreshTextView.setText("No Internet connection!");
             mStationSwipeRefresh.setRefreshing(false);
+            refreshAnimator.cancel();
+            Snackbar.make(mStationSwipeRefresh, getString(R.string.network_error), Snackbar.LENGTH_SHORT)
+                    .setAction(R.string.retry, new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            setPlatformLoader();
+                            refreshPlatform();
+                        }
+                    })
+                    .show();
             return;
         }
 
@@ -463,7 +472,7 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
                     mPlatformRefreshTextView.setText(getResources().getString(R.string.unknown_error));
                 }
                 refreshAnimator.cancel();
-                Toast.makeText(getApplicationContext(), "Sorry! We did our best.", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
@@ -487,21 +496,22 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
             MAP_URL = MAP_URL.replace("DESLAT", desLat);
             MAP_URL = MAP_URL.replace("DESLONG", desLong);
 
-            //Log.d(TAG, MAP_URL);
-
             Intent mapIntent = new Intent(Intent.ACTION_VIEW);
             mapIntent.setData(Uri.parse(MAP_URL));
             if (mapIntent.resolveActivity(getPackageManager()) != null) {
                 startActivity(mapIntent);
+                return;
             } else {
-                Toast.makeText(getApplicationContext(), "Kindly install a browser or Google maps applicaton for directions!", Toast.LENGTH_LONG).show();
+                Snackbar.make(mStationSwipeRefresh, R.string.no_google_maps, Snackbar.LENGTH_SHORT).show();
             }
 
         } else {
-            if (!stationLocationEnabled)
-                Toast.makeText(getApplicationContext(), "Station Location Not available", Toast.LENGTH_SHORT).show();
-            else
-                Toast.makeText(getApplicationContext(), "Current Location Not Available!", Toast.LENGTH_SHORT).show();
+            if (!stationLocationEnabled) {
+                Snackbar.make(mStationSwipeRefresh, R.string.station_not_available, Snackbar.LENGTH_SHORT).show();
+            }
+            else {
+                Snackbar.make(mStationSwipeRefresh, R.string.current_location_not_available, Snackbar.LENGTH_SHORT).show();
+            }
         }
     }
 

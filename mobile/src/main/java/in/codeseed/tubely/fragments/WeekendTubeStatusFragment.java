@@ -9,6 +9,7 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
@@ -24,7 +25,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -235,23 +235,18 @@ public class WeekendTubeStatusFragment extends Fragment implements LoaderManager
         if(swipeRefreshLayout.isRefreshing())
             swipeRefreshLayout.setRefreshing(false);
 
-        LayoutInflater inflater = getActivity().getLayoutInflater();
-        View layout = inflater.inflate(R.layout.toast_network_error,
-                (ViewGroup) getActivity().findViewById(R.id.toast_network_error));
 
-        /*TextView text = (TextView) layout.findViewById(R.id.text);
-        text.setText("Network Failure!");
-        Toast toast = new Toast(getActivity().getApplicationContext());
-        toast.setDuration(Toast.LENGTH_LONG);
-        toast.setView(layout);
-        toast.show();*/
-
-        Toast.makeText(getActivity().getApplicationContext(), "No Internet connection!", Toast.LENGTH_SHORT).show();
+        Snackbar.make(swipeRefreshLayout, R.string.network_error, Snackbar.LENGTH_SHORT)
+                .setAction(R.string.retry, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        updateCurrentTubeStatus();
+                    }
+                })
+                .show();
 
         if(tubeLoader.getVisibility() == View.VISIBLE)
             tubeLoaderTextView.setText("Pull down to refresh!");
-
-
     }
 
     public void setDataError(){

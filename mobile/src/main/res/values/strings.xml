@@ -5,7 +5,7 @@
     <string name="app_version">1.0.4</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="network_error">Duh.. Network Error!</string>
+    <string name="network_error">Duh.. Network Error</string>
     <string name="network_error_toast">"There is some problem with your data network :(</string>
     <string name="refresh_success">Refreshed!</string>
     <string name="tubestatus_current_feed">http://cloud.tfl.gov.uk/TrackerNet/LineStatus</string>
@@ -51,11 +51,16 @@
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="no_nearby_stations">No Nearby stations found!</string>
-    <string name="unknown_error">Unknown Error. Please refresh!</string>
-    <string name="departure_not_avail">Train departures not available for this station!</string>
-    <string name="shortcut_added">shortcut added to your homescreen!</string>
+    <string name="no_nearby_stations">No Nearby stations found</string>
+    <string name="unknown_error">Unknown Error. Please refresh</string>
+    <string name="departure_not_avail">Train departures not available for this station</string>
+    <string name="shortcut_added">shortcut added to your homescreen</string>
+    <string name="station_not_available">Station Location Not available</string>
+    <string name="current_location_not_available">Current Location Not Available</string>
+    <string name="no_google_maps">Kindly install a browser or Google maps applicaton for directions</string>
+    <string name="platform_loading_failure">Cannot load the platform status</string>
+    <string name="station_location_not_found">Station Location Not available</string>
+    <string name="retry">RETRY</string>
 
     <integer name="db_code">1</integer>
 

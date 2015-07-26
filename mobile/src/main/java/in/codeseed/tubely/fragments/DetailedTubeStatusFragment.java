@@ -7,23 +7,26 @@ import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import in.codeseed.tubely.R;
 import in.codeseed.tubely.adapters.DetailedStatusAdapter;
 import in.codeseed.tubely.pojos.Tube;
@@ -44,20 +47,22 @@ public class DetailedTubeStatusFragment extends Fragment {
     private static final String ACCESS_TOKEN = "58185250-SAI4FcCe38RbYGGeBq5fhl5CJxqlZ9nc0F4JUM17g";
     private static final String ACCESS_TOKEN_SECRET = "SclsQbfPMyqiZhYP2a3mhl79Kx2VHuZwQQagH9fLNm55C";
 
-    private DownloadTwitterStatus downloadTwitterStatus;
-    private RelativeLayout tweetLoader;
-    private ImageView tweetRefreshImageView;
+    @Bind(R.id.detailed_status_root_layout) FrameLayout mDetailedStatusRootLayout;
+    @Bind(R.id.tweetLoader) RelativeLayout mTweetLoader;
+    @Bind(R.id.tweetLoaderImageView) ImageView mTweetLoaderImageView;
+    @Bind(R.id.twitter_stream_recyclerview) RecyclerView mRecyclerView;
 
-    private RecyclerView recyclerView;
-    private List<Tweet> tweetList = new ArrayList<>();
-    private LinearLayoutManager linearLayoutManager;
-    private DetailedStatusAdapter detailedStatusAdapter;
+    private DownloadTwitterStatus mDownloadTwitterStatus;
+    private List<Tweet> mTweetList = new ArrayList<>();
+    private LinearLayoutManager mLinearLayoutManager;
 
-    private Tube tube;
-    private int pageStart = 1;
-    private int pageEnd = 20;
-    private String twitterHandle;
-    private ObjectAnimator animator;
+    private DetailedStatusAdapter mDetailedStatusAdapter;
+    private Tube mTube;
+    private int mPageStart = 1;
+    private int mPageEnd = 20;
+    private String mTwitterHandle;
+
+    private ObjectAnimator mLoaderAnimator;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -66,7 +71,9 @@ public class DetailedTubeStatusFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_detailed_status, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_detailed_status, container, false);
+        ButterKnife.bind(this, rootView);
+        return rootView;
     }
 
     @Override
@@ -74,74 +81,70 @@ public class DetailedTubeStatusFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         //Read Input data
-        tube = (Tube)getArguments().getSerializable("data");
-        twitterHandle = getArguments().getString("twitter_handle");
-
-        injectViews(view);
+        mTube = (Tube)getArguments().getSerializable("data");
+        mTwitterHandle = getArguments().getString("twitter_handle");
 
         //Layout manager for RecyclerView
-        linearLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
-        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        mLinearLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
+        mLinearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
-        detailedStatusAdapter = new DetailedStatusAdapter(getActivity().getApplicationContext(), tube, tweetList);
+        mDetailedStatusAdapter = new DetailedStatusAdapter(getActivity().getApplicationContext(), mTube, mTweetList);
 
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setAdapter(detailedStatusAdapter);
+        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+        mRecyclerView.setLayoutManager(mLinearLayoutManager);
+        mRecyclerView.setAdapter(mDetailedStatusAdapter);
 
-        tweetRefreshImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                refreshTweetStatus(twitterHandle);
-            }
-        });
+        mLoaderAnimator = ObjectAnimator.ofFloat(mTweetLoaderImageView, "rotation", 360);
+        mLoaderAnimator.setDuration(600);
+        mLoaderAnimator.setInterpolator(new LinearInterpolator());
+        mLoaderAnimator.setRepeatCount(ObjectAnimator.INFINITE);
 
-        animator = ObjectAnimator.ofFloat(tweetRefreshImageView, "rotation", 360);
-        animator.setDuration(600);
-        animator.setInterpolator(new LinearInterpolator());
-        animator.setRepeatCount(ObjectAnimator.INFINITE);
-
-        refreshTweetStatus(twitterHandle);
+        refreshTweetStatus(mTwitterHandle);
     }
 
-    void injectViews(View view){
-        tweetLoader = (RelativeLayout) view.findViewById(R.id.tweetLoader);
-        tweetRefreshImageView = (ImageView) tweetLoader.findViewById(R.id.tweetLoaderImageView);
-        recyclerView = (RecyclerView) view.findViewById(R.id.twitter_stream_recyclerview);
+    @OnClick(R.id.tweetLoaderImageView)
+    public void reloadTweets(View view){
+        refreshTweetStatus(mTwitterHandle);
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putSerializable("tweets_list", (Serializable) tweetList);
+        outState.putSerializable("tweets_list", (Serializable) mTweetList);
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        downloadTwitterStatus = null;
+        mDownloadTwitterStatus = null;
     }
 
     private void refreshTweetStatus(String twitterHandle) {
-
-        animator.start();
+        mLoaderAnimator.start();
         ConnectivityManager connMgr = (ConnectivityManager) getActivity().getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = connMgr.getActiveNetworkInfo();
 
         if (netInfo != null && netInfo.isConnected()) {
             //Call Async Task
-            if (downloadTwitterStatus == null || downloadTwitterStatus.getStatus() == AsyncTask.Status.FINISHED) {
-                downloadTwitterStatus = new DownloadTwitterStatus();
-                downloadTwitterStatus.execute(twitterHandle);
+            if (mDownloadTwitterStatus == null || mDownloadTwitterStatus.getStatus() == AsyncTask.Status.FINISHED) {
+                mDownloadTwitterStatus = new DownloadTwitterStatus();
+                mDownloadTwitterStatus.execute(twitterHandle);
             }
         } else {
             setNetworkError();
-            animator.cancel();
+            mLoaderAnimator.cancel();
         }
     }
 
-    void setNetworkError() {
-        Toast.makeText(getActivity().getApplicationContext(), "There is some problem with your data network :(", Toast.LENGTH_SHORT).show();
+    private void setNetworkError() {
+        Snackbar.make(mDetailedStatusRootLayout, R.string.network_error, Snackbar.LENGTH_SHORT)
+                .setAction(R.string.retry, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        refreshTweetStatus(mTwitterHandle);
+                    }
+                })
+                .show();
     }
 
     private class DownloadTwitterStatus extends AsyncTask<String, Void, List<Tweet>> {
@@ -156,7 +159,7 @@ public class DetailedTubeStatusFragment extends Fragment {
             String tweetHomeUser = users[0];
             Tweet tweet;
             List<Tweet> updatedTweetsList = new ArrayList<>();
-            Paging page = new Paging(pageStart, pageEnd);
+            Paging page = new Paging(mPageStart, mPageEnd);
             ConfigurationBuilder cb = new ConfigurationBuilder();
             cb.setDebugEnabled(true)
                     .setOAuthConsumerKey(CONSUMER_KEY)
@@ -176,7 +179,6 @@ public class DetailedTubeStatusFragment extends Fragment {
                     updatedTweetsList.add(tweet);
                 }
             } catch (Exception e) {
-                Log.e("TwitterException", e.getMessage());
             }
 
             return updatedTweetsList;
@@ -187,15 +189,13 @@ public class DetailedTubeStatusFragment extends Fragment {
 
             if(getActivity() != null) {
                 if (tweets == null || tweets.isEmpty()) {
-                    Log.d("Tweets", "Failure");
-                    animator.cancel();
+                    mLoaderAnimator.cancel();
                     setNetworkError();
                 } else {
-                    Log.d("Tweets", "Success");
-                    tweetList = tweets;
-                    detailedStatusAdapter.updateData(tube, tweetList);
-                    tweetLoader.setVisibility(View.INVISIBLE);
-                    animator.cancel();
+                    mTweetList = tweets;
+                    mDetailedStatusAdapter.updateData(mTube, mTweetList);
+                    mTweetLoader.setVisibility(View.INVISIBLE);
+                    mLoaderAnimator.cancel();
                 }
             }
         }

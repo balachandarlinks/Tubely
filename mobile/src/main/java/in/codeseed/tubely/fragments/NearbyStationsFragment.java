@@ -10,17 +10,18 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.BounceInterpolator;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -30,6 +31,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import in.codeseed.tubely.R;
 import in.codeseed.tubely.activities.StationActivity;
 import in.codeseed.tubely.customviews.LinesBatchLayout;
@@ -41,19 +45,21 @@ import in.codeseed.tubely.util.Util;
 public class NearbyStationsFragment extends Fragment implements GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener {
 
-
     private final static String TAG = NearbyStationsFragment.class.getSimpleName();
     private static String MAP_URL = "http://maps.google.com/maps?saddr=CURLAT,CURLONG&daddr=DESLAT,DESLONG&mode=walking";
-    private static LayoutInflater layoutInflater;
-    private RelativeLayout stationsLoader;
-    private ImageView stationsLoaderImageView;
-    private TextView stationsLoaderTextView;
-    private LinearLayout nearbyStationsLayout;
-    private SharedPreferences preferences;
+    private static LayoutInflater mLayoutInflater;
+
+    @Bind(R.id.nearby_stations_root_layout) FrameLayout mNearbyStationsRootLayout;
+    @Bind(R.id.nearby_stations_loader) RelativeLayout mStationsLoader;
+    @Bind(R.id.reload_nearby_stations_imageview) ImageView mStationsLoaderImageView;
+    @Bind(R.id.reload_nearby_stations_textview) TextView mStationsLoaderTextView;
+    @Bind(R.id.nearby_stations) LinearLayout mNearbyStationsLayout;
+
+    private SharedPreferences mPreferences;
     private GoogleApiClient mGoogleApiClient;
-    private Location currentLocation;
+    private Location mCurrentLocation;
     private ObjectAnimator mStationsLoaderImageViewanimator;
-    private Util util;
+    private Util mUtil;
 
     public NearbyStationsFragment() {
         // Required empty public constructor
@@ -62,15 +68,17 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.util = Util.getInstance(getActivity().getApplicationContext());
+        mUtil = Util.getInstance(getActivity().getApplicationContext());
+        mLayoutInflater = LayoutInflater.from(getActivity().getApplicationContext());
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_nearby_stations, container, false);
+        ButterKnife.bind(this, rootView);
 
-        if (util.checkPlayServices(getActivity()))
+        if (mUtil.checkPlayServices(getActivity()))
             buildGoogleApiClient();
 
         return rootView;
@@ -86,20 +94,17 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-
-        injectViews(view);
-        mStationsLoaderImageViewanimator = ObjectAnimator.ofFloat(stationsLoaderImageView, "rotation", 360);
+        mStationsLoaderImageViewanimator = ObjectAnimator.ofFloat(mStationsLoaderImageView, "rotation", 360);
         mStationsLoaderImageViewanimator.setRepeatCount(ObjectAnimator.INFINITE);
         mStationsLoaderImageViewanimator.setDuration(600);
         mStationsLoaderImageViewanimator.setInterpolator(new BounceInterpolator());
 
-        preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
-        stationsLoaderImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startAsyncStationsUpdate();
-            }
-        });
+        mPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
+    }
+
+    @OnClick(R.id.reload_nearby_stations_imageview)
+    public void reloadNearbyStations(){
+        startAsyncStationsUpdate();
     }
 
     @Override
@@ -107,15 +112,8 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
         super.onResume();
         if (mGoogleApiClient != null && mGoogleApiClient.isConnected())
             startAsyncStationsUpdate();
-    }
-
-
-    public void injectViews(View rootView){
-        layoutInflater = LayoutInflater.from(getActivity().getApplicationContext());
-        stationsLoader = (RelativeLayout) rootView.findViewById(R.id.nearby_stations_loader);
-        stationsLoaderImageView = (ImageView) stationsLoader.findViewById(R.id.reload_nearby_stations_imageview);
-        stationsLoaderTextView = (TextView) stationsLoader.findViewById(R.id.reload_nearby_stations_textview);
-        nearbyStationsLayout = (LinearLayout) rootView.findViewById(R.id.nearby_stations);
+        else
+            setLocationError();
     }
 
     public void callDetailedStationActivityIntent(String stationName){
@@ -154,7 +152,7 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
 
     @Override
     public void onConnected(Bundle bundle) {
-        currentLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+        mCurrentLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
         startAsyncStationsUpdate();
 
         Log.d(TAG, "Location Connected!");
@@ -162,14 +160,14 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
 
     public void startAsyncStationsUpdate(){
 
-        if(currentLocation != null)
+        if(mCurrentLocation != null)
             new UpdateNearbyStations().execute();
         else
             setLocationError();
     }
 
     public void setLocationError(){
-        stationsLoaderTextView.setText("Not able to get your current Location. Check your GPS.");
+        mStationsLoaderTextView.setText("Not able to get your current Location. Check your GPS.");
     }
 
     private void directToGooglMap(NearByStation station){
@@ -192,11 +190,11 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
             if (mapIntent.resolveActivity(getActivity().getPackageManager()) != null) {
                 startActivity(mapIntent);
             }else{
-                Toast.makeText(getActivity().getApplicationContext(), "Kindly install a browser or Google maps applicaton for directions!", Toast.LENGTH_LONG).show();
+                Snackbar.make(mNearbyStationsRootLayout, "Kindly install a browser or Google maps applicaton for directions", Snackbar.LENGTH_SHORT).show();
             }
 
         }else{
-            Toast.makeText(getActivity().getApplicationContext(),"Your current location is not available! Check your GPS.", Toast.LENGTH_SHORT).show();
+            Snackbar.make(mNearbyStationsRootLayout, "Your current location is not available! Check your GPS", Snackbar.LENGTH_SHORT).show();
         }
     }
 
@@ -218,8 +216,8 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
 
         @Override
         protected void onPreExecute() {
-            nearbyStationsLayout.removeAllViews();
-            stationsLoader.setVisibility(View.VISIBLE);
+            mNearbyStationsLayout.removeAllViews();
+            mStationsLoader.setVisibility(View.VISIBLE);
             mStationsLoaderImageViewanimator.start();
         }
 
@@ -239,18 +237,17 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
             mStationsLoaderImageViewanimator.cancel();
             nearbyStations = sortNearByStations(nearbyStations);
             if(nearbyStations.isEmpty()){
-                String nearByStationsRadious = preferences.getString(Util.SHARED_PREF_NEARBY_STATIONS_RADIOUS, "1000");
-                nearbyStationsLayout.setVisibility(View.INVISIBLE);
-                stationsLoader.setVisibility(View.VISIBLE);
-                stationsLoaderTextView.setText("No Nearby Stations in " + nearByStationsRadious + " m radius! \n Open Settings to change the radius.");
-                if(Util.NEARBY_FRAGMENTS_VISIBLE)
-                    Toast.makeText(getActivity().getApplicationContext(), "No nearby stations!", Toast.LENGTH_SHORT).show();
+                String nearByStationsRadious = mPreferences.getString(Util.SHARED_PREF_NEARBY_STATIONS_RADIOUS, "1000");
+                mNearbyStationsLayout.setVisibility(View.INVISIBLE);
+                mStationsLoader.setVisibility(View.VISIBLE);
+                mStationsLoaderTextView.setText("No Nearby Stations in " + nearByStationsRadious + " m radius! \n Open Settings to change the radius.");
+                Snackbar.make(mNearbyStationsRootLayout, "No nearby tube stations found", Snackbar.LENGTH_SHORT).show();
             }else {
-                nearbyStationsLayout.setVisibility(View.VISIBLE);
-                stationsLoader.setVisibility(View.INVISIBLE);
-                nearbyStationsLayout.removeAllViews();
+                mNearbyStationsLayout.setVisibility(View.VISIBLE);
+                mStationsLoader.setVisibility(View.INVISIBLE);
+                mNearbyStationsLayout.removeAllViews();
                 for (NearByStation station : nearbyStations) {
-                    LinearLayout nearbyStationCard = (LinearLayout) layoutInflater.inflate(R.layout.card_nearby_station, null);
+                    LinearLayout nearbyStationCard = (LinearLayout) mLayoutInflater.inflate(R.layout.card_nearby_station, null);
 
                     LinearLayout googleMapDirectionButton = (LinearLayout) nearbyStationCard.findViewById(R.id.direction_walk);
                     googleMapDirectionButton.setTag(station);
@@ -280,7 +277,7 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
                     linesBatchLayout.setLines(lines);
                     stationDistance.setText("~" + String.valueOf((int) station.getDistanceFromCurrentLocation()) + " m");
 
-                    nearbyStationsLayout.addView(nearbyStationCard);
+                    mNearbyStationsLayout.addView(nearbyStationCard);
                 }
             }
 
@@ -299,7 +296,7 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
                     currentStationLocation.setLatitude(allStationsCursor.getDouble(allStationsCursor.getColumnIndex(TubelyDBContract.StationTable.COLUMN_LAT)));
                     currentStationLocation.setLongitude(allStationsCursor.getDouble(allStationsCursor.getColumnIndex(TubelyDBContract.StationTable.COLUMN_LONG)));
 
-                    float distance = currentLocation.distanceTo(currentStationLocation);
+                    float distance = mCurrentLocation.distanceTo(currentStationLocation);
 
                     if(distance < nearbyStationsRadious()){
 
@@ -334,5 +331,4 @@ public class NearbyStationsFragment extends Fragment implements GoogleApiClient.
             return nearByStations;
         }
     }
-
 }

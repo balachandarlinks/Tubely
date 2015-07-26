@@ -1,13 +1,11 @@
 package in.codeseed.tubely.fragments;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.database.Cursor;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
@@ -23,12 +21,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import in.codeseed.tubely.R;
 import in.codeseed.tubely.adapters.TubeStatusAdapter;
 import in.codeseed.tubely.data.TubelyDBContract;
@@ -39,41 +38,93 @@ import in.codeseed.tubely.util.Util;
 
 public class CurrentTubeStatusFragment extends Fragment implements LoaderManager.LoaderCallbacks<Cursor>{
 
-    /*
-    @InjectView(R.id.cts_dummytext) private TextView ctsDummyText;
-    @InjectView(R.id.current_tubestatus_container) private FrameLayout currentTubeStatusContainer;
-    */
-
-
     private static final String TAG = CurrentTubeStatusFragment.class.getSimpleName();
     private static final int LOADER_CURRENT_TUBESTATUS_ID = 1;
 
-    private RecyclerView recyclerView;
-    private SwipeRefreshLayout swipeRefreshLayout;
-    private RelativeLayout tubeLoader;
-    private TextView tubeLoaderTextView, tubeStatusLastUpdate;
-    private ImageView tubeLoaderImageView;
+    @Bind(R.id.tubeStatusRecyclerView) RecyclerView mTubeStausRecyclerView;
+    @Bind(R.id.tubeFragmentSwipeRefresh) SwipeRefreshLayout mSwipeRefreshLayout;
+    @Bind(R.id.tubeLoader) RelativeLayout mTubeLoader;
+    @Bind(R.id.tubeLoaderTextView) TextView mTubeLoaderTextView;
+    @Bind(R.id.tubeStatusLastUpdate) TextView mTubeStatusLastUpdate;
+    @Bind(R.id.tubeLoaderImageView) ImageView mTubeLoaderImageView;
+
     private GridLayoutManager gridLayoutManager;
     private TubeStatusAdapter tubeStatusAdapter;
     private CurrentTubeStatusLoader weekendTubeStatusLoader;
     private List<Tube> tubeList;
     private SharedPreferences preferences;
+    private Util util;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+        preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
+        util = Util.getInstance(getActivity().getApplicationContext());
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        if(tubeList.isEmpty()) {
-            doLocalUpdate();
-        }else{
-            tubeStatusLastUpdate.setText(getLastUpdatedCurrentTubeStatusTime());
-            tubeStatusAdapter.updateAdapter(tubeList);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rooView = inflater.inflate(R.layout.fragment_tubestatus, container, false);
+        ButterKnife.bind(this, rooView);
+        return rooView;
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        tubeList = new ArrayList<>();
+
+        //Setup swipe refresh Layout
+        mSwipeRefreshLayout.setColorSchemeResources(R.color.circle_bg, R.color.overground_bg, R.color.victoria_bg, R.color.dlr_bg);
+
+        //Setup GridLayout Manager and Recycler view
+        if(getActivity().getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+            gridLayoutManager = new GridLayoutManager(getActivity().getApplicationContext(), 2);
+        }else {
+            gridLayoutManager = new GridLayoutManager(getActivity().getApplicationContext(), 3);
         }
+
+        mTubeStausRecyclerView.setLayoutManager(gridLayoutManager);
+        tubeStatusAdapter = new TubeStatusAdapter(getActivity().getApplicationContext(), tubeList, R.layout.grid_card_tubestatus);
+        mTubeStausRecyclerView.setAdapter(tubeStatusAdapter);
+
+        mTubeStausRecyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+
+                //Fix to let recycler view scroll to the top without getting disturbed by swipe refresh layout
+                mSwipeRefreshLayout.setEnabled(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0);
+
+                //Hide Lastupdate Textview while scrolling tube status
+                mTubeStatusLastUpdate.setVisibility(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0 ? View.VISIBLE : View.INVISIBLE);
+            }
+        });
+
+        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                updateCurrentTubeStatus();
+            }
+        });
+
+        //Initialize the loader and register for the callback
+        LoaderManager loaderManager = this.getLoaderManager();
+        loaderManager.initLoader(LOADER_CURRENT_TUBESTATUS_ID, null, this);
+
+        //Do Local Update
+        doLocalUpdate();
+
+        //Start the intent service to update current tube status
+        if(util.isNetworkConnected())
+            updateCurrentTubeStatus();
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
     }
 
     @Override
@@ -94,88 +145,14 @@ public class CurrentTubeStatusFragment extends Fragment implements LoaderManager
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_tubestatus, container, false);
-    }
-
-    @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        tubeList = new ArrayList<>();
-        injectResources(view);
-
-        //Setup swipe refresh Layout
-        swipeRefreshLayout.setColorSchemeResources(R.color.circle_bg, R.color.overground_bg, R.color.victoria_bg, R.color.dlr_bg);
-
-        //Setup GridLayout Manager and Recycler view
-        if(getActivity().getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
-            gridLayoutManager = new GridLayoutManager(getActivity().getApplicationContext(), 2);
-        }else {
-            gridLayoutManager = new GridLayoutManager(getActivity().getApplicationContext(), 3);
+    public void onResume() {
+        super.onResume();
+        if(tubeList.isEmpty()) {
+            doLocalUpdate();
+        }else{
+            mTubeStatusLastUpdate.setText(getLastUpdatedCurrentTubeStatusTime());
+            tubeStatusAdapter.updateAdapter(tubeList);
         }
-
-        recyclerView.setLayoutManager(gridLayoutManager);
-        tubeStatusAdapter = new TubeStatusAdapter(getActivity().getApplicationContext(), tubeList, R.layout.grid_card_tubestatus);
-        recyclerView.setAdapter(tubeStatusAdapter);
-
-        recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
-
-                //Fix to let recycler view scroll to the top without getting disturbed by swipe refresh layout
-                swipeRefreshLayout.setEnabled(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0);
-
-                //Hide Lastupdate Textview while scrolling tube status
-                tubeStatusLastUpdate.setVisibility(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0 ? View.VISIBLE:View.INVISIBLE);
-            }
-        });
-
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                updateCurrentTubeStatus();
-            }
-        });
-
-        //Initialize the loader and register for the callback
-        LoaderManager loaderManager = this.getLoaderManager();
-        loaderManager.initLoader(LOADER_CURRENT_TUBESTATUS_ID, null, this);
-
-        //Do Local Update
-        doLocalUpdate();
-
-        //Start the intent service to update current tube status
-        if(isNetworkConnected())
-            updateCurrentTubeStatus();
-    }
-
-    private void injectResources(View view){
-
-        recyclerView = (RecyclerView) view.findViewById(R.id.tubeStatusRecyclerView);
-        tubeLoader = (RelativeLayout)view.findViewById(R.id.tubeLoader);
-        tubeLoaderTextView = (TextView) view.findViewById(R.id.tubeLoaderTextView);
-        tubeLoaderImageView = (ImageView) view.findViewById(R.id.tubeLoaderImageView);
-        swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.tubeFragmentSwipeRefresh);
-        tubeStatusLastUpdate = (TextView) view.findViewById(R.id.tubeStatusLastUpdate);
-        preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
-    }
-
-    private void updateCurrentTubeStatus(){
-        if(isNetworkConnected()) {
-            if(!swipeRefreshLayout.isRefreshing())
-                swipeRefreshLayout.setRefreshing(true);
-                DownloadTubeStatusIntentService.startActionTubeStatusCurrent(getActivity().getApplicationContext());
-        }
-        else {
-            setNetworkError();
-        }
-    }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
     }
 
     @Override
@@ -227,14 +204,14 @@ public class CurrentTubeStatusFragment extends Fragment implements LoaderManager
         }
 
         //Update UI
-        if(tubeLoader.getVisibility() == View.VISIBLE)
-            tubeLoader.setVisibility(View.INVISIBLE);
+        if(mTubeLoader.getVisibility() == View.VISIBLE)
+            mTubeLoader.setVisibility(View.INVISIBLE);
 
         tubeStatusAdapter.updateAdapter(tubeList);
-        tubeStatusLastUpdate.setText(getLastUpdatedCurrentTubeStatusTime());
+        mTubeStatusLastUpdate.setText(getLastUpdatedCurrentTubeStatusTime());
 
-        if(swipeRefreshLayout.isRefreshing())
-            swipeRefreshLayout.setRefreshing(false);
+        if(mSwipeRefreshLayout.isRefreshing())
+            mSwipeRefreshLayout.setRefreshing(false);
     }
 
     @Override
@@ -242,33 +219,41 @@ public class CurrentTubeStatusFragment extends Fragment implements LoaderManager
         tubeStatusAdapter.updateAdapter(null);
     }
 
+    private void updateCurrentTubeStatus(){
+        if(util.isNetworkConnected()) {
+            if(!mSwipeRefreshLayout.isRefreshing())
+                mSwipeRefreshLayout.setRefreshing(true);
+            DownloadTubeStatusIntentService.startActionTubeStatusCurrent(getActivity().getApplicationContext());
+        }
+        else {
+            setNetworkError();
+        }
+    }
+
     void setNetworkError(){
 
-        if(swipeRefreshLayout.isRefreshing())
-            swipeRefreshLayout.setRefreshing(false);
+        if(mSwipeRefreshLayout.isRefreshing())
+            mSwipeRefreshLayout.setRefreshing(false);
 
-        Toast.makeText(getActivity().getApplicationContext(), "No Internet connection!", Toast.LENGTH_SHORT).show();
-
-        if(tubeLoader.getVisibility() == View.VISIBLE)
-            tubeLoaderTextView.setText("Pull down to refresh!");
+        Snackbar.make(mSwipeRefreshLayout, R.string.network_error, Snackbar.LENGTH_SHORT)
+                .setAction(R.string.retry, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        updateCurrentTubeStatus();
+                    }
+                })
+                .show();
+        if(mTubeLoader.getVisibility() == View.VISIBLE)
+            mTubeLoaderTextView.setText("Pull down to refresh!");
 
     }
 
     void setDataError(){
 
-        if(swipeRefreshLayout.isRefreshing())
-            swipeRefreshLayout.setRefreshing(false);
-        tubeLoader.setVisibility(View.VISIBLE);
-        tubeLoaderTextView.setText("Swipe down to refresh!");
-    }
-
-    boolean isNetworkConnected(){
-        ConnectivityManager conn = (ConnectivityManager)getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = conn.getActiveNetworkInfo();
-        if(networkInfo != null && networkInfo.isConnected())
-            return true;
-        else
-            return false;
+        if(mSwipeRefreshLayout.isRefreshing())
+            mSwipeRefreshLayout.setRefreshing(false);
+        mTubeLoader.setVisibility(View.VISIBLE);
+        mTubeLoaderTextView.setText("Swipe down to refresh!");
     }
 
     void doLocalUpdate(){

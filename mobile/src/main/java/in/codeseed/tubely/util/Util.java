@@ -159,14 +159,9 @@ public class Util {
         int resultCode = GooglePlayServicesUtil
                 .isGooglePlayServicesAvailable(activity.getApplicationContext());
         if (resultCode != ConnectionResult.SUCCESS) {
-            if (GooglePlayServicesUtil.isUserRecoverableError(resultCode)) {
-                GooglePlayServicesUtil.getErrorDialog(resultCode, activity,
-                        PLAY_SERVICES_RESOLUTION_REQUEST).show();
-            } else {
                 Toast.makeText(activity,
                         "Location based services will not work without Google play services!", Toast.LENGTH_LONG)
                         .show();
-            }
             return false;
         }
         return true;
