@@ -15,6 +15,8 @@ import android.widget.RelativeLayout;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import in.codeseed.tubely.R;
 import in.codeseed.tubely.activities.StationActivity;
 import in.codeseed.tubely.simplexml.allstations.Station;
@@ -25,8 +27,8 @@ import in.codeseed.tubely.util.Util;
  */
 public class TubeStationsFragment extends Fragment {
 
-    private ListView listView;
-    private RelativeLayout lineError;
+    @Bind(R.id.list_view) ListView listView;
+    @Bind(R.id.line_error) RelativeLayout lineError;
 
     private ArrayList<String> stations;
     private ArrayAdapter<String> stationsAdapter;
@@ -34,7 +36,9 @@ public class TubeStationsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_tubestations, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_tubestations, container, false);
+        ButterKnife.bind(this, rootView);
+        return rootView;
     }
 
     @Override
@@ -43,12 +47,9 @@ public class TubeStationsFragment extends Fragment {
 
         lineName = getArguments().getString("line_name");
 
-        lineError = (RelativeLayout) view.findViewById(R.id.line_error);
-        listView = (ListView) view.findViewById(R.id.list_view);
-
-        if(lineName.equalsIgnoreCase("Overground") || lineName.equalsIgnoreCase("DLR")){
+        if (lineName.equalsIgnoreCase("Overground") || lineName.equalsIgnoreCase("DLR")) {
             listView.setVisibility(View.GONE);
-        }else {
+        } else {
             lineError.setVisibility(View.GONE);
             stations = new ArrayList<>();
             stationsAdapter = new ArrayAdapter<>(getActivity().getApplicationContext(), R.layout.listitem_tube_station, stations);
@@ -61,8 +62,8 @@ public class TubeStationsFragment extends Fragment {
                     String stationName = stations.get(position);
                     String stationCode = "";
                     String stationLine = "";
-                    for(Station station : Util.getAllStations().getStations()){
-                        if(station.getName().equalsIgnoreCase(stationName)){
+                    for (Station station : Util.getAllStations().getStations()) {
+                        if (station.getName().equalsIgnoreCase(stationName)) {
                             stationCode = station.getCode();
                             stationLine = station.getLine();
                         }
@@ -83,17 +84,17 @@ public class TubeStationsFragment extends Fragment {
 
     }
 
-    private String sortStationLine(String stationLine){
+    private String sortStationLine(String stationLine) {
         String sortedStationLine;
-        if(stationLine.contains(lineName+",")){
+        if (stationLine.contains(lineName + ",")) {
             stationLine = stationLine.replace(lineName + ",", "");
-        }else{
+        } else {
             stationLine = stationLine.replace(lineName, "");
         }
 
-        if(stationLine.equalsIgnoreCase("")){
+        if (stationLine.equalsIgnoreCase("")) {
             sortedStationLine = lineName;
-        }else {
+        } else {
             sortedStationLine = lineName + "," + stationLine;
         }
         return sortedStationLine;
@@ -105,14 +106,16 @@ public class TubeStationsFragment extends Fragment {
 
     }
 
-    public void loadStationsData(){
+    public void loadStationsData() {
         List<String> stationsList = new ArrayList<>();
-        for(Station station : Util.getAllStations().getStations()){
-            if(station.getLine().contains(lineName)){
+
+        for (Station station : Util.getAllStations().getStations()) {
+            if (station.getLine().contains(lineName)) {
                 stationsList.add(station.getName());
             }
         }
-        if(stationsList.isEmpty())
+
+        if (stationsList.isEmpty())
             stationsList.add("Sorry! We don't support " + lineName + " stations.");
         stations.addAll(stationsList);
         stationsAdapter.notifyDataSetChanged();

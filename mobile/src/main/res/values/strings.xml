@@ -27,6 +27,7 @@
         <item>Overground</item>
         <item>DLR</item>
     </string-array>
+
     <string-array name="twitterHandles">
         <item>bakerlooline</item>
         <item>centralline</item>
@@ -41,6 +42,34 @@
         <item>wlooandcityline</item>
         <item>LDNOverground</item>
         <item>LondonDLR</item>
+    </string-array>
+
+    <string-array name="bakerloo_stations">
+        <item>Elephant and Castle</item>
+        <item>Lambeth North</item>
+        <item>Waterloo</item>
+        <item>Embankment</item>
+        <item>Charing Cross</item>
+        <item>Piccadilly Circus</item>
+        <item>Oxford Circus</item>
+        <item>Regent\'s Park</item>
+        <item>Baker Street</item>
+        <item>Marylebone</item>
+        <item>Edgware Road (Bakerloo)</item>
+        <item>Paddington</item>
+        <item>Warwick Avenue</item>
+        <item>Maida Vale</item>
+        <item>Kilburn Park</item>
+        <item>Queen\'s Park</item>
+        <item>Kensal Green</item>
+        <item>Willesden Junction</item>
+        <item>Harlesden</item>
+        <item>Stonebridge Park</item>
+        <item>Wembley Central</item>
+        <item>North Wembley</item>
+        <item>South Kenton</item>
+        <item>Kenton</item>
+        <item>Harrow and Wealdstone</item>
     </string-array>
 
     <string name="title_activity_status_and_stations">StatusAndStationsActivity</string>
