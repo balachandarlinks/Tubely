@@ -20,7 +20,7 @@ public class TubeMapActivity extends BaseActivity {
     @Bind(R.id.map_layout) FrameLayout mMapLayout;
     @Bind(R.id.tube_map) SubsamplingScaleImageView mTubeMap;
 
-    private static int MAP_MODE = 0;
+    private int MAP_MODE = 0;
     private Snackbar mSnackbar;
     private MenuItem mMapMenuItem;
 
