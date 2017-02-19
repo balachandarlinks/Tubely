@@ -194,7 +194,7 @@ public class DetailedTubeStatusFragment extends Fragment {
                 } else {
                     mTweetList = tweets;
                     mDetailedStatusAdapter.updateData(mTube, mTweetList);
-                    mTweetLoader.setVisibility(View.INVISIBLE);
+                    mTweetLoader.setVisibility(View.GONE);
                     mLoaderAnimator.cancel();
                 }
             }

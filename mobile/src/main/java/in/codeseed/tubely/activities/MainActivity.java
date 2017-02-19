@@ -40,8 +40,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
 
     private static final String TAG = MainActivity.class.getSimpleName();
     private static final int IDLE_PAGE_LIMIT = 2;
-    @Bind(R.id.tubeStatusViewPager)
-    ViewPager mTubeStatusViewPager;
+    @Bind(R.id.tubeStatusViewPager) ViewPager mTubeStatusViewPager;
     SharedPreferences mSharedPreferences;
     private TubeStatusViewPagerAdapter mTubeStatusViewPagerAdapter;
     private ArrayList<String> mSuggestedStations;

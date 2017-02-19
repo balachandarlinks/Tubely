@@ -30,6 +30,11 @@
             android:summary="Don't miss out my other apps in Playstore"
             android:title="More Apps by Appkiddo" />
 
+        <Preference android:title="Privacy policy" >
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://bit.ly/tubely_privacy_policy" />
+        </Preference>
+
         <Preference
             android:key="pref_appversion"
             android:summary="@string/app_version"

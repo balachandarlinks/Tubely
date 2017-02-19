@@ -90,18 +90,18 @@ public class CurrentTubeStatusFragment extends Fragment implements LoaderManager
         tubeStatusAdapter = new TubeStatusAdapter(getActivity().getApplicationContext(), tubeList, R.layout.grid_card_tubestatus);
         mTubeStausRecyclerView.setAdapter(tubeStatusAdapter);
 
-        mTubeStausRecyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
-
-                //Fix to let recycler view scroll to the top without getting disturbed by swipe refresh layout
-                mSwipeRefreshLayout.setEnabled(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0);
-
-                //Hide Lastupdate Textview while scrolling tube status
-                mTubeStatusLastUpdate.setVisibility(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0 ? View.VISIBLE : View.INVISIBLE);
-            }
-        });
+//        mTubeStausRecyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
+//            @Override
+//            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+//                super.onScrolled(recyclerView, dx, dy);
+//
+//                Fix to let recycler view scroll to the top without getting disturbed by swipe refresh layout
+//                mSwipeRefreshLayout.setEnabled(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0);
+//
+//                Hide Lastupdate Textview while scrolling tube status
+//                mTubeStatusLastUpdate.setVisibility(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0 ? View.VISIBLE : View.INVISIBLE);
+//            }
+//        });
 
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override

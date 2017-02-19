@@ -33,6 +33,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
@@ -85,7 +86,6 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
     private static final int STATION_DATA_LOADER = 1;
     private static String MAP_URL = "http://maps.google.com/maps?saddr=CURLAT,CURLONG&daddr=DESLAT,DESLONG&mode=transit";
 
-    private GoogleMap mMap;
     private Util util;
     private ArrayAdapter mLinesSpinnerAdapter;
     private ColorDrawable actionBarBackground;
@@ -335,24 +335,27 @@ public class StationActivity extends BaseActivity implements LoaderManager.Loade
 
     public void setupMap(double latitude, double longitude) {
         if (stationLocationEnabled) {
-            LatLng LOCATION = new LatLng(latitude, longitude);
-            mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
-            if (mMap != null) {
-                mMap.setMyLocationEnabled(true);
-                mMap.addMarker(new MarkerOptions()
-                        .position(LOCATION)
-                        .title("Acton Town"));
+            final LatLng LOCATION = new LatLng(latitude, longitude);
 
-                CameraPosition cameraPosition = new CameraPosition.Builder()
-                        .target(LOCATION)      // Sets the center of the map to Mountain View
-                        .zoom(17)                   // Sets the zoom
-                        .bearing(90)                // Sets the orientation of the camera to east
-                        .tilt(30)                   // Sets the tilt of the camera to 30 degrees
-                        .build();                   // Creates a CameraPosition from the builder
+            ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMapAsync(new OnMapReadyCallback() {
+                @Override
+                public void onMapReady(GoogleMap googleMap) {
+                    if (googleMap != null) {
+                        googleMap.setMyLocationEnabled(true);
+                        googleMap.addMarker(new MarkerOptions()
+                                .position(LOCATION)
+                                .title(stationName));
+                        CameraPosition cameraPosition = new CameraPosition.Builder()
+                                .target(LOCATION)      // Sets the center of the map to Mountain View
+                                .zoom(17)                   // Sets the zoom
+                                .bearing(90)                // Sets the orientation of the camera to east
+                                .tilt(30)                   // Sets the tilt of the camera to 30 degrees
+                                .build();                   // Creates a CameraPosition from the builder
 
-                mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-
-            }
+                        googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+                    }
+                }
+            });
         } else {
             Snackbar.make(mStationSwipeRefresh, getString(R.string.station_location_not_found), Snackbar.LENGTH_SHORT).show();
         }

@@ -106,18 +106,18 @@ public class WeekendTubeStatusFragment extends Fragment implements LoaderManager
         tubeStatusAdapter = new TubeStatusWeekendAdapter(getActivity().getApplicationContext(), tubeList, R.layout.grid_card_tubestatus);
         recyclerView.setAdapter(tubeStatusAdapter);
 
-        recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
-
+//        recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
+//            @Override
+//            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+//                super.onScrolled(recyclerView, dx, dy);
+//
                 //Fix to let recycler view scroll to the top without getting disturbed by swipe refresh layout
-                swipeRefreshLayout.setEnabled(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0);
+//                swipeRefreshLayout.setEnabled(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0);
 
                 //Hide Lastupdate Textview while scrolling tube status
-                tubeStatusLastUpdate.setVisibility(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0 ? View.VISIBLE:View.INVISIBLE);
-            }
-        });
+//                tubeStatusLastUpdate.setVisibility(gridLayoutManager.findFirstCompletelyVisibleItemPosition() == 0 ? View.VISIBLE:View.INVISIBLE);
+//            }
+//        });
 
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
